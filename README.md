@@ -1,5 +1,7 @@
 # Revisit
 
+**Try it in the browser:** [replay demo](https://a96020183.github.io/revisit-debian-triage/) — recorded live runs, no install. Live mode needs local Zetaris + Meterless Nightshift (setup below).
+
 **A Debian LTS triage agent that remembers how each package was handled, checks that memory against the raw evidence, closes deferred CVEs bookworm already fixed, and reopens the ones whose written condition is met.**
 
 User: the people who decide Debian 12 "bookworm" security work (Debian LTS, and derivative distributions that follow its tracker).
