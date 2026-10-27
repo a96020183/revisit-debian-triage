@@ -55,9 +55,9 @@ h3 { margin: 0; font-size: 15px; font-weight: 600; }
 .run .k { font: 500 12px/1.3 var(--sans); color: var(--faint); margin-bottom: 6px; }
 .run .v { font: 500 18px/1.2 var(--mono); }
 .run .n { color: var(--muted); font-size: 13px; margin-top: 6px; overflow-wrap: anywhere; }
-.open { all: unset; cursor: pointer; color: var(--text); font: 500 13px/1.2 var(--sans); border-bottom: 1px solid var(--faint); }
-.open:hover { border-color: var(--text); }
-.open:focus-visible { outline: 2px solid var(--reopen); outline-offset: 2px; }
+button.open { all: unset; cursor: pointer; color: var(--text); font: 500 13px/1.2 var(--sans); border-bottom: 1px solid var(--faint); }
+button.open:hover { border-color: var(--text); }
+button.open:focus-visible { outline: 2px solid var(--reopen); outline-offset: 2px; }
 .c-mem { color: var(--memory); } .c-ev { color: var(--evidence); } .c-urg { color: var(--urgent); } .c-ok { color: var(--ok); } .c-warn { color: var(--warn); } .c-muted { color: var(--muted); }
 .verdict-match { color: var(--ok); } .verdict-miss { color: var(--urgent); }
 
