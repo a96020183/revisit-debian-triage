@@ -1,5 +1,7 @@
 # Revisit — offline replay
 
+The replay banner wraps on narrow screens. Its measured height reserves space for the page header and trace drawer, including at a 390px viewport. Verification used local Chromium viewport emulation; it does not represent physical-device or Safari testing.
+
 Open `index.html` directly, or serve this folder with any static web server. No installation, API key, backend or network connection is needed. Keep the files together. The site also works under a project subdirectory on GitHub Pages.
 
 ## What to try
