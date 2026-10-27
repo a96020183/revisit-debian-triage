@@ -1,0 +1,85 @@
+{
+ "note": "Which exam items showed a bookworm version that did not exist yet at their time wall? (QA round 2, H3)\nFor every (package, version) the sealed facts showed, ask snapshot.debian.org when that source version first appeared in any\nDebian archive (debian or debian-security): /mr/package/<pkg>/<version>/srcfiles?fileinfo=1, the first_seen time of its .dsc.\nAn item leaks if that first appearance is after the item's wall (walls are snapshot dates, 00:00 UTC).",
+ "sealed_items_checked": 570,
+ "sealed_leaks": [
+  {
+   "cve": "CVE-2026-25971",
+   "pkg": "imagemagick",
+   "wall": "2026-06-01",
+   "bw_version": "8:6.9.11.60+dfsg-1.6+deb12u11",
+   "first_seen": "2026-06-23"
+  },
+  {
+   "cve": "CVE-2026-32316",
+   "pkg": "jq",
+   "wall": "2026-06-01",
+   "bw_version": "1.6-2.1+deb12u2",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "cve": "CVE-2026-47023",
+   "pkg": "mariadb",
+   "wall": "2026-07-01",
+   "bw_version": "1:10.11.18-0+deb12u1",
+   "first_seen": "2026-07-04"
+  },
+  {
+   "cve": "CVE-2026-60184",
+   "pkg": "mariadb",
+   "wall": "2026-07-01",
+   "bw_version": "1:10.11.18-0+deb12u1",
+   "first_seen": "2026-07-04"
+  },
+  {
+   "cve": "CVE-2026-60331",
+   "pkg": "mariadb",
+   "wall": "2026-07-01",
+   "bw_version": "1:10.11.18-0+deb12u1",
+   "first_seen": "2026-07-04"
+  },
+  {
+   "cve": "CVE-2026-60585",
+   "pkg": "mariadb",
+   "wall": "2026-07-01",
+   "bw_version": "1:10.11.18-0+deb12u1",
+   "first_seen": "2026-07-04"
+  },
+  {
+   "cve": "CVE-2026-60747",
+   "pkg": "mariadb",
+   "wall": "2026-07-01",
+   "bw_version": "1:10.11.18-0+deb12u1",
+   "first_seen": "2026-07-04"
+  },
+  {
+   "cve": "CVE-2026-61081",
+   "pkg": "mariadb",
+   "wall": "2026-07-01",
+   "bw_version": "1:10.11.18-0+deb12u1",
+   "first_seen": "2026-07-04"
+  },
+  {
+   "cve": "CVE-2026-8286",
+   "pkg": "curl",
+   "wall": "2026-06-01",
+   "bw_version": "7.88.1-10+deb12u15",
+   "first_seen": "2026-06-30"
+  },
+  {
+   "cve": "CVE-2026-8924",
+   "pkg": "curl",
+   "wall": "2026-06-01",
+   "bw_version": "7.88.1-10+deb12u15",
+   "first_seen": "2026-06-30"
+  },
+  {
+   "cve": "CVE-2026-8927",
+   "pkg": "curl",
+   "wall": "2026-06-01",
+   "bw_version": "7.88.1-10+deb12u15",
+   "first_seen": "2026-06-30"
+  }
+ ],
+ "walled_facts_leaks": [],
+ "versions_without_answer": []
+}

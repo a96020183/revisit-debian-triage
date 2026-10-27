@@ -1,0 +1,4675 @@
+{
+ "title": "Revisit 3 news exam: pre-registration (sealed before any model call on these items)",
+ "written": "2026-10-26 (Asia/Taipei)",
+ "decision_under_test": "For a newly tracked CVE in a Debian 12 bookworm source package, decide URGENT (the LTS team ships a DLA) vs NEXT / WONTFIX / NOTAFF.",
+ "answers": "Debian's own records only: the bookworm decision in the Debian security tracker and the DSA/DLA lists fetched 2026-10-26 16:09 +08:00, labelled with the unchanged gold rule of ../revisit/prep_data.py gold_label (URGENT = a DSA/DLA lists the bookworm package for the CVE). No human or AI labels.",
+ "selection": {
+  "news_set": "A: every CVE named in a Debian DSA or DLA dated 2026-10-01 .. 2026-10-26. B: every CVE CISA KEV added with dateAdded in 2026-10 (catalog 2026.10.23). Item = (CVE, source package) for every source package the tracker lists, kept when Debian has a bookworm decision. Excluded packages (bulk whole-version updates, same as every earlier exam): linux, linux-* backport kernels, chromium, firefox-esr, thunderbird, webkit2gtk, wpewebkit.",
+  "mix_set": "Same size as the news set. Pool: (CVE, pkg) whose CVE first appears after the 2026-09-01 snapshot, not in A or B, package not excluded, bookworm record <no-dsa>, <postponed> or <not-affected> (or no bookworm line and unstable <not-affected>), gold NEXT or NOTAFF. For each news item in (cve, pkg) order, one pool item of the same package type (Section of the bookworm Sources entry) is drawn with random.Random(20261026); if that type is used up, from the whole remaining pool. Each news item and its drawn mix item form a pair.",
+  "not_hand_picked": "PHP2Shell (CVE-2026-109618, CVE-2026-109619, php8.2) is in the news set only because DLA-4848-1 / DSA-6574-1 (2026-10-21) match rule A.",
+  "script": "exam/make_news_exam.py",
+  "build_meta": {
+   "cutoff": "2026-10-26",
+   "seed": 20261026,
+   "fetched_files_sha256": {
+    "list.txt": "ce303c76ac3f06c0da06734468715948c2a5caad4656c97d89548f13c8242632",
+    "dsa.txt": "f74c93c2296662f06093a59e2ce06d86b31a09d66576e8140395d02d47ca366f",
+    "dla.txt": "a7f0939c1ab392b22bc45ef0072221de36f98eff454e312fc90f81019a4f25a0",
+    "tracker.json": "4bdef57121ff35839e94bdbece9e4f8f81f6a734088843e0b836b2b0ec24d249",
+    "kev.json": "97a6e54bc74c651ab3c55657191db9adec6c63b05ca54e4205327cfd97a8fb70",
+    "Sources_bookworm.xz": "92d11a035571df011f06f28c61cb9825130ef1d92abb2f2e0525e8674dc44af8"
+   },
+   "kev_catalog": "2026.10.23",
+   "n_news": 285,
+   "n_mix": 285,
+   "skipped": {
+    "no bookworm decision (None)": 257,
+    "NOT-FOR-US": 21,
+    "excluded package": 3555,
+    "no bookworm decision (OPEN)": 120
+   },
+   "mix_pool": 759
+  },
+  "counts": {
+   "items": 570,
+   "news": 285,
+   "mix": 285,
+   "news_gold": {
+    "URGENT": 251,
+    "WONTFIX": 3,
+    "NOTAFF": 6,
+    "NEXT": 25
+   },
+   "mix_gold": {
+    "NEXT": 181,
+    "NOTAFF": 104
+   },
+   "walls": {
+    "2026-06-01": 108,
+    "2026-09-01": 249,
+    "2026-10-01": 109,
+    "2026-07-01": 65,
+    "2026-08-01": 39
+   },
+   "own_cve_history_dropped": 76
+  },
+  "time_wall": "Each item sees tracker history only up to the monthly snapshot before the CVE first appears. CVEs already in the earliest snapshot (2026-06-01): wall 2026-06-01 and every record of that same CVE removed from what S, OURS, NN and R1 see.",
+  "items": [
+   {
+    "cve": "CVE-2024-28757",
+    "pkg": "expat",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2024-28757|expat",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2024-28757",
+    "pkg": "libxmltok",
+    "answer": "WONTFIX",
+    "set": "news",
+    "pair": "CVE-2024-28757|libxmltok",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2024-58379",
+    "pkg": "node-nodemailer",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-62437|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2025-10263",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2025-10263|xen",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2025-1218",
+    "pkg": "php8.2",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2025-1218|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2025-13465",
+    "pkg": "node-lodash",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2025-13465|node-lodash",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2025-14181",
+    "pkg": "php8.2",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2025-14181|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2025-15649",
+    "pkg": "libio-compress-perl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2025-15649|libio-compress-perl",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2025-15649",
+    "pkg": "perl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2025-15649|perl",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2025-1647",
+    "pkg": "twitter-bootstrap3",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2025-1647|twitter-bootstrap3",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2025-1647",
+    "pkg": "twitter-bootstrap4",
+    "answer": "NOTAFF",
+    "set": "news",
+    "pair": "CVE-2025-1647|twitter-bootstrap4",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2025-26625",
+    "pkg": "git-lfs",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2025-26625|git-lfs",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2025-47183",
+    "pkg": "gst-plugins-good1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2025-47183|gst-plugins-good1.0",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2025-54505",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2025-54505|xen",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2025-54518",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2025-54518|xen",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2025-58150",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2025-58150|xen",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2025-59375",
+    "pkg": "expat",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2025-59375|expat",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2025-59933",
+    "pkg": "vips",
+    "answer": "WONTFIX",
+    "set": "news",
+    "pair": "CVE-2025-59933|vips",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2025-69534",
+    "pkg": "pypy3",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2025-69534|pypy3",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2025-69534",
+    "pkg": "python3.11",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2025-69534|python3.11",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-0799",
+    "pkg": "libpcap",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-85150|gst-plugins-base1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-0964",
+    "pkg": "libssh",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-0964|libssh",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-0965",
+    "pkg": "libssh",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-0965|libssh",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-0966",
+    "pkg": "libssh",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-0966|libssh",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-0967",
+    "pkg": "libssh",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-0967|libssh",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-0968",
+    "pkg": "libssh",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-0968|libssh",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-100659",
+    "pkg": "netty",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-23554|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-100662",
+    "pkg": "netty",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-25243|redis",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-100691",
+    "pkg": "hugo",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-93589|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-100692",
+    "pkg": "hugo",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-66066|rails",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-100694",
+    "pkg": "hugo",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-62430|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-100698",
+    "pkg": "adminer",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-58040|nodejs",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-100700",
+    "pkg": "node-nodemailer",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-91768|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-101900",
+    "pkg": "node-axios",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-3276|python3.11",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-101906",
+    "pkg": "node-axios",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-42493|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-101917",
+    "pkg": "pyjwt",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-19553|python3.11",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102253",
+    "pkg": "iperf3",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-27585|caddy",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102272",
+    "pkg": "pyjwt",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-7017|perl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102274",
+    "pkg": "pyjwt",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-91769|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102504",
+    "pkg": "libimager-perl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2025-15649|perl",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-102505",
+    "pkg": "libimager-perl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2025-15649|libio-compress-perl",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-102556",
+    "pkg": "libsoup3",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-62432|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102558",
+    "pkg": "libsoup3",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-75131|network-manager-l2tp",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102598",
+    "pkg": "python-werkzeug",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-87975|python-django",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102633",
+    "pkg": "expat",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-102633|expat",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102635",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-102635|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102731",
+    "pkg": "apache-directory-api",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-6103|php8.2",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-102925",
+    "pkg": "python-virtualenv",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-90460|keystone",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102938",
+    "pkg": "python-virtualenv",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-73234|freecad",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102977",
+    "pkg": "mediawiki",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-60331|mariadb",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-102993",
+    "pkg": "pypdf",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-20347|clamav",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-102993",
+    "pkg": "pypdf2",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-42490|xen",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-102995",
+    "pkg": "pypdf",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-27587|caddy",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-102997",
+    "pkg": "pypdf",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-79602|xen",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-102998",
+    "pkg": "pypdf",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-19445|python3.11",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-102998",
+    "pkg": "pypdf2",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-103111|pcre2",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-103000",
+    "pkg": "pypdf2",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-91766|php8.2",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-103001",
+    "pkg": "pyjwt",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-20217|clamav",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-103111",
+    "pkg": "pcre2",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-103111|pcre2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-103658",
+    "pkg": "aspell",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-20215|clamav",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-104851",
+    "pkg": "fsspec",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-1502|python3.11",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-105083",
+    "pkg": "imagemagick",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-106579|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-105111",
+    "pkg": "bcel",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-75805|openssl",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-105483",
+    "pkg": "nodejs",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-56848|nodejs",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-105837",
+    "pkg": "libmikmod",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-32777|expat",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-105838",
+    "pkg": "libmikmod",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-0965|libssh",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-105839",
+    "pkg": "libmikmod",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-25210|expat",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106026",
+    "pkg": "tftp-hpa",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-18725|open-iscsi",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106070",
+    "pkg": "nodejs",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-56846|nodejs",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106071",
+    "pkg": "nodejs",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-58042|nodejs",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106435",
+    "pkg": "pymongo",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-86423|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106452",
+    "pkg": "lz4-java",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-19553|pypy3",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106564",
+    "pkg": "imagemagick",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-107209|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106565",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-106565|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106566",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-106566|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106567",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-106567|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106568",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-106568|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106569",
+    "pkg": "imagemagick",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-106577|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106570",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-106570|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106571",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-106571|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106572",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-106572|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106573",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-106573|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106574",
+    "pkg": "imagemagick",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-106570|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106575",
+    "pkg": "imagemagick",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-106568|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106576",
+    "pkg": "imagemagick",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-106573|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106577",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-106577|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106578",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-106578|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106579",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-106579|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106580",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-106580|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106585",
+    "pkg": "openssh",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-62424|xen",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106589",
+    "pkg": "openssh",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-62431|xen",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-107167",
+    "pkg": "m17n-lib",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-12892|gst-plugins-bad1.0",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-107168",
+    "pkg": "m17n-lib",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-17072|gst-plugins-good1.0",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-107169",
+    "pkg": "m17n-lib",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-39044|gst-plugins-good1.0",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-107170",
+    "pkg": "m17n-lib",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-19387|gst-plugins-bad1.0",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-107208",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-107208|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-107209",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-107209|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-107210",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-107210|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-107313",
+    "pkg": "libpgjava",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-52719|gst-plugins-bad1.0",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-107314",
+    "pkg": "libpgjava",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-8927|curl",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-107929",
+    "pkg": "curl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2024-28757|expat",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-108693",
+    "pkg": "imagemagick",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-106566|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-108830",
+    "pkg": "janus",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-42487|xen",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-108978",
+    "pkg": "rlottie",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-47736|puma",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-109261",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-109261|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-109618",
+    "pkg": "php8.2",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-109618|php8.2",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-109619",
+    "pkg": "php8.2",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-109619|php8.2",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-109786",
+    "pkg": "fail2ban",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-18728|open-iscsi",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-109854",
+    "pkg": "m17n-lib",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-92392|curl",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-109956",
+    "pkg": "nltk",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-62427|xen",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-110237",
+    "pkg": "vifm",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-20031|clamav",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-110354",
+    "pkg": "haproxy",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-110354|haproxy",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-110451",
+    "pkg": "nix",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-27590|caddy",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-110601",
+    "pkg": "libsixel",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-93682|php8.2",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-111183",
+    "pkg": "gst-plugins-good1.0",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-59844|libssh",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-111497",
+    "pkg": "brotli",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-111497|brotli",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-111497",
+    "pkg": "nodejs",
+    "answer": "WONTFIX",
+    "set": "news",
+    "pair": "CVE-2026-111497|nodejs",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-112202",
+    "pkg": "libimager-perl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-7010|libhttp-tiny-perl",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-113351",
+    "pkg": "expat",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-18298|gst-plugins-good1.0",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-113680",
+    "pkg": "harfbuzz",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2025-54518|xen",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-115504",
+    "pkg": "cfitsio",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-48554|nagios4",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-115567",
+    "pkg": "rust-tokio",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-62433|xen",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-115730",
+    "pkg": "node-i18next-http-backend",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-15308|python3.11",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-12087",
+    "pkg": "libsocket-perl",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-12087|libsocket-perl",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-12087",
+    "pkg": "perl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-12087|perl",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-12505",
+    "pkg": "cifs-utils",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-12505|cifs-utils",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-12892",
+    "pkg": "gst-plugins-bad1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-12892|gst-plugins-bad1.0",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-13221",
+    "pkg": "perl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-13221|perl",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-13311",
+    "pkg": "node-shell-quote",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-13311|node-shell-quote",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-13608",
+    "pkg": "curl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-53702|gst-plugins-bad1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-14935",
+    "pkg": "gst-plugins-bad1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-14935|gst-plugins-bad1.0",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-1502",
+    "pkg": "pypy3",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-1502|pypy3",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-1502",
+    "pkg": "python3.11",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-1502|python3.11",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-15308",
+    "pkg": "python3.11",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-15308|python3.11",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-15310",
+    "pkg": "python3.11",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-15310|python3.11",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-15806",
+    "pkg": "pypy3",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-15806|pypy3",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-15806",
+    "pkg": "python3.11",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-15806|python3.11",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-16028",
+    "pkg": "libprotocol-http2-perl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-33176|rails",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-17072",
+    "pkg": "gst-plugins-good1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-17072|gst-plugins-good1.0",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-17084",
+    "pkg": "pypy3",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-17084|pypy3",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-17084",
+    "pkg": "python3.11",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-17084|python3.11",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-17495",
+    "pkg": "node-moment",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-12505|cifs-utils",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-17591",
+    "pkg": "libarchive",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-32776|expat",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-17615",
+    "pkg": "resteasy3.0",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-15806|python3.11",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-18090",
+    "pkg": "gdk-pixbuf",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-59845|libssh",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-18297",
+    "pkg": "gst-plugins-base1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-18297|gst-plugins-base1.0",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-18298",
+    "pkg": "gst-plugins-good1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-18298|gst-plugins-good1.0",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-18299",
+    "pkg": "gst-plugins-good1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-18299|gst-plugins-good1.0",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-18503",
+    "pkg": "pypy3",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-18503|pypy3",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-18503",
+    "pkg": "python3.11",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-18503|python3.11",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-18724",
+    "pkg": "open-iscsi",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-18724|open-iscsi",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-18725",
+    "pkg": "open-iscsi",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-18725|open-iscsi",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-18726",
+    "pkg": "open-iscsi",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-18726|open-iscsi",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-18727",
+    "pkg": "open-iscsi",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-18727|open-iscsi",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-18728",
+    "pkg": "open-iscsi",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-18728|open-iscsi",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-18924",
+    "pkg": "curl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-5917|libgit2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-19387",
+    "pkg": "gst-plugins-bad1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-19387|gst-plugins-bad1.0",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-1940",
+    "pkg": "gst-plugins-good1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-1940|gst-plugins-good1.0",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-19445",
+    "pkg": "pypy3",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-19445|pypy3",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-19445",
+    "pkg": "python3.11",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-19445|python3.11",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-19487",
+    "pkg": "perl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-19487|perl",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-19553",
+    "pkg": "pypy3",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-19553|pypy3",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-19553",
+    "pkg": "python3.11",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-19553|python3.11",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-19624",
+    "pkg": "network-manager-l2tp",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-19624|network-manager-l2tp",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-19872",
+    "pkg": "libhtml-formhandler-perl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-48959|libio-compress-perl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-19931",
+    "pkg": "curl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-66046|expat",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-19954",
+    "pkg": "libnet-whois-raw-perl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-13221|perl",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-20031",
+    "pkg": "clamav",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-20031|clamav",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-20213",
+    "pkg": "clamav",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-20213|clamav",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-20214",
+    "pkg": "clamav",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-20214|clamav",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-20215",
+    "pkg": "clamav",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-20215|clamav",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-20216",
+    "pkg": "clamav",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-20216|clamav",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-20217",
+    "pkg": "clamav",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-20217|clamav",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-20243",
+    "pkg": "clamav",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-20243|clamav",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-20244",
+    "pkg": "clamav",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-20244|clamav",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-20339",
+    "pkg": "clamav",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-20339|clamav",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-20345",
+    "pkg": "clamav",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-20345|clamav",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-20346",
+    "pkg": "clamav",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-20346|clamav",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-20347",
+    "pkg": "clamav",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-20347|clamav",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-20348",
+    "pkg": "clamav",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-20348|clamav",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-23479",
+    "pkg": "redis",
+    "answer": "NOTAFF",
+    "set": "news",
+    "pair": "CVE-2026-23479|redis",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-23553",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-23553|xen",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-23554",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-23554|xen",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-23556",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-23556|xen",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-23557",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-23557|xen",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-23558",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-23558|xen",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-23631",
+    "pkg": "redis",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-23631|redis",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-24515",
+    "pkg": "expat",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-24515|expat",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-25210",
+    "pkg": "expat",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-25210|expat",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-25243",
+    "pkg": "redis",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-25243|redis",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-25971",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-25971|imagemagick",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-27585",
+    "pkg": "caddy",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-27585|caddy",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-27587",
+    "pkg": "caddy",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-27587|caddy",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-27588",
+    "pkg": "caddy",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-27588|caddy",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-27589",
+    "pkg": "caddy",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-27589|caddy",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-27590",
+    "pkg": "caddy",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-27590|caddy",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-2950",
+    "pkg": "node-lodash",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-2950|node-lodash",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-3083",
+    "pkg": "gst-plugins-good1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-3083|gst-plugins-good1.0",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-3085",
+    "pkg": "gst-plugins-good1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-3085|gst-plugins-good1.0",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-31911",
+    "pkg": "libpcap",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-52720|gst-plugins-bad1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-31912",
+    "pkg": "libpcap",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-8286|curl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-32316",
+    "pkg": "jq",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-32316|jq",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-3276",
+    "pkg": "python3.11",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-3276|python3.11",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-32776",
+    "pkg": "expat",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-32776|expat",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-32777",
+    "pkg": "expat",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-32777|expat",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-32778",
+    "pkg": "expat",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-32778|expat",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-33168",
+    "pkg": "rails",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-33168|rails",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-33169",
+    "pkg": "rails",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-33169|rails",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-33170",
+    "pkg": "rails",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-33170|rails",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-33173",
+    "pkg": "rails",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-33173|rails",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-33174",
+    "pkg": "rails",
+    "answer": "NOTAFF",
+    "set": "news",
+    "pair": "CVE-2026-33174|rails",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-33176",
+    "pkg": "rails",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-33176|rails",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-33195",
+    "pkg": "rails",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-33195|rails",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-33202",
+    "pkg": "rails",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-33202|rails",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-33555",
+    "pkg": "haproxy",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-33555|haproxy",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-33658",
+    "pkg": "rails",
+    "answer": "NOTAFF",
+    "set": "news",
+    "pair": "CVE-2026-33658|rails",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-34475",
+    "pkg": "varnish",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-34475|varnish",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-34789",
+    "pkg": "freecad",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-34789|freecad",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-35189",
+    "pkg": "openssl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-35189|openssl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-35191",
+    "pkg": "openssl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-73434|gst-plugins-good1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-3731",
+    "pkg": "libssh",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-3731|libssh",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-39043",
+    "pkg": "gst-plugins-good1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-39043|gst-plugins-good1.0",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-39044",
+    "pkg": "gst-plugins-good1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-39044|gst-plugins-good1.0",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-42487",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-42487|xen",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-42488",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-42488|xen",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-42489",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-42489|xen",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-42490",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-42490|xen",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-42493",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-42493|xen",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-42494",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-42494|xen",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-42495",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-42495|xen",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-42496",
+    "pkg": "perl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-42496|perl",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-42497",
+    "pkg": "perl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-42497|perl",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-42772",
+    "pkg": "openssl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-88914|gst-plugins-good1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-44943",
+    "pkg": "open-iscsi",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-44943|open-iscsi",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-44944",
+    "pkg": "open-iscsi",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-44944|open-iscsi",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-45186",
+    "pkg": "expat",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-45186|expat",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-45363",
+    "pkg": "ruby-jwt",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-45363|ruby-jwt",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-45692",
+    "pkg": "caddy",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-45692|caddy",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-46471",
+    "pkg": "gst-plugins-good1.0",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-102633|expat",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-46472",
+    "pkg": "gst-plugins-good1.0",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-0966|libssh",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-46675",
+    "pkg": "libpng1.6",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-46675|libpng1.6",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-47023",
+    "pkg": "mariadb",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-47023|mariadb",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-47736",
+    "pkg": "puma",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-47736|puma",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-47737",
+    "pkg": "puma",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-47737|puma",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-4800",
+    "pkg": "node-lodash",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-4800|node-lodash",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-48549",
+    "pkg": "nagios4",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-48549|nagios4",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-48550",
+    "pkg": "nagios4",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-48550|nagios4",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-48551",
+    "pkg": "nagios4",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-48551|nagios4",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-48552",
+    "pkg": "nagios4",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-48552|nagios4",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-48553",
+    "pkg": "nagios4",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-48553|nagios4",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-48554",
+    "pkg": "nagios4",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-48554|nagios4",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-48618",
+    "pkg": "nodejs",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-48618|nodejs",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-48928",
+    "pkg": "nodejs",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-48928|nodejs",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-48930",
+    "pkg": "nodejs",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-48930|nodejs",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-48931",
+    "pkg": "nodejs",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-48931|nodejs",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-48933",
+    "pkg": "nodejs",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-48933|nodejs",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-48934",
+    "pkg": "nodejs",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-48934|nodejs",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-48959",
+    "pkg": "libio-compress-perl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-48959|libio-compress-perl",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-48959",
+    "pkg": "perl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-48959|perl",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-48962",
+    "pkg": "libio-compress-perl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-48962|libio-compress-perl",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-48962",
+    "pkg": "perl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-48962|perl",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-49275",
+    "pkg": "exiv2",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-102635|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-49836",
+    "pkg": "psd-tools",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-62428|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-52718",
+    "pkg": "gst-plugins-bad1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-52718|gst-plugins-bad1.0",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-52719",
+    "pkg": "gst-plugins-bad1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-52719|gst-plugins-bad1.0",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-52720",
+    "pkg": "gst-plugins-bad1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-52720|gst-plugins-bad1.0",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-52845",
+    "pkg": "caddy",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-52845|caddy",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-52846",
+    "pkg": "caddy",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-52846|caddy",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-53584",
+    "pkg": "libgit2",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-53584|libgit2",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-53585",
+    "pkg": "libgit2",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-53585|libgit2",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-53586",
+    "pkg": "libgit2",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-53586|libgit2",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-53702",
+    "pkg": "gst-plugins-bad1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-53702|gst-plugins-bad1.0",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-53705",
+    "pkg": "gst-plugins-good1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-53705|gst-plugins-good1.0",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-54603",
+    "pkg": "ruby-oauth2",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-54603|ruby-oauth2",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-54634",
+    "pkg": "hamlib",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2024-28757|libxmltok",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-54872",
+    "pkg": "openssl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-54872|openssl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-54875",
+    "pkg": "openssl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-14935|gst-plugins-bad1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-55073",
+    "pkg": "weasyprint",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-79604|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-56132",
+    "pkg": "expat",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-56132|expat",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-56846",
+    "pkg": "nodejs",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-56846|nodejs",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-56848",
+    "pkg": "nodejs",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-56848|nodejs",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-56850",
+    "pkg": "nodejs",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-56850|nodejs",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-57432",
+    "pkg": "perl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-57432|perl",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-57433",
+    "pkg": "perl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-57433|perl",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-58040",
+    "pkg": "nodejs",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-58040|nodejs",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-58042",
+    "pkg": "nodejs",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-58042|nodejs",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-5917",
+    "pkg": "libgit2",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-5917|libgit2",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-59691",
+    "pkg": "gst-plugins-bad1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-59691|gst-plugins-bad1.0",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59692",
+    "pkg": "gst-plugins-bad1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-59692|gst-plugins-bad1.0",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59843",
+    "pkg": "libssh",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-59843|libssh",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59844",
+    "pkg": "libssh",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-59844|libssh",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59845",
+    "pkg": "libssh",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-59845|libssh",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59846",
+    "pkg": "libssh",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-59846|libssh",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59847",
+    "pkg": "libssh",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-59847|libssh",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59848",
+    "pkg": "libssh",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-59848|libssh",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59850",
+    "pkg": "libssh",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-59850|libssh",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-60184",
+    "pkg": "mariadb",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-60184|mariadb",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-6019",
+    "pkg": "pypy3",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-6019|pypy3",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-6019",
+    "pkg": "python3.11",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-6019|python3.11",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-60331",
+    "pkg": "mariadb",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-60331|mariadb",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-60585",
+    "pkg": "mariadb",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-60585|mariadb",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-60747",
+    "pkg": "mariadb",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-60747|mariadb",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-6103",
+    "pkg": "php8.2",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-6103|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-61081",
+    "pkg": "mariadb",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-61081|mariadb",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-61781",
+    "pkg": "pg-partman",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-54603|ruby-oauth2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-61814",
+    "pkg": "jawn",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-19624|network-manager-l2tp",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-61819",
+    "pkg": "pg-partman",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-45692|caddy",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-62343",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-62343|imagemagick",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62423",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-62423|xen",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62424",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-62424|xen",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62425",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-62425|xen",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62426",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-62426|xen",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62427",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-62427|xen",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62428",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-62428|xen",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62429",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-62429|xen",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62430",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-62430|xen",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62431",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-62431|xen",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62432",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-62432|xen",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62433",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-62433|xen",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62434",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-62434|xen",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62435",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-62435|xen",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62436",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-62436|xen",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62437",
+    "pkg": "xen",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-62437|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-62438",
+    "pkg": "gimp",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-106567|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-62439",
+    "pkg": "gimp",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-106578|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-62946",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-62946|imagemagick",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62993",
+    "pkg": "smarty3",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-56850|nodejs",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-62993",
+    "pkg": "smarty4",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-109618|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-63347",
+    "pkg": "suricata-update",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-63347|suricata-update",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-63435",
+    "pkg": "ruby-mail",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-33168|rails",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-64685",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-64685|imagemagick",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-6554",
+    "pkg": "libpcap",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-76957|expat",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-65970",
+    "pkg": "openimageio",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-59691|gst-plugins-bad1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-66046",
+    "pkg": "expat",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-66046|expat",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-66066",
+    "pkg": "rails",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-66066|rails",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-66069",
+    "pkg": "rabbitmq-server",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-44943|open-iscsi",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-66080",
+    "pkg": "rabbitmq-server",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-44944|open-iscsi",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-67234",
+    "pkg": "rabbitmq-server",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-8376|perl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-67236",
+    "pkg": "rabbitmq-server",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-33555|haproxy",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-67240",
+    "pkg": "rabbitmq-server",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-20244|clamav",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-67410",
+    "pkg": "rabbitmq-server",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-18727|open-iscsi",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-67415",
+    "pkg": "rabbitmq-server",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-18724|open-iscsi",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-67549",
+    "pkg": "openimageio",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2025-59933|vips",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-6811",
+    "pkg": "php-mongodb",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-6811|php-mongodb",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-68495",
+    "pkg": "jackson-dataformat-cbor",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-62946|imagemagick",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-69150",
+    "pkg": "keepassxc",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-18503|pypy3",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-7010",
+    "pkg": "libhttp-tiny-perl",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-7010|libhttp-tiny-perl",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-7010",
+    "pkg": "perl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-7010|perl",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-7017",
+    "pkg": "libhttp-tiny-perl",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-7017|libhttp-tiny-perl",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-7017",
+    "pkg": "perl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-7017|perl",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-71220",
+    "pkg": "gfs2-utils",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-93337|network-manager-l2tp",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-72897",
+    "pkg": "openssl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-93587|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-73234",
+    "pkg": "freecad",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-73234|freecad",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-73235",
+    "pkg": "freecad",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-73235|freecad",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-73433",
+    "pkg": "gst-plugins-good1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-73433|gst-plugins-good1.0",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-73434",
+    "pkg": "gst-plugins-good1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-73434|gst-plugins-good1.0",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-74222",
+    "pkg": "u-boot",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-7017|libhttp-tiny-perl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-74859",
+    "pkg": "gnome-tweaks",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-62435|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-74860",
+    "pkg": "libxml2",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-75806|openssl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-75131",
+    "pkg": "network-manager-l2tp",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-75131|network-manager-l2tp",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-75804",
+    "pkg": "openssl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-53584|libgit2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-75805",
+    "pkg": "openssl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-75805|openssl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-75806",
+    "pkg": "openssl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-75806|openssl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-75893",
+    "pkg": "osmo-bsc",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-47023|mariadb",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-75894",
+    "pkg": "osmo-iuh",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2025-69534|python3.11",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-76174",
+    "pkg": "ocsinventory-server",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-111497|nodejs",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-76175",
+    "pkg": "ocsinventory-server",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-48928|nodejs",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-76176",
+    "pkg": "ocsinventory-server",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-34475|varnish",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-76177",
+    "pkg": "ocsinventory-server",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-48931|nodejs",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-76178",
+    "pkg": "ocsinventory-server",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-48930|nodejs",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-76654",
+    "pkg": "kubernetes",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-6019|pypy3",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-76781",
+    "pkg": "libxml2",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-76956|expat",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-76925",
+    "pkg": "flatpak",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2025-26625|git-lfs",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-76956",
+    "pkg": "expat",
+    "answer": "NOTAFF",
+    "set": "news",
+    "pair": "CVE-2026-76956|expat",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-76957",
+    "pkg": "expat",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-76957|expat",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-77050",
+    "pkg": "python-django",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-77050|python-django",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-77214",
+    "pkg": "expat",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-77214|expat",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-77281",
+    "pkg": "caddy",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-77281|caddy",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-77405",
+    "pkg": "golang-github-rabbitmq-amqp091-go",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-9669|python3.11",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-77407",
+    "pkg": "golang-github-rabbitmq-amqp091-go",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-20339|clamav",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-77410",
+    "pkg": "golang-github-rabbitmq-amqp091-go",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-109261|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-77412",
+    "pkg": "golang-github-rabbitmq-amqp091-go",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-23553|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-77420",
+    "pkg": "jline",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2025-54505|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-77422",
+    "pkg": "jline",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-32778|expat",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-77423",
+    "pkg": "jline",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2025-47183|gst-plugins-good1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-77528",
+    "pkg": "python-autobahn",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-23556|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-77696",
+    "pkg": "openssl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-77696|openssl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-78253",
+    "pkg": "qt6-base",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-7010|perl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-78253",
+    "pkg": "qtbase-opensource-src",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-27588|caddy",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-78663",
+    "pkg": "golang-golang-x-net",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-23558|xen",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-78667",
+    "pkg": "golang-1.19",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2025-1647|twitter-bootstrap3",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-78669",
+    "pkg": "golang-1.19",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-33202|rails",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-78689",
+    "pkg": "libnginx-mod-js",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-81934|redis",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-79516",
+    "pkg": "libstb",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-48549|nagios4",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-79602",
+    "pkg": "xen",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-79602|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-79603",
+    "pkg": "xen",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-79603|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-79604",
+    "pkg": "xen",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-79604|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-79607",
+    "pkg": "xen",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2025-10263|xen",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-79616",
+    "pkg": "qtdeclarative-opensource-src",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-33170|rails",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-80229",
+    "pkg": "curl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-3731|libssh",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-80230",
+    "pkg": "curl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-84782|openssl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-80231",
+    "pkg": "curl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-24515|expat",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-80255",
+    "pkg": "curl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-59843|libssh",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-81869",
+    "pkg": "golang-opentelemetry-otel",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-42488|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-81871",
+    "pkg": "golang-opentelemetry-otel",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-47737|puma",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-81928",
+    "pkg": "libnet-dns-perl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-57433|perl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-81934",
+    "pkg": "redis",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-81934|redis",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-82049",
+    "pkg": "python3.11",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-63347|suricata-update",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-82208",
+    "pkg": "curl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-52718|gst-plugins-bad1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-82209",
+    "pkg": "curl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-53586|libgit2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-82398",
+    "pkg": "pypdf",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-20216|clamav",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-82531",
+    "pkg": "smarty3",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-48618|nodejs",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-82631",
+    "pkg": "redis",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-23479|redis",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-82659",
+    "pkg": "node-nodemailer",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-91767|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-82661",
+    "pkg": "node-nodemailer",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-17084|pypy3",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-82662",
+    "pkg": "node-nodemailer",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-42489|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-82677",
+    "pkg": "redis",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-23631|redis",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-82853",
+    "pkg": "node-nodemailer",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-62423|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-82854",
+    "pkg": "node-nodemailer",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-64685|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-8286",
+    "pkg": "curl",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-8286|curl",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-8328",
+    "pkg": "pypy3",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-8328|pypy3",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-8328",
+    "pkg": "python3.11",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-8328|python3.11",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-83602",
+    "pkg": "netdata",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-52845|caddy",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-83606",
+    "pkg": "node-xmldom",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-48550|nagios4",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-83614",
+    "pkg": "node-xmldom",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2025-1218|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-83618",
+    "pkg": "node-xmldom",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-33195|rails",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-83619",
+    "pkg": "node-xmldom",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-15310|python3.11",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-8376",
+    "pkg": "perl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-8376|perl",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-84042",
+    "pkg": "crun",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-48552|nagios4",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84233",
+    "pkg": "rpm",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-86420|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84267",
+    "pkg": "gvfs",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-35189|openssl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84268",
+    "pkg": "gvfs",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-0964|libssh",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84270",
+    "pkg": "gvfs",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-59846|libssh",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84304",
+    "pkg": "golang-google-grpc",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-107210|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84305",
+    "pkg": "sqlparse",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-77050|python-django",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84308",
+    "pkg": "php-phpseclib3",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-6019|python3.11",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84309",
+    "pkg": "pypdf",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2025-69534|pypy3",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84311",
+    "pkg": "pypdf",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-77281|caddy",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84366",
+    "pkg": "python-scrapy",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-42495|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84394",
+    "pkg": "node-ajv",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-2950|node-lodash",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84782",
+    "pkg": "openssl",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-84782|openssl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84783",
+    "pkg": "openssl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-0967|libssh",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84939",
+    "pkg": "libfreemarker-java",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-93588|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84947",
+    "pkg": "node-undici",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-20348|clamav",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84968",
+    "pkg": "php-mongodb",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-84968|php-mongodb",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-85013",
+    "pkg": "modules",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-62436|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-85150",
+    "pkg": "gst-plugins-base1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-85150|gst-plugins-base1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-85197",
+    "pkg": "libsoup3",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2025-14181|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-85234",
+    "pkg": "tftp-hpa",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-18726|open-iscsi",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-85394",
+    "pkg": "python-jose",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-73235|freecad",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-85484",
+    "pkg": "libhtml-formhandler-perl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-42497|perl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-85485",
+    "pkg": "libhtml-formhandler-perl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-12087|perl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-85630",
+    "pkg": "libhtml-formhandler-perl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-48962|perl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-85732",
+    "pkg": "golang-oras-oras-go",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-32316|jq",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-85748",
+    "pkg": "mariadb",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-48553|nagios4",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-86137",
+    "pkg": "libxml2",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-56132|expat",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86138",
+    "pkg": "libxml2",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-53705|gst-plugins-good1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86141",
+    "pkg": "libxml2",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-53585|libgit2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86142",
+    "pkg": "libxml2",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-3083|gst-plugins-good1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86143",
+    "pkg": "libxml2",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-18297|gst-plugins-base1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86144",
+    "pkg": "libxml2",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-93990|expat",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86219",
+    "pkg": "libauthen-sasl-perl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-12087|libsocket-perl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86231",
+    "pkg": "jsch",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-18299|gst-plugins-good1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86320",
+    "pkg": "flatpak-builder",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-33174|rails",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86412",
+    "pkg": "curl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-20345|clamav",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-86413",
+    "pkg": "curl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-59847|libssh",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-86420",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-86420|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86421",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-86421|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86422",
+    "pkg": "imagemagick",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-106580|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86423",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-86423|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86424",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-86424|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86425",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-86425|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86472",
+    "pkg": "node-ajv",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-13311|node-shell-quote",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-87733",
+    "pkg": "ocaml-mirage-crypto",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-86424|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-87737",
+    "pkg": "ocaml-mirage-crypto",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-1502|pypy3",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-87823",
+    "pkg": "zstd-jni-java",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2025-1647|twitter-bootstrap4",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-87859",
+    "pkg": "node-morgan",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-86421|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-87861",
+    "pkg": "curl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-3085|gst-plugins-good1.0",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-87862",
+    "pkg": "curl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-0968|libssh",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-87890",
+    "pkg": "python-django",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-33658|rails",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-87908",
+    "pkg": "node-multiparty",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2025-13465|node-lodash",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-87975",
+    "pkg": "python-django",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-87975|python-django",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-88015",
+    "pkg": "rclone",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-92842|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-88016",
+    "pkg": "rclone",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-109619|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-88017",
+    "pkg": "rclone",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-46675|libpng1.6",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-88018",
+    "pkg": "rclone",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-84968|php-mongodb",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-88032",
+    "pkg": "mongo-java-driver",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-93894|varnish",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-88045",
+    "pkg": "rclone",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-79603|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-88340",
+    "pkg": "yara",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-48551|nagios4",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-88362",
+    "pkg": "mujs",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-62429|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-88372",
+    "pkg": "libsndfile",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-73433|gst-plugins-good1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-88382",
+    "pkg": "hiredis",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-1940|gst-plugins-good1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-88386",
+    "pkg": "libsndfile",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-59848|libssh",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-88807",
+    "pkg": "libxrender",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-39043|gst-plugins-good1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-88840",
+    "pkg": "busybox",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-111497|brotli",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-88914",
+    "pkg": "gst-plugins-good1.0",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-88914|gst-plugins-good1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-89058",
+    "pkg": "resteasy3.0",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-25971|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-89059",
+    "pkg": "resteasy3.0",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-86425|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-89087",
+    "pkg": "ocaml-cstruct",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-45363|ruby-jwt",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-89092",
+    "pkg": "glibc",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-33173|rails",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-89135",
+    "pkg": "wolfssl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-8328|pypy3",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-89136",
+    "pkg": "wolfssl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-42494|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-89147",
+    "pkg": "net-snmp",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-110354|haproxy",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-8924",
+    "pkg": "curl",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-8924|curl",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-89258",
+    "pkg": "hugo",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-60747|mariadb",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-89259",
+    "pkg": "hugo",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-18503|python3.11",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-8927",
+    "pkg": "curl",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-8927|curl",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-90460",
+    "pkg": "keystone",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-90460|keystone",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-90558",
+    "pkg": "sngrep",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-61081|mariadb",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-90648",
+    "pkg": "wabt",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-23557|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-90698",
+    "pkg": "memcached",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-48934|nodejs",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-90781",
+    "pkg": "alsa-lib",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-45186|expat",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-90949",
+    "pkg": "gimp",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-106572|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-91477",
+    "pkg": "openjfx",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-60184|mariadb",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-91752",
+    "pkg": "libextractor",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-54872|openssl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-91765",
+    "pkg": "php8.2",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-91765|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-91766",
+    "pkg": "php8.2",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-91766|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-91767",
+    "pkg": "php8.2",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-91767|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-91768",
+    "pkg": "php8.2",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-91768|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-91769",
+    "pkg": "php8.2",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-91769|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-91949",
+    "pkg": "freerdp2",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-91765|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-92121",
+    "pkg": "wss4j",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-62426|xen",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-92288",
+    "pkg": "lemonldap-ng",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-42496|perl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-92289",
+    "pkg": "lemonldap-ng",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-19487|perl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-92382",
+    "pkg": "usbredir",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-77214|expat",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-92386",
+    "pkg": "curl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2025-59375|expat",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-92392",
+    "pkg": "curl",
+    "answer": "NOTAFF",
+    "set": "news",
+    "pair": "CVE-2026-92392|curl",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-92595",
+    "pkg": "node-nodemailer",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-19445|pypy3",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-92598",
+    "pkg": "node-nodemailer",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-52846|caddy",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-92747",
+    "pkg": "cockpit-machines",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-15806|pypy3",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-92768",
+    "pkg": "cockpit-machines",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-27589|caddy",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-92842",
+    "pkg": "php8.2",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-92842|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93012",
+    "pkg": "libemail-sender-perl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-57432|perl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93018",
+    "pkg": "libimager-perl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-48962|libio-compress-perl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93019",
+    "pkg": "libimager-perl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-48959|perl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93337",
+    "pkg": "network-manager-l2tp",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-93337|network-manager-l2tp",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93544",
+    "pkg": "libxi",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-62425|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93586",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-93586|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93587",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-93587|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93588",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-93588|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93589",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-93589|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93590",
+    "pkg": "imagemagick",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2025-58150|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93653",
+    "pkg": "poppler",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-33169|rails",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93658",
+    "pkg": "rust-coreutils",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-17084|python3.11",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93682",
+    "pkg": "php8.2",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-93682|php8.2",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93687",
+    "pkg": "node-braces",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-4800|node-lodash",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93711",
+    "pkg": "libdancer2-perl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-6811|php-mongodb",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93712",
+    "pkg": "libdancer2-perl",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-60585|mariadb",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93750",
+    "pkg": "node-got",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-62434|xen",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93853",
+    "pkg": "barman",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-20243|clamav",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93894",
+    "pkg": "varnish",
+    "answer": "NEXT",
+    "set": "news",
+    "pair": "CVE-2026-93894|varnish",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93990",
+    "pkg": "expat",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-93990|expat",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-94114",
+    "pkg": "bcel",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-8924|curl",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-94265",
+    "pkg": "curl",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-20213|clamav",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-94285",
+    "pkg": "libx11",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-93586|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-94422",
+    "pkg": "xdg-dbus-proxy",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-94422|xdg-dbus-proxy",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-94571",
+    "pkg": "octavia",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-8328|python3.11",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-94574",
+    "pkg": "wget",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-48933|nodejs",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-95512",
+    "pkg": "freetype",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-59850|libssh",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-95619",
+    "pkg": "gcc-12",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-94422|xdg-dbus-proxy",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-96543",
+    "pkg": "gimp",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-107208|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-96544",
+    "pkg": "gimp",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-106565|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-96545",
+    "pkg": "gimp",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-106571|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-96674",
+    "pkg": "alsa-lib",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-59692|gst-plugins-bad1.0",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-96675",
+    "pkg": "alsa-lib",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-77696|openssl",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-9669",
+    "pkg": "python3.11",
+    "answer": "URGENT",
+    "set": "news",
+    "pair": "CVE-2026-9669|python3.11",
+    "wall": "2026-06-01"
+   },
+   {
+    "cve": "CVE-2026-96747",
+    "pkg": "pymongo",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-62343|imagemagick",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-97030",
+    "pkg": "golang-1.19",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-20214|clamav",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-97059",
+    "pkg": "dcmtk",
+    "answer": "NEXT",
+    "set": "mix",
+    "pair": "CVE-2026-34789|freecad",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-97688",
+    "pkg": "python-urllib3",
+    "answer": "NOTAFF",
+    "set": "mix",
+    "pair": "CVE-2026-20346|clamav",
+    "wall": "2026-09-01"
+   }
+  ]
+ },
+ "arms": {
+  "S": "evidence path, strong baseline without Meterless: same Nemotron request via Nightshift; policy + item facts + the package's 20 most recent raw tracker decision lines before the wall (core/triage_agent.py run_S).",
+  "OURS": "memory path, always trust memory: Planner reads H-MEM (current stances after supersession, relevance recall, stance changes) -> Executor -> Evaluator (core/triage_agent.py run_OURS).",
+  "GATED": "the frozen gatekeeper core/gate.py (byte-identical to ../revisit2/gate.py, frozen 2026-10-23 before fresh300) chooses the OURS or the S answer per item from the two answers and H-MEM features (data/news_feat.json, computed before any model call). The product runs the same rules as the Guard stage of its Meterless Scout Intent implementation; a test must show Scout and gate.py give identical choices on every scored item.",
+  "NN": "time-walled TF-IDF nearest past decision inside the package; no model.",
+  "R1": "rule: repeat the package's most recent recorded bookworm decision before the wall (NEXT if none); no model.",
+  "reported_only": "package-mode baseline; ablation \"gatekeeper without the H-MEM rule\" (rules agree + class_unreliable only); removing the Scout gatekeeper = OURS or S alone.",
+  "code_changes_vs_earlier_runs": "core/triage_agent.py = ../revisit/triage_agent.py with data paths switched to the news exam and the own-CVE history filter (lines marked REVISIT3). Prompts and Planner/Executor/Evaluator logic unchanged."
+ },
+ "run_rules": {
+  "nightshift": "every model call through Meterless Nightshift only; meterless-scope iso-<uuid4> per request (REVISIT_SCOPE=iso); stream, tier-split off; one request in flight in total (the box is shared with two other projects); backoff 15/30/60/120/180 s, 8 tries.",
+  "model": "nvidia/nemotron-3-super-120b-a12b requested; Nightshift routes inside its Nemotron lanes; served model logged per call.",
+  "order": "pairs in the order random.Random(20261027).shuffle(sorted pair keys); news item then mix item; S then OURS. New pairs are not started after 2026-10-27 05:30 +08:00. Because the order is a sealed random permutation, the completed pairs are a random subset of the exam.",
+  "scored_set": "every pair whose two items both have S and OURS answers. Unparsed replies count as the parser default (NEXT), as in every earlier run."
+ },
+ "metric": {
+  "main": "URGENT F1 (and URGENT recall) over the scored items",
+  "secondary": "macro-F1 over the four classes; per-class table; news half only",
+  "bootstrap": "paired bootstrap over items, 2,000 resamples, random.Random(11), 95% interval = sorted[50], sorted[1949]; package-cluster bootstrap reported, not deciding."
+ },
+ "gate": {
+  "rule": "PASS iff at least 50 complete pairs AND the lower 95% bound of GATED - S URGENT F1 > 0.",
+  "reported_not_deciding": [
+   "GATED - OURS",
+   "GATED - NN",
+   "GATED - R1",
+   "GATED - pkg_mode",
+   "GATED - (gatekeeper without H-MEM rule)",
+   "URGENT recall differences",
+   "macro-F1 differences",
+   "package-cluster intervals"
+  ],
+  "no_changes": "The rule, the metric, the arms, the scored set and the code hashes below are not changed after this file is sealed.",
+  "if_fail": "The product is still finished and submitted (user decision 2026-10-26). README then states the failed gate with its numbers and narrows the claim to what passed (e.g. the reopen watcher and the measured trade-off), without claiming the memory gatekeeper improves urgent detection."
+ },
+ "input_hashes": {
+  "data/news_items.json": "96e1129dc45efb7c0e879eab09efdd0a7859142fbb49eb50815dfef4647987d3",
+  "data/news_events.json": "f797f98d2a31b0d2883f3ca42cb52aa0f0e7c1a8e10e6ad295d1aed8a7b48ce0",
+  "data/news_feat.json": "335f78309ddb03e43e50b20bbac92ede8471ee0b4b21514c2fac26efe23c33d1",
+  "data/news_build_meta.json": "42dc8c102ed0e02ebad36bf16c93f286456da91ff7c9f2912469fb976dfd3c8d",
+  "exam/make_news_exam.py": "e49059835480b147e335e920487dd3eebd5d40a923dea68b66cf1a2869244c88",
+  "exam/run_news.py": "2e91185d67ce423eb8391cae3af7bfc67a3dea36bbf0ec3b8349fdf4187c9cd5",
+  "exam/score_news.py": "5e4ed6826a556045f12aa942436a30fcda6872b07936f1bcff3d35195dc1ce5e",
+  "core/build_events.py": "b27d5a42ff6def9461de4353c74a37400ffc874024478ae9bb7bfe66884abdfb",
+  "core/triage_agent.py": "390a93672e54951d9ef5683ac1a7f1765a01f1d703efa007be4b6dbb87e3a8f5",
+  "core/gate.py": "f6245d66723f9c34dc6bdf5a609b2496d914e58f926be18e9348ec3192de1db4",
+  "core/hmem_features.py": "630fc6cf2d159b4f93c55601af52d8c12f4f0095e50955775c24f2bb6cc225c9",
+  "core/eval_core.py": "49a70457e9060dd52275d50d3653ccfe4316078da7e8bc281c338eb5792ffa68",
+  "core/nightshift.py": "fada8d030e36cb4acb7a5dc66975803d19b3926444ed6bc6b6ee2ba26407fa24",
+  "core/debparse.py": "3f4753828657a14ea458bbcfa9b269e5144597fa6a3b41b642fb52a4446adb5e",
+  "core/engines_client.py": "c64db00bbcf9b3c90d276f17b58189784107ae0b480e70620894ed890ab4ad5b",
+  "engines/bridge.ts": "b39228196525c24107b812eb6c1c88edf1773631e71ab486ca7628f2478491c3",
+  "engines/hmem/index.ts": "8cd21e26ef9d2fd2ee147d844028df7845c16279ad475fcdc26bf54151b437cc",
+  "engines/world-model/index.ts": "3dcc32a73fcde90834f2135e6c9aea3a20547461c22dc710b8eea7b7c7f5413a"
+ }
+}

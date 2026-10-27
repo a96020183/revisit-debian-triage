@@ -1,0 +1,16 @@
+{
+"FFmpeg/FFmpeg n5.1.10": "2026-06-21",
+"FFmpeg/FFmpeg n8.0": "2025-08-22",
+"PackageKit/PackageKit v1.3.6": "2026-06-16",
+"Unidata/netcdf-c v4.10.1": "2026-07-09",
+"assimp/assimp v6.0.0": "2025-05-31",
+"assimp/assimp v6.0.2": "2025-06-08",
+"assimp/assimp v6.0.5": "2026-04-30",
+"malaterre/GDCM v3.2.6": "2026-05-06",
+"psf/requests v2.32.4": "2025-06-09",
+"qemu/qemu v11.0.0": "2026-04-21",
+"saitoha/libsixel v1.8.7": "2025-08-31",
+"smuellerDD/libkcapi v1.5.1": "2026-08-08",
+"stleary/JSON-java 20231013": "2023-10-13",
+"uclouvain/openjpeg v2.5.3": "2024-12-09"
+}

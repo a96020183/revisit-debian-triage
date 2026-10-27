@@ -1,0 +1,25 @@
+Scout leave-one-out check (NOT part of the official harness). Command: node --import tsx test/scout_loo.ts   run at 2026-10-26T08:46:18Z
+Each intent-labeled v1 prompt is removed from the official fixture registry's examples before that prompt is classified.
+
+MISS deal-recover-001     expected deal.recover         got (clarify:low-band top=deal.recover)  (top: deal.recover 0.388)
+MISS deal-recover-002     expected deal.recover         got (clarify:low-band top=deal.query)  (top: deal.query 0.482)
+MISS deal-recover-003     expected deal.recover         got (clarify:low-band top=deal.recover)  (top: deal.recover 0.389)
+MISS deal-query-001       expected deal.query           got (clarify:low-band top=email.draft)  (top: email.draft 0.37)
+MISS deal-query-002       expected deal.query           got (clarify:low-band top=deal.query)  (top: deal.query 0.512)
+MISS deal-update-001      expected deal.update          got (clarify:low-band top=deal.query)  (top: deal.query 0.304)
+MISS email-draft-001      expected email.draft          got (clarify:low-band top=email.draft)  (top: email.draft 0.535)
+MISS email-draft-002      expected email.draft          got (clarify:low-band top=email.draft)  (top: email.draft 0.294)
+MISS email-summarize-001  expected email.summarize      got (clarify:low-band top=world.query)  (top: world.query 0.332)
+ok   email-bulk-001       expected email.send           got email.send  (top: email.send 0.55)
+MISS research-comp-001    expected research.comparison  got (clarify:low-band top=research.comparison)  (top: research.comparison 0.481)
+ok   research-comp-002    expected research.comparison  got research.comparison  (top: research.comparison 0.696)
+ok   research-market-001  expected research.market      got research.market  (top: research.market 0.634)
+MISS plan-long-001        expected plan.long-horizon    got (clarify:low-band top=plan.long-horizon)  (top: plan.long-horizon 0.448)
+MISS plan-long-002        expected plan.long-horizon    got (clarify:low-band top=deal.recover)  (top: deal.recover 0.296)
+MISS edge-twoway-001      expected deal.query           got (clarify:low-band top=deal.recover)  (top: deal.recover 0.439)
+ok   edge-overlap-001     expected email.draft          got email.draft  (top: email.draft 0.594)
+
+leave-one-out, 17 intent-labeled prompts:
+  ranked first (top candidate == label) 0.647 (11/17)
+  contract issued for the label (official top-1 definition) 0.235 (4/17)  <- unseen phrasings mostly fall in the Low band and get a clarification instead of a guess
+  label in top 3 0.941 (16/17)

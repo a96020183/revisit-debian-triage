@@ -1,0 +1,162 @@
+Zetaris governance check 2026-10-27T09:11:55 (local Zetaris, non-admin users per agent role)
+
+ALREADY SET  [admin]  CREATE ROLE 'RV3_EXECUTOR'  -> HTTP 400 {"msg":"A role named \"RV3_EXECUTOR\" already exists."}
+ALREADY SET  [admin]  ASSIGN USER 'executor@revisit3.local' TO ROLE 'RV3_EXECUTOR'  -> HTTP 400 {"msg":"USER : executor@revisit3.local has already been assigned to the ROLE : RV3_EXECUTOR"}
+ALREADY SET  [admin]  ASSIGN DATASOURCE revisit_pg TO ROLE 'RV3_EXECUTOR'  -> HTTP 400 {"msg":"Data source REVISIT_PG has already been assigned to RV3_EXECUTOR role."}
+ALLOWED      [admin]  REVOKE SELECT ON DATASOURCE TABLE revisit_pg.rv3_advisories FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON DATASOURCE TABLE revisit_pg.rv3_kev FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON DATASOURCE TABLE revisit_pg.rv3_decisions FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON DATASOURCE TABLE revisit_pg.rv3_cve_facts FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON VIEW TABLE rv3.decisions_2026_06_01 FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON VIEW TABLE rv3.advisories_2026_06_01 FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON VIEW TABLE rv3.kev_2026_06_01 FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON VIEW TABLE rv3.decisions_2026_07_01 FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON VIEW TABLE rv3.advisories_2026_07_01 FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON VIEW TABLE rv3.kev_2026_07_01 FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON VIEW TABLE rv3.decisions_2026_08_01 FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON VIEW TABLE rv3.advisories_2026_08_01 FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON VIEW TABLE rv3.kev_2026_08_01 FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON VIEW TABLE rv3.decisions_2026_09_01 FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON VIEW TABLE rv3.advisories_2026_09_01 FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON VIEW TABLE rv3.kev_2026_09_01 FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON VIEW TABLE rv3.decisions_2026_10_01 FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON VIEW TABLE rv3.advisories_2026_10_01 FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON VIEW TABLE rv3.kev_2026_10_01 FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON VIEW TABLE rv3.decisions_2026_10_26 FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON VIEW TABLE rv3.advisories_2026_10_26 FROM ROLE 'RV3_EXECUTOR'
+ALLOWED      [admin]  REVOKE SELECT ON VIEW TABLE rv3.kev_2026_10_26 FROM ROLE 'RV3_EXECUTOR'
+ALREADY SET  [admin]  CREATE ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"A role named \"RV3_WATCHER\" already exists."}
+ALREADY SET  [admin]  ASSIGN USER 'watcher@revisit3.local' TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"USER : watcher@revisit3.local has already been assigned to the ROLE : RV3_WATCHER"}
+ALREADY SET  [admin]  ASSIGN DATASOURCE revisit_pg TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"Data source REVISIT_PG has already been assigned to RV3_WATCHER role."}
+ALREADY SET  [admin]  ASSIGN LIGHTNING DATABASE rv3_up TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"Database RV3_UP has already been assigned to RV3_WATCHER role."}
+ALLOWED      [admin]  GRANT SELECT ON VIEW TABLE rv3.reopen_due TO ROLE 'RV3_WATCHER'
+ALLOWED      [admin]  GRANT SELECT ON VIEW TABLE rv3.reopen_due_v2 TO ROLE 'RV3_WATCHER'
+ALREADY SET  [admin]  GRANT SELECT ON DATASOURCE TABLE revisit_pg.rv3_waits TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `revisit_pg`.`rv3_waits`"}
+ALREADY SET  [admin]  GRANT SELECT ON DATASOURCE TABLE revisit_pg.rv3_tracker_now TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `revisit_pg`.`rv3_tracker_now`"}
+ALREADY SET  [admin]  GRANT SELECT ON DATASOURCE TABLE revisit_pg.rv3_upstream TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `revisit_pg`.`rv3_upstream`"}
+ALREADY SET  [admin]  GRANT SELECT ON DATASOURCE TABLE revisit_pg.rv3_branch_fix TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `revisit_pg`.`rv3_branch_fix`"}
+ALREADY SET  [admin]  GRANT SELECT ON DATASOURCE TABLE revisit_pg.rv3_resolved TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `revisit_pg`.`rv3_resolved`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2019_12067 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2019_12067`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2019_12214 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2019_12214`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2022_29977 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2022_29977`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2022_29978 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2022_29978`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2022_37331 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2022_37331`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2023_28858 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2023_28858`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2023_39327 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2023_39327`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2023_4232 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2023_4232`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2023_4233 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2023_4233`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2023_4234 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2023_4234`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2023_4235 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2023_4235`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2023_42366 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2023_42366`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2023_46565 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2023_46565`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2023_5072 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2023_5072`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2023_6605 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2023_6605`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_38949 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_38949`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_38950 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_38950`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_39705 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_39705`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_42040 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_42040`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_47081 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_47081`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_48423 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_48423`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_48424 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_48424`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_48425 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_48425`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_53425 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_53425`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_7537 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_7537`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_7538 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_7538`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_7539 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_7539`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_7540 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_7540`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_7541 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_7541`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_7542 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_7542`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_7543 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_7543`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_7544 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_7544`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_7545 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_7545`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_7546 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_7546`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_7547 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_7547`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2024_9101 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2024_9101`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_10911 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_10911`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_12495 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_12495`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_12839 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_12839`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_12840 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_12840`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_14505 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_14505`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_14932 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_14932`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_14933 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_14933`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_14934 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_14934`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_14935 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_14935`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_14936 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_14936`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_15571 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_15571`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_2151 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_2151`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_2152 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_2152`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_22921 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_22921`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_2337 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_2337`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_2591 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_2591`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_2592 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_2592`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_2750 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_2750`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_2751 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_2751`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_2754 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_2754`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_2756 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_2756`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_2757 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_2757`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_3158 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_3158`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_46394 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_46394`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_60876 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_60876`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_61103 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_61103`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_61104 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_61104`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_61106 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_61106`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2025_61107 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2025_61107`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2026_10294 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2026_10294`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2026_14683 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2026_14683`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2026_14684 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2026_14684`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2026_14685 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2026_14685`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2026_14686 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2026_14686`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2026_30997 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2026_30997`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2026_6659 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2026_6659`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2026_71225 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2026_71225`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2026_71226 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2026_71226`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2026_71227 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2026_71227`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.osv_cve_2026_72854 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`osv_cve_2026_72854`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_assimp TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_assimp`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_busybox TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_busybox`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_edk2 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_edk2`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_ffmpeg TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_ffmpeg`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_freeimage TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_freeimage`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_frr TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_frr`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_gdcm TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_gdcm`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_glib_networking TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_glib_networking`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_gobgp TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_gobgp`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_hdrhistogram TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_hdrhistogram`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_libde265 TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_libde265`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_libkcapi TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_libkcapi`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_libsixel TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_libsixel`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_libxslt TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_libxslt`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_lrzip TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_lrzip`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_msgpack_c TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_msgpack_c`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_netcdf TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_netcdf`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_nltk TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_nltk`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_ofono TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_ofono`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_openbabel TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_openbabel`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_openexr TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_openexr`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_packagekit TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_packagekit`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_phpldapadmin TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_phpldapadmin`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_qemu TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_qemu`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_requests TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_requests`"}
+ALREADY SET  [admin]  GRANT SELECT ON LIGHTNING DATABASE TABLE rv3_up.rm_u_boot TO ROLE 'RV3_WATCHER'  -> HTTP 400 {"msg":"SELECT has already been granted to RV3_WATCHER on `rv3_up`.`rm_u_boot`"}
+== what each identity may read (Zetaris enforces; same SQL, different API key)
+-- no item running: the executor holds no grant on any walled view
+REFUSED      [executor]  SELECT count(*) FROM rv3.decisions_2026_10_01  -> HTTP 400 {"msg":"User 'EXECUTOR@REVISIT3.LOCAL' does not have privileges to execute 'SELECT' on: `rv3`.`decisions_2026_10_01`"}
+REFUSED      [executor]  SELECT * FROM rv3.advisories_2026_10_26 WHERE cve = 'CVE-2026-109618'  -> HTTP 400 {"msg":"User 'EXECUTOR@REVISIT3.LOCAL' does not have privileges to execute 'SELECT' on: `rv3`.`advisories_2026_10_26`"}
+REFUSED      [executor]  SELECT count(*) FROM revisit_pg.rv3_cve_facts  -> HTTP 400 {"msg":"User 'EXECUTOR@REVISIT3.LOCAL' does not have privileges to execute 'SELECT' on: `REVISIT_PG`.`rv3_cve_facts`"}
+-- wall keeper opens wall 2026-10-01 (as for an item whose wall is 2026-10-01)
+ALLOWED      [executor]  SELECT count(*) FROM rv3.decisions_2026_10_01
+ALLOWED      [executor]  SELECT count(*) FROM revisit_pg.rv3_cve_facts
+   (note: the CVE-record grant is the whole table, so while an item runs the executor could also read the records of other items: descriptions and versions, never answers; the product reads only its own item, see the SQL in each trace)
+REFUSED      [executor]  SELECT count(*) FROM revisit_pg.rv3_decisions  -> HTTP 400 {"msg":"User 'EXECUTOR@REVISIT3.LOCAL' does not have privileges to execute 'SELECT' on: `REVISIT_PG`.`rv3_decisions`"}
+ALLOWED      [executor]  SELECT count(*) FROM rv3.advisories_2026_10_01
+ALLOWED      [executor]  SELECT count(*) FROM rv3.kev_2026_10_01
+REFUSED      [executor]  SELECT * FROM revisit_pg.rv3_advisories WHERE cve = 'CVE-2026-109618'  -> HTTP 400 {"msg":"User 'EXECUTOR@REVISIT3.LOCAL' does not have privileges to execute 'SELECT' on: `REVISIT_PG`.`rv3_advisories`"}
+REFUSED      [executor]  SELECT count(*) FROM revisit_pg.rv3_kev  -> HTTP 400 {"msg":"User 'EXECUTOR@REVISIT3.LOCAL' does not have privileges to execute 'SELECT' on: `REVISIT_PG`.`rv3_kev`"}
+REFUSED      [executor]  SELECT * FROM rv3.advisories_2026_10_26 WHERE cve = 'CVE-2026-109618'  -> HTTP 400 {"msg":"User 'EXECUTOR@REVISIT3.LOCAL' does not have privileges to execute 'SELECT' on: `rv3`.`advisories_2026_10_26`"}
+REFUSED      [executor]  SELECT count(*) FROM revisit_pg.rv3_waits  -> HTTP 400 {"msg":"User 'EXECUTOR@REVISIT3.LOCAL' does not have privileges to execute 'SELECT' on: `REVISIT_PG`.`rv3_waits`"}
+REFUSED      [executor]  GRANT SELECT ON DATASOURCE TABLE revisit_pg.rv3_decisions TO ROLE 'RV3_EXECUTOR'  -> HTTP 400 {"msg":"User is not permitted to run this command"}
+-- wall keeper revoked wall 2026-10-01
+REFUSED      [executor]  SELECT count(*) FROM rv3.decisions_2026_10_01  -> HTTP 400 {"msg":"User 'EXECUTOR@REVISIT3.LOCAL' does not have privileges to execute 'SELECT' on: `rv3`.`decisions_2026_10_01`"}
+ALLOWED      [watcher]  SELECT count(*) FROM rv3.reopen_due
+REFUSED      [watcher]  SELECT count(*) FROM revisit_pg.rv3_cve_facts  -> HTTP 400 {"msg":"User 'WATCHER@REVISIT3.LOCAL' does not have privileges to execute 'SELECT' on: `REVISIT_PG`.`rv3_cve_facts`"}
+REFUSED      [watcher]  SELECT count(*) FROM rv3.decisions_2026_10_01  -> HTTP 400 {"msg":"User 'WATCHER@REVISIT3.LOCAL' does not have privileges to execute 'SELECT' on: `rv3`.`decisions_2026_10_01`"}

@@ -1,0 +1,1599 @@
+{
+"adminer 4.8.1-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20210817T150540Z"
+},
+"alsa-lib 1.2.8-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20221130T032020Z"
+},
+"apache-directory-api 2.1.2-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20221227T032939Z"
+},
+"aspell 0.60.8-4": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20210929T084842Z"
+},
+"assimp 6.0.2+ds-1": {
+"first_seen": "20250829T025455Z"
+},
+"barman 3.4.0-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20230127T150858Z"
+},
+"bcel 6.5.0-2": {
+"archives": [
+"debian"
+],
+"first_seen": "20221018T031337Z"
+},
+"brotli 1.0.9-2": {
+"archives": [
+"debian",
+"debian-archive",
+"debian-debug"
+],
+"first_seen": "20200908T144848Z"
+},
+"busybox 1:1.35.0-4+deb12u1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20260328T204221Z"
+},
+"busybox 1:1.37.0-8": {
+"first_seen": "20260201T201907Z"
+},
+"busybox 1:1.37.0-9": {
+"first_seen": "20260201T201907Z"
+},
+"cacti 1.2.26+ds1-1": {
+"first_seen": "20231226T084823Z"
+},
+"caddy 2.6.2-5": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230417T204608Z"
+},
+"cfitsio 4.2.0-3": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20221223T213929Z"
+},
+"cifs-utils 2:7.0-2": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20220826T211148Z"
+},
+"clamav 1.4.3+dfsg-1~deb12u2": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20260108T022348Z"
+},
+"cockpit-machines 288-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20230419T205131Z"
+},
+"crun 1.8.1-1+deb12u1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20231106T025649Z"
+},
+"curl 7.88.1-10+deb12u14": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20250729T203448Z"
+},
+"curl 7.88.1-10+deb12u15": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20260630T210956Z"
+},
+"dcmtk 3.6.7-9~deb12u4": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20260630T210956Z"
+},
+"edk2 2026.05-3": {
+"first_seen": "20260922T142438Z"
+},
+"exiv2 0.27.6-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230128T154824Z"
+},
+"expat 2.5.0-1+deb12u2": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20250601T025158Z"
+},
+"expat 2.5.0-1+deb12u3": {
+"archives": [
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260831T205248Z"
+},
+"expat 2.5.0-1+deb12u4": {
+"archives": [
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260930T222250Z"
+},
+"fail2ban 1.0.2-2": {
+"archives": [
+"debian"
+],
+"first_seen": "20230423T032533Z"
+},
+"ffmpeg 7:6.1-1": {
+"first_seen": "20231111T204944Z"
+},
+"ffmpeg 7:7.0.1-3": {
+"first_seen": "20240728T205356Z"
+},
+"ffmpeg 7:7.1-3": {
+"first_seen": "20241027T215652Z"
+},
+"ffmpeg 7:7.1.1-1": {
+"first_seen": "20250308T162325Z"
+},
+"ffmpeg 7:7.1.2-1": {
+"first_seen": "20250921T022649Z"
+},
+"ffmpeg 7:8.0.1-2": {
+"first_seen": "20251213T143317Z"
+},
+"ffmpeg 7:8.1.1-1": {
+"first_seen": "20260508T204256Z"
+},
+"flatpak 1.14.10-1~deb12u2": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260422T083627Z"
+},
+"flatpak-builder 1.2.3-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20221130T212815Z"
+},
+"freecad 0.20.2+dfsg1-4": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230205T031525Z"
+},
+"freerdp2 2.11.7+dfsg1-6~deb12u1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20251019T151146Z"
+},
+"freetype 2.12.1+dfsg-5+deb12u4": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20250317T175148Z"
+},
+"frr 10.5.1-3": {
+"first_seen": "20260214T201524Z"
+},
+"fsspec 2022.11.0-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20221113T031952Z"
+},
+"gcc-12 12.2.0-13": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230103T151722Z"
+},
+"gcc-12 12.2.0-14+deb12u1": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security"
+],
+"first_seen": "20250414T210755Z"
+},
+"gdcm 3.0.24-11": {
+"first_seen": "20260626T203506Z"
+},
+"gdk-pixbuf 2.42.10+dfsg-1+deb12u4": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260411T185331Z"
+},
+"gfs2-utils 3.5.0-2": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230214T212225Z"
+},
+"gimp 2.10.34-1+deb12u10": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260417T211647Z"
+},
+"git-lfs 3.3.0-1+deb12u1": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20250124T185844Z"
+},
+"glib-networking 2.90.0-1": {
+"first_seen": "20260919T142413Z"
+},
+"glibc 2.36-8": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230108T032246Z"
+},
+"glibc 2.36-9+deb12u14": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20260503T204801Z"
+},
+"gnome-tweaks 42~beta-4": {
+"archives": [
+"debian"
+],
+"first_seen": "20230303T144023Z"
+},
+"gobgp 4.3.0-1": {
+"first_seen": "20260326T203750Z"
+},
+"golang-1.19 1.19.4-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20221209T031835Z"
+},
+"golang-1.19 1.19.8-2": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security"
+],
+"first_seen": "20230407T084409Z"
+},
+"golang-github-rabbitmq-amqp091-go 1.5.0-2": {
+"archives": [
+"debian"
+],
+"first_seen": "20221204T030502Z"
+},
+"golang-golang-x-net 1:0.7.0+dfsg-1": {
+"archives": [
+"debian",
+"debian-security"
+],
+"first_seen": "20230215T210953Z"
+},
+"golang-google-grpc 1.33.3-2": {
+"archives": [
+"debian",
+"debian-security"
+],
+"first_seen": "20230111T033348Z"
+},
+"golang-opentelemetry-otel 1.1.0-2": {
+"archives": [
+"debian",
+"debian-security"
+],
+"first_seen": "20211118T205424Z"
+},
+"golang-oras-oras-go 1.1.1-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20220427T214504Z"
+},
+"gst-plugins-bad1.0 1.22.0-4+deb12u7": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260401T201658Z"
+},
+"gst-plugins-base1.0 1.22.0-3+deb12u6": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260317T200144Z"
+},
+"gst-plugins-good1.0 1.22.0-5+deb12u3": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20250827T210843Z"
+},
+"gvfs 1.50.3-1+deb12u1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20260404T024735Z"
+},
+"hamlib 4.5.4-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230116T212610Z"
+},
+"haproxy 2.6.12-1+deb12u3": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20251003T122959Z"
+},
+"harfbuzz 6.0.0+dfsg-3": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230202T212152Z"
+},
+"hdrhistogram 2.2.2-1": {
+"first_seen": "20260727T082558Z"
+},
+"hiredis 0.14.1-3": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20220627T153523Z"
+},
+"hugo 0.111.3-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230316T213637Z"
+},
+"imagemagick 8:6.9.11.60+dfsg-1.6+deb12u10": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260529T182405Z"
+},
+"imagemagick 8:6.9.11.60+dfsg-1.6+deb12u11": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260623T121102Z"
+},
+"imagemagick 8:6.9.11.60+dfsg-1.6+deb12u13": {
+"archives": [
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260723T143306Z"
+},
+"imagemagick 8:6.9.11.60+dfsg-1.6+deb12u9": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260503T145635Z"
+},
+"iperf3 3.12-1+deb12u2": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20250831T144953Z"
+},
+"jackson-dataformat-cbor 2.7.8-5": {
+"archives": [
+"debian"
+],
+"first_seen": "20211104T150851Z"
+},
+"janus 1.1.2-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230120T150743Z"
+},
+"jawn 0.11.1+really0.6.0-1": {
+"archives": [
+"debian",
+"debian-archive"
+],
+"first_seen": "20181115T045552Z"
+},
+"jline 1.0-3": {
+"archives": [
+"debian",
+"debian-archive"
+],
+"first_seen": "20201214T085442Z"
+},
+"jq 1.6-2.1+deb12u1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20250712T143640Z"
+},
+"jq 1.6-2.1+deb12u2": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260701T152329Z"
+},
+"jsch 0.1.55-1": {
+"archives": [
+"debian",
+"debian-archive"
+],
+"first_seen": "20181211T031201Z"
+},
+"keepassxc 2.7.4+dfsg.1-2": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20221229T091003Z"
+},
+"keystone 2:22.0.2-0+deb12u3": {
+"archives": [
+"debian",
+"debian-security"
+],
+"first_seen": "20260608T185557Z"
+},
+"kubernetes 1.20.5+really1.20.2-1.1+deb12u1": {
+"archives": [
+"debian"
+],
+"first_seen": "20250712T023950Z"
+},
+"lemonldap-ng 2.16.1+ds-deb12u8": {
+"archives": [
+"debian"
+],
+"first_seen": "20260503T204801Z"
+},
+"lemonldap-ng 2.16.1+ds-deb12u9": {
+"archives": [
+"debian-security"
+],
+"first_seen": "20260811T102326Z"
+},
+"libarchive 3.6.2-1+deb12u4": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20260506T205057Z"
+},
+"libarchive 3.6.2-1+deb12u5": {
+"archives": [
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260831T062358Z"
+},
+"libauthen-sasl-perl 2.1600-3": {
+"archives": [
+"debian"
+],
+"first_seen": "20221013T214821Z"
+},
+"libcrypt-passwdmd5-perl 1.44-1": {
+"first_seen": "20260707T021943Z"
+},
+"libdancer2-perl 0.400001+dfsg-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20230211T151657Z"
+},
+"libde265 1.1.1-1": {
+"first_seen": "20260701T084025Z"
+},
+"libemail-sender-perl 2.600-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20221122T031434Z"
+},
+"libextractor 1:1.11-7": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230131T034648Z"
+},
+"libfreemarker-java 2.3.31-2": {
+"archives": [
+"debian"
+],
+"first_seen": "20230211T151657Z"
+},
+"libgit2 1.5.1+ds-1+deb12u1": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20240209T190746Z"
+},
+"libhtml-formhandler-perl 0.40068-2": {
+"archives": [
+"debian"
+],
+"first_seen": "20220325T205932Z"
+},
+"libhttp-tiny-perl 0.082-2": {
+"archives": [
+"debian"
+],
+"first_seen": "20221015T220129Z"
+},
+"libimager-perl 1.019+dfsg-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20220709T210413Z"
+},
+"libio-compress-perl 2.204-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20230211T151657Z"
+},
+"libjson-java 3.1.0+dfsg-1": {
+"first_seen": "20241209T023655Z"
+},
+"libkcapi 1.5.1-1": {
+"first_seen": "20260919T203403Z"
+},
+"libmatio 1.5.28-2": {
+"first_seen": "20250429T143311Z"
+},
+"libmikmod 3.3.11.1-7": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230123T040022Z"
+},
+"libnet-dns-perl 1.36-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20230101T091029Z"
+},
+"libnet-dns-perl 1.36-1+deb12u1": {
+"archives": [
+"debian-security"
+],
+"first_seen": "20260830T155258Z"
+},
+"libnet-whois-raw-perl 2.43-1.1": {
+"archives": [
+"debian",
+"debian-archive"
+],
+"first_seen": "20210105T023154Z"
+},
+"libnginx-mod-js 0.7.9-2": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230213T151507Z"
+},
+"libpcap 1.10.3-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230114T205500Z"
+},
+"libpgjava 42.5.5-0+deb12u1": {
+"archives": [
+"debian"
+],
+"first_seen": "20241221T204840Z"
+},
+"libpng1.6 1.6.39-2+deb12u5": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260510T160838Z"
+},
+"libprotocol-http2-perl 1.10-2": {
+"archives": [
+"debian"
+],
+"first_seen": "20221205T212638Z"
+},
+"libsixel 1.10.3-3": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20220114T025235Z"
+},
+"libsixel 1:1.8.7-1": {
+"first_seen": "20260312T142611Z"
+},
+"libsndfile 1.2.0-1+deb12u1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20250825T205037Z"
+},
+"libsocket-perl 2.036-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20220822T155847Z"
+},
+"libsoup3 3.2.3-0+deb12u2": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20250827T085636Z"
+},
+"libssh 0.10.6-0+deb12u2": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20251206T145206Z"
+},
+"libstb 0.0~git20220908.8b5f1f3+ds-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20220927T212318Z"
+},
+"libx11 2:1.8.4-2+deb12u2": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20231005T190705Z"
+},
+"libxi 2:1.8-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20210923T084701Z"
+},
+"libxml2 2.9.14+dfsg-1.3~deb12u6": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20260609T203938Z"
+},
+"libxmltok 1.2-4": {
+"archives": [
+"debian",
+"debian-archive",
+"debian-debug"
+],
+"first_seen": "20170810T155707Z"
+},
+"libxrender 1:0.9.10-1.1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20220614T154533Z"
+},
+"libxslt 1.1.43-0.3": {
+"first_seen": "20251024T204237Z"
+},
+"lrzip 0.660-1": {
+"first_seen": "20260215T202551Z"
+},
+"lz4-java 1.8.0-3": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20220829T032859Z"
+},
+"m17n-lib 1.8.0-6": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230219T210957Z"
+},
+"mariadb 1:10.11.14-0+deb12u2": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20250831T024403Z"
+},
+"mariadb 1:10.11.18-0+deb12u1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20260704T145040Z"
+},
+"mediawiki 1:1.39.17-1+deb12u2": {
+"archives": [
+"debian",
+"debian-security"
+],
+"first_seen": "20260412T093521Z"
+},
+"memcached 1.6.18-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230112T090754Z"
+},
+"modules 5.2.0-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20221115T031042Z"
+},
+"mongo-java-driver 3.6.3-2": {
+"archives": [
+"debian",
+"debian-archive"
+],
+"first_seen": "20190112T211025Z"
+},
+"msgpack-c 7.0.2-1": {
+"first_seen": "20261012T023456Z"
+},
+"mujs 1.3.2-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20221124T210835Z"
+},
+"nagios4 4.4.6-4+deb12u1": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260528T205420Z"
+},
+"net-snmp 5.9.3+dfsg-2+deb12u1": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260112T192438Z"
+},
+"netcdf 1:4.10.1-1": {
+"first_seen": "20260710T081948Z"
+},
+"netcdf-parallel 1:4.10.1-1": {
+"first_seen": "20260804T202836Z"
+},
+"netdata 1.37.1-2": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230117T215416Z"
+},
+"netty 1:4.1.48-7+deb12u2": {
+"archives": [
+"debian",
+"debian-security"
+],
+"first_seen": "20260311T221456Z"
+},
+"network-manager-l2tp 1.20.8-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230101T091029Z"
+},
+"nix 2.8.0-1.1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20221015T150249Z"
+},
+"nltk 3.8-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20221215T151605Z"
+},
+"nltk 3.9.1-1": {
+"first_seen": "20241002T083823Z"
+},
+"node-ajv 6.12.6-3": {
+"archives": [
+"debian"
+],
+"first_seen": "20211122T213901Z"
+},
+"node-axios 1.2.1+dfsg-1+deb12u1": {
+"archives": [
+"debian"
+],
+"first_seen": "20250203T205752Z"
+},
+"node-braces 3.0.2+~3.0.1-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20211114T025323Z"
+},
+"node-elliptic 6.6.1+dfsg+~6.4.18-2": {
+"first_seen": "20260406T144517Z"
+},
+"node-got 11.8.5+~cs58.13.36-3": {
+"archives": [
+"debian"
+],
+"first_seen": "20230115T091123Z"
+},
+"node-i18next-http-backend 2.1.1-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20230106T205957Z"
+},
+"node-lodash 4.17.21+dfsg+~cs8.31.198.20210220-9": {
+"archives": [
+"debian"
+],
+"first_seen": "20220523T211908Z"
+},
+"node-moment 2.29.4+ds-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20220713T220842Z"
+},
+"node-morgan 1.10.0+~1.9.3-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20221031T151338Z"
+},
+"node-multiparty 4.2.3-2": {
+"archives": [
+"debian"
+],
+"first_seen": "20220718T151428Z"
+},
+"node-nodemailer 6.8.0+~6.4.6-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20220930T145834Z"
+},
+"node-shell-quote 1.7.4+~1.7.1-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20221115T031042Z"
+},
+"node-shell-quote 1.7.4+~1.7.1-1+deb12u1": {
+"archives": [
+"debian",
+"debian-security"
+],
+"first_seen": "20260526T210706Z"
+},
+"node-undici 5.15.0+dfsg1+~cs20.10.9.3-1+deb12u4": {
+"archives": [
+"debian"
+],
+"first_seen": "20240617T023617Z"
+},
+"node-xmldom 0.8.6-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20221124T210835Z"
+},
+"nodejs 18.20.4+dfsg-1~deb12u1": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20250829T180502Z"
+},
+"nodejs 18.20.4+dfsg-1~deb12u2": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260514T210214Z"
+},
+"ocaml-cstruct 6.1.1-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230205T031525Z"
+},
+"ocaml-mirage-crypto 0.10.7-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230123T040022Z"
+},
+"ocsinventory-server 2.8.1+dfsg1+~2.11.1-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20221124T210835Z"
+},
+"octavia 11.0.0-2": {
+"archives": [
+"debian"
+],
+"first_seen": "20230414T144855Z"
+},
+"ofono 2.10-1": {
+"first_seen": "20240917T144520Z"
+},
+"ofono 2.14-1": {
+"first_seen": "20250106T033111Z"
+},
+"ofono 2.16-1": {
+"first_seen": "20250410T023313Z"
+},
+"open-iscsi 2.1.8-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20221019T213007Z"
+},
+"openexr 3.4.6+ds-1": {
+"first_seen": "20260312T142611Z"
+},
+"openimageio 2.4.7.1+dfsg-2": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230123T040022Z"
+},
+"openjfx 11.0.11+1-3": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230208T211659Z"
+},
+"openssh 1:9.2p1-2+deb12u10": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20260505T204143Z"
+},
+"openssl 3.0.20-1~deb12u2": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260609T214505Z"
+},
+"osmo-bsc 1.9.0-3": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20221015T220129Z"
+},
+"osmo-iuh 1.3.0+dfsg1-5": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230523T145755Z"
+},
+"packagekit 1.3.6-1": {
+"first_seen": "20260617T023428Z"
+},
+"pcre2 10.42-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230102T153446Z"
+},
+"perl 5.36.0-7+deb12u3": {
+"archives": [
+"debian"
+],
+"first_seen": "20250830T025132Z"
+},
+"pg-partman 4.7.2-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230204T031401Z"
+},
+"php-mongodb 1.15.0+1.11.1+1.9.2+1.7.5-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230106T205957Z"
+},
+"php-phpseclib3 3.0.19-1+deb12u6": {
+"archives": [
+"debian"
+],
+"first_seen": "20260504T143711Z"
+},
+"php8.2 8.2.32-1~deb12u1": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260704T125527Z"
+},
+"php8.2 8.2.33-1~deb12u1": {
+"archives": [
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260811T194334Z"
+},
+"phpldapadmin 1.2.6.7-4": {
+"first_seen": "20250411T205535Z"
+},
+"poppler 22.12.0-2+deb12u2": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260609T211520Z"
+},
+"poppler 22.12.0-2+deb12u3": {
+"archives": [
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260731T194322Z"
+},
+"psd-tools 1.9.24+dfsg.1-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230201T153118Z"
+},
+"puma 5.6.5-3+deb12u1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20250202T030201Z"
+},
+"pyjwt 2.6.0-1+deb12u1": {
+"archives": [
+"debian",
+"debian-security"
+],
+"first_seen": "20260509T110725Z"
+},
+"pymongo 3.11.0-1+deb12u1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20240619T203839Z"
+},
+"pypdf 3.4.1-1+deb12u1": {
+"archives": [
+"debian"
+],
+"first_seen": "20240121T032514Z"
+},
+"pypdf2 2.12.1-3+deb12u1": {
+"archives": [
+"debian"
+],
+"first_seen": "20240121T032514Z"
+},
+"pypy3 7.3.11+dfsg-2+deb12u3": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20241231T024646Z"
+},
+"python-autobahn 22.7.1+dfsg1-2": {
+"archives": [
+"debian"
+],
+"first_seen": "20220923T173305Z"
+},
+"python-django 3:3.2.25-0+deb12u3": {
+"archives": [
+"debian"
+],
+"first_seen": "20260529T053103Z"
+},
+"python-django 3:3.2.25-0+deb12u5": {
+"archives": [
+"debian-security"
+],
+"first_seen": "20260930T153250Z"
+},
+"python-jose 3.3.0+dfsg-4": {
+"archives": [
+"debian"
+],
+"first_seen": "20221127T211746Z"
+},
+"python-redis 5.2.1-1": {
+"first_seen": "20250410T205407Z"
+},
+"python-scrapy 2.8.0-2": {
+"archives": [
+"debian"
+],
+"first_seen": "20230326T212104Z"
+},
+"python-urllib3 1.26.12-1+deb12u4": {
+"archives": [
+"debian",
+"debian-security"
+],
+"first_seen": "20260626T084517Z"
+},
+"python-virtualenv 20.17.1+ds-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20221209T031835Z"
+},
+"python-werkzeug 2.2.2-3+deb12u1": {
+"archives": [
+"debian"
+],
+"first_seen": "20241208T204421Z"
+},
+"python3.11 3.11.2-6+deb12u7": {
+"archives": [
+"debian"
+],
+"first_seen": "20260503T033240Z"
+},
+"python3.11 3.11.2-6+deb12u8": {
+"archives": [
+"debian"
+],
+"first_seen": "20260524T203145Z"
+},
+"qt6-base 6.4.2+dfsg-10": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230528T210109Z"
+},
+"qtbase-opensource-src 5.15.8+dfsg-11+deb12u3": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20250328T023542Z"
+},
+"qtdeclarative-opensource-src 5.15.8+dfsg-3": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230227T025930Z"
+},
+"rabbitmq-server 3.10.8-1.1+deb12u1": {
+"archives": [
+"debian",
+"debian-security"
+],
+"first_seen": "20231201T203002Z"
+},
+"rails 2:6.1.7.10+dfsg-1~deb12u2": {
+"archives": [
+"debian",
+"debian-security"
+],
+"first_seen": "20251221T144825Z"
+},
+"rclone 1.60.1+dfsg-2": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20221213T205439Z"
+},
+"redis 5:7.0.15-1~deb12u6": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20251008T181644Z"
+},
+"redis 5:7.0.15-1~deb12u7": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260517T093454Z"
+},
+"redis 5:7.0.15-1~deb12u8": {
+"archives": [
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260714T190013Z"
+},
+"redis 5:7.0.15-1~deb12u9": {
+"archives": [
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260806T214318Z"
+},
+"requests 2.32.4+dfsg-1": {
+"first_seen": "20250818T142840Z"
+},
+"resteasy3.0 3.0.26-6": {
+"archives": [
+"debian"
+],
+"first_seen": "20230515T030231Z"
+},
+"rlottie 0.1+dfsg-4+deb12u2": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20260704T145040Z"
+},
+"rpm 4.18.0+dfsg-1+deb12u1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20240131T153825Z"
+},
+"ruby-jwt 2.5.0-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20221201T090253Z"
+},
+"ruby-mail 2.7.1+dfsg1-2": {
+"archives": [
+"debian"
+],
+"first_seen": "20221205T212638Z"
+},
+"ruby-oauth2 1.4.4-1": {
+"archives": [
+"debian",
+"debian-archive"
+],
+"first_seen": "20200623T204338Z"
+},
+"rust-coreutils 0.0.17-2": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230124T184127Z"
+},
+"rust-tokio 1.24.2-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20230120T150743Z"
+},
+"smarty3 3.1.47-2+deb12u1": {
+"archives": [
+"debian",
+"debian-security"
+],
+"first_seen": "20241210T190047Z"
+},
+"smarty4 4.3.0-1+deb12u2": {
+"archives": [
+"debian",
+"debian-security"
+],
+"first_seen": "20241212T193325Z"
+},
+"sngrep 1.6.0-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20220903T155935Z"
+},
+"sqlparse 0.4.2-1+deb12u1": {
+"archives": [
+"debian"
+],
+"first_seen": "20250103T213531Z"
+},
+"suricata-update 1.2.7-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20230205T031525Z"
+},
+"tftp-hpa 5.2+20150808-1.4": {
+"archives": [
+"debian"
+],
+"first_seen": "20221026T030313Z"
+},
+"twitter-bootstrap3 3.4.1+dfsg-3+deb12u1": {
+"archives": [
+"debian"
+],
+"first_seen": "20250510T204402Z"
+},
+"twitter-bootstrap4 4.6.1+dfsg1-4+deb12u1": {
+"archives": [
+"debian",
+"debian-security"
+],
+"first_seen": "20250510T204402Z"
+},
+"u-boot 2023.01+dfsg-2+deb12u3": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260623T121424Z"
+},
+"u-boot 2025.01-3.2": {
+"first_seen": "20260615T143345Z"
+},
+"usbredir 0.13.0-2": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230207T154006Z"
+},
+"varnish 7.1.1-2+deb12u1": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20250513T181433Z"
+},
+"vifm 0.12-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20211013T144806Z"
+},
+"vips 8.14.1-3+deb12u3": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20260503T033240Z"
+},
+"wabt 1.0.32-1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230113T030855Z"
+},
+"weasyprint 57.2-1": {
+"archives": [
+"debian"
+],
+"first_seen": "20230115T031229Z"
+},
+"wget 1.21.3-1+deb12u1": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20250308T220502Z"
+},
+"wolfssl 5.5.4-2+deb12u2": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20250831T144953Z"
+},
+"wolfssl 5.5.4-2+deb12u3": {
+"archives": [
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260713T190736Z"
+},
+"wss4j 1.6.19-3": {
+"archives": [
+"debian"
+],
+"first_seen": "20230206T092119Z"
+},
+"xdg-dbus-proxy 0.1.4-3+deb12u1": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20260422T083627Z"
+},
+"xen 4.17.5+72-g01140da4e8-1": {
+"archives": [
+"debian",
+"debian-debug",
+"debian-security",
+"debian-security-debug"
+],
+"first_seen": "20251202T215504Z"
+},
+"yara 4.2.3-4": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230123T153828Z"
+},
+"zstd-jni-java 1.5.2-5+ds-3": {
+"archives": [
+"debian",
+"debian-debug"
+],
+"first_seen": "20230409T030248Z"
+}
+}

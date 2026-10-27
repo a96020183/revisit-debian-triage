@@ -1,0 +1,22 @@
+{
+ "cutoff": "2026-10-26",
+ "seed": 20261026,
+ "fetched_files_sha256": {
+  "list.txt": "ce303c76ac3f06c0da06734468715948c2a5caad4656c97d89548f13c8242632",
+  "dsa.txt": "f74c93c2296662f06093a59e2ce06d86b31a09d66576e8140395d02d47ca366f",
+  "dla.txt": "a7f0939c1ab392b22bc45ef0072221de36f98eff454e312fc90f81019a4f25a0",
+  "tracker.json": "4bdef57121ff35839e94bdbece9e4f8f81f6a734088843e0b836b2b0ec24d249",
+  "kev.json": "97a6e54bc74c651ab3c55657191db9adec6c63b05ca54e4205327cfd97a8fb70",
+  "Sources_bookworm.xz": "92d11a035571df011f06f28c61cb9825130ef1d92abb2f2e0525e8674dc44af8"
+ },
+ "kev_catalog": "2026.10.23",
+ "n_news": 285,
+ "n_mix": 285,
+ "skipped": {
+  "no bookworm decision (None)": 257,
+  "NOT-FOR-US": 21,
+  "excluded package": 3555,
+  "no bookworm decision (OPEN)": 120
+ },
+ "mix_pool": 759
+}

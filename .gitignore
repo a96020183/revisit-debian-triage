@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*_PRIVATE*
+node_modules/
+ui/data.js
+runs/traces_sample/
+# internal working notes (Traditional Chinese), kept locally, not part of the submission
+/[!A-Za-z0-9_.-]*.md
+docs/qa_round*.md

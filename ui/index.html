@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revisit</title>
+<meta name="description" content="A Debian LTS triage agent that remembers how each package was handled, checks that memory against the raw evidence, and brings deferred decisions back when their condition is met.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Crect width=%2716%27 height=%2716%27 rx=%274%27 fill=%27%23c3a1f0%27/%3E%3Crect x=%278%27 width=%278%27 height=%2716%27 fill=%27%236fd3c4%27/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="brand"><span class="mark" aria-hidden="true"></span>revisit</div>
+  <p class="tag">Debian LTS triage that remembers each package and calls deferred CVEs back.</p>
+  <div class="mode" id="mode"></div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-h">
+    <h1 id="hero-h"></h1>
+    <p class="lede" id="hero-lede"></p>
+    <div class="replay" id="php-replay"></div>
+    <aside class="forecast" id="forecast" aria-label="Live forecast" hidden></aside>
+  </section>
+
+  <section class="band" aria-labelledby="catch-h">
+    <div class="band-head">
+      <h2 id="catch-h">Memory was wrong. Scout caught it.</h2>
+      <p class="sub" id="catch-sub"></p>
+    </div>
+    <div id="catch"></div>
+  </section>
+
+  <section class="band" aria-labelledby="exam-h">
+    <div class="band-head">
+      <h2 id="exam-h">Sealed before it ran.</h2>
+      <p class="sub" id="exam-sub"></p>
+    </div>
+    <div class="exam" id="exam"></div>
+  </section>
+
+  <section class="band" aria-labelledby="queue-h">
+    <div class="band-head">
+      <h2 id="queue-h">This morning's queue</h2>
+      <p class="sub" id="queue-sub"></p>
+    </div>
+    <div class="queue">
+      <div class="col"><h3 class="col-h"><span class="dot dot-urgent" aria-hidden="true"></span>Decide now</h3><ul class="cards" id="q-triage"></ul></div>
+      <div class="col"><h3 class="col-h"><span class="dot dot-reopen" aria-hidden="true"></span>Reopen or close</h3><ul class="cards" id="q-reopen"></ul></div>
+      <div class="col"><h3 class="col-h"><span class="dot dot-wait" aria-hidden="true"></span>Keep waiting</h3><ul class="cards" id="q-wait"></ul></div>
+    </div>
+  </section>
+
+  <section class="band small" aria-labelledby="lim-h">
+    <h2 id="lim-h">What it does not prove</h2>
+    <ul class="limits" id="limits"></ul>
+  </section>
+</main>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-labelledby="dr-title" aria-hidden="true" tabindex="-1">
+  <div class="dr-head">
+    <div>
+      <h2 id="dr-title"></h2>
+      <p class="dr-meta" id="dr-kind"></p>
+    </div>
+    <button class="close" id="dr-close" aria-label="Close trace">Close</button>
+  </div>
+  <div class="dr-stats" id="dr-stats"></div>
+  <ol class="events" id="dr-events"></ol>
+</aside>
+
+<footer class="foot"><p id="foot"></p></footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1150 @@
+{
+"CVE-2022-25869|angular.js": [
+"https://security.snyk.io/vuln/SNYK-JS-ANGULAR-2949781"
+],
+"CVE-2026-8367|aria2": [
+"https://github.com/aria2/aria2/issues/2355"
+],
+"CVE-2022-38528|assimp": [
+"https://github.com/assimp/assimp/issues/4662"
+],
+"CVE-2024-46632|assimp": [
+"https://github.com/assimp/assimp/issues/5771"
+],
+"CVE-2024-48423|assimp": [
+"https://github.com/assimp/assimp/issues/5788",
+"https://github.com/assimp/assimp/pull/5918",
+"https://github.com/assimp/assimp/commit/f12e52198669239af525e525ebb68407977f8e34 (v6.0.0)"
+],
+"CVE-2024-48424|assimp": [
+"https://github.com/assimp/assimp/issues/5787",
+"https://github.com/assimp/assimp/commit/2b773f0f5a726c38dda72307b5311c14fc3a76ae (v6.0.0)"
+],
+"CVE-2024-48425|assimp": [
+"https://github.com/assimp/assimp/issues/5791",
+"https://github.com/assimp/assimp/commit/ecdf8d24b85367b22ba353b4f82299d4af7f1f97 (v6.0.0)",
+"https://github.com/assimp/assimp/pull/5799"
+],
+"CVE-2024-48426|assimp": [
+"https://github.com/assimp/assimp/issues/5789"
+],
+"CVE-2024-53425|assimp": [
+"https://github.com/assimp/assimp/issues/5860",
+"https://github.com/assimp/assimp/pull/5921",
+"Fixed by: https://github.com/assimp/assimp/commit/ecc8a1c8695560df108d6adc00b3d7b1ba15df9f (v6.0.0)"
+],
+"CVE-2025-11274|assimp": [
+"https://github.com/assimp/assimp/issues/6356"
+],
+"CVE-2025-11275|assimp": [
+"https://github.com/assimp/assimp/issues/6357"
+],
+"CVE-2025-15538|assimp": [
+"https://github.com/assimp/assimp/issues/6258"
+],
+"CVE-2025-15666|assimp": [
+"https://github.com/assimp/assimp/issues/6079",
+"https://github.com/assimp/assimp/pull/6869",
+"Fixed by: https://github.com/assimp/assimp/commit/a4eff9f89585c590d7b43daf5065f7bdf398bbc6"
+],
+"CVE-2025-2151|assimp": [
+"https://github.com/assimp/assimp/issues/6016",
+"https://github.com/assimp/assimp/issues/6026",
+"https://github.com/sae-as-me/Crashes/raw/refs/heads/main/assimp/assimp_crash_1",
+"Fixed by: https://github.com/assimp/assimp/commit/d2c6e64a1122884570caf4aaa589d810f5351f28 (v6.0.0)"
+],
+"CVE-2025-2152|assimp": [
+"https://github.com/assimp/assimp/issues/6027",
+"https://github.com/assimp/assimp/commit/9182879e1f2cb6e64f158ee935f0e0a68a9a8104 (v6.0.0)"
+],
+"CVE-2025-2591|assimp": [
+"https://github.com/assimp/assimp/issues/6009",
+"https://github.com/assimp/assimp/pull/6047",
+"Fixed by: https://github.com/assimp/assimp/commit/bcf11c252a9635af83c0f48b5ebdfad8e1ab5522 (v6.0.0)"
+],
+"CVE-2025-2592|assimp": [
+"https://github.com/assimp/assimp/issues/6010",
+"https://github.com/assimp/assimp/pull/6052",
+"Fixed by: https://github.com/assimp/assimp/commit/2690e354da0c681db000cfd892a55226788f2743 (v6.0.0)"
+],
+"CVE-2025-2750|assimp": [
+"https://github.com/assimp/assimp/issues/6011",
+"https://github.com/assimp/assimp/commit/269987085fbeef43af877f5eab8945a872ded650 (v6.0.2)"
+],
+"CVE-2025-2751|assimp": [
+"https://github.com/assimp/assimp/issues/6012",
+"https://github.com/assimp/assimp/commit/177797c77b027a6de080fb3bacbd8822617e11d8 (v6.0.2)"
+],
+"CVE-2025-2752|assimp": [
+"https://github.com/assimp/assimp/issues/6013"
+],
+"CVE-2025-2753|assimp": [
+"https://github.com/assimp/assimp/issues/6014"
+],
+"CVE-2025-2754|assimp": [
+"https://github.com/assimp/assimp/issues/6015",
+"https://github.com/assimp/assimp/pull/6458",
+"Fixed by: https://github.com/assimp/assimp/commit/ae6633ef8a8b686a7a080e9ad65fc77fd712e4b4"
+],
+"CVE-2025-2755|assimp": [
+"https://github.com/assimp/assimp/issues/6017"
+],
+"CVE-2025-2756|assimp": [
+"https://github.com/assimp/assimp/issues/6018",
+"https://github.com/assimp/assimp/pull/6458",
+"Fixed by: https://github.com/assimp/assimp/commit/ae6633ef8a8b686a7a080e9ad65fc77fd712e4b4"
+],
+"CVE-2025-2757|assimp": [
+"https://github.com/assimp/assimp/issues/6019",
+"https://github.com/assimp/assimp/commit/5be336779d81b1d71b290bc004eb5d1593c328c5 (v6.0.2)"
+],
+"CVE-2025-3158|assimp": [
+"https://github.com/assimp/assimp/issues/6023",
+"https://github.com/assimp/assimp/commit/357b5baabbd0af01cbe712c6506ee1d06d2da8de (v6.0.2)"
+],
+"CVE-2025-5167|assimp": [
+"https://github.com/assimp/assimp/issues/6169",
+"https://github.com/assimp/assimp/issues/6128"
+],
+"CVE-2025-5168|assimp": [
+"https://github.com/assimp/assimp/issues/6170",
+"https://github.com/assimp/assimp/issues/6128"
+],
+"CVE-2025-5169|assimp": [
+"https://github.com/assimp/assimp/issues/6171",
+"https://github.com/assimp/assimp/issues/6128"
+],
+"CVE-2025-5200|assimp": [
+"https://github.com/assimp/assimp/issues/6172"
+],
+"CVE-2025-5201|assimp": [
+"https://github.com/assimp/assimp/issues/6173"
+],
+"CVE-2025-5202|assimp": [
+"https://github.com/assimp/assimp/issues/6174"
+],
+"CVE-2025-5203|assimp": [
+"https://github.com/assimp/assimp/issues/6175"
+],
+"CVE-2025-5204|assimp": [
+"https://github.com/assimp/assimp/issues/6176",
+"https://github.com/assimp/assimp/issues/6128"
+],
+"CVE-2025-6119|assimp": [
+"https://github.com/assimp/assimp/issues/6219"
+],
+"CVE-2025-6120|assimp": [
+"https://github.com/assimp/assimp/issues/6220"
+],
+"CVE-2026-10198|assimp": [
+"https://github.com/assimp/assimp/issues/6609"
+],
+"CVE-2026-10200|assimp": [
+"https://github.com/assimp/assimp/issues/6612"
+],
+"CVE-2026-10201|assimp": [
+"https://github.com/assimp/assimp/issues/6613"
+],
+"CVE-2026-10229|assimp": [
+"https://github.com/assimp/assimp/issues/6614"
+],
+"CVE-2026-10230|assimp": [
+"https://github.com/assimp/assimp/issues/6615"
+],
+"CVE-2026-10231|assimp": [
+"https://github.com/assimp/assimp/issues/6616"
+],
+"CVE-2026-10232|assimp": [
+"https://github.com/assimp/assimp/issues/6617"
+],
+"CVE-2026-10233|assimp": [
+"https://github.com/assimp/assimp/issues/6619"
+],
+"CVE-2026-14604|assimp": [
+"https://github.com/assimp/assimp/issues/6620"
+],
+"CVE-2026-19967|assimp": [
+"https://github.com/assimp/assimp/issues/6624"
+],
+"CVE-2026-19969|assimp": [
+"https://github.com/assimp/assimp/issues/6631"
+],
+"CVE-2026-19970|assimp": [
+"https://github.com/assimp/assimp/issues/6632"
+],
+"CVE-2025-50950|audiofile": [
+"https://github.com/mpruett/audiofile/issues/66"
+],
+"CVE-2025-59529|avahi": [
+"https://github.com/avahi/avahi/security/advisories/GHSA-73wf-3xmj-x82q",
+"https://github.com/avahi/avahi/pull/808"
+],
+"CVE-2023-44431|bluez": [
+"https://www.zerodayinitiative.com/advisories/ZDI-23-1900/"
+],
+"CVE-2023-51580|bluez": [
+"https://www.zerodayinitiative.com/advisories/ZDI-23-1903/"
+],
+"CVE-2023-51589|bluez": [
+"https://www.zerodayinitiative.com/advisories/ZDI-23-1904/"
+],
+"CVE-2023-51592|bluez": [
+"https://www.zerodayinitiative.com/advisories/ZDI-23-1905/"
+],
+"CVE-2023-51594|bluez": [
+"https://www.zerodayinitiative.com/advisories/ZDI-23-1901/"
+],
+"CVE-2023-51596|bluez": [
+"https://www.zerodayinitiative.com/advisories/ZDI-23-1902/"
+],
+"CVE-2023-42366|busybox": [
+"https://bugs.busybox.net/show_bug.cgi?id=15874"
+],
+"CVE-2024-58251|busybox": [
+"https://bugs.busybox.net/show_bug.cgi?id=15922"
+],
+"CVE-2025-46394|busybox": [
+"https://bugs.busybox.net/show_bug.cgi?id=16018",
+"https://www.openwall.com/lists/oss-security/2025/04/23/1",
+"Proposed patch: https://lists.busybox.net/pipermail/busybox/2025-April/091461.html"
+],
+"CVE-2025-60876|busybox": [
+"https://gist.github.com/subyumatest/41554af6a72aedaacaec026adc311092"
+],
+"CVE-2023-46490|cacti": [
+"https://github.com/Cacti/cacti/security/advisories/GHSA-f4r3-53jr-654c (not public yet)",
+"https://gist.github.com/ISHGARD-2/a95632111138fcd7ccf7432ccb145b53",
+"Checking the above link, this is probably a duplicate of CVE-2023-51448, hence related to CVE-2023-30534",
+"Duplicate reported at MITRE 2024-02-20 (CVE Request 1607585)",
+"https://github.com/Cacti/cacti/commit/58a980f335980ab57659420053d89d4e721ae3fc (release/1.2.26)"
+],
+"CVE-2019-10735|claws-mail": [
+"https://www.thewildbeast.co.uk/claws-mail/bugzilla/show_bug.cgi?id=4159"
+],
+"CVE-2024-45321|cpanminus": [
+"https://security.metacpan.org/2024/08/26/cpanminus-downloads-code-using-insecure-http.html",
+"https://github.com/miyagawa/cpanminus/issues/611",
+"https://github.com/miyagawa/cpanminus/pull/674"
+],
+"CVE-2026-88264|crun": [
+"https://bugzilla.redhat.com/show_bug.cgi?id=2531223"
+],
+"CVE-2026-88265|crun": [
+"https://bugzilla.redhat.com/show_bug.cgi?id=2531224"
+],
+"CVE-2025-69872|diskcache": [
+"https://github.com/EthanKim88/ethan-cve-disclosures/blob/main/CVE-2025-69872-DiskCache-Pickle-Deserialization.md",
+"https://github.com/grantjenks/python-diskcache/issues/357"
+],
+"CVE-2026-12216|duktape": [
+"https://github.com/hmKunlun/compileOOB/blob/main/api_bytecode.md"
+],
+"CVE-2024-13745|edk2": [
+"https://www.openwall.com/lists/oss-security/2026/05/29/2"
+],
+"CVE-2023-50671|exiftags": [
+"https://blog.yulun.ac.cn/posts/2023/fuzzing-exiftags/"
+],
+"CVE-2025-66382|expat": [
+"https://github.com/libexpat/libexpat/issues/1076"
+],
+"CVE-2023-49528|ffmpeg": [
+"https://trac.ffmpeg.org/ticket/10691",
+"Introduced after: https://github.com/FFmpeg/FFmpeg/commit/f05c52985cf80d565c6e91fb4749e57dd8977d3e (n5.1)",
+"Fixed by: https://github.com/ffmpeg/ffmpeg/commit/2d9ed64859c9887d0504cd71dbd5b2c15e14251a (n7.0)"
+],
+"CVE-2023-6601|ffmpeg": [
+"https://bugzilla.redhat.com/show_bug.cgi?id=2253172",
+"Fixed by: https://github.com/FFmpeg/FFmpeg/commit/d09f50c0f5f045dec35f0ca22c2212fae2378dba (n6.1)"
+],
+"CVE-2023-6605|ffmpeg": [
+"https://bugzilla.redhat.com/show_bug.cgi?id=2334336",
+"Fixed by: https://github.com/FFmpeg/FFmpeg/commit/4c96d6bf75357ab13808efc9f08c1b41b1bf5bdf (master)",
+"Fixed by: https://github.com/FFmpeg/FFmpeg/commit/c3c7ecfe48d464a0b06564f2e92504b1d9c91d69 (n7.1.1)",
+"Fixed by: https://github.com/FFmpeg/FFmpeg/commit/097131a6474bd6294ff337fa92025df60dff907a (n5.1.7)"
+],
+"CVE-2024-31578|ffmpeg": [
+"Fixed by: https://github.com/ffmpeg/ffmpeg/commit/3bb00c0a420c3ce83c6fafee30270d69622ccad7 (n7.0)"
+],
+"CVE-2024-35369|ffmpeg": [
+"https://github.com/ffmpeg/ffmpeg/commit/0895ef0d6d6406ee6cd158fc4d47d80f201b8e9c (n7.0)"
+],
+"CVE-2024-36615|ffmpeg": [
+"https://github.com/ffmpeg/ffmpeg/commit/0ba058579f332b3060d8470a04ddd3fbf305be61 (n7.1)",
+"Regression fix: https://github.com/FFmpeg/FFmpeg/commit/8c62d77139ca07390414fcfd26b2a4d506fed3b9 (n7.1)"
+],
+"CVE-2025-10256|ffmpeg": [
+"Fixed by: https://git.ffmpeg.org/gitweb/ffmpeg.git/commitdiff/a25462482c02c004d685a8fcf2fa63955aaa0931 (n8.0)",
+"Fixed by: https://git.ffmpeg.org/gitweb/ffmpeg.git/commitdiff/0e8ccde9e5c9daa081eb4c037d83350390c9aa2b (n7.1.2)",
+"Introduced in: https://git.ffmpeg.org/gitweb/ffmpeg.git/commitdiff/d3be186ed1bcdcf2c093d6b13a0e66dc5132be2a (n3.2)"
+],
+"CVE-2025-22921|ffmpeg": [
+"https://trac.ffmpeg.org/ticket/11393",
+"Fixed by: https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/7f9c7f9849a2155224711f0ff57ecdac6e4bfb57 (n8.0)",
+"Fixed by: https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/3a18d60f65f633bcca7916fd9c0f1d0394901438 (n7.1.5)"
+],
+"CVE-2026-30997|ffmpeg": [
+"https://excellent-oatmeal-319.notion.site/CVE-2026-30997-Out-of-Bounds-Access-a7929817b9794568b2f7774397c7d65f",
+"Fixed by: https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/1a2c16fe514b60e1860829c42ce199de77a007e5",
+"Fixed by: https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/6266867e7bc4106dd3f77d6d702a0499fb3254db (n8.1.1)",
+"Fixed by: https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/3c4ca300f469d657051c8584515870fe9c36aaa3 (n8.0.2)",
+"Fixed by: https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/9abe92e3af7fa7becc8f7f742b1457b4c28220a6 (n7.1.4)",
+"Fixed by: https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/74c75e9ceacd99d20c09d09fec73c1b15ffd6172 (n5.1.9)"
+],
+"CVE-2026-6385|ffmpeg": [
+"https://bugzilla.redhat.com/show_bug.cgi?id=2458764"
+],
+"CVE-2024-56169|fort-validator": [
+"https://github.com/NICMx/FORT-validator/issues/82"
+],
+"CVE-2024-56170|fort-validator": [
+"https://github.com/NICMx/FORT-validator/issues/82"
+],
+"CVE-2019-12212|freeimage": [
+"https://sourceforge.net/p/freeimage/discussion/36111/thread/e06734bed5/"
+],
+"CVE-2019-12214|freeimage": [
+"https://sourceforge.net/p/freeimage/discussion/36111/thread/e06734bed5/",
+"very few information regarding this vulnerability, which is seemingly located",
+"in libopenjpeg, not freeimage. Without reproducer or stacktrace, this is",
+"nearly unfixable."
+],
+"CVE-2020-21426|freeimage": [
+"https://sourceforge.net/p/freeimage/bugs/300/",
+"it looks like the issue is in openexr. No relevant patches in freeimage are detected"
+],
+"CVE-2020-24292|freeimage": [
+"https://sourceforge.net/p/freeimage/discussion/36111/thread/afb98701eb/",
+"Patch in Fedora (not upstream'ed): https://src.fedoraproject.org/rpms/freeimage/blob/f39/f/CVE-2020-24292.patch"
+],
+"CVE-2020-24293|freeimage": [
+"https://sourceforge.net/p/freeimage/discussion/36111/thread/afb98701eb/",
+"Patch in Fedora (not upstream'ed): https://src.fedoraproject.org/rpms/freeimage/blob/f39/f/CVE-2020-24293.patch"
+],
+"CVE-2020-24294|freeimage": [
+"https://sourceforge.net/p/freeimage/discussion/36111/thread/afb98701eb/"
+],
+"CVE-2020-24295|freeimage": [
+"https://sourceforge.net/p/freeimage/discussion/36111/thread/afb98701eb/",
+"Patch in Fedora (not upstream'ed): https://src.fedoraproject.org/rpms/freeimage/blob/f39/f/CVE-2020-24295.patch"
+],
+"CVE-2021-40262|freeimage": [
+"https://sourceforge.net/p/freeimage/bugs/338/"
+],
+"CVE-2021-40263|freeimage": [
+"https://sourceforge.net/p/freeimage/bugs/336/",
+"Patch in Fedora (not upstream'ed): https://src.fedoraproject.org/rpms/freeimage/blob/f39/f/CVE-2021-40263.patch"
+],
+"CVE-2021-40264|freeimage": [
+"https://sourceforge.net/p/freeimage/bugs/335/"
+],
+"CVE-2021-40265|freeimage": [
+"https://sourceforge.net/p/freeimage/bugs/337/"
+],
+"CVE-2021-40266|freeimage": [
+"https://sourceforge.net/p/freeimage/bugs/334/",
+"Patch in Fedora (not upstream'ed): https://src.fedoraproject.org/rpms/freeimage/blob/f39/f/CVE-2021-40266.patch"
+],
+"CVE-2023-47992|freeimage": [
+"https://github.com/thelastede/FreeImage-cve-poc/tree/master/CVE-2023-47992",
+"https://sourceforge.net/p/freeimage/bugs/357/"
+],
+"CVE-2023-47993|freeimage": [
+"https://github.com/thelastede/FreeImage-cve-poc/tree/master/CVE-2023-47993",
+"https://sourceforge.net/p/freeimage/bugs/358/"
+],
+"CVE-2023-47994|freeimage": [
+"https://github.com/thelastede/FreeImage-cve-poc/tree/master/CVE-2023-47994",
+"https://sourceforge.net/p/freeimage/bugs/359/"
+],
+"CVE-2023-47995|freeimage": [
+"https://github.com/thelastede/FreeImage-cve-poc/tree/master/CVE-2023-47995",
+"Patch in Fedora (not upstream'ed): https://src.fedoraproject.org/rpms/freeimage/blob/f39/f/CVE-2023-47995.patch",
+"https://sourceforge.net/p/freeimage/bugs/360/"
+],
+"CVE-2023-47996|freeimage": [
+"https://github.com/thelastede/FreeImage-cve-poc/tree/master/CVE-2023-47996"
+],
+"CVE-2023-47997|freeimage": [
+"https://github.com/thelastede/FreeImage-cve-poc/tree/master/CVE-2023-47997",
+"Patch in Fedora (not upstream'ed): https://src.fedoraproject.org/rpms/freeimage/blob/f39/f/CVE-2023-47997.patch"
+],
+"CVE-2024-28562|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/363/"
+],
+"CVE-2024-28563|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/364/"
+],
+"CVE-2024-28564|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/365/"
+],
+"CVE-2024-28565|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/366/"
+],
+"CVE-2024-28566|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/367/"
+],
+"CVE-2024-28567|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/368/"
+],
+"CVE-2024-28568|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/369/"
+],
+"CVE-2024-28569|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/370/"
+],
+"CVE-2024-28570|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/371/"
+],
+"CVE-2024-28571|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/372/"
+],
+"CVE-2024-28572|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/373/"
+],
+"CVE-2024-28573|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/374/"
+],
+"CVE-2024-28574|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/375/"
+],
+"CVE-2024-28575|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/376/"
+],
+"CVE-2024-28576|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/377/"
+],
+"CVE-2024-28577|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/378/"
+],
+"CVE-2024-28578|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/379/"
+],
+"CVE-2024-28579|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/380/"
+],
+"CVE-2024-28580|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/381/"
+],
+"CVE-2024-28581|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/382/"
+],
+"CVE-2024-28582|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/383/"
+],
+"CVE-2024-28583|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/384/"
+],
+"CVE-2024-28584|freeimage": [
+"https://github.com/Ruanxingzhi/vul-report/tree/master/freeimage-r1909",
+"https://sourceforge.net/p/freeimage/bugs/385/"
+],
+"CVE-2024-9029|freeimage": [
+"https://sourceforge.net/p/freeimage/bugs/351/"
+],
+"CVE-2025-65803|freeimage": [
+"https://gist.github.com/1mxml/cabd6d972557d9d992fe5f4f6ca1dd87",
+"https://sourceforge.net/p/freeimage/bugs/390/"
+],
+"CVE-2025-70968|freeimage": [
+"https://github.com/MiracleWolf/FreeimageCrash/tree/main",
+"FreeImageRe fork is not affected, underlying code has reworked memory management"
+],
+"CVE-2025-61103|frr": [
+"https://github.com/FRRouting/frr/issues/19471",
+"https://github.com/FRRouting/frr/pull/19480",
+"https://github.com/FRRouting/frr/pull/19983"
+],
+"CVE-2025-61104|frr": [
+"https://github.com/FRRouting/frr/issues/19471",
+"https://github.com/FRRouting/frr/pull/19480",
+"https://github.com/FRRouting/frr/pull/19983"
+],
+"CVE-2025-61106|frr": [
+"https://github.com/FRRouting/frr/issues/19471",
+"https://github.com/FRRouting/frr/pull/19480",
+"https://github.com/FRRouting/frr/pull/19983"
+],
+"CVE-2025-61107|frr": [
+"https://github.com/FRRouting/frr/issues/19471",
+"https://github.com/FRRouting/frr/pull/19480",
+"https://github.com/FRRouting/frr/pull/19983"
+],
+"CVE-2024-52762|ganglia-web": [
+"https://github.com/ganglia/ganglia-web/issues/382"
+],
+"CVE-2024-52763|ganglia-web": [
+"https://github.com/ganglia/ganglia-web/issues/382"
+],
+"CVE-2026-3650|gdcm": [
+"https://bugzilla.redhat.com/show_bug.cgi?id=2451988",
+"https://github.com/malaterre/GDCM/commit/9d65a217c958968a74c14b10388d03ca61953a74 (v3.2.6)"
+],
+"CVE-2026-10028|glib-networking": [
+"https://bugzilla.redhat.com/show_bug.cgi?id=2465152",
+"https://gitlab.gnome.org/GNOME/glib-networking/-/work_items/231"
+],
+"CVE-2023-5616|gnome-control-center": [
+"https://bugs.launchpad.net/ubuntu/+source/gnome-control-center/+bug/2039577",
+"https://gitlab.gnome.org/GNOME/gnome-control-center/-/merge_requests/2462",
+"https://gitlab.gnome.org/GNOME/gnome-control-center/-/merge_requests/2092 (abandoned)",
+"TODO: check, potentially same incorrect checking of service and socket status in budgie-control-center"
+],
+"CVE-2023-46565|gobgp": [
+"https://github.com/osrg/gobgp/issues/2725"
+],
+"CVE-2024-56738|grub2": [
+"https://savannah.gnu.org/bugs/?66603"
+],
+"CVE-2026-14683|hdrhistogram": [
+"https://github.com/HdrHistogram/HdrHistogram/issues/219"
+],
+"CVE-2026-14684|hdrhistogram": [
+"https://github.com/HdrHistogram/HdrHistogram/issues/220"
+],
+"CVE-2026-14685|hdrhistogram": [
+"https://github.com/HdrHistogram/HdrHistogram/issues/221"
+],
+"CVE-2026-14686|hdrhistogram": [
+"https://github.com/HdrHistogram/HdrHistogram/issues/222"
+],
+"CVE-2023-5072|jenkins-json": [
+"https://github.com/stleary/JSON-java/issues/758",
+"https://github.com/stleary/JSON-java/issues/771",
+"https://github.com/stleary/JSON-java/pull/772/",
+"https://github.com/stleary/JSON-java/commit/dbb113176b143b519ad0a50b033a9997cc2248fe (20231013)",
+"https://github.com/stleary/JSON-java/commit/16967f322ee65c301b48fa79bb681e38896fd212 (20231013)",
+"https://github.com/stleary/JSON-java/commit/661114c50dcfd53bb041aab66f14bb91e0a87c8a (20231013)",
+"https://github.com/kordamp/json-lib/issues/58",
+"https://github.com/jettison-json/jettison/issues/86"
+],
+"CVE-2023-34623|jtidy": [
+"https://github.com/trajano/jtidy/issues/4"
+],
+"CVE-2025-XXXX#[exposes .zip passwords while (un)archiving]|krusader": [],
+"CVE-2013-10075|libapache-session-perl": [
+"https://lists.security.metacpan.org/cve-announce/msg/39844719/"
+],
+"CVE-2025-40931|libapache-session-perl": [
+"https://lists.security.metacpan.org/cve-announce/msg/37639294/",
+"Partially tackled via https://bugs.debian.org/930659 to gather better entropy."
+],
+"CVE-2026-5081|libapache-session-perl": [
+"https://lists.security.metacpan.org/cve-announce/msg/39783104/",
+"CVE exists to document that Apache::Session::Generate::ModUniqueId is",
+"to use e.g. for where session id might be used for authentication or",
+"provides access to restricted data and to use Apache::Session::Generate::Random",
+"in such cases."
+],
+"CVE-2026-6659|libcrypt-passwdmd5-perl": [
+"https://lists.security.metacpan.org/cve-announce/msg/39857355/",
+"Fixed by: https://github.com/ronsavage/Crypt-PasswdMD5/commit/a2f821637db0296082297aa4b02254ab08f0dc5e (1.43)"
+],
+"CVE-2022-48570|libcrypto++": [
+"Related issue: https://github.com/weidai11/cryptopp/issues/992",
+"This issue exists because the CVE-2019-14318 fix was intentionally removed for",
+"functionality reasons. To fix the issue a rewrite of the rewrite the Integer class",
+"is required."
+],
+"CVE-2023-50979|libcrypto++": [
+"https://github.com/weidai11/cryptopp/issues/1247"
+],
+"CVE-2023-50981|libcrypto++": [
+"https://github.com/weidai11/cryptopp/issues/1249"
+],
+"CVE-2024-28285|libcrypto++": [
+"https://groups.google.com/g/cryptopp-users/c/UkVcH2IWR2M?pli=1",
+"https://github.com/weidai11/cryptopp/issues/1262"
+],
+"CVE-2024-38949|libde265": [
+"https://github.com/strukturag/libde265/issues/460",
+"https://github.com/strukturag/libde265/commit/4089de0845e0009e019be4ca5cbebaf2aee0a8ce (v1.0.19)"
+],
+"CVE-2024-38950|libde265": [
+"https://github.com/strukturag/libde265/issues/460",
+"https://github.com/strukturag/libde265/commit/4089de0845e0009e019be4ca5cbebaf2aee0a8ce (v1.0.19)"
+],
+"CVE-2023-5072|libjettison-java": [
+"https://github.com/stleary/JSON-java/issues/758",
+"https://github.com/stleary/JSON-java/issues/771",
+"https://github.com/stleary/JSON-java/pull/772/",
+"https://github.com/stleary/JSON-java/commit/dbb113176b143b519ad0a50b033a9997cc2248fe (20231013)",
+"https://github.com/stleary/JSON-java/commit/16967f322ee65c301b48fa79bb681e38896fd212 (20231013)",
+"https://github.com/stleary/JSON-java/commit/661114c50dcfd53bb041aab66f14bb91e0a87c8a (20231013)",
+"https://github.com/kordamp/json-lib/issues/58",
+"https://github.com/jettison-json/jettison/issues/86"
+],
+"CVE-2023-46998|libjs-bootbox": [
+"https://github.com/bootboxjs/bootbox/issues/661"
+],
+"CVE-2023-5072|libjson-java": [
+"https://github.com/stleary/JSON-java/issues/758",
+"https://github.com/stleary/JSON-java/issues/771",
+"https://github.com/stleary/JSON-java/pull/772/",
+"https://github.com/stleary/JSON-java/commit/dbb113176b143b519ad0a50b033a9997cc2248fe (20231013)",
+"https://github.com/stleary/JSON-java/commit/16967f322ee65c301b48fa79bb681e38896fd212 (20231013)",
+"https://github.com/stleary/JSON-java/commit/661114c50dcfd53bb041aab66f14bb91e0a87c8a (20231013)",
+"https://github.com/kordamp/json-lib/issues/58",
+"https://github.com/jettison-json/jettison/issues/86"
+],
+"CVE-2026-71225|libkcapi": [
+"https://bugzilla.redhat.com/show_bug.cgi?id=2462011",
+"Fixed by: https://github.com/smuellerDD/libkcapi/commit/017adba8f54f36f92e1919687fb67a89c4d299c6 (v1.5.1)"
+],
+"CVE-2026-71226|libkcapi": [
+"https://bugzilla.redhat.com/show_bug.cgi?id=2462114",
+"Fixed by: https://github.com/smuellerDD/libkcapi/commit/cd966ffa08cf605ae5853d2f9a42fdd2b6df8bb4 (v1.5.1)"
+],
+"CVE-2026-71227|libkcapi": [
+"https://bugzilla.redhat.com/show_bug.cgi?id=2462867",
+"Fixed by: https://github.com/smuellerDD/libkcapi/commit/9a29cc2ce0fa87ec212d58118402eafe07db3f60 (v1.5.1)"
+],
+"CVE-2025-2337|libmatio": [
+"https://github.com/tbeu/matio/issues/267",
+"Introduced with: https://github.com/tbeu/matio/commit/67a922f83467d694fa6e9759ac9a30b6ab82aec4 (v1.5.20)",
+"Fixed by: https://github.com/tbeu/matio/commit/67000893b627205c42abc125d7917b6b2d18f84f (v1.5.29)"
+],
+"CVE-2025-50343|libmatio": [],
+"CVE-2021-47155|libnetwork-ipv4addr-perl": [
+"https://blog.urth.org/2021/03/29/security-issues-in-perl-ip-address-distros/#net-ipv4addrhttpsmetacpanorgreleasenet-ipv4addr"
+],
+"CVE-2021-30469|libpodofo": [
+"https://sourceforge.net/p/podofo/tickets/129/"
+],
+"CVE-2021-30472|libpodofo": [
+"https://sourceforge.net/p/podofo/tickets/132/"
+],
+"CVE-2021-46700|libsixel": [
+"https://github.com/saitoha/libsixel/issues/158"
+],
+"CVE-2022-29977|libsixel": [
+"https://github.com/libsixel/libsixel/issues/62",
+"Previously also reported in https://github.com/saitoha/libsixel/issues/165",
+"https://github.com/saitoha/libsixel/issues/165#issuecomment-3156339204",
+"https://github.com/saitoha/libsixel/commit/d6bc4ef88015d3a4922d63b9b4655c6b5cc340cd (v1.8.7)",
+"https://github.com/saitoha/libsixel/commit/1c58a6ea708b6fa793ffb5a10798ccfea36e8eed (v1.8.7)"
+],
+"CVE-2022-29978|libsixel": [
+"https://github.com/libsixel/libsixel/issues/63",
+"Previously also reported in https://github.com/saitoha/libsixel/issues/166",
+"https://github.com/saitoha/libsixel/commit/07ab2354d5b1678e7857d40f61832c9847f3f473 (v1.8.7)"
+],
+"CVE-2024-50613|libsndfile": [
+"https://github.com/libsndfile/libsndfile/issues/1034",
+"Issue reachable after enabling mp3 encoder (by linking against lame). Only done",
+"in the packaging since debian/1.1.0-1 (starting in bookworm) with",
+"https://salsa.debian.org/multimedia-team/libsndfile/-/commit/ef6944427e1e4b39f634bfb3af2ddc6071810aaa"
+],
+"CVE-2026-37555|libsndfile": [
+"https://www.openwall.com/lists/oss-security/2026/04/30/7",
+"CVE exists because of an incomplte fix for CVE-2022-33065.",
+"https://github.com/libsndfile/libsndfile/issues/1120",
+"https://github.com/libsndfile/libsndfile/pull/1123",
+"Fixed by: https://github.com/libsndfile/libsndfile/commit/c32c090ff9bb45e1dae637957c9c9b47b3967623"
+],
+"CVE-2023-42118|libspf2": [
+"https://www.zerodayinitiative.com/advisories/ZDI-23-1472/",
+"https://bugs.exim.org/show_bug.cgi?id=3032",
+"https://www.openwall.com/lists/oss-security/2023/09/29/5",
+"https://www.openwall.com/lists/oss-security/2023/10/01/4",
+"https://exim.org/static/doc/security/CVE-2023-zdi.txt",
+"https://lists.exim.org/lurker/message/20231004.080103.8c98192c.en.html",
+"Potentially same issue as: https://github.com/shevek/libspf2/issues/45",
+"https://github.com/shevek/libspf2/pull/44",
+"The potentially related (but unknown if exploitable) integer overflow flaw from pull/44",
+"is fixed with libspf2/1.2.10-8. There have been 1. no proofs it is exploitable, and the",
+"finder clarifies as \"ut I haven't been able to get it to do anything after that because",
+"another buffer fills up.\" and 2. that this is the same issue as CVE-2023-42118 ."
+],
+"CVE-2023-45661|libstb": [
+"https://securitylab.github.com/advisories/GHSL-2023-145_GHSL-2023-151_stb_image_h/ (issue 1)",
+"https://github.com/nothings/stb/issues/1538"
+],
+"CVE-2023-45662|libstb": [
+"https://securitylab.github.com/advisories/GHSL-2023-145_GHSL-2023-151_stb_image_h/ (issue 2)",
+"https://github.com/nothings/stb/issues/1540"
+],
+"CVE-2023-45663|libstb": [
+"https://securitylab.github.com/advisories/GHSL-2023-145_GHSL-2023-151_stb_image_h/ (issue 3)",
+"https://github.com/nothings/stb/issues/1542"
+],
+"CVE-2023-45664|libstb": [
+"https://securitylab.github.com/advisories/GHSL-2023-145_GHSL-2023-151_stb_image_h/ (issue 4)",
+"https://github.com/nothings/stb/issues/1542"
+],
+"CVE-2023-45666|libstb": [
+"https://securitylab.github.com/advisories/GHSL-2023-145_GHSL-2023-151_stb_image_h/ (issue 6)",
+"https://github.com/nothings/stb/issues/1548"
+],
+"CVE-2023-45667|libstb": [
+"https://securitylab.github.com/advisories/GHSL-2023-145_GHSL-2023-151_stb_image_h/ (issue 7)",
+"https://github.com/nothings/stb/issues/1550"
+],
+"CVE-2023-45675|libstb": [
+"https://securitylab.github.com/advisories/GHSL-2023-145_GHSL-2023-151_stb_image_h/ (issue 8)",
+"https://github.com/nothings/stb/issues/1552"
+],
+"CVE-2023-45676|libstb": [
+"https://securitylab.github.com/advisories/GHSL-2023-145_GHSL-2023-151_stb_image_h/ (issue 9)",
+"https://github.com/nothings/stb/pull/1554"
+],
+"CVE-2023-45677|libstb": [
+"https://securitylab.github.com/advisories/GHSL-2023-145_GHSL-2023-151_stb_image_h/ (issue 10)",
+"https://github.com/nothings/stb/pull/1555"
+],
+"CVE-2023-45678|libstb": [
+"https://securitylab.github.com/advisories/GHSL-2023-145_GHSL-2023-151_stb_image_h/ (issue 11)",
+"https://github.com/nothings/stb/pull/1556"
+],
+"CVE-2023-45679|libstb": [
+"https://securitylab.github.com/advisories/GHSL-2023-145_GHSL-2023-151_stb_image_h/ (issue 12)",
+"https://github.com/nothings/stb/pull/1557"
+],
+"CVE-2023-45680|libstb": [
+"https://securitylab.github.com/advisories/GHSL-2023-145_GHSL-2023-151_stb_image_h/ (issue 13)",
+"https://github.com/nothings/stb/pull/1558"
+],
+"CVE-2023-45681|libstb": [
+"https://securitylab.github.com/advisories/GHSL-2023-145_GHSL-2023-151_stb_image_h/ (issue 14)",
+"https://github.com/nothings/stb/pull/1559"
+],
+"CVE-2023-45682|libstb": [
+"https://securitylab.github.com/advisories/GHSL-2023-145_GHSL-2023-151_stb_image_h/ (issue 15)",
+"https://github.com/nothings/stb/pull/1560"
+],
+"CVE-2023-47212|libstb": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2023-1846"
+],
+"CVE-2025-3406|libstb": [
+"https://github.com/nothings/stb/issues/1772"
+],
+"CVE-2025-3407|libstb": [
+"https://github.com/nothings/stb/issues/1769"
+],
+"CVE-2025-3408|libstb": [
+"https://github.com/nothings/stb/issues/1770"
+],
+"CVE-2025-3409|libstb": [
+"https://github.com/nothings/stb/issues/1771"
+],
+"CVE-2026-5185|libstb": [
+"https://github.com/nothings/stb/issues/1916"
+],
+"CVE-2026-79516|libstb": [
+"https://github.com/nothings/stb/issues/1963"
+],
+"CVE-2026-5673|libtheora": [
+"https://github.com/xiph/theora/issues/24",
+"Vulnerable code not built for binary packages, win32 specific code path"
+],
+"CVE-2026-1991|libuvc": [
+"https://github.com/libuvc/libuvc/issues/300"
+],
+"CVE-2024-57868|libweb-api-perl": [
+"https://lists.security.metacpan.org/cve-announce/msg/28503730/"
+],
+"CVE-2025-10911|libxslt": [
+"https://gitlab.gnome.org/GNOME/libxslt/-/issues/144",
+"https://gitlab.gnome.org/GNOME/libxslt/-/merge_requests/77"
+],
+"CVE-2019-15213|linux": [],
+"CVE-2019-16089|linux": [],
+"CVE-2019-19449|linux": [
+"https://github.com/bobfuzzer/CVE/tree/master/CVE-2019-19449"
+],
+"CVE-2019-20794|linux": [
+"https://sourceforge.net/p/fuse/mailman/message/36598753/"
+],
+"CVE-2025-15571|lrzip": [
+"https://github.com/ckolivas/lrzip/issues/263"
+],
+"CVE-2025-15537|mapnik": [
+"https://github.com/mapnik/mapnik/issues/4543"
+],
+"CVE-2026-72854|msgpack-c": [
+"https://github.com/msgpack/msgpack-c/issues/1181",
+"https://github.com/msgpack/msgpack-c/pull/1182",
+"Fixed by: https://github.com/msgpack/msgpack-c/commit/8a48af0e3ed15ce0e60273de30a073ae6419489e (c-7.0.2)"
+],
+"CVE-2026-6067|nasm": [
+"https://github.com/netwide-assembler/nasm/issues/203"
+],
+"CVE-2026-6069|nasm": [
+"https://github.com/netwide-assembler/nasm/issues/217"
+],
+"CVE-2025-14932|netcdf": [
+"https://www.zerodayinitiative.com/advisories/ZDI-25-1153/",
+"https://github.com/Unidata/netcdf-c/issues/3236",
+"Fixed by: https://github.com/Unidata/netcdf-c/commit/60578c3ac26b93b1932cba414a2870096bbcdd3b (v4.10.1)"
+],
+"CVE-2025-14933|netcdf": [
+"https://www.zerodayinitiative.com/advisories/ZDI-25-1151/",
+"https://github.com/Unidata/netcdf-c/issues/3236",
+"Fixed by: https://github.com/Unidata/netcdf-c/commit/b06b973e040ffede8d776ff7a94d22c68074ea98 (v4.10.1)"
+],
+"CVE-2025-14934|netcdf": [
+"https://www.zerodayinitiative.com/advisories/ZDI-25-1152/",
+"https://github.com/Unidata/netcdf-c/issues/3236",
+"Fixed by: https://github.com/Unidata/netcdf-c/commit/1e22866daae12203c768a38c168b8d25c65627d9 (v4.10.1)"
+],
+"CVE-2025-14935|netcdf": [
+"https://www.zerodayinitiative.com/advisories/ZDI-25-1154/",
+"https://github.com/Unidata/netcdf-c/issues/3236",
+"Fixed by: https://github.com/Unidata/netcdf-c/commit/0b33fab5c1d7bc458bf0aead93af433e0eae5abc (v4.10.1)"
+],
+"CVE-2025-14936|netcdf": [
+"https://www.zerodayinitiative.com/advisories/ZDI-25-1155/",
+"https://github.com/Unidata/netcdf-c/issues/3236",
+"Fixed by: https://github.com/Unidata/netcdf-c/commit/b491ecd8021f510427459051ebfd7bd4cfda2371 (v4.10.1)"
+],
+"CVE-2025-14932|netcdf-parallel": [
+"https://www.zerodayinitiative.com/advisories/ZDI-25-1153/",
+"https://github.com/Unidata/netcdf-c/issues/3236",
+"Fixed by: https://github.com/Unidata/netcdf-c/commit/60578c3ac26b93b1932cba414a2870096bbcdd3b (v4.10.1)"
+],
+"CVE-2025-14933|netcdf-parallel": [
+"https://www.zerodayinitiative.com/advisories/ZDI-25-1151/",
+"https://github.com/Unidata/netcdf-c/issues/3236",
+"Fixed by: https://github.com/Unidata/netcdf-c/commit/b06b973e040ffede8d776ff7a94d22c68074ea98 (v4.10.1)"
+],
+"CVE-2025-14934|netcdf-parallel": [
+"https://www.zerodayinitiative.com/advisories/ZDI-25-1152/",
+"https://github.com/Unidata/netcdf-c/issues/3236",
+"Fixed by: https://github.com/Unidata/netcdf-c/commit/1e22866daae12203c768a38c168b8d25c65627d9 (v4.10.1)"
+],
+"CVE-2025-14935|netcdf-parallel": [
+"https://www.zerodayinitiative.com/advisories/ZDI-25-1154/",
+"https://github.com/Unidata/netcdf-c/issues/3236",
+"Fixed by: https://github.com/Unidata/netcdf-c/commit/0b33fab5c1d7bc458bf0aead93af433e0eae5abc (v4.10.1)"
+],
+"CVE-2025-14936|netcdf-parallel": [
+"https://www.zerodayinitiative.com/advisories/ZDI-25-1155/",
+"https://github.com/Unidata/netcdf-c/issues/3236",
+"Fixed by: https://github.com/Unidata/netcdf-c/commit/b491ecd8021f510427459051ebfd7bd4cfda2371 (v4.10.1)"
+],
+"CVE-2024-36050|nix": [
+"https://github.com/NixOS/nix/issues/969",
+"https://github.com/NixOS/ofborg/issues/68#issuecomment-2082789441"
+],
+"CVE-2024-39705|nltk": [
+"https://github.com/nltk/nltk/issues/3266",
+"https://github.com/nltk/nltk/issues/2522"
+],
+"CVE-2025-14505|node-elliptic": [
+"https://github.com/indutny/elliptic/issues/321",
+"https://github.com/indutny/elliptic/pull/345"
+],
+"CVE-2023-4232|ofono": [
+"https://bugzilla.redhat.com/show_bug.cgi?id=2255394",
+"https://git.kernel.org/pub/scm/network/ofono/ofono.git/commit/?id=2ff2da7ac374a790f8b2a0216bcb4e3126498225"
+],
+"CVE-2023-4233|ofono": [
+"https://bugzilla.redhat.com/show_bug.cgi?id=2255396",
+"https://git.kernel.org/pub/scm/network/ofono/ofono.git/commit/?id=1a5fbefa59465bec80425add562bdb1d36ec8e23 (2.3)"
+],
+"CVE-2023-4234|ofono": [
+"https://bugzilla.redhat.com/show_bug.cgi?id=2255399",
+"https://git.kernel.org/pub/scm/network/ofono/ofono.git/commit/?id=8d74bc66146ea78620d140640a0a57af86fc8936 (2.3)"
+],
+"CVE-2023-4235|ofono": [
+"https://bugzilla.redhat.com/show_bug.cgi?id=2255402",
+"https://git.kernel.org/pub/scm/network/ofono/ofono.git/commit/?id=02aa0f9bad3d9e47a152fc045d0f51874d901d7e"
+],
+"CVE-2024-7537|ofono": [
+"https://www.zerodayinitiative.com/advisories/ZDI-24-1077/",
+"https://lore.kernel.org/ofono/BYAPR01MB3830B08E8DB1D76A9A85B07680D62@BYAPR01MB3830.prod.exchangelabs.com/T/#u"
+],
+"CVE-2024-7538|ofono": [
+"https://www.zerodayinitiative.com/advisories/ZDI-24-1078/",
+"https://lore.kernel.org/ofono/BYAPR01MB3830CC0A4CA324706691F19380D62@BYAPR01MB3830.prod.exchangelabs.com/"
+],
+"CVE-2024-7539|ofono": [
+"https://www.zerodayinitiative.com/advisories/ZDI-24-1079/",
+"https://git.kernel.org/pub/scm/network/ofono/ofono.git/commit/?id=389e2344f86319265fb72ae590b470716e038fdc",
+"https://lore.kernel.org/ofono/DM5PR0102MB3477EF696990E9AF78891586805F2@DM5PR0102MB3477.prod.exchangelabs.com/"
+],
+"CVE-2024-7540|ofono": [
+"https://www.zerodayinitiative.com/advisories/ZDI-24-1080/",
+"https://git.kernel.org/pub/scm/network/ofono/ofono.git/commit/?id=29ff6334b492504ace101be748b256e6953d2c2f"
+],
+"CVE-2024-7541|ofono": [
+"https://www.zerodayinitiative.com/advisories/ZDI-24-1081/",
+"https://git.kernel.org/pub/scm/network/ofono/ofono.git/commit/?id=29ff6334b492504ace101be748b256e6953d2c2f"
+],
+"CVE-2024-7542|ofono": [
+"https://www.zerodayinitiative.com/advisories/ZDI-24-1082/",
+"https://git.kernel.org/pub/scm/network/ofono/ofono.git/commit/?id=29ff6334b492504ace101be748b256e6953d2c2f"
+],
+"CVE-2024-7543|ofono": [
+"https://www.zerodayinitiative.com/advisories/ZDI-24-1083/",
+"https://git.kernel.org/pub/scm/network/ofono/ofono.git/commit/?id=90e60ada012de42964214d8155260f5749d0dcc7 (2.14)"
+],
+"CVE-2024-7544|ofono": [
+"https://www.zerodayinitiative.com/advisories/ZDI-24-1084/",
+"https://git.kernel.org/pub/scm/network/ofono/ofono.git/commit/?id=a240705a0d5d41eca6de4125ab2349ecde4c873a (2.14)"
+],
+"CVE-2024-7545|ofono": [
+"https://www.zerodayinitiative.com/advisories/ZDI-24-1085/",
+"https://git.kernel.org/pub/scm/network/ofono/ofono.git/commit/?id=556e14548c38c2b96d85881542046ee7ed750bb5 (2.14)"
+],
+"CVE-2024-7546|ofono": [
+"https://www.zerodayinitiative.com/advisories/ZDI-24-1086/",
+"https://git.kernel.org/pub/scm/network/ofono/ofono.git/commit/?id=79ea6677669e50b0bb9c231765adb4f81c375f63 (2.14)"
+],
+"CVE-2024-7547|ofono": [
+"https://www.zerodayinitiative.com/advisories/ZDI-24-1087/",
+"https://git.kernel.org/pub/scm/network/ofono/ofono.git/commit/?id=305df050d02aea8532f7625d6642685aa530f9b0 (2.14)"
+],
+"CVE-2020-21724|oggvideotools": [
+"https://sourceforge.net/p/oggvideotools/bugs/9/"
+],
+"CVE-2022-37331|openbabel": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2022-1672",
+"https://github.com/openbabel/openbabel/issues/2650"
+],
+"CVE-2022-41793|openbabel": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2022-1667",
+"https://github.com/openbabel/openbabel/issues/2650"
+],
+"CVE-2022-42885|openbabel": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2022-1668",
+"https://github.com/openbabel/openbabel/issues/2650"
+],
+"CVE-2022-43467|openbabel": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2022-1671",
+"https://github.com/openbabel/openbabel/issues/2650"
+],
+"CVE-2022-43607|openbabel": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2022-1664",
+"https://github.com/openbabel/openbabel/issues/2650"
+],
+"CVE-2022-44451|openbabel": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2022-1669",
+"https://github.com/openbabel/openbabel/issues/2650"
+],
+"CVE-2022-46280|openbabel": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2022-1670",
+"https://github.com/openbabel/openbabel/issues/2650"
+],
+"CVE-2022-46289|openbabel": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2022-1665",
+"https://github.com/openbabel/openbabel/issues/2650"
+],
+"CVE-2022-46290|openbabel": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2022-1665",
+"https://github.com/openbabel/openbabel/issues/2650"
+],
+"CVE-2022-46291|openbabel": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2022-1666",
+"https://github.com/openbabel/openbabel/issues/2650"
+],
+"CVE-2022-46292|openbabel": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2022-1666",
+"https://github.com/openbabel/openbabel/issues/2650"
+],
+"CVE-2022-46293|openbabel": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2022-1666",
+"https://github.com/openbabel/openbabel/issues/2650"
+],
+"CVE-2022-46294|openbabel": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2022-1666",
+"https://github.com/openbabel/openbabel/issues/2650"
+],
+"CVE-2022-46295|openbabel": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2022-1666",
+"https://github.com/openbabel/openbabel/issues/2650"
+],
+"CVE-2025-12495|openexr": [
+"https://www.zerodayinitiative.com/advisories/ZDI-25-989/",
+"https://lists.aswf.io/g/openexr-dev/topic/openexr_v3_4_3_is_staged_for/116040425"
+],
+"CVE-2025-12839|openexr": [
+"https://www.zerodayinitiative.com/advisories/ZDI-25-990/",
+"https://lists.aswf.io/g/openexr-dev/topic/openexr_v3_4_3_is_staged_for/116040425"
+],
+"CVE-2025-12840|openexr": [
+"https://www.zerodayinitiative.com/advisories/ZDI-25-991/",
+"https://lists.aswf.io/g/openexr-dev/topic/openexr_v3_4_3_is_staged_for/116040425"
+],
+"CVE-2019-6988|openjpeg2": [
+"https://github.com/uclouvain/openjpeg/issues/1178"
+],
+"CVE-2023-39327|openjpeg2": [
+"https://github.com/uclouvain/openjpeg/issues/1472",
+"Partial mitigation of CVE-2023-39327 (in absence of EPH):",
+"https://github.com/uclouvain/openjpeg/commit/822562d689f491ae5d012627ba00ac235d399b9e (v2.5.3)"
+],
+"CVE-2023-39328|openjpeg2": [
+"https://github.com/uclouvain/openjpeg/issues/1471",
+"https://github.com/uclouvain/openjpeg/pull/1470"
+],
+"CVE-2023-39329|openjpeg2": [
+"https://github.com/uclouvain/openjpeg/issues/1474"
+],
+"CVE-2019-25076|openvswitch": [
+"Architectual limitation, not treated as an actionable security vulnerability,",
+"also see bug #1021740",
+"https://arxiv.org/abs/2011.09107",
+"https://sites.google.com/view/tuple-space-explosion",
+"https://dl.acm.org/doi/10.1145/3359989.3365431",
+"https://www.youtube.com/watch?v=5cHpzVK0D28",
+"https://www.youtube.com/watch?v=DSC3m-Bww64"
+],
+"CVE-2026-10294|packagekit": [
+"https://github.com/PackageKit/PackageKit/issues/969",
+"Fixed by: https://github.com/PackageKit/PackageKit/commit/4c1994d0545dea8a66cc56d9457ff740965abaf0"
+],
+"CVE-2025-26240|pdfkit": [
+"https://habuon.github.io/2025/03/12/pdfkit-vulnerability-%28CVE-2025-26240%29.html"
+],
+"CVE-2024-9101|phpldapadmin": [
+"https://www.redguard.ch/blog/2024/12/19/security-advisory-phpldapadmin/"
+],
+"CVE-2023-28858|python-redis": [
+"https://github.com/redis/redis-py/issues/2624",
+"https://github.com/redis/redis-py/pull/2641",
+"https://openai.com/blog/march-20-chatgpt-outage",
+"Async support added in v4.2.0",
+"When fixing this issue make sure to apply complete fixes (cf. CVE-2023-28859",
+"CVE entry) to not open CVE-2023-28859."
+],
+"CVE-2019-12067|qemu": [
+"https://lists.gnu.org/archive/html/qemu-devel/2019-08/msg01358.html",
+"https://patchew.org/QEMU/20190808065636.28787-1-ppandit@redhat.com/",
+"patched function introduced in 2014/2.1.50 but affected code pre-existed",
+"https://github.com/qemu/qemu/commit/659142ecf71a0da240ab0ff7cf929ee25c32b9bc (v2.2.0-rc0)",
+"No sanctioned upstream patch as of 2024-08-06"
+],
+"CVE-2020-25741|qemu": [
+"https://lists.nongnu.org/archive/html/qemu-devel/2020-09/msg07779.html",
+"https://patchew.org/QEMU/20200922092722.344518-1-ppandit@redhat.com/",
+"https://ruhr-uni-bochum.sciebo.de/s/NNWP2GfwzYKeKwE?path=%2Ffdc_nullptr1",
+"No sanctioned upstream patch as of 2024-08-06"
+],
+"CVE-2020-25742|qemu": [
+"https://lists.nongnu.org/archive/html/qemu-devel/2020-09/msg05294.html",
+"https://patchew.org/QEMU/20200827114917.1851111-1-ppandit@redhat.com/",
+"https://ruhr-uni-bochum.sciebo.de/s/NNWP2GfwzYKeKwE?path=%2Flsi_nullptr1",
+"No sanctioned upstream patch as of 2024-08-06"
+],
+"CVE-2020-25743|qemu": [
+"https://lists.nongnu.org/archive/html/qemu-devel/2020-09/msg01568.html",
+"https://patchew.org/QEMU/20200903183138.2161977-1-ppandit@redhat.com/",
+"https://ruhr-uni-bochum.sciebo.de/s/NNWP2GfwzYKeKwE?path=%2Fide_nullptr1",
+"No sanctioned upstream patch as of 2025-04-19"
+],
+"CVE-2020-35503|qemu": [
+"https://bugzilla.redhat.com/show_bug.cgi?id=1910346",
+"https://lists.gnu.org/archive/html/qemu-devel/2020-12/msg06065.html",
+"https://patchew.org/QEMU/20201224175441.67538-1-mcascell@redhat.com/",
+"No sanctioned upstream patch as of 2025-04-19"
+],
+"CVE-2021-3735|qemu": [
+"https://bugzilla.redhat.com/show_bug.cgi?id=1997184",
+"No upstream patch as of 2025-04-19"
+],
+"CVE-2022-3872|qemu": [
+"https://bugzilla.redhat.com/show_bug.cgi?id=2140567",
+"patch proposal 1: https://lists.nongnu.org/archive/html/qemu-devel/2022-11/msg01068.html",
+"https://patchew.org/QEMU/20221107103510.34588-1-mcascell@redhat.com/",
+"patch proposal 2: https://lists.nongnu.org/archive/html/qemu-devel/2022-11/msg01161.html",
+"https://patchew.org/QEMU/20221107221236.47841-1-philmd@linaro.org/",
+"No sanctioned upstream patch as of 2024-08-06"
+],
+"CVE-2023-1386|qemu": [
+"https://github.com/v9fs/linux/issues/29"
+],
+"CVE-2024-39684|rapidjson": [
+"https://github.com/Tencent/rapidjson/issues/2289"
+],
+"CVE-2024-47081|requests": [
+"https://www.openwall.com/lists/oss-security/2025/06/03/9",
+"https://github.com/psf/requests/pull/6965",
+"Fixed by: https://github.com/psf/requests/commit/96ba401c1296ab1dda74a2365ef36d88f7d144ef (v2.32.4)",
+"Testcase: https://github.com/psf/requests/commit/7bc45877a86192af77645e156eb3744f95b47dae (v2.32.4)"
+],
+"CVE-2020-28594|slic3r-prusa": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2020-1218"
+],
+"CVE-2020-28595|slic3r-prusa": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2020-1219"
+],
+"CVE-2020-28596|slic3r-prusa": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2020-1220"
+],
+"CVE-2020-28598|slic3r-prusa": [
+"https://talosintelligence.com/vulnerability_reports/TALOS-2020-1222"
+],
+"CVE-2021-27211|steghide": [
+"https://github.com/b4shfire/stegcrack"
+],
+"CVE-2021-37746|sylpheed": [
+"https://git.claws-mail.org/?p=claws.git;a=commit;h=ac286a71ed78429e16c612161251b9ea90ccd431"
+],
+"CVE-2025-6496|tidy-html5": [
+"https://github.com/htacg/tidy-html5/issues/1141"
+],
+"CVE-2025-6497|tidy-html5": [
+"https://github.com/htacg/tidy-html5/issues/1142"
+],
+"CVE-2025-6498|tidy-html5": [
+"https://github.com/htacg/tidy-html5/issues/1152"
+],
+"CVE-2024-50614|tinyxml2": [
+"https://github.com/leethomason/tinyxml2/issues/996",
+"Fixed by: https://github.com/leethomason/tinyxml2/pull/1009 (10.1.0)"
+],
+"CVE-2024-42040|u-boot": [
+"https://lists.denx.de/pipermail/u-boot/2024-August/562528.html",
+"https://www.schutzwerk.com/advisories/SCHUTZWERK-SA-2024-004.txt",
+"Fixed by: https://github.com/u-boot/u-boot/commit/81e5708cc2c865df606e49aed5415adb2a662171 (v2026.01-rc1)"
+],
+"CVE-2021-31879|wget": [
+"https://mail.gnu.org/archive/html/bug-wget/2021-02/msg00002.html",
+"https://savannah.gnu.org/bugs/?56909"
+],
+"CVE-2022-3590|wordpress": [
+"https://www.sonarsource.com/blog/wordpress-core-unauthenticated-blind-ssrf/"
+],
+"CVE-2020-27748|xdg-utils": [
+"https://bugzilla.redhat.com/show_bug.cgi?id=1899769",
+"https://bugzilla.mozilla.org/show_bug.cgi?id=1613425",
+"https://gitlab.freedesktop.org/xdg/xdg-utils/-/issues/177",
+"Introduced by: https://gitlab.freedesktop.org/xdg/xdg-utils/-/commit/53bd27e8d0ab37f64638d27a8ddd328a297351fe",
+"Proposed change: https://gitlab.freedesktop.org/xdg/xdg-utils/-/merge_requests/28",
+"Fixed by: https://gitlab.freedesktop.org/xdg/xdg-utils/-/commit/5f3f563d69ae72bbefe9031c68d8167935abcba5",
+"Fixed by: https://gitlab.freedesktop.org/xdg/xdg-utils/-/commit/be7c2ce232472ed9f090eb5aac62db5481eb2fbc",
+"Fixed by: https://gitlab.freedesktop.org/xdg/xdg-utils/-/commit/592cf2fd21dbe0c3df84006e075fb593d35df930",
+"Fixed by: https://gitlab.freedesktop.org/xdg/xdg-utils/-/commit/9043ac2e8fb729b51bcccf85af536c6d2fc166ae"
+],
+"CVE-2022-4055|xdg-utils": [
+"https://gitlab.freedesktop.org/xdg/xdg-utils/-/issues/205#note_1494267",
+"https://gitlab.freedesktop.org/xdg/xdg-utils/-/merge_requests/58"
+],
+"CVE-2023-5574|xorg-server": [
+"https://lists.x.org/archives/xorg-announce/2023-October/003430.html",
+"https://gitlab.freedesktop.org/xorg/xserver/-/merge_requests/1189"
+]
+}

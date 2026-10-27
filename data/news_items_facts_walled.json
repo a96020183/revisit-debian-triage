@@ -1,0 +1,5132 @@
+[
+{
+"cve": "CVE-2024-28757",
+"pkg": "expat",
+"wall": "2026-06-01",
+"bw_version": "2.5.0-1+deb12u2",
+"desc": "libexpat through 2.6.1 allows an XML Entity Expansion attack when ther ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2024-28757",
+"pkg": "libxmltok",
+"wall": "2026-06-01",
+"bw_version": "1.2-4",
+"desc": "libexpat through 2.6.1 allows an XML Entity Expansion attack when ther ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2024-58379",
+"pkg": "node-nodemailer",
+"wall": "2026-09-01",
+"bw_version": "6.8.0+~6.4.6-1",
+"desc": "nodemailer before 6.9.9 contains a regular expression denial of servic ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2025-10263",
+"pkg": "xen",
+"wall": "2026-06-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "Arm C1-Ultra, C1-Premium, Neoverse V3 & V3AE, Neoverse V2, Neoverse V1 ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2025-1218",
+"pkg": "php8.2",
+"wall": "2026-09-01",
+"bw_version": "8.2.33-1~deb12u1",
+"desc": "The mysqlnd wire protocol parser reads fields out of server packets be ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2025-13465",
+"pkg": "node-lodash",
+"wall": "2026-06-01",
+"bw_version": "4.17.21+dfsg+~cs8.31.198.20210220-9",
+"desc": "Lodash versions 4.0.0 through 4.17.22 are vulnerable to prototype poll ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2025-14181",
+"pkg": "php8.2",
+"wall": "2026-09-01",
+"bw_version": "8.2.33-1~deb12u1",
+"desc": "The SOAP HTTP client guards its response buffer growth with a check th ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2025-15649",
+"pkg": "libio-compress-perl",
+"wall": "2026-06-01",
+"bw_version": "2.204-1",
+"desc": "IO::Uncompress::Unzip versions before 2.215 for Perl propagate uncaugh ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2025-15649",
+"pkg": "perl",
+"wall": "2026-06-01",
+"bw_version": "5.36.0-7+deb12u3",
+"desc": "IO::Uncompress::Unzip versions before 2.215 for Perl propagate uncaugh ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2025-1647",
+"pkg": "twitter-bootstrap3",
+"wall": "2026-06-01",
+"bw_version": "3.4.1+dfsg-3+deb12u1",
+"desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'C ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2025-1647",
+"pkg": "twitter-bootstrap4",
+"wall": "2026-06-01",
+"bw_version": "4.6.1+dfsg1-4+deb12u1",
+"desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'C ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2025-26625",
+"pkg": "git-lfs",
+"wall": "2026-06-01",
+"bw_version": "3.3.0-1+deb12u1",
+"desc": "Git LFS is a Git extension for versioning large files. In Git LFS vers ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2025-47183",
+"pkg": "gst-plugins-good1.0",
+"wall": "2026-06-01",
+"bw_version": "1.22.0-5+deb12u3",
+"desc": "In GStreamer through 1.26.1, the isomp4 plugin's qtdemux_parse_tree fu ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2025-54505",
+"pkg": "xen",
+"wall": "2026-06-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "A transient execution vulnerability within AMD CPUs may allow a local  ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2025-54518",
+"pkg": "xen",
+"wall": "2026-06-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "Improper isolation of shared resources within the CPU operation cache  ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2025-58150",
+"pkg": "xen",
+"wall": "2026-06-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "Shadow mode tracing code uses a set of per-CPU variables to avoid cumb ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2025-59375",
+"pkg": "expat",
+"wall": "2026-06-01",
+"bw_version": "2.5.0-1+deb12u2",
+"desc": "libexpat in Expat before 2.7.2 allows attackers to trigger large dynam ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2025-59933",
+"pkg": "vips",
+"wall": "2026-06-01",
+"bw_version": "8.14.1-3+deb12u3",
+"desc": "libvips is a demand-driven, horizontally threaded image processing lib ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2025-69534",
+"pkg": "pypy3",
+"wall": "2026-06-01",
+"bw_version": "7.3.11+dfsg-2+deb12u3",
+"desc": "Python-Markdown version 3.8 contain a vulnerability where malformed HT ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2025-69534",
+"pkg": "python3.11",
+"wall": "2026-06-01",
+"bw_version": "3.11.2-6+deb12u7",
+"desc": "Python-Markdown version 3.8 contain a vulnerability where malformed HT ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-0799",
+"pkg": "libpcap",
+"wall": "2026-09-01",
+"bw_version": "1.10.3-1",
+"desc": "In BPF instructions that load/store a value from/to a scratch memory r ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-0964",
+"pkg": "libssh",
+"wall": "2026-06-01",
+"bw_version": "0.10.6-0+deb12u2",
+"desc": "A malicious SCP server can send unexpected paths that could make the c ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-0965",
+"pkg": "libssh",
+"wall": "2026-06-01",
+"bw_version": "0.10.6-0+deb12u2",
+"desc": "A flaw was found in libssh where it can attempt to open arbitrary file ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-0966",
+"pkg": "libssh",
+"wall": "2026-06-01",
+"bw_version": "0.10.6-0+deb12u2",
+"desc": "A flaw was found in libssh. The API function `ssh_get_hexa()` is vulne ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-0967",
+"pkg": "libssh",
+"wall": "2026-06-01",
+"bw_version": "0.10.6-0+deb12u2",
+"desc": "A flaw was found in libssh. A remote attacker, by controlling client c ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-0968",
+"pkg": "libssh",
+"wall": "2026-06-01",
+"bw_version": "0.10.6-0+deb12u2",
+"desc": "A flaw was found in libssh in which a malicious SFTP (SSH File Transfe ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-100659",
+"pkg": "netty",
+"wall": "2026-09-01",
+"bw_version": "1:4.1.48-7+deb12u2",
+"desc": "Netty's HTTP/3 codec (io.netty:netty-codec-http3) in versions 4.2.0.Fi ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-100662",
+"pkg": "netty",
+"wall": "2026-09-01",
+"bw_version": "1:4.1.48-7+deb12u2",
+"desc": "Netty's HTTP/3 codec (io.netty:netty-codec-http3) versions 4.2.0.Final ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-100691",
+"pkg": "hugo",
+"wall": "2026-09-01",
+"bw_version": "0.111.3-1",
+"desc": "Hugo versions 0.75.0 through 0.165.x contain a stored cross-site scrip ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-100692",
+"pkg": "hugo",
+"wall": "2026-09-01",
+"bw_version": "0.111.3-1",
+"desc": "Hugo is a static site generator. In versions after v0.123.0 and before ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-100694",
+"pkg": "hugo",
+"wall": "2026-09-01",
+"bw_version": "0.111.3-1",
+"desc": "Hugo is a static site generator. In versions from v0.56.0 through v0.1 ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-100698",
+"pkg": "adminer",
+"wall": "2026-09-01",
+"bw_version": "4.8.1-1",
+"desc": "Adminer 5.5.1 through 6.0.1 improperly parses the login 'server' strin ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-100700",
+"pkg": "node-nodemailer",
+"wall": "2026-09-01",
+"bw_version": "6.8.0+~6.4.6-1",
+"desc": "nodemailer before 10.0.6 contains a denial of service vulnerability in ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-101900",
+"pkg": "node-axios",
+"wall": "2026-09-01",
+"bw_version": "1.2.1+dfsg-1+deb12u1",
+"desc": "Axios is a promise-based HTTP client for the browser and Node.js. From ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-101906",
+"pkg": "node-axios",
+"wall": "2026-09-01",
+"bw_version": "1.2.1+dfsg-1+deb12u1",
+"desc": "Axios is a promise-based HTTP client for the browser and Node.js. From ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-101917",
+"pkg": "pyjwt",
+"wall": "2026-09-01",
+"bw_version": "2.6.0-1+deb12u1",
+"desc": "PyJWT is a Python implementation of JSON Web Token standards. Prior to ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102253",
+"pkg": "iperf3",
+"wall": "2026-09-01",
+"bw_version": "3.12-1+deb12u2",
+"desc": "iperf3 versions prior to 3.22 contains a denial of service vulnerabili ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102272",
+"pkg": "pyjwt",
+"wall": "2026-09-01",
+"bw_version": "2.6.0-1+deb12u1",
+"desc": "PyJWT is a Python implementation of JSON Web Token standards. From 2.1 ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102274",
+"pkg": "pyjwt",
+"wall": "2026-09-01",
+"bw_version": "2.6.0-1+deb12u1",
+"desc": "PyJWT is a Python implementation of JSON Web Token standards. From 2.9 ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102504",
+"pkg": "libimager-perl",
+"wall": "2026-10-01",
+"bw_version": "1.019+dfsg-1",
+"desc": "Imager versions before 1.037 for Perl exit the process reading a raw i ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102505",
+"pkg": "libimager-perl",
+"wall": "2026-10-01",
+"bw_version": "1.019+dfsg-1",
+"desc": "Imager versions before 1.037 for Perl overflow a heap buffer fetching  ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102556",
+"pkg": "libsoup3",
+"wall": "2026-09-01",
+"bw_version": "3.2.3-0+deb12u2",
+"desc": "A flaw was found in libsoup. When handling an incoming WebSocket Pong  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102558",
+"pkg": "libsoup3",
+"wall": "2026-09-01",
+"bw_version": "3.2.3-0+deb12u2",
+"desc": "A flaw was found in libsoup. When max-incoming-payload-size is unlimit ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102598",
+"pkg": "python-werkzeug",
+"wall": "2026-09-01",
+"bw_version": "2.2.2-3+deb12u1",
+"desc": "Werkzeug is a comprehensive WSGI web application library. Prior to 3.1 ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102633",
+"pkg": "expat",
+"wall": "2026-09-01",
+"bw_version": "2.5.0-1+deb12u3",
+"desc": "libexpat versions 2.7.2 through 2.8.5 contain an integer overflow vuln ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102635",
+"pkg": "imagemagick",
+"wall": "2026-09-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick versions before 7.1.2-32 and 6.9.13-57 contain uninitializ ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102731",
+"pkg": "apache-directory-api",
+"wall": "2026-10-01",
+"bw_version": "2.1.2-1",
+"desc": "Memory allocation with excessive size value vulnerability in Apache Di ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102925",
+"pkg": "python-virtualenv",
+"wall": "2026-09-01",
+"bw_version": "20.17.1+ds-1",
+"desc": "virtualenv is a tool for creating isolated virtual python environments ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102938",
+"pkg": "python-virtualenv",
+"wall": "2026-09-01",
+"bw_version": "20.17.1+ds-1",
+"desc": "virtualenv is a tool for creating isolated virtual python environments ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102977",
+"pkg": "mediawiki",
+"wall": "2026-10-01",
+"bw_version": "1:1.39.17-1+deb12u2",
+"desc": "",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102993",
+"pkg": "pypdf",
+"wall": "2026-10-01",
+"bw_version": "3.4.1-1+deb12u1",
+"desc": "pypdf is a free and open-source pure-python PDF library. Prior to 6.17 ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102993",
+"pkg": "pypdf2",
+"wall": "2026-10-01",
+"bw_version": "2.12.1-3+deb12u1",
+"desc": "pypdf is a free and open-source pure-python PDF library. Prior to 6.17 ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102995",
+"pkg": "pypdf",
+"wall": "2026-10-01",
+"bw_version": "3.4.1-1+deb12u1",
+"desc": "pypdf is a free and open-source pure-python PDF library. Prior to 6.18 ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102997",
+"pkg": "pypdf",
+"wall": "2026-10-01",
+"bw_version": "3.4.1-1+deb12u1",
+"desc": "pypdf is a free and open-source pure-python PDF library. Prior to 6.18 ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102998",
+"pkg": "pypdf",
+"wall": "2026-10-01",
+"bw_version": "3.4.1-1+deb12u1",
+"desc": "pypdf is a free and open-source pure-python PDF library. Prior to 6.19 ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-102998",
+"pkg": "pypdf2",
+"wall": "2026-10-01",
+"bw_version": "2.12.1-3+deb12u1",
+"desc": "pypdf is a free and open-source pure-python PDF library. Prior to 6.19 ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-103000",
+"pkg": "pypdf2",
+"wall": "2026-10-01",
+"bw_version": "2.12.1-3+deb12u1",
+"desc": "pypdf is a free and open-source pure-python PDF library. Prior to 6.19 ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-103001",
+"pkg": "pyjwt",
+"wall": "2026-10-01",
+"bw_version": "2.6.0-1+deb12u1",
+"desc": "PyJWT is a Python implementation of JSON Web Token standards. From 2.1 ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-103111",
+"pkg": "pcre2",
+"wall": "2026-09-01",
+"bw_version": "10.42-1",
+"desc": "PCRE2 before 10.49, when there is an attacker-controlled regular expre ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-103658",
+"pkg": "aspell",
+"wall": "2026-10-01",
+"bw_version": "0.60.8-4",
+"desc": "GNU Aspell 0.60.8.2 (first vulnerable version is not known) contains a ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-104851",
+"pkg": "fsspec",
+"wall": "2026-10-01",
+"bw_version": "2022.11.0-1",
+"desc": "fsspec is a specification and Python implementation framework for file ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-105083",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick before 7.1.2-32 and 6.9.13-57 contains a policy bypass vul ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-105111",
+"pkg": "bcel",
+"wall": "2026-10-01",
+"bw_version": "6.5.0-2",
+"desc": "Improper neutralization of input during web page generation ('cross-si ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-105483",
+"pkg": "nodejs",
+"wall": "2026-10-01",
+"bw_version": "18.20.4+dfsg-1~deb12u2",
+"desc": "A flaw in Node.js TLS hostname verification allows a certificate witho ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-105837",
+"pkg": "libmikmod",
+"wall": "2026-10-01",
+"bw_version": "3.3.11.1-7",
+"desc": "libmikmod before 3.3.14 contains an integer overflow vulnerability in  ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-105838",
+"pkg": "libmikmod",
+"wall": "2026-10-01",
+"bw_version": "3.3.11.1-7",
+"desc": "libmikmod before 3.3.14 contains a heap out-of-bounds read vulnerabili ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-105839",
+"pkg": "libmikmod",
+"wall": "2026-10-01",
+"bw_version": "3.3.11.1-7",
+"desc": "libmikmod before 3.3.14 contains an integer overflow in the Oktalyzer  ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106026",
+"pkg": "tftp-hpa",
+"wall": "2026-10-01",
+"bw_version": "5.2+20150808-1.4",
+"desc": "tftp-hpa 5.4 before 6.0 contains an out-of-bounds read vulnerability i ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106070",
+"pkg": "nodejs",
+"wall": "2026-10-01",
+"bw_version": "18.20.4+dfsg-1~deb12u2",
+"desc": "A flaw in the Node.js `zlib.ZipFile` API can cause it to return bytes  ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106071",
+"pkg": "nodejs",
+"wall": "2026-10-01",
+"bw_version": "18.20.4+dfsg-1~deb12u2",
+"desc": "A flaw in Node.js Permission Model filesystem enforcement can grant ac ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106435",
+"pkg": "pymongo",
+"wall": "2026-10-01",
+"bw_version": "3.11.0-1+deb12u1",
+"desc": "The MongoDB Python Driver's binary accelerator can read outside a buff ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106452",
+"pkg": "lz4-java",
+"wall": "2026-10-01",
+"bw_version": "1.8.0-3",
+"desc": "yawkat LZ4 Java provides LZ4 compression for Java. Prior to 1.11.2, ne ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106564",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106565",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106566",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106567",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106568",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106569",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106570",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106571",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106572",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106573",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106574",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106575",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106576",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106577",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106578",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106579",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106580",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106585",
+"pkg": "openssh",
+"wall": "2026-10-01",
+"bw_version": "1:9.2p1-2+deb12u10",
+"desc": "In sshd and ssh in OpenSSH before 10.6, there is no check for whether  ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-106589",
+"pkg": "openssh",
+"wall": "2026-10-01",
+"bw_version": "1:9.2p1-2+deb12u10",
+"desc": "In sshd in OpenSSH through 10.6, in certain environments such as QNX 6 ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-107167",
+"pkg": "m17n-lib",
+"wall": "2026-10-01",
+"bw_version": "1.8.0-6",
+"desc": "A flaw was found in m17n-lib. A user providing specially crafted text  ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-107168",
+"pkg": "m17n-lib",
+"wall": "2026-10-01",
+"bw_version": "1.8.0-6",
+"desc": "A flaw was found in m17n-lib. By providing crafted input containing an ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-107169",
+"pkg": "m17n-lib",
+"wall": "2026-10-01",
+"bw_version": "1.8.0-6",
+"desc": "A flaw was found in m17n-lib. An attacker could provide specially craf ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-107170",
+"pkg": "m17n-lib",
+"wall": "2026-10-01",
+"bw_version": "1.8.0-6",
+"desc": "A flaw was found in m17n-lib. A partial failure during library initial ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-107208",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-107209",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-107210",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-107313",
+"pkg": "libpgjava",
+"wall": "2026-10-01",
+"bw_version": "42.5.5-0+deb12u1",
+"desc": "pgjdbc, the PostgreSQL JDBC Driver, versions 42.7.4 and 42.7.5 can sen ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-107314",
+"pkg": "libpgjava",
+"wall": "2026-10-01",
+"bw_version": "42.5.5-0+deb12u1",
+"desc": "pgjdbc, the PostgreSQL JDBC Driver, versions 42.7.11 through 42.7.13 e ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-107929",
+"pkg": "curl",
+"wall": "2026-10-01",
+"bw_version": "7.88.1-10+deb12u15",
+"desc": "When `CURLOPT_INTERFACE` (or the command line tool's `--interface` opt ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-108693",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick on Windows through 7.1.2-33 and 6.9.13-58 contains an unco ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-108830",
+"pkg": "janus",
+"wall": "2026-10-01",
+"bw_version": "1.1.2-1",
+"desc": "A weakness has been identified in meetecho janus-gateway up to 1.4.2.  ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-108978",
+"pkg": "rlottie",
+"wall": "2026-10-01",
+"bw_version": "0.1+dfsg-4+deb12u2",
+"desc": "Heap-based buffer overflow vulnerability in Samsung Opensource rlottie ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-109261",
+"pkg": "imagemagick",
+"wall": "2026-10-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick before 6.9.13-57 and 7.x before 7.1.2-32 contains a memory ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-109618",
+"pkg": "php8.2",
+"wall": "2026-10-01",
+"bw_version": "8.2.33-1~deb12u1",
+"desc": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current  ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-109619",
+"pkg": "php8.2",
+"wall": "2026-10-01",
+"bw_version": "8.2.33-1~deb12u1",
+"desc": "PHP has various global state that temporarily points into request memo ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-109786",
+"pkg": "fail2ban",
+"wall": "2026-10-01",
+"bw_version": "1.0.2-2",
+"desc": "In fail2ban 0.10.5 through 1.1.1 before ddd879d, the sshd filter (conf ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-109854",
+"pkg": "m17n-lib",
+"wall": "2026-10-01",
+"bw_version": "1.8.0-6",
+"desc": "A flaw was found in m17n-lib. An attacker who supplies crafted input t ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-109956",
+"pkg": "nltk",
+"wall": "2026-10-01",
+"bw_version": "3.8-1",
+"desc": "NLTK through 3.10.3 contains a path traversal vulnerability in WekaCla ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-110237",
+"pkg": "vifm",
+"wall": "2026-10-01",
+"bw_version": "0.12-1",
+"desc": "Vifm 0.8.1-beta through 0.14.4 reuses a pre-existing IPC FIFO in the s ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-110354",
+"pkg": "haproxy",
+"wall": "2026-10-01",
+"bw_version": "2.6.12-1+deb12u3",
+"desc": "HAProxy 3 before 3.4.6 allows a remote unauthenticated attacker to cau ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-110451",
+"pkg": "nix",
+"wall": "2026-10-01",
+"bw_version": "2.8.0-1.1",
+"desc": "Nix before 2.35.3 and Lix before 2.95.4 on macOS allow a Seatbelt sand ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-110601",
+"pkg": "libsixel",
+"wall": "2026-10-01",
+"bw_version": "1.10.3-3",
+"desc": "libsixel before 1.8.7-r1 and 1.9.0 through 1.10.5 contains a heap out- ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-111183",
+"pkg": "gst-plugins-good1.0",
+"wall": "2026-10-01",
+"bw_version": "1.22.0-5+deb12u3",
+"desc": "GStreamer rtpL16depay Heap-based Buffer Overflow Remote Code Execution ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-111497",
+"pkg": "brotli",
+"wall": "2026-10-01",
+"bw_version": "1.0.9-2",
+"desc": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-111497",
+"pkg": "nodejs",
+"wall": "2026-10-01",
+"bw_version": "18.20.4+dfsg-1~deb12u2",
+"desc": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-112202",
+"pkg": "libimager-perl",
+"wall": "2026-10-01",
+"bw_version": "1.019+dfsg-1",
+"desc": "Imager::File::GIF versions before 1.006 for Perl allow out-of-bounds r ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-113351",
+"pkg": "expat",
+"wall": "2026-10-01",
+"bw_version": "2.5.0-1+deb12u4",
+"desc": "libexpat 2.7.2 through 2.9.0 contains a denial of service vulnerabilit ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-113680",
+"pkg": "harfbuzz",
+"wall": "2026-10-01",
+"bw_version": "6.0.0+dfsg-3",
+"desc": "HarfBuzz from 8.0.0 through 14.6.0 contains a NULL pointer dereference ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-115504",
+"pkg": "cfitsio",
+"wall": "2026-10-01",
+"bw_version": "4.2.0-3",
+"desc": "CFITSIO through 4.7.0 contains an out-of-bounds write vulnerability in ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-115567",
+"pkg": "rust-tokio",
+"wall": "2026-10-01",
+"bw_version": "1.24.2-1",
+"desc": "Tokio is a runtime for writing applications with Rust. In 1.54.0, a ra ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-115730",
+"pkg": "node-i18next-http-backend",
+"wall": "2026-10-01",
+"bw_version": "2.1.1-1",
+"desc": "i18next-http-backend 4.0.2 contains an incomplete fix in interpolateUr ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-12087",
+"pkg": "libsocket-perl",
+"wall": "2026-06-01",
+"bw_version": "2.036-1",
+"desc": "Socket versions before 2.041 for Perl have an out-of-bounds heap read. ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-12087",
+"pkg": "perl",
+"wall": "2026-06-01",
+"bw_version": "5.36.0-7+deb12u3",
+"desc": "Socket versions before 2.041 for Perl have an out-of-bounds heap read. ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-12505",
+"pkg": "cifs-utils",
+"wall": "2026-06-01",
+"bw_version": "2:7.0-2",
+"desc": "A flaw was found in the cifs-utils package where the cifs.upcall helpe ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-12892",
+"pkg": "gst-plugins-bad1.0",
+"wall": "2026-06-01",
+"bw_version": "1.22.0-4+deb12u7",
+"desc": "A flaw was found in GStreamer's gst-plugins-bad package. When processi ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-13221",
+"pkg": "perl",
+"wall": "2026-07-01",
+"bw_version": "5.36.0-7+deb12u3",
+"desc": "Perl versions through 5.43.9 produce silently incorrect regular expres ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-13311",
+"pkg": "node-shell-quote",
+"wall": "2026-06-01",
+"bw_version": "1.7.4+~1.7.1-1+deb12u1",
+"desc": "shell-quote prior to 1.8.5 finalizes parsed tokens in parse() using Ar ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-13608",
+"pkg": "curl",
+"wall": "2026-09-01",
+"bw_version": "7.88.1-10+deb12u15",
+"desc": "A flaw in the libcurl SASL negotiation for LDAP authentication allows  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-14935",
+"pkg": "gst-plugins-bad1.0",
+"wall": "2026-07-01",
+"bw_version": "1.22.0-4+deb12u7",
+"desc": "A logic vulnerability was found in GStreamer's webrtcbin component. Th ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-1502",
+"pkg": "pypy3",
+"wall": "2026-06-01",
+"bw_version": "7.3.11+dfsg-2+deb12u3",
+"desc": "CR/LF bytes were not rejected by HTTP client proxy tunnel headers or h ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-1502",
+"pkg": "python3.11",
+"wall": "2026-06-01",
+"bw_version": "3.11.2-6+deb12u7",
+"desc": "CR/LF bytes were not rejected by HTTP client proxy tunnel headers or h ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-15308",
+"pkg": "python3.11",
+"wall": "2026-07-01",
+"bw_version": "3.11.2-6+deb12u7",
+"desc": "The incremental HTML parser (html.parser.HTMLParser) allows for CPU de ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-15310",
+"pkg": "python3.11",
+"wall": "2026-08-01",
+"bw_version": "3.11.2-6+deb12u8",
+"desc": "When decompressing crafted zip files using the bzip/LZMA/Zstandard   c ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-15806",
+"pkg": "pypy3",
+"wall": "2026-08-01",
+"bw_version": "7.3.11+dfsg-2+deb12u3",
+"desc": "The HTTPPasswordMgr class in the urllib.request module, along with its ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-15806",
+"pkg": "python3.11",
+"wall": "2026-08-01",
+"bw_version": "3.11.2-6+deb12u8",
+"desc": "The HTTPPasswordMgr class in the urllib.request module, along with its ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-16028",
+"pkg": "libprotocol-http2-perl",
+"wall": "2026-09-01",
+"bw_version": "1.10-2",
+"desc": "Protocol::HTTP2 versions before 1.14 for Perl allow memory exhaustion  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-17072",
+"pkg": "gst-plugins-good1.0",
+"wall": "2026-07-01",
+"bw_version": "1.22.0-5+deb12u3",
+"desc": "A flaw was found in GStreamer's gst-plugins-good. A heap-based out-of- ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-17084",
+"pkg": "pypy3",
+"wall": "2026-08-01",
+"bw_version": "7.3.11+dfsg-2+deb12u3",
+"desc": "The \"stringprep\" module didn't process characters from RFC 3454 tables ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-17084",
+"pkg": "python3.11",
+"wall": "2026-08-01",
+"bw_version": "3.11.2-6+deb12u8",
+"desc": "The \"stringprep\" module didn't process characters from RFC 3454 tables ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-17495",
+"pkg": "node-moment",
+"wall": "2026-09-01",
+"bw_version": "2.29.4+ds-1",
+"desc": "moment is a JavaScript date library for parsing, validating, manipulat ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-17591",
+"pkg": "libarchive",
+"wall": "2026-10-01",
+"bw_version": "3.6.2-1+deb12u5",
+"desc": "A flaw was found in libarchive. An attacker can cause a Denial of Serv ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-17615",
+"pkg": "resteasy3.0",
+"wall": "2026-09-01",
+"bw_version": "3.0.26-6",
+"desc": "A flaw was found in RESTEasy's SourceProvider. This vulnerability allo ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-18090",
+"pkg": "gdk-pixbuf",
+"wall": "2026-09-01",
+"bw_version": "2.42.10+dfsg-1+deb12u4",
+"desc": "A flaw was found in gdk-pixbuf. This vulnerability allows a remote att ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-18297",
+"pkg": "gst-plugins-base1.0",
+"wall": "2026-08-01",
+"bw_version": "1.22.0-3+deb12u6",
+"desc": "GStreamer OGG File Parsing Stack-based Buffer Overflow Remote Code Exe ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-18298",
+"pkg": "gst-plugins-good1.0",
+"wall": "2026-08-01",
+"bw_version": "1.22.0-5+deb12u3",
+"desc": "GStreamer PNG File Parsing Heap-based Buffer Overflow Remote Code Exec ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-18299",
+"pkg": "gst-plugins-good1.0",
+"wall": "2026-08-01",
+"bw_version": "1.22.0-5+deb12u3",
+"desc": "GStreamer rtpsbcdepay Use-After-Free Remote Code Execution Vulnerabili ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-18503",
+"pkg": "pypy3",
+"wall": "2026-08-01",
+"bw_version": "7.3.11+dfsg-2+deb12u3",
+"desc": "Attacker-controlled CSV samples can trigger super-linear  regular-expr ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-18503",
+"pkg": "python3.11",
+"wall": "2026-08-01",
+"bw_version": "3.11.2-6+deb12u8",
+"desc": "Attacker-controlled CSV samples can trigger super-linear  regular-expr ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-18724",
+"pkg": "open-iscsi",
+"wall": "2026-08-01",
+"bw_version": "2.1.8-1",
+"desc": "",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-18725",
+"pkg": "open-iscsi",
+"wall": "2026-08-01",
+"bw_version": "2.1.8-1",
+"desc": "",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-18726",
+"pkg": "open-iscsi",
+"wall": "2026-08-01",
+"bw_version": "2.1.8-1",
+"desc": "A flaw was found in open-iscsi. This vulnerability allows a remote att ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-18727",
+"pkg": "open-iscsi",
+"wall": "2026-08-01",
+"bw_version": "2.1.8-1",
+"desc": "A flaw was found in open-iscsi's iscsiuio component. This vulnerabilit ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-18728",
+"pkg": "open-iscsi",
+"wall": "2026-08-01",
+"bw_version": "2.1.8-1",
+"desc": "A flaw was found in open-iscsi. An integer underflow vulnerability in  ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-18924",
+"pkg": "curl",
+"wall": "2026-09-01",
+"bw_version": "7.88.1-10+deb12u15",
+"desc": "A flaw in libcurl's handling of HTTP/2 Server Push streams, when the p ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-19387",
+"pkg": "gst-plugins-bad1.0",
+"wall": "2026-08-01",
+"bw_version": "1.22.0-4+deb12u7",
+"desc": "A heap out-of-bounds write vulnerability was found in the GStreamer gs ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-1940",
+"pkg": "gst-plugins-good1.0",
+"wall": "2026-06-01",
+"bw_version": "1.22.0-5+deb12u3",
+"desc": "An incomplete fix for CVE-2024-47778 allows an out-of-bounds read in g ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-19445",
+"pkg": "pypy3",
+"wall": "2026-10-01",
+"bw_version": "7.3.11+dfsg-2+deb12u3",
+"desc": "A remote, unauthenticated TLS client can make a server crash or call t ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-19445",
+"pkg": "python3.11",
+"wall": "2026-10-01",
+"bw_version": "3.11.2-6+deb12u8",
+"desc": "A remote, unauthenticated TLS client can make a server crash or call t ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-19487",
+"pkg": "perl",
+"wall": "2026-08-01",
+"bw_version": "5.36.0-7+deb12u3",
+"desc": "Perl versions from 5.9.4 before 5.41.9 produce incorrect regular expre ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-19553",
+"pkg": "pypy3",
+"wall": "2026-10-01",
+"bw_version": "7.3.11+dfsg-2+deb12u3",
+"desc": "ssl.SSLContext.wrap_bio() didn't require the server_hostname argument  ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-19553",
+"pkg": "python3.11",
+"wall": "2026-10-01",
+"bw_version": "3.11.2-6+deb12u8",
+"desc": "ssl.SSLContext.wrap_bio() didn't require the server_hostname argument  ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-19624",
+"pkg": "network-manager-l2tp",
+"wall": "2026-09-01",
+"bw_version": "1.20.8-1",
+"desc": "A flaw was found in NetworkManager-l2tp. The plugin writes attacker-co ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-19872",
+"pkg": "libhtml-formhandler-perl",
+"wall": "2026-09-01",
+"bw_version": "0.40068-2",
+"desc": "HTML::FormHandler versions before 0.410000 for Perl allow cross-site s ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-19931",
+"pkg": "curl",
+"wall": "2026-09-01",
+"bw_version": "7.88.1-10+deb12u15",
+"desc": "A flaw in libcurl makes it wrongly reuse an HTTP connection setup for  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-19954",
+"pkg": "libnet-whois-raw-perl",
+"wall": "2026-10-01",
+"bw_version": "2.43-1.1",
+"desc": "Net::Whois::Raw versions before 2.99044 for Perl ship a pwhois command ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-20031",
+"pkg": "clamav",
+"wall": "2026-06-01",
+"bw_version": "1.4.3+dfsg-1~deb12u2",
+"desc": "A vulnerability in the HTML Cascading Style Sheets (CSS) module of Cla ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-20213",
+"pkg": "clamav",
+"wall": "2026-07-01",
+"bw_version": "1.4.3+dfsg-1~deb12u2",
+"desc": "A vulnerability in the PE file format parser of ClamAV could allow an  ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-20214",
+"pkg": "clamav",
+"wall": "2026-07-01",
+"bw_version": "1.4.3+dfsg-1~deb12u2",
+"desc": "A vulnerability in the FSG file format parser of ClamAV could allow an ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-20215",
+"pkg": "clamav",
+"wall": "2026-07-01",
+"bw_version": "1.4.3+dfsg-1~deb12u2",
+"desc": "A vulnerability in the 7z file format parser of ClamAV could allow an  ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-20216",
+"pkg": "clamav",
+"wall": "2026-07-01",
+"bw_version": "1.4.3+dfsg-1~deb12u2",
+"desc": "A vulnerability in the InstallShield file format parser of ClamAV coul ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-20217",
+"pkg": "clamav",
+"wall": "2026-07-01",
+"bw_version": "1.4.3+dfsg-1~deb12u2",
+"desc": "A vulnerability in the PESpin file format parser of ClamAV could allow ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-20243",
+"pkg": "clamav",
+"wall": "2026-07-01",
+"bw_version": "1.4.3+dfsg-1~deb12u2",
+"desc": "A vulnerability in the ALZ file format parser of ClamAV could allow an ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-20244",
+"pkg": "clamav",
+"wall": "2026-07-01",
+"bw_version": "1.4.3+dfsg-1~deb12u2",
+"desc": "A vulnerability in the DMG file format parser of ClamAV could allow an ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-20339",
+"pkg": "clamav",
+"wall": "2026-08-01",
+"bw_version": "1.4.3+dfsg-1~deb12u2",
+"desc": "A vulnerability in the PESpin file format parser of ClamAV could allow ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-20345",
+"pkg": "clamav",
+"wall": "2026-08-01",
+"bw_version": "1.4.3+dfsg-1~deb12u2",
+"desc": "A vulnerability in the GPT file format parser of ClamAV could allow an ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-20346",
+"pkg": "clamav",
+"wall": "2026-08-01",
+"bw_version": "1.4.3+dfsg-1~deb12u2",
+"desc": "A vulnerability in the PDF file format parser of ClamAV could allow an ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-20347",
+"pkg": "clamav",
+"wall": "2026-08-01",
+"bw_version": "1.4.3+dfsg-1~deb12u2",
+"desc": "A vulnerability in the Mach-O file format parser of ClamAV could allow ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-20348",
+"pkg": "clamav",
+"wall": "2026-08-01",
+"bw_version": "1.4.3+dfsg-1~deb12u2",
+"desc": "A vulnerability in the XAR file format parser of ClamAV could allow an ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-23479",
+"pkg": "redis",
+"wall": "2026-06-01",
+"bw_version": "5:7.0.15-1~deb12u7",
+"desc": "Redis is an in-memory data structure store. In redis-server from 7.2.0 ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-23553",
+"pkg": "xen",
+"wall": "2026-06-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "In the context switch logic Xen attempts to skip an IBPB in the case o ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-23554",
+"pkg": "xen",
+"wall": "2026-06-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "The Intel EPT paging code uses an optimization to defer flushing of an ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-23556",
+"pkg": "xen",
+"wall": "2026-06-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-23557",
+"pkg": "xen",
+"wall": "2026-06-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "Any guest can cause xenstored to crash by issuing a XS_RESET_WATCHES c ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-23558",
+"pkg": "xen",
+"wall": "2026-06-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "The adjustments made for XSA-379 as well as those subsequently becomin ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-23631",
+"pkg": "redis",
+"wall": "2026-06-01",
+"bw_version": "5:7.0.15-1~deb12u7",
+"desc": "Redis is an in-memory data structure store. In all versions of redis-s ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-24515",
+"pkg": "expat",
+"wall": "2026-06-01",
+"bw_version": "2.5.0-1+deb12u2",
+"desc": "In libexpat before 2.7.4, XML_ExternalEntityParserCreate does not copy ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-25210",
+"pkg": "expat",
+"wall": "2026-06-01",
+"bw_version": "2.5.0-1+deb12u2",
+"desc": "In libexpat before 2.7.4, the doContent function does not properly det ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-25243",
+"pkg": "redis",
+"wall": "2026-06-01",
+"bw_version": "5:7.0.15-1~deb12u7",
+"desc": "Redis is an in-memory data structure store. In versions of redis-serve ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-25971",
+"pkg": "imagemagick",
+"wall": "2026-06-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u10",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-27585",
+"pkg": "caddy",
+"wall": "2026-06-01",
+"bw_version": "2.6.2-5",
+"desc": "Caddy is an extensible server platform that uses TLS by default. Prior ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-27587",
+"pkg": "caddy",
+"wall": "2026-06-01",
+"bw_version": "2.6.2-5",
+"desc": "Caddy is an extensible server platform that uses TLS by default. Prior ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-27588",
+"pkg": "caddy",
+"wall": "2026-06-01",
+"bw_version": "2.6.2-5",
+"desc": "Caddy is an extensible server platform that uses TLS by default. Prior ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-27589",
+"pkg": "caddy",
+"wall": "2026-06-01",
+"bw_version": "2.6.2-5",
+"desc": "Caddy is an extensible server platform that uses TLS by default. Prior ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-27590",
+"pkg": "caddy",
+"wall": "2026-06-01",
+"bw_version": "2.6.2-5",
+"desc": "Caddy is an extensible server platform that uses TLS by default. Prior ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-2950",
+"pkg": "node-lodash",
+"wall": "2026-06-01",
+"bw_version": "4.17.21+dfsg+~cs8.31.198.20210220-9",
+"desc": "Impact:  Lodash versions 4.17.23 and earlier are vulnerable to prototy ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-3083",
+"pkg": "gst-plugins-good1.0",
+"wall": "2026-06-01",
+"bw_version": "1.22.0-5+deb12u3",
+"desc": "GStreamer rtpqdm2depay Out-Of-Bounds Write Remote Code Execution Vulne ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-3085",
+"pkg": "gst-plugins-good1.0",
+"wall": "2026-06-01",
+"bw_version": "1.22.0-5+deb12u3",
+"desc": "GStreamer rtpqdm2depay Heap-based Buffer Overflow Remote Code Executio ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-31911",
+"pkg": "libpcap",
+"wall": "2026-09-01",
+"bw_version": "1.10.3-1",
+"desc": "libpcap BPF interpreter calls abort() if it encounters a BPF instructi ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-31912",
+"pkg": "libpcap",
+"wall": "2026-09-01",
+"bw_version": "1.10.3-1",
+"desc": "libpcap BPF interpreter detects neither reaching the end of the filter ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-32316",
+"pkg": "jq",
+"wall": "2026-06-01",
+"bw_version": "1.6-2.1+deb12u1",
+"desc": "jq is a command-line JSON processor. An integer overflow vulnerability ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-3276",
+"pkg": "python3.11",
+"wall": "2026-06-01",
+"bw_version": "3.11.2-6+deb12u7",
+"desc": "unicodedata.normalize() can take excessive CPU time when processing sp ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-32776",
+"pkg": "expat",
+"wall": "2026-06-01",
+"bw_version": "2.5.0-1+deb12u2",
+"desc": "libexpat before 2.7.5 allows a NULL pointer dereference with empty ext ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-32777",
+"pkg": "expat",
+"wall": "2026-06-01",
+"bw_version": "2.5.0-1+deb12u2",
+"desc": "libexpat before 2.7.5 allows an infinite loop while parsing DTD conten ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-32778",
+"pkg": "expat",
+"wall": "2026-06-01",
+"bw_version": "2.5.0-1+deb12u2",
+"desc": "libexpat before 2.7.5 allows a NULL pointer dereference in the functio ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-33168",
+"pkg": "rails",
+"wall": "2026-06-01",
+"bw_version": "2:6.1.7.10+dfsg-1~deb12u2",
+"desc": "Action View provides conventions and helpers for building web pages wi ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-33169",
+"pkg": "rails",
+"wall": "2026-06-01",
+"bw_version": "2:6.1.7.10+dfsg-1~deb12u2",
+"desc": "Active Support is a toolkit of support libraries and Ruby core extensi ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-33170",
+"pkg": "rails",
+"wall": "2026-06-01",
+"bw_version": "2:6.1.7.10+dfsg-1~deb12u2",
+"desc": "Active Support is a toolkit of support libraries and Ruby core extensi ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-33173",
+"pkg": "rails",
+"wall": "2026-06-01",
+"bw_version": "2:6.1.7.10+dfsg-1~deb12u2",
+"desc": "Active Storage allows users to attach cloud and local files in Rails a ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-33174",
+"pkg": "rails",
+"wall": "2026-06-01",
+"bw_version": "2:6.1.7.10+dfsg-1~deb12u2",
+"desc": "Active Storage allows users to attach cloud and local files in Rails a ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-33176",
+"pkg": "rails",
+"wall": "2026-06-01",
+"bw_version": "2:6.1.7.10+dfsg-1~deb12u2",
+"desc": "Active Support is a toolkit of support libraries and Ruby core extensi ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-33195",
+"pkg": "rails",
+"wall": "2026-06-01",
+"bw_version": "2:6.1.7.10+dfsg-1~deb12u2",
+"desc": "Active Storage allows users to attach cloud and local files in Rails a ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-33202",
+"pkg": "rails",
+"wall": "2026-06-01",
+"bw_version": "2:6.1.7.10+dfsg-1~deb12u2",
+"desc": "Active Storage allows users to attach cloud and local files in Rails a ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-33555",
+"pkg": "haproxy",
+"wall": "2026-06-01",
+"bw_version": "2.6.12-1+deb12u3",
+"desc": "An issue was discovered in HAProxy before 3.3.6. The HTTP/3 parser doe ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-33658",
+"pkg": "rails",
+"wall": "2026-06-01",
+"bw_version": "2:6.1.7.10+dfsg-1~deb12u2",
+"desc": "Active Storage allows users to attach cloud and local files in Rails a ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-34475",
+"pkg": "varnish",
+"wall": "2026-06-01",
+"bw_version": "7.1.1-2+deb12u1",
+"desc": "Varnish Cache before 8.0.1 and Varnish Enterprise before 6.0.16r12, in ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-34789",
+"pkg": "freecad",
+"wall": "2026-08-01",
+"bw_version": "0.20.2+dfsg1-4",
+"desc": "FreeCAD is a free and open-source multiplatform 3D parametric modeler. ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-35189",
+"pkg": "openssl",
+"wall": "2026-09-01",
+"bw_version": "3.0.20-1~deb12u2",
+"desc": "Issue summary: A certificate with many nameRelativeToCRLIssuer CRL dis ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-35191",
+"pkg": "openssl",
+"wall": "2026-09-01",
+"bw_version": "3.0.20-1~deb12u2",
+"desc": "Issue summary: The OpenSSL QUIC server, when configured to not preform ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-3731",
+"pkg": "libssh",
+"wall": "2026-06-01",
+"bw_version": "0.10.6-0+deb12u2",
+"desc": "A weakness has been identified in libssh up to 0.11.3. The impacted el ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-39043",
+"pkg": "gst-plugins-good1.0",
+"wall": "2026-06-01",
+"bw_version": "1.22.0-5+deb12u3",
+"desc": "",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-39044",
+"pkg": "gst-plugins-good1.0",
+"wall": "2026-06-01",
+"bw_version": "1.22.0-5+deb12u3",
+"desc": "",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-42487",
+"pkg": "xen",
+"wall": "2026-06-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "HVM guest I/O port accesses are subject to either emulation or at leas ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-42488",
+"pkg": "xen",
+"wall": "2026-06-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "Some shadow paging errors paths will switch the page-tables without up ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-42489",
+"pkg": "xen",
+"wall": "2026-06-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "[This CNA information record relates to multiple CVEs; the text explai ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-42490",
+"pkg": "xen",
+"wall": "2026-06-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "[This CNA information record relates to multiple CVEs; the text explai ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-42493",
+"pkg": "xen",
+"wall": "2026-07-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "Addressing certain issues, in particular related to operations which m ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-42494",
+"pkg": "xen",
+"wall": "2026-07-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "[This CNA information record relates to multiple CVEs; the text explai ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-42495",
+"pkg": "xen",
+"wall": "2026-07-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "[This CNA information record relates to multiple CVEs; the text explai ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-42496",
+"pkg": "perl",
+"wall": "2026-06-01",
+"bw_version": "5.36.0-7+deb12u3",
+"desc": "Archive::Tar versions before 3.08 for Perl extract symlinks with attac ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-42497",
+"pkg": "perl",
+"wall": "2026-06-01",
+"bw_version": "5.36.0-7+deb12u3",
+"desc": "Archive::Tar versions before 3.08 for Perl extract hardlinks to attack ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-42772",
+"pkg": "openssl",
+"wall": "2026-09-01",
+"bw_version": "3.0.20-1~deb12u2",
+"desc": "Issue summary: The QUIC stream reassembly algorithm performance deteri ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-44943",
+"pkg": "open-iscsi",
+"wall": "2026-07-01",
+"bw_version": "2.1.8-1",
+"desc": "An Improper Limitation of a Pathname to a Restricted Directory ('Path  ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-44944",
+"pkg": "open-iscsi",
+"wall": "2026-07-01",
+"bw_version": "2.1.8-1",
+"desc": "An Incorrect Authorization vulnerability in open-iscsi allowsunprivili ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-45186",
+"pkg": "expat",
+"wall": "2026-06-01",
+"bw_version": "2.5.0-1+deb12u2",
+"desc": "In libexpat before 2.8.1, the computational complexity of attribute na ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-45363",
+"pkg": "ruby-jwt",
+"wall": "2026-07-01",
+"bw_version": "2.5.0-1",
+"desc": "ruby-jwt is a Ruby implementation of the RFC 7519 OAuth JSON Web Token ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-45692",
+"pkg": "caddy",
+"wall": "2026-06-01",
+"bw_version": "2.6.2-5",
+"desc": "Caddy is an extensible server platform that uses TLS by default. From  ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-46471",
+"pkg": "gst-plugins-good1.0",
+"wall": "2026-10-01",
+"bw_version": "1.22.0-5+deb12u3",
+"desc": "An issue was discovered in GStreamer gst-plugins-good before 1.28.2. W ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-46472",
+"pkg": "gst-plugins-good1.0",
+"wall": "2026-10-01",
+"bw_version": "1.22.0-5+deb12u3",
+"desc": "An issue was discovered in GStreamer gst-plugins-good before 1.28.2. W ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-46675",
+"pkg": "libpng1.6",
+"wall": "2026-09-01",
+"bw_version": "1.6.39-2+deb12u5",
+"desc": "[Use-after-free of zlib input in `png_read_end` after incomplete zTXt, iTXt or iCCP decompression]",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-47023",
+"pkg": "mariadb",
+"wall": "2026-07-01",
+"bw_version": "1:10.11.14-0+deb12u2",
+"desc": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MyS ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-47736",
+"pkg": "puma",
+"wall": "2026-07-01",
+"bw_version": "5.6.5-3+deb12u1",
+"desc": "Puma is a Ruby/Rack web server built for parallelism. From 5.5.0 until ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-47737",
+"pkg": "puma",
+"wall": "2026-07-01",
+"bw_version": "5.6.5-3+deb12u1",
+"desc": "Puma is a Ruby/Rack web server built for parallelism. From 5.5.0 until ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-4800",
+"pkg": "node-lodash",
+"wall": "2026-06-01",
+"bw_version": "4.17.21+dfsg+~cs8.31.198.20210220-9",
+"desc": "Impact:  The fix for CVE-2021-23337 (https://github.com/advisories/GHS ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-48549",
+"pkg": "nagios4",
+"wall": "2026-08-01",
+"bw_version": "4.4.6-4+deb12u1",
+"desc": "Nagios Core before 4.5.13 and Nagios XI before 2026R1.5 contains a CSR ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-48550",
+"pkg": "nagios4",
+"wall": "2026-08-01",
+"bw_version": "4.4.6-4+deb12u1",
+"desc": "Nagios Core before 4.5.14 and Nagios XI before 2026R1.7 are vulnerable ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-48551",
+"pkg": "nagios4",
+"wall": "2026-08-01",
+"bw_version": "4.4.6-4+deb12u1",
+"desc": "Nagios Core before 4.5.14 and Nagios XI before 2026R1.7 contain a cros ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-48552",
+"pkg": "nagios4",
+"wall": "2026-08-01",
+"bw_version": "4.4.6-4+deb12u1",
+"desc": "Nagios Core before 4.5.14 and Nagios XI before 2026R1.7 are vulnerable ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-48553",
+"pkg": "nagios4",
+"wall": "2026-08-01",
+"bw_version": "4.4.6-4+deb12u1",
+"desc": "Nagios Core before 4.5.13 and Nagios XI before 2026R1.5 are vulnerable ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-48554",
+"pkg": "nagios4",
+"wall": "2026-08-01",
+"bw_version": "4.4.6-4+deb12u1",
+"desc": "Nagios Core before 4.5.14 and Nagios XI before 2026R1.7 are vulnerable ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-48618",
+"pkg": "nodejs",
+"wall": "2026-06-01",
+"bw_version": "18.20.4+dfsg-1~deb12u2",
+"desc": "A flaw in Node.js TLS hostname handling can cause Node.js unicode dot  ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-48928",
+"pkg": "nodejs",
+"wall": "2026-06-01",
+"bw_version": "18.20.4+dfsg-1~deb12u2",
+"desc": "A inconsistency in Node.js hostname matching can cause a trust-policy  ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-48930",
+"pkg": "nodejs",
+"wall": "2026-06-01",
+"bw_version": "18.20.4+dfsg-1~deb12u2",
+"desc": "A flaw in Node.js TLS hostname handling can cause Embedded-nul hostnam ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-48931",
+"pkg": "nodejs",
+"wall": "2026-06-01",
+"bw_version": "18.20.4+dfsg-1~deb12u2",
+"desc": "A flaw in Node.js HTTP Agent can cause a client to accept as valid a r ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-48933",
+"pkg": "nodejs",
+"wall": "2026-06-01",
+"bw_version": "18.20.4+dfsg-1~deb12u2",
+"desc": "A flaw in Node.js WebCrypto implementation can crash the process if th ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-48934",
+"pkg": "nodejs",
+"wall": "2026-06-01",
+"bw_version": "18.20.4+dfsg-1~deb12u2",
+"desc": "A flaw in Node.js TLS host verification can cause an attacker to bypas ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-48959",
+"pkg": "libio-compress-perl",
+"wall": "2026-06-01",
+"bw_version": "2.204-1",
+"desc": "IO::Uncompress::Unzip versions before 2.220 for Perl allow CPU exhaust ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-48959",
+"pkg": "perl",
+"wall": "2026-06-01",
+"bw_version": "5.36.0-7+deb12u3",
+"desc": "IO::Uncompress::Unzip versions before 2.220 for Perl allow CPU exhaust ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-48962",
+"pkg": "libio-compress-perl",
+"wall": "2026-06-01",
+"bw_version": "2.204-1",
+"desc": "IO::Compress versions before 2.220 for Perl can execute arbitrary code ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-48962",
+"pkg": "perl",
+"wall": "2026-06-01",
+"bw_version": "5.36.0-7+deb12u3",
+"desc": "IO::Compress versions before 2.220 for Perl can execute arbitrary code ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-49275",
+"pkg": "exiv2",
+"wall": "2026-09-01",
+"bw_version": "0.27.6-1",
+"desc": "[GHSA-hxph-pv7w-8649: Out of bounds read in CrwMap::decodeBasic]",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-49836",
+"pkg": "psd-tools",
+"wall": "2026-09-01",
+"bw_version": "1.9.24+dfsg.1-1",
+"desc": "psd-tools is a Python package for working with Adobe Photoshop PSD fil ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-52718",
+"pkg": "gst-plugins-bad1.0",
+"wall": "2026-06-01",
+"bw_version": "1.22.0-4+deb12u7",
+"desc": "A denial of service vulnerability was found in GStreamer's AV1 codec p ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-52719",
+"pkg": "gst-plugins-bad1.0",
+"wall": "2026-06-01",
+"bw_version": "1.22.0-4+deb12u7",
+"desc": "An out-of-bounds read vulnerability was found in the VA JPEG decoder i ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-52720",
+"pkg": "gst-plugins-bad1.0",
+"wall": "2026-06-01",
+"bw_version": "1.22.0-4+deb12u7",
+"desc": "A heap buffer overflow vulnerability was found in GStreamer's librfb ( ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-52845",
+"pkg": "caddy",
+"wall": "2026-06-01",
+"bw_version": "2.6.2-5",
+"desc": "Caddy is an extensible server platform that uses TLS by default. Prior ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-52846",
+"pkg": "caddy",
+"wall": "2026-06-01",
+"bw_version": "2.6.2-5",
+"desc": "Caddy is an extensible server platform that uses TLS by default. Prior ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-53584",
+"pkg": "libgit2",
+"wall": "2026-07-01",
+"bw_version": "1.5.1+ds-1+deb12u1",
+"desc": "",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-53585",
+"pkg": "libgit2",
+"wall": "2026-07-01",
+"bw_version": "1.5.1+ds-1+deb12u1",
+"desc": "",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-53586",
+"pkg": "libgit2",
+"wall": "2026-07-01",
+"bw_version": "1.5.1+ds-1+deb12u1",
+"desc": "",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-53702",
+"pkg": "gst-plugins-bad1.0",
+"wall": "2026-06-01",
+"bw_version": "1.22.0-4+deb12u7",
+"desc": "A stack buffer overflow flaw was found in the GStreamer H.265 codec pa ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-53705",
+"pkg": "gst-plugins-good1.0",
+"wall": "2026-06-01",
+"bw_version": "1.22.0-5+deb12u3",
+"desc": "A flaw was found in GStreamer's WavPack audio decoder in gst-plugins-g ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-54603",
+"pkg": "ruby-oauth2",
+"wall": "2026-07-01",
+"bw_version": "1.4.4-1",
+"desc": "OAuth2 is a Ruby wrapper for the OAuth 2.0 and 2.1 authorization frame ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-54634",
+"pkg": "hamlib",
+"wall": "2026-09-01",
+"bw_version": "4.5.4-1",
+"desc": "Hamlib is a ham radio control library for radios, rotators, and amplif ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-54872",
+"pkg": "openssl",
+"wall": "2026-09-01",
+"bw_version": "3.0.20-1~deb12u2",
+"desc": "Issue summary: The generic elliptic-curve scalar multiplication used f ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-54875",
+"pkg": "openssl",
+"wall": "2026-09-01",
+"bw_version": "3.0.20-1~deb12u2",
+"desc": "Issue summary: A non-constant-time optimized implementation of scalar  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-55073",
+"pkg": "weasyprint",
+"wall": "2026-09-01",
+"bw_version": "57.2-1",
+"desc": "WeasyPrint helps web developers to create PDF documents. Prior to 70.0 ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-56132",
+"pkg": "expat",
+"wall": "2026-06-01",
+"bw_version": "2.5.0-1+deb12u2",
+"desc": "In libexpat before 2.8.2, there is a heap-based buffer overflow in doP ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-56846",
+"pkg": "nodejs",
+"wall": "2026-07-01",
+"bw_version": "18.20.4+dfsg-1~deb12u2",
+"desc": "",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-56848",
+"pkg": "nodejs",
+"wall": "2026-07-01",
+"bw_version": "18.20.4+dfsg-1~deb12u2",
+"desc": "",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-56850",
+"pkg": "nodejs",
+"wall": "2026-07-01",
+"bw_version": "18.20.4+dfsg-1~deb12u2",
+"desc": "A flaw in Node.js HTTPS Agent connection reuse can cause PFX object-ar ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-57432",
+"pkg": "perl",
+"wall": "2026-07-01",
+"bw_version": "5.36.0-7+deb12u3",
+"desc": "Perl versions through 5.43.10 have an integer overflow in S_measure_st ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-57433",
+"pkg": "perl",
+"wall": "2026-07-01",
+"bw_version": "5.36.0-7+deb12u3",
+"desc": "Storable versions before 3.41 for Perl have a signed integer overflow  ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-58040",
+"pkg": "nodejs",
+"wall": "2026-07-01",
+"bw_version": "18.20.4+dfsg-1~deb12u2",
+"desc": "An incomplete fix has been identified in Node.js: HTTPS Agent TLS sess ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-58042",
+"pkg": "nodejs",
+"wall": "2026-07-01",
+"bw_version": "18.20.4+dfsg-1~deb12u2",
+"desc": "",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-5917",
+"pkg": "libgit2",
+"wall": "2026-08-01",
+"bw_version": "1.5.1+ds-1+deb12u1",
+"desc": "libgit2 versions before 1.8.7 and 1.9.0 before 1.9.7 built with the li ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-59691",
+"pkg": "gst-plugins-bad1.0",
+"wall": "2026-07-01",
+"bw_version": "1.22.0-4+deb12u7",
+"desc": "A heap buffer overflow vulnerability was found in GStreamer's rfbsrc p ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-59692",
+"pkg": "gst-plugins-bad1.0",
+"wall": "2026-07-01",
+"bw_version": "1.22.0-4+deb12u7",
+"desc": "A stack buffer overflow vulnerability was found in GStreamer's DTLS pl ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-59843",
+"pkg": "libssh",
+"wall": "2026-07-01",
+"bw_version": "0.10.6-0+deb12u2",
+"desc": "A flaw was found in libssh. A remote authenticated peer can advertise  ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-59844",
+"pkg": "libssh",
+"wall": "2026-07-01",
+"bw_version": "0.10.6-0+deb12u2",
+"desc": "A flaw was found in libssh. A remote authenticated client can issue SS ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-59845",
+"pkg": "libssh",
+"wall": "2026-07-01",
+"bw_version": "0.10.6-0+deb12u2",
+"desc": "A flaw was found in libssh. When ProxyCommand is used, an unchecked fo ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-59846",
+"pkg": "libssh",
+"wall": "2026-07-01",
+"bw_version": "0.10.6-0+deb12u2",
+"desc": "A flaw was found in libssh. A malicious username expanded through %r i ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-59847",
+"pkg": "libssh",
+"wall": "2026-07-01",
+"bw_version": "0.10.6-0+deb12u2",
+"desc": "A flaw was found in libssh. Incorrect AES-GCM finalization checks in b ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-59848",
+"pkg": "libssh",
+"wall": "2026-07-01",
+"bw_version": "0.10.6-0+deb12u2",
+"desc": "A flaw was found in libssh. A malicious SFTP server can send responses ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-59850",
+"pkg": "libssh",
+"wall": "2026-07-01",
+"bw_version": "0.10.6-0+deb12u2",
+"desc": "A flaw was found in libssh. If data packets are processed after a chan ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-60184",
+"pkg": "mariadb",
+"wall": "2026-07-01",
+"bw_version": "1:10.11.14-0+deb12u2",
+"desc": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MyS ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-6019",
+"pkg": "pypy3",
+"wall": "2026-06-01",
+"bw_version": "7.3.11+dfsg-2+deb12u3",
+"desc": "http.cookies.Morsel.js_output() returns an inline <script> snippet and ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-6019",
+"pkg": "python3.11",
+"wall": "2026-06-01",
+"bw_version": "3.11.2-6+deb12u7",
+"desc": "http.cookies.Morsel.js_output() returns an inline <script> snippet and ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-60331",
+"pkg": "mariadb",
+"wall": "2026-07-01",
+"bw_version": "1:10.11.14-0+deb12u2",
+"desc": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MyS ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-60585",
+"pkg": "mariadb",
+"wall": "2026-07-01",
+"bw_version": "1:10.11.14-0+deb12u2",
+"desc": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MyS ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-60747",
+"pkg": "mariadb",
+"wall": "2026-07-01",
+"bw_version": "1:10.11.14-0+deb12u2",
+"desc": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MyS ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-6103",
+"pkg": "php8.2",
+"wall": "2026-09-01",
+"bw_version": "8.2.33-1~deb12u1",
+"desc": "phar_tar_number() parses the octal size field of a TAR header into a u ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-61081",
+"pkg": "mariadb",
+"wall": "2026-07-01",
+"bw_version": "1:10.11.14-0+deb12u2",
+"desc": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MyS ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-61781",
+"pkg": "pg-partman",
+"wall": "2026-09-01",
+"bw_version": "4.7.2-1",
+"desc": "pg_partman is a PostgreSQL extension that manages partitioned tables b ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-61814",
+"pkg": "jawn",
+"wall": "2026-09-01",
+"bw_version": "0.11.1+really0.6.0-1",
+"desc": "Jawn is an open source JSON parser. Prior to 1.7.0, Jawn's AsyncParser ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-61819",
+"pkg": "pg-partman",
+"wall": "2026-09-01",
+"bw_version": "4.7.2-1",
+"desc": "pg_partman is a PostgreSQL extension that manages partitioned tables b ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62343",
+"pkg": "imagemagick",
+"wall": "2026-07-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u11",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62423",
+"pkg": "xen",
+"wall": "2026-07-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "[This CNA information record relates to multiple CVEs; the text explai ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62424",
+"pkg": "xen",
+"wall": "2026-07-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "[This CNA information record relates to multiple CVEs; the text explai ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62425",
+"pkg": "xen",
+"wall": "2026-07-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "[This CNA information record relates to multiple CVEs; the text explai ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62426",
+"pkg": "xen",
+"wall": "2026-07-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "[This CNA information record relates to multiple CVEs; the text explai ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62427",
+"pkg": "xen",
+"wall": "2026-07-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "[This CNA information record relates to multiple CVEs; the text explai ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62428",
+"pkg": "xen",
+"wall": "2026-07-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "When grant-copy operations are processed, the respective grant may or  ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62429",
+"pkg": "xen",
+"wall": "2026-07-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "Accessing the vNUMA configuration data of a guest is still possible wh ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62430",
+"pkg": "xen",
+"wall": "2026-07-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "Accesses to the CMOS memory contents are done using an indirect IO por ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62431",
+"pkg": "xen",
+"wall": "2026-07-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "The logic to handle periodic Viridian STIMERs performs a division with ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62432",
+"pkg": "xen",
+"wall": "2026-07-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "The EVTCHNOP_expand_array hypercall checks for whether FIFO event chan ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62433",
+"pkg": "xen",
+"wall": "2026-07-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "Parts of the DM_OP handling code assumes the caller has provided the r ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62434",
+"pkg": "xen",
+"wall": "2026-07-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "A guest started with Populated on Demand enabled (PoD) can attempt to  ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62435",
+"pkg": "xen",
+"wall": "2026-07-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "[This CNA information record relates to multiple CVEs; the text explai ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62436",
+"pkg": "xen",
+"wall": "2026-07-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "[This CNA information record relates to multiple CVEs; the text explai ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62437",
+"pkg": "xen",
+"wall": "2026-09-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "When guests are terminated, various pieces of cleanup need carrying ou ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62438",
+"pkg": "gimp",
+"wall": "2026-10-01",
+"bw_version": "2.10.34-1+deb12u10",
+"desc": "A flaw was found in GIMP. An attacker can cause a Denial of Service (D ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62439",
+"pkg": "gimp",
+"wall": "2026-09-01",
+"bw_version": "2.10.34-1+deb12u10",
+"desc": "",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62946",
+"pkg": "imagemagick",
+"wall": "2026-07-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u11",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62993",
+"pkg": "smarty3",
+"wall": "2026-09-01",
+"bw_version": "3.1.47-2+deb12u1",
+"desc": "Smarty is a template engine for PHP, facilitating the separation of pr ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-62993",
+"pkg": "smarty4",
+"wall": "2026-09-01",
+"bw_version": "4.3.0-1+deb12u2",
+"desc": "Smarty is a template engine for PHP, facilitating the separation of pr ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-63347",
+"pkg": "suricata-update",
+"wall": "2026-08-01",
+"bw_version": "1.2.7-1",
+"desc": "",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-63435",
+"pkg": "ruby-mail",
+"wall": "2026-09-01",
+"bw_version": "2.7.1+dfsg1-2",
+"desc": "Mail is an internet library for Ruby designed to handle email generati ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-64685",
+"pkg": "imagemagick",
+"wall": "2026-07-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u11",
+"desc": "ImageMagick is free and open-source software used for editing and mani ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-6554",
+"pkg": "libpcap",
+"wall": "2026-09-01",
+"bw_version": "1.10.3-1",
+"desc": "libpcap BPF interpreter treats the offset in the 'ja L' BPF instructio ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-65970",
+"pkg": "openimageio",
+"wall": "2026-09-01",
+"bw_version": "2.4.7.1+dfsg-2",
+"desc": "OpenImageIO is a toolset for reading, writing, and manipulating image  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-66046",
+"pkg": "expat",
+"wall": "2026-08-01",
+"bw_version": "2.5.0-1+deb12u2",
+"desc": "Expat through 2.8.3 contains a denial of service vulnerability caused  ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-66066",
+"pkg": "rails",
+"wall": "2026-07-01",
+"bw_version": "2:6.1.7.10+dfsg-1~deb12u2",
+"desc": "Action Pack is a framework for handling and responding to web requests ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-66069",
+"pkg": "rabbitmq-server",
+"wall": "2026-09-01",
+"bw_version": "3.10.8-1.1+deb12u1",
+"desc": "RabbitMQ is a messaging and streaming broker. Prior to versions 4.1.13 ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-66080",
+"pkg": "rabbitmq-server",
+"wall": "2026-09-01",
+"bw_version": "3.10.8-1.1+deb12u1",
+"desc": "RabbitMQ is a messaging and streaming broker. Prior to versions 4.1.11 ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-67234",
+"pkg": "rabbitmq-server",
+"wall": "2026-09-01",
+"bw_version": "3.10.8-1.1+deb12u1",
+"desc": "RabbitMQ is a messaging and streaming broker. From 4.2.0 until 4.2.8 a ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-67236",
+"pkg": "rabbitmq-server",
+"wall": "2026-09-01",
+"bw_version": "3.10.8-1.1+deb12u1",
+"desc": "RabbitMQ is a messaging and streaming broker. From 4.2.0 until 4.2.8 a ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-67240",
+"pkg": "rabbitmq-server",
+"wall": "2026-09-01",
+"bw_version": "3.10.8-1.1+deb12u1",
+"desc": "RabbitMQ is a messaging and streaming broker. Prior to versions 4.2.7  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-67410",
+"pkg": "rabbitmq-server",
+"wall": "2026-09-01",
+"bw_version": "3.10.8-1.1+deb12u1",
+"desc": "RabbitMQ is a messaging and streaming broker. From 4.2.0 until 4.3.3 a ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-67415",
+"pkg": "rabbitmq-server",
+"wall": "2026-09-01",
+"bw_version": "3.10.8-1.1+deb12u1",
+"desc": "RabbitMQ is a messaging and streaming broker. From 4.2.0 until 4.2.9 a ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-67549",
+"pkg": "openimageio",
+"wall": "2026-09-01",
+"bw_version": "2.4.7.1+dfsg-2",
+"desc": "OpenImageIO is a toolset for reading, writing, and manipulating image  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-6811",
+"pkg": "php-mongodb",
+"wall": "2026-06-01",
+"bw_version": "1.15.0+1.11.1+1.9.2+1.7.5-1",
+"desc": "Stack exhaustion vulnerability in the MongoDB PHP driver can cause app ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-68495",
+"pkg": "jackson-dataformat-cbor",
+"wall": "2026-10-01",
+"bw_version": "2.7.8-5",
+"desc": "The CBOR parser in FasterXML jackson-dataformats-binary never invokes  ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-69150",
+"pkg": "keepassxc",
+"wall": "2026-10-01",
+"bw_version": "2.7.4+dfsg.1-2",
+"desc": "KeePassXC is a cross-platform community-driven port of the Windows app ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-7010",
+"pkg": "libhttp-tiny-perl",
+"wall": "2026-06-01",
+"bw_version": "0.082-2",
+"desc": "HTTP::Tiny versions before 0.093 for Perl do not validate CRLF in HTTP ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-7010",
+"pkg": "perl",
+"wall": "2026-06-01",
+"bw_version": "5.36.0-7+deb12u3",
+"desc": "HTTP::Tiny versions before 0.093 for Perl do not validate CRLF in HTTP ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-7017",
+"pkg": "libhttp-tiny-perl",
+"wall": "2026-07-01",
+"bw_version": "0.082-2",
+"desc": "HTTP::Tiny versions before 0.095 for Perl forward credential headers t ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-7017",
+"pkg": "perl",
+"wall": "2026-07-01",
+"bw_version": "5.36.0-7+deb12u3",
+"desc": "HTTP::Tiny versions before 0.095 for Perl forward credential headers t ...",
+"desc_from_snapshot": "2026-08-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-71220",
+"pkg": "gfs2-utils",
+"wall": "2026-09-01",
+"bw_version": "3.5.0-2",
+"desc": "A stack out-of-bounds write vulnerability was found in gfs2-utils. In  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-72897",
+"pkg": "openssl",
+"wall": "2026-09-01",
+"bw_version": "3.0.20-1~deb12u2",
+"desc": "Issue summary: A TLS server that calls SSL_set_SSL_CTX() to switch a c ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-73234",
+"pkg": "freecad",
+"wall": "2026-08-01",
+"bw_version": "0.20.2+dfsg1-4",
+"desc": "FreeCAD is a free and open-source multiplatform 3D parametric modeler. ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-73235",
+"pkg": "freecad",
+"wall": "2026-08-01",
+"bw_version": "0.20.2+dfsg1-4",
+"desc": "FreeCAD is a free and open-source multiplatform 3D parametric modeler. ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-73433",
+"pkg": "gst-plugins-good1.0",
+"wall": "2026-08-01",
+"bw_version": "1.22.0-5+deb12u3",
+"desc": "A flaw was found in GStreamer gst-plugins-good (avidemux). When parsin ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-73434",
+"pkg": "gst-plugins-good1.0",
+"wall": "2026-08-01",
+"bw_version": "1.22.0-5+deb12u3",
+"desc": "A flaw was found in GStreamer gst-plugins-good (avidemux). In gst_avi_ ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-74222",
+"pkg": "u-boot",
+"wall": "2026-09-01",
+"bw_version": "2023.01+dfsg-2+deb12u3",
+"desc": "U-Boot before 2026.10-rc5 contains a use-after-free vulnerability in t ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-74859",
+"pkg": "gnome-tweaks",
+"wall": "2026-09-01",
+"bw_version": "42~beta-4",
+"desc": "The shell theme installer in gnome-tweaks extracts user-supplied ZIP a ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-74860",
+"pkg": "libxml2",
+"wall": "2026-09-01",
+"bw_version": "2.9.14+dfsg-1.3~deb12u6",
+"desc": "A flaw was found in libxml2 with Python bindings enabled. A remote att ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-75131",
+"pkg": "network-manager-l2tp",
+"wall": "2026-09-01",
+"bw_version": "1.20.8-1",
+"desc": "NetworkManager-l2tp through 1.52.4, fixed in 1.52.6, contains a privil ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-75804",
+"pkg": "openssl",
+"wall": "2026-09-01",
+"bw_version": "3.0.20-1~deb12u2",
+"desc": "Issue summary: OpenSSL QUIC stack does not enforce connection level fl ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-75805",
+"pkg": "openssl",
+"wall": "2026-09-01",
+"bw_version": "3.0.20-1~deb12u2",
+"desc": "Issue summary: A CMP client that requests certificate revocation on th ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-75806",
+"pkg": "openssl",
+"wall": "2026-09-01",
+"bw_version": "3.0.20-1~deb12u2",
+"desc": "Issue summary: An established DTLS 1.2 association using an AEAD ciphe ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-75893",
+"pkg": "osmo-bsc",
+"wall": "2026-09-01",
+"bw_version": "1.9.0-3",
+"desc": "In osmo-bsc from 1.0.1 through 1.14.1 a heap based buffer overflow iss ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-75894",
+"pkg": "osmo-iuh",
+"wall": "2026-09-01",
+"bw_version": "1.3.0+dfsg1-5",
+"desc": "In osmo-iuh from 0.1.0 through 1.8.0 a reachable assertion was found i ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-76174",
+"pkg": "ocsinventory-server",
+"wall": "2026-09-01",
+"bw_version": "2.8.1+dfsg1+~2.11.1-1",
+"desc": "Unrestricted file upload vulnerability in the CSV file upload function ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-76175",
+"pkg": "ocsinventory-server",
+"wall": "2026-09-01",
+"bw_version": "2.8.1+dfsg1+~2.11.1-1",
+"desc": "SQL injection vulnerability in the del_check parameter of the /ocsrepo ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-76176",
+"pkg": "ocsinventory-server",
+"wall": "2026-09-01",
+"bw_version": "2.8.1+dfsg1+~2.11.1-1",
+"desc": "SQL injection vulnerability in the endpoint /ocsreports/index.php?func ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-76177",
+"pkg": "ocsinventory-server",
+"wall": "2026-09-01",
+"bw_version": "2.8.1+dfsg1+~2.11.1-1",
+"desc": "Server-Side Request Forgery (SSRF) vulnerability in the /ocsreports/?f ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-76178",
+"pkg": "ocsinventory-server",
+"wall": "2026-09-01",
+"bw_version": "2.8.1+dfsg1+~2.11.1-1",
+"desc": "A stored Cross-Site Scripting (XSS) vulnerability in the notification  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-76654",
+"pkg": "kubernetes",
+"wall": "2026-09-01",
+"bw_version": "1.20.5+really1.20.2-1.1+deb12u1",
+"desc": "",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-76781",
+"pkg": "libxml2",
+"wall": "2026-09-01",
+"bw_version": "2.9.14+dfsg-1.3~deb12u6",
+"desc": "A flaw was found in libxml2. A local user or an attacker providing a s ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-76925",
+"pkg": "flatpak",
+"wall": "2026-09-01",
+"bw_version": "1.14.10-1~deb12u2",
+"desc": "A flaw was found in Flatpak. A Time-of-check to time-of-use (TOCTOU) r ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-76956",
+"pkg": "expat",
+"wall": "2026-08-01",
+"bw_version": "2.5.0-1+deb12u2",
+"desc": "In libexpat 2.8.2 and 2.8.3 before 2.8.4, misinterpretation of getentr ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-76957",
+"pkg": "expat",
+"wall": "2026-08-01",
+"bw_version": "2.5.0-1+deb12u2",
+"desc": "libexpat before 2.8.4 lacks handler call depth tracking with custom en ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-77050",
+"pkg": "python-django",
+"wall": "2026-10-01",
+"bw_version": "3:3.2.25-0+deb12u5",
+"desc": "An issue was discovered in Django 6.1 before 6.1.2, 6.0 before 6.0.9,  ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-77214",
+"pkg": "expat",
+"wall": "2026-10-01",
+"bw_version": "2.5.0-1+deb12u4",
+"desc": "libexpat before commit 13c5f63 contains a heap buffer over-read vulner ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-77281",
+"pkg": "caddy",
+"wall": "2026-09-01",
+"bw_version": "2.6.2-5",
+"desc": "Caddy is an extensible server platform that uses TLS by default. In ve ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-77405",
+"pkg": "golang-github-rabbitmq-amqp091-go",
+"wall": "2026-09-01",
+"bw_version": "1.5.0-2",
+"desc": "RabbitMQ amqp091-go is a Go AMQP 0.9.1 client. Prior to 1.13.0, tlsCon ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-77407",
+"pkg": "golang-github-rabbitmq-amqp091-go",
+"wall": "2026-09-01",
+"bw_version": "1.5.0-2",
+"desc": "RabbitMQ amqp091-go is a Go AMQP 0.9.1 client. Prior to 1.13.0, PlainA ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-77410",
+"pkg": "golang-github-rabbitmq-amqp091-go",
+"wall": "2026-09-01",
+"bw_version": "1.5.0-2",
+"desc": "RabbitMQ amqp091-go is a Go AMQP 0.9.1 client. Prior to 1.13.0, Channe ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-77412",
+"pkg": "golang-github-rabbitmq-amqp091-go",
+"wall": "2026-09-01",
+"bw_version": "1.5.0-2",
+"desc": "RabbitMQ amqp091-go is a Go AMQP 0.9.1 client. Prior to 1.13.0, readFi ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-77420",
+"pkg": "jline",
+"wall": "2026-09-01",
+"bw_version": "1.0-3",
+"desc": "JLine is a Java library for handling console input. From 3.0.0 until 3 ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-77422",
+"pkg": "jline",
+"wall": "2026-09-01",
+"bw_version": "1.0-3",
+"desc": "JLine is a Java library for handling console input. From 3.0.0 until 3 ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-77423",
+"pkg": "jline",
+"wall": "2026-09-01",
+"bw_version": "1.0-3",
+"desc": "JLine is a Java library for handling console input. From 3.0.0 until 3 ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-77528",
+"pkg": "python-autobahn",
+"wall": "2026-09-01",
+"bw_version": "22.7.1+dfsg1-2",
+"desc": "Autobahn Python is a WebSocket and WAMP implementation for Python that ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-77696",
+"pkg": "openssl",
+"wall": "2026-09-01",
+"bw_version": "3.0.20-1~deb12u2",
+"desc": "Issue summary: SM2 signature generation uses non-constant-time arithme ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-78253",
+"pkg": "qt6-base",
+"wall": "2026-09-01",
+"bw_version": "6.4.2+dfsg-10",
+"desc": "Uncontrolled recursion in QXmlStreamReader::readElementText() in Qt Gr ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-78253",
+"pkg": "qtbase-opensource-src",
+"wall": "2026-09-01",
+"bw_version": "5.15.8+dfsg-11+deb12u3",
+"desc": "Uncontrolled recursion in QXmlStreamReader::readElementText() in Qt Gr ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-78663",
+"pkg": "golang-golang-x-net",
+"wall": "2026-10-01",
+"bw_version": "1:0.7.0+dfsg-1",
+"desc": "The HTTP/2 server can refund connection-level flow control twice for t ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-78667",
+"pkg": "golang-1.19",
+"wall": "2026-10-01",
+"bw_version": "1.19.8-2",
+"desc": "When parsing a Range header containing a large number of small ranges, ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-78669",
+"pkg": "golang-1.19",
+"wall": "2026-10-01",
+"bw_version": "1.19.8-2",
+"desc": "A malicious HTTP/2 peer can cause excessive CPU consumption in the cli ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-78689",
+"pkg": "libnginx-mod-js",
+"wall": "2026-09-01",
+"bw_version": "0.7.9-2",
+"desc": "Description   NGINX JavaScript (njs) has a vulnerability in the XML mo ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-79516",
+"pkg": "libstb",
+"wall": "2026-09-01",
+"bw_version": "0.0~git20220908.8b5f1f3+ds-1",
+"desc": "An out-of-bounds read in the stbsp_vsnprintf function (stb_sprintf.h)  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-79602",
+"pkg": "xen",
+"wall": "2026-09-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "A guest with a PCI device assigned that has at least a BAR on the IO p ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-79603",
+"pkg": "xen",
+"wall": "2026-09-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "x86 PV guests can free memory pages while still keeping a stale TLB en ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-79604",
+"pkg": "xen",
+"wall": "2026-09-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-79607",
+"pkg": "xen",
+"wall": "2026-10-01",
+"bw_version": "4.17.5+72-g01140da4e8-1",
+"desc": "During Xenstore live update the state record for a Xenstore watch with ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-79616",
+"pkg": "qtdeclarative-opensource-src",
+"wall": "2026-09-01",
+"bw_version": "5.15.8+dfsg-3",
+"desc": "Out-of-bounds read while parsing untrusted SVG path strings in Qt Quic ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-80229",
+"pkg": "curl",
+"wall": "2026-09-01",
+"bw_version": "7.88.1-10+deb12u15",
+"desc": "When performing transfers via libcurl\\u2019s multi interface, pooled T ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-80230",
+"pkg": "curl",
+"wall": "2026-09-01",
+"bw_version": "7.88.1-10+deb12u15",
+"desc": "When `CURLOPT_PINNEDPUBLICKEY` is configured alongside options that di ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-80231",
+"pkg": "curl",
+"wall": "2026-09-01",
+"bw_version": "7.88.1-10+deb12u15",
+"desc": "A flaw in libcurl makes it wrongly reuse an existing HTTPS connection  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-80255",
+"pkg": "curl",
+"wall": "2026-09-01",
+"bw_version": "7.88.1-10+deb12u15",
+"desc": "A `Set-Cookie:` header using tab (horizontal tab, ASCII code 9) instea ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-81869",
+"pkg": "golang-opentelemetry-otel",
+"wall": "2026-09-01",
+"bw_version": "1.1.0-2",
+"desc": "OpenTelemetry-Go is the Go implementation of OpenTelemetry. From versi ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-81871",
+"pkg": "golang-opentelemetry-otel",
+"wall": "2026-09-01",
+"bw_version": "1.1.0-2",
+"desc": "OpenTelemetry-Go is the Go implementation of OpenTelemetry. Prior to v ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-81928",
+"pkg": "libnet-dns-perl",
+"wall": "2026-09-01",
+"bw_version": "1.36-1+deb12u1",
+"desc": "Net::DNS versions before 1.57 for Perl allow memory exhaustion via unb ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-81934",
+"pkg": "redis",
+"wall": "2026-08-01",
+"bw_version": "5:7.0.15-1~deb12u8",
+"desc": "Redis contains a use-after-free vulnerability in the 'tlsProcessPendin ...",
+"desc_from_snapshot": "2026-09-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-82049",
+"pkg": "python3.11",
+"wall": "2026-09-01",
+"bw_version": "3.11.2-6+deb12u8",
+"desc": "In CPython 3.13 and earlier, the tarfilemodule's dataand tar extractio ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-82208",
+"pkg": "curl",
+"wall": "2026-09-01",
+"bw_version": "7.88.1-10+deb12u15",
+"desc": "With the wolfSSL backend, when CA caching is enabled and an `CURLOPT_S ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-82209",
+"pkg": "curl",
+"wall": "2026-09-01",
+"bw_version": "7.88.1-10+deb12u15",
+"desc": "When libpsl support is enabled, libcurl fails to enforce the Public Su ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-82398",
+"pkg": "pypdf",
+"wall": "2026-09-01",
+"bw_version": "3.4.1-1+deb12u1",
+"desc": "pypdf is a free and open-source pure-python PDF library. Prior to 6.15 ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-82531",
+"pkg": "smarty3",
+"wall": "2026-10-01",
+"bw_version": "3.1.47-2+deb12u1",
+"desc": "Smarty before 4.5.8 and 5.x before 5.8.5 contains a code injection vul ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-82631",
+"pkg": "redis",
+"wall": "2026-09-01",
+"bw_version": "5:7.0.15-1~deb12u9",
+"desc": "A security flaw has been discovered in valkey-io valkey 9.1.0. The aff ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-82659",
+"pkg": "node-nodemailer",
+"wall": "2026-09-01",
+"bw_version": "6.8.0+~6.4.6-1",
+"desc": "nodemailer before 9.0.1 fails to apply disableFileAccess and disableUr ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-82661",
+"pkg": "node-nodemailer",
+"wall": "2026-09-01",
+"bw_version": "6.8.0+~6.4.6-1",
+"desc": "Nodemailer before 8.0.9 fails to sanitize carriage return and line fee ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-82662",
+"pkg": "node-nodemailer",
+"wall": "2026-09-01",
+"bw_version": "6.8.0+~6.4.6-1",
+"desc": "Nodemailer before 8.0.8 disables TLS certificate verification in lib/f ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-82677",
+"pkg": "redis",
+"wall": "2026-09-01",
+"bw_version": "5:7.0.15-1~deb12u9",
+"desc": "A vulnerability was determined in valkey-io valkey 9.1.0. Impacted is  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-82853",
+"pkg": "node-nodemailer",
+"wall": "2026-09-01",
+"bw_version": "6.8.0+~6.4.6-1",
+"desc": "Nodemailer versions before 8.0.5 contain an SMTP command injection vul ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-82854",
+"pkg": "node-nodemailer",
+"wall": "2026-09-01",
+"bw_version": "6.8.0+~6.4.6-1",
+"desc": "Nodemailer before 8.0.4 is vulnerable to SMTP command injection throug ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-8286",
+"pkg": "curl",
+"wall": "2026-06-01",
+"bw_version": "7.88.1-10+deb12u14",
+"desc": "",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-8328",
+"pkg": "pypy3",
+"wall": "2026-06-01",
+"bw_version": "7.3.11+dfsg-2+deb12u3",
+"desc": "The ftpcp() function in Lib/ftplib.py was not updated when  CVE-2021-4 ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-8328",
+"pkg": "python3.11",
+"wall": "2026-06-01",
+"bw_version": "3.11.2-6+deb12u7",
+"desc": "The ftpcp() function in Lib/ftplib.py was not updated when  CVE-2021-4 ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-83602",
+"pkg": "netdata",
+"wall": "2026-09-01",
+"bw_version": "1.37.1-2",
+"desc": "Netdata is an open source observability tool. From 2.0.0 until 2.11.0, ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-83606",
+"pkg": "node-xmldom",
+"wall": "2026-09-01",
+"bw_version": "0.8.6-1",
+"desc": "xmldom is a pure JavaScript W3C standard-based (XML DOM Level 2 Core)  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-83614",
+"pkg": "node-xmldom",
+"wall": "2026-09-01",
+"bw_version": "0.8.6-1",
+"desc": "xmldom is a pure JavaScript W3C standard-based (XML DOM Level 2 Core)  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-83618",
+"pkg": "node-xmldom",
+"wall": "2026-09-01",
+"bw_version": "0.8.6-1",
+"desc": "xmldom is a pure JavaScript W3C standard-based (XML DOM Level 2 Core)  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-83619",
+"pkg": "node-xmldom",
+"wall": "2026-09-01",
+"bw_version": "0.8.6-1",
+"desc": "xmldom is a pure JavaScript W3C standard-based (XML DOM Level 2 Core)  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-8376",
+"pkg": "perl",
+"wall": "2026-06-01",
+"bw_version": "5.36.0-7+deb12u3",
+"desc": "Perl versions through 5.43.10 have a heap buffer overflow when compili ...",
+"desc_from_snapshot": "2026-06-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-84042",
+"pkg": "crun",
+"wall": "2026-09-01",
+"bw_version": "1.8.1-1+deb12u1",
+"desc": "A flaw was found in crun. When crun is built with libkrun and a contai ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-84233",
+"pkg": "rpm",
+"wall": "2026-09-01",
+"bw_version": "4.18.0+dfsg-1+deb12u1",
+"desc": "A flaw was found in rpm. A local attacker could supply a specially cra ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-84267",
+"pkg": "gvfs",
+"wall": "2026-09-01",
+"bw_version": "1.50.3-1+deb12u1",
+"desc": "A flaw was found in the SFTP backend in gvfs. When mounting a share, a ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-84268",
+"pkg": "gvfs",
+"wall": "2026-09-01",
+"bw_version": "1.50.3-1+deb12u1",
+"desc": "A flaw was found in the SFTP backend in gvfs. When mounting a share an ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-84270",
+"pkg": "gvfs",
+"wall": "2026-09-01",
+"bw_version": "1.50.3-1+deb12u1",
+"desc": "A flaw was found in the MTP backend in gvfs. When reading a file from  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-84304",
+"pkg": "golang-google-grpc",
+"wall": "2026-09-01",
+"bw_version": "1.33.3-2",
+"desc": "gRPC-Go is the Go language implementation of gRPC. Prior to 1.83.1, in ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-84305",
+"pkg": "sqlparse",
+"wall": "2026-09-01",
+"bw_version": "0.4.2-1+deb12u1",
+"desc": "sqlparse is a non-validating SQL parser module for Python. Prior to 0. ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-84308",
+"pkg": "php-phpseclib3",
+"wall": "2026-09-01",
+"bw_version": "3.0.19-1+deb12u6",
+"desc": "phpseclib is a PHP secure communications library. Prior to 3.0.57 and  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-84309",
+"pkg": "pypdf",
+"wall": "2026-09-01",
+"bw_version": "3.4.1-1+deb12u1",
+"desc": "pypdf is a free and open-source pure-python PDF library. Prior to 6.16 ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-84311",
+"pkg": "pypdf",
+"wall": "2026-09-01",
+"bw_version": "3.4.1-1+deb12u1",
+"desc": "pypdf is a free and open-source pure-python PDF library. Prior to 6.16 ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-84366",
+"pkg": "python-scrapy",
+"wall": "2026-09-01",
+"bw_version": "2.8.0-2",
+"desc": "Scrapy is a high-level web crawling and scraping framework for Python. ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-84394",
+"pkg": "node-ajv",
+"wall": "2026-09-01",
+"bw_version": "6.12.6-3",
+"desc": "fast-uri accepts a host that contains an unbalanced or misplaced autho ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-84782",
+"pkg": "openssl",
+"wall": "2026-09-01",
+"bw_version": "3.0.20-1~deb12u2",
+"desc": "Issue summary: The DTLS retransmission logic does not correctly handle ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-84783",
+"pkg": "openssl",
+"wall": "2026-09-01",
+"bw_version": "3.0.20-1~deb12u2",
+"desc": "Issue summary: The first concurrent use of the same X.509 certificate  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-84939",
+"pkg": "libfreemarker-java",
+"wall": "2026-09-01",
+"bw_version": "2.3.31-2",
+"desc": "Path traversal vulnerability in Apache FreeMarker template loading mec ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-84947",
+"pkg": "node-undici",
+"wall": "2026-09-01",
+"bw_version": "5.15.0+dfsg1+~cs20.10.9.3-1+deb12u4",
+"desc": "undici's dump interceptor reads and discards a response body up to a c ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-84968",
+"pkg": "php-mongodb",
+"wall": "2026-09-01",
+"bw_version": "1.15.0+1.11.1+1.9.2+1.7.5-1",
+"desc": "An out-of-bounds read in the BSON decoding component of the MongoDB PH ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-85013",
+"pkg": "modules",
+"wall": "2026-09-01",
+"bw_version": "5.2.0-1",
+"desc": "A flaw was found in environment-modules. A local attacker can exploit  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-85150",
+"pkg": "gst-plugins-base1.0",
+"wall": "2026-09-01",
+"bw_version": "1.22.0-3+deb12u6",
+"desc": "A NULL pointer dereference flaw was found in GStreamer's RTSP support  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-85197",
+"pkg": "libsoup3",
+"wall": "2026-09-01",
+"bw_version": "3.2.3-0+deb12u2",
+"desc": "A flaw was found in libsoup. A malicious HTTP/2 server or a Man-in-the ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-85234",
+"pkg": "tftp-hpa",
+"wall": "2026-09-01",
+"bw_version": "5.2+20150808-1.4",
+"desc": "A flaw was found in tftp-hpa. When the `in.tftpd` remap engine process ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-85394",
+"pkg": "python-jose",
+"wall": "2026-09-01",
+"bw_version": "3.3.0+dfsg-4",
+"desc": "python-jose through 3.5.0 fails to properly validate asymmetric keys i ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-85484",
+"pkg": "libhtml-formhandler-perl",
+"wall": "2026-09-01",
+"bw_version": "0.40068-2",
+"desc": "HTML::FormHandler versions before 0.410002 for Perl render option grou ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-85485",
+"pkg": "libhtml-formhandler-perl",
+"wall": "2026-09-01",
+"bw_version": "0.40068-2",
+"desc": "HTML::FormHandler versions before 0.410002 for Perl render some error  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-85630",
+"pkg": "libhtml-formhandler-perl",
+"wall": "2026-09-01",
+"bw_version": "0.40068-2",
+"desc": "HTML::FormHandler versions before 0.410002 for Perl render field attri ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-85732",
+"pkg": "golang-oras-oras-go",
+"wall": "2026-09-01",
+"bw_version": "1.1.1-1",
+"desc": "oras-go is a Go library for managing OCI artifacts. Prior to 2.6.2, th ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-85748",
+"pkg": "mariadb",
+"wall": "2026-10-01",
+"bw_version": "1:10.11.18-0+deb12u1",
+"desc": "MariaDB server is a community developed fork of MySQL server. From 12. ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-86137",
+"pkg": "libxml2",
+"wall": "2026-09-01",
+"bw_version": "2.9.14+dfsg-1.3~deb12u6",
+"desc": "In libxml2 before 2.15.4, xmlFAParsePosCharGroup has an out-of-bounds  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-86138",
+"pkg": "libxml2",
+"wall": "2026-09-01",
+"bw_version": "2.9.14+dfsg-1.3~deb12u6",
+"desc": "In libxml2 before 2.15.4, xmlDictAddQString in dict.c has an integer o ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-86141",
+"pkg": "libxml2",
+"wall": "2026-09-01",
+"bw_version": "2.9.14+dfsg-1.3~deb12u6",
+"desc": "xmlregexp in libxml2 before 2.15.4 has a NULL pointer dereference in x ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-86142",
+"pkg": "libxml2",
+"wall": "2026-09-01",
+"bw_version": "2.9.14+dfsg-1.3~deb12u6",
+"desc": "In libxml2 before 2.15.4, there is a heap-based buffer overflow in xml ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-86143",
+"pkg": "libxml2",
+"wall": "2026-09-01",
+"bw_version": "2.9.14+dfsg-1.3~deb12u6",
+"desc": "In xmlIO in libxml2 before 2.15.4, an inconsistency in xmlOutputWriteC ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-86144",
+"pkg": "libxml2",
+"wall": "2026-09-01",
+"bw_version": "2.9.14+dfsg-1.3~deb12u6",
+"desc": "In xinclude in libxml2 before 2.15.4, xmlXIncludeProcess and xmlXInclu ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-86219",
+"pkg": "libauthen-sasl-perl",
+"wall": "2026-09-01",
+"bw_version": "2.1600-3",
+"desc": "Authen::SASL::Perl::DIGEST_MD5 versions before 2.2100 for Perl accept  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-86231",
+"pkg": "jsch",
+"wall": "2026-09-01",
+"bw_version": "0.1.55-1",
+"desc": "A security flaw has been discovered in mwiede jsch up to 2.28.5. Affec ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-86320",
+"pkg": "flatpak-builder",
+"wall": "2026-09-01",
+"bw_version": "1.2.3-1",
+"desc": "A flaw was found in flatpak-builder where Git hooks are not disabled w ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-86412",
+"pkg": "curl",
+"wall": "2026-10-01",
+"bw_version": "7.88.1-10+deb12u15",
+"desc": "A remote HTTP server can set a cookie that curl accepts and writes to  ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-86413",
+"pkg": "curl",
+"wall": "2026-10-01",
+"bw_version": "7.88.1-10+deb12u15",
+"desc": "When using an *ambient user* in a first transfer doing Negotiate authe ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-86420",
+"pkg": "imagemagick",
+"wall": "2026-09-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick before 7.1.2-30 and 6.9.13-55 fails to properly lower the  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-86421",
+"pkg": "imagemagick",
+"wall": "2026-09-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick before 7.1.2-30 and 6.9.13-55 contains a memory leak in th ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-86422",
+"pkg": "imagemagick",
+"wall": "2026-09-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick before 7.1.2-30 contains a time-of-check-time-of-use vulne ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-86423",
+"pkg": "imagemagick",
+"wall": "2026-09-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick before 7.1.2-30 and 6.9.x before 6.9.13-55 contains a heap ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-86424",
+"pkg": "imagemagick",
+"wall": "2026-09-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick before 7.1.2-30 and 6.9.13-55 contains a time-of-check-tim ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-86425",
+"pkg": "imagemagick",
+"wall": "2026-09-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick before 7.1.2-30 and 6.9.x before 6.9.13-55 contains a heap ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-86472",
+"pkg": "node-ajv",
+"wall": "2026-09-01",
+"bw_version": "6.12.6-3",
+"desc": "fast-uri is a dependency-free RFC 3986 URI parser for Node.js, used by ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-87733",
+"pkg": "ocaml-mirage-crypto",
+"wall": "2026-09-01",
+"bw_version": "0.10.7-1",
+"desc": "An issue was discovered in the mirage-crypto-ec function before 2.2.0  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-87737",
+"pkg": "ocaml-mirage-crypto",
+"wall": "2026-09-01",
+"bw_version": "0.10.7-1",
+"desc": "An issue was discovered in the mirage-crypto-ec package before 2.4.0 f ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-87823",
+"pkg": "zstd-jni-java",
+"wall": "2026-09-01",
+"bw_version": "1.5.2-5+ds-3",
+"desc": "zstd-jni before 1.5.7-14 performs 32-bit signed bounds checks on three ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-87859",
+"pkg": "node-morgan",
+"wall": "2026-09-01",
+"bw_version": "1.10.0+~1.9.3-1",
+"desc": "morgan is an HTTP request logger middleware for Node.js. In versions b ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-87861",
+"pkg": "curl",
+"wall": "2026-10-01",
+"bw_version": "7.88.1-10+deb12u15",
+"desc": "When using ambient user credentials, an HTTP request directed to one o ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-87862",
+"pkg": "curl",
+"wall": "2026-10-01",
+"bw_version": "7.88.1-10+deb12u15",
+"desc": "Importing a `includeSubDomains` parent HSTS entry before a longer-live ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-87890",
+"pkg": "python-django",
+"wall": "2026-10-01",
+"bw_version": "3:3.2.25-0+deb12u5",
+"desc": "An issue was discovered in Django 6.1 before 6.1.2, 6.0 before 6.0.9,  ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-87908",
+"pkg": "node-multiparty",
+"wall": "2026-09-01",
+"bw_version": "4.2.3-2",
+"desc": "multiparty is a Node.js library for parsing multipart/form-data reques ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-87975",
+"pkg": "python-django",
+"wall": "2026-10-01",
+"bw_version": "3:3.2.25-0+deb12u5",
+"desc": "An issue was discovered in Django 6.1 before 6.1.2, 6.0 before 6.0.9,  ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-88015",
+"pkg": "rclone",
+"wall": "2026-09-01",
+"bw_version": "1.60.1+dfsg-2",
+"desc": "rclone is a command-line program to sync files and directories to and  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-88016",
+"pkg": "rclone",
+"wall": "2026-09-01",
+"bw_version": "1.60.1+dfsg-2",
+"desc": "rclone is a command-line program to sync files and directories to and  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-88017",
+"pkg": "rclone",
+"wall": "2026-09-01",
+"bw_version": "1.60.1+dfsg-2",
+"desc": "rclone is a command-line program to sync files and directories to and  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-88018",
+"pkg": "rclone",
+"wall": "2026-09-01",
+"bw_version": "1.60.1+dfsg-2",
+"desc": "rclone is a command-line program to sync files and directories to and  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-88032",
+"pkg": "mongo-java-driver",
+"wall": "2026-09-01",
+"bw_version": "3.6.3-2",
+"desc": "A use-after-free in the reactive client-side encryption component of t ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-88045",
+"pkg": "rclone",
+"wall": "2026-09-01",
+"bw_version": "1.60.1+dfsg-2",
+"desc": "rclone is a command-line program to sync files and directories to and  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-88340",
+"pkg": "yara",
+"wall": "2026-09-01",
+"bw_version": "4.2.3-4",
+"desc": "An invalid pointer release vulnerability exists in YARA 4.5.8 during d ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-88362",
+"pkg": "mujs",
+"wall": "2026-09-01",
+"bw_version": "1.3.2-1",
+"desc": "MuJS e892c9fdb contains an incorrect numeric conversion vulnerability  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-88372",
+"pkg": "libsndfile",
+"wall": "2026-09-01",
+"bw_version": "1.2.0-1+deb12u1",
+"desc": "libsndfile 1.2.2 contains an integer overflow vulnerability in mat4_re ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-88382",
+"pkg": "hiredis",
+"wall": "2026-09-01",
+"bw_version": "0.14.1-3",
+"desc": "hiredis commit 29ea279 (post-v1.5.0) contains an uncontrolled memory a ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-88386",
+"pkg": "libsndfile",
+"wall": "2026-09-01",
+"bw_version": "1.2.0-1+deb12u1",
+"desc": "libsndfile 1.2.2 contains a misaligned memory access issue in psf_binh ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-88807",
+"pkg": "libxrender",
+"wall": "2026-09-01",
+"bw_version": "1:0.9.10-1.1",
+"desc": "A heap overflow in libXrender before 0.9.13 inRenderQueryPictFormats c ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-88840",
+"pkg": "busybox",
+"wall": "2026-09-01",
+"bw_version": "1:1.35.0-4+deb12u1",
+"desc": "BusyBox TLS get_client_hello() reads past the end of the input buffer  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-88914",
+"pkg": "gst-plugins-good1.0",
+"wall": "2026-09-01",
+"bw_version": "1.22.0-5+deb12u3",
+"desc": "A flaw was found in GStreamer's gst-plugins-good isomp4 plugin. When p ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-89058",
+"pkg": "resteasy3.0",
+"wall": "2026-09-01",
+"bw_version": "3.0.26-6",
+"desc": "A flaw was found in RESTEasy's CorsFilter, which, when configured to a ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-89059",
+"pkg": "resteasy3.0",
+"wall": "2026-09-01",
+"bw_version": "3.0.26-6",
+"desc": "A flaw was found in RESTEasy's IIOImageProvider, which decodes attacke ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-89087",
+"pkg": "ocaml-cstruct",
+"wall": "2026-09-01",
+"bw_version": "6.1.1-1",
+"desc": "The cstruct package before 6.3.0 for OCaml mishandles indexes.",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-89092",
+"pkg": "glibc",
+"wall": "2026-09-01",
+"bw_version": "2.36-9+deb12u14",
+"desc": "The nscd service in the GNU C Library 2.3.4 onwards may crash due to a ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-89135",
+"pkg": "wolfssl",
+"wall": "2026-09-01",
+"bw_version": "5.5.4-2+deb12u3",
+"desc": "A failed X509_verify_cert call permanently plants an unverified attack ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-89136",
+"pkg": "wolfssl",
+"wall": "2026-09-01",
+"bw_version": "5.5.4-2+deb12u3",
+"desc": "When using RPK (Raw Public Key), the client side of a TLS 1.2, 1.3 and ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-89147",
+"pkg": "net-snmp",
+"wall": "2026-09-01",
+"bw_version": "5.9.3+dfsg-2+deb12u1",
+"desc": "Net-SNMP through 5.9.5.2 contains a denial of service vulnerability in ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-8924",
+"pkg": "curl",
+"wall": "2026-06-01",
+"bw_version": "7.88.1-10+deb12u14",
+"desc": "",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-89258",
+"pkg": "hugo",
+"wall": "2026-09-01",
+"bw_version": "0.111.3-1",
+"desc": "Hugo is a static site generator. In versions after v0.123.0 and before ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-89259",
+"pkg": "hugo",
+"wall": "2026-09-01",
+"bw_version": "0.111.3-1",
+"desc": "Hugo is a static site generator. From v0.161.0, Hugo executes Node too ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-8927",
+"pkg": "curl",
+"wall": "2026-06-01",
+"bw_version": "7.88.1-10+deb12u14",
+"desc": "",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-90460",
+"pkg": "keystone",
+"wall": "2026-09-01",
+"bw_version": "2:22.0.2-0+deb12u3",
+"desc": "An issue was discovered in OpenStack Keystone before 29.0.3. Tokens ob ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-90558",
+"pkg": "sngrep",
+"wall": "2026-09-01",
+"bw_version": "1.6.0-1",
+"desc": "sngrep through 1.8.4 contains stack buffer overflow vulnerabilities in ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-90648",
+"pkg": "wabt",
+"wall": "2026-09-01",
+"bw_version": "1.0.32-1",
+"desc": "wasm2c in WebAssembly wabt through 1.0.41 allows sandbox escape in som ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-90698",
+"pkg": "memcached",
+"wall": "2026-09-01",
+"bw_version": "1.6.18-1",
+"desc": "A security flaw has been discovered in memcached 1.6.41/1.6.42/1.6.43. ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-90781",
+"pkg": "alsa-lib",
+"wall": "2026-09-01",
+"bw_version": "1.2.8-1",
+"desc": "alsa-lib through 1.2.16.1 contains a stack buffer overflow in the __sn ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-90949",
+"pkg": "gimp",
+"wall": "2026-09-01",
+"bw_version": "2.10.34-1+deb12u10",
+"desc": "A flaw was found in GIMP's PSP (Paint Shop Pro) file loader. When proc ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-91477",
+"pkg": "openjfx",
+"wall": "2026-10-01",
+"bw_version": "11.0.11+1-3",
+"desc": "Vulnerability in the Oracle JavaFX product of Oracle Java SE (componen ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-91752",
+"pkg": "libextractor",
+"wall": "2026-09-01",
+"bw_version": "1:1.11-7",
+"desc": "GNU libextractor before 1.15 contains a stack-based buffer overflow vu ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-91765",
+"pkg": "php8.2",
+"wall": "2026-09-01",
+"bw_version": "8.2.33-1~deb12u1",
+"desc": "cleanup_xml_node() in the SOAP XML parser recurses once per XML nestin ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-91766",
+"pkg": "php8.2",
+"wall": "2026-09-01",
+"bw_version": "8.2.33-1~deb12u1",
+"desc": "When the http:// stream wrapper follows a redirect it forwards the use ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-91767",
+"pkg": "php8.2",
+"wall": "2026-09-01",
+"bw_version": "8.2.33-1~deb12u1",
+"desc": "php_openssl_matches_wildcard_name() in ext/openssl/xp_ssl.c underflows ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-91768",
+"pkg": "php8.2",
+"wall": "2026-09-01",
+"bw_version": "8.2.33-1~deb12u1",
+"desc": "The IPv6 branch of the FastCGI client access check compares only the f ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-91769",
+"pkg": "php8.2",
+"wall": "2026-09-01",
+"bw_version": "8.2.33-1~deb12u1",
+"desc": "PHP's OpenSSL stream peer verification checks the certificate's subjec ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-91949",
+"pkg": "freerdp2",
+"wall": "2026-09-01",
+"bw_version": "2.11.7+dfsg1-6~deb12u1",
+"desc": "FreeRDP server versions before 3.31.0 contain a protocol negotiation b ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-92121",
+"pkg": "wss4j",
+"wall": "2026-10-01",
+"bw_version": "1.6.19-3",
+"desc": "In the WSS4J streaming (StAX) code, a signature reference using the WS ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-92288",
+"pkg": "lemonldap-ng",
+"wall": "2026-09-01",
+"bw_version": "2.16.1+ds-deb12u9",
+"desc": "Lemonldap::NG::Portal versions from 2.20.0 before 2.21.6, from 2.22.0  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-92289",
+"pkg": "lemonldap-ng",
+"wall": "2026-09-01",
+"bw_version": "2.16.1+ds-deb12u9",
+"desc": "Lemonldap::NG::Portal versions from 2.23.0 before 2.23.4 for Perl allo ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-92382",
+"pkg": "usbredir",
+"wall": "2026-09-01",
+"bw_version": "0.13.0-2",
+"desc": "An out-of-bounds write flaw was found in usbredir. Starting an isochro ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-92386",
+"pkg": "curl",
+"wall": "2026-10-01",
+"bw_version": "7.88.1-10+deb12u15",
+"desc": "When writing a long cookie name and value to a Netscape cookie jar, a  ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-92392",
+"pkg": "curl",
+"wall": "2026-10-01",
+"bw_version": "7.88.1-10+deb12u15",
+"desc": "During an upload, curl mishandles HTTP/2 `RST_STREAM` received from th ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-92595",
+"pkg": "node-nodemailer",
+"wall": "2026-09-01",
+"bw_version": "6.8.0+~6.4.6-1",
+"desc": "Nodemailer (npm package `nodemailer`) versions 9.1.0 and earlier do no ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-92598",
+"pkg": "node-nodemailer",
+"wall": "2026-09-01",
+"bw_version": "6.8.0+~6.4.6-1",
+"desc": "Nodemailer before 9.1.0 fails to apply UTS-46 normalization when encod ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-92747",
+"pkg": "cockpit-machines",
+"wall": "2026-09-01",
+"bw_version": "288-1",
+"desc": "A flaw was found in `cockpit-machines`. This vulnerability allows a lo ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-92768",
+"pkg": "cockpit-machines",
+"wall": "2026-09-01",
+"bw_version": "288-1",
+"desc": "A flaw was found in cockpit-machines. This vulnerability allows a loca ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-92842",
+"pkg": "php8.2",
+"wall": "2026-09-01",
+"bw_version": "8.2.33-1~deb12u1",
+"desc": "The convert.base64-encode, convert.quoted-printable-encode and convert ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93012",
+"pkg": "libemail-sender-perl",
+"wall": "2026-09-01",
+"bw_version": "2.600-1",
+"desc": "Email::Sender::Transport::Sendmail versions before 2.602 for Perl allo ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93018",
+"pkg": "libimager-perl",
+"wall": "2026-09-01",
+"bw_version": "1.019+dfsg-1",
+"desc": "Imager versions before 1.036 for Perl disclose uninitialised heap memo ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93019",
+"pkg": "libimager-perl",
+"wall": "2026-09-01",
+"bw_version": "1.019+dfsg-1",
+"desc": "Imager versions before 1.036 for Perl exit the process reading a TGA w ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93337",
+"pkg": "network-manager-l2tp",
+"wall": "2026-09-01",
+"bw_version": "1.20.8-1",
+"desc": "NetworkManager-l2tp through 1.52.4, fixed in 1.52.6, contains an impro ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93544",
+"pkg": "libxi",
+"wall": "2026-09-01",
+"bw_version": "2:1.8-1",
+"desc": "An out-of-bounds read in libXi's XI2 XIQueryDevice reply parsing in li ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93586",
+"pkg": "imagemagick",
+"wall": "2026-09-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick before 7.1.2-31 and before 6.9.13-56 contains a use-after- ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93587",
+"pkg": "imagemagick",
+"wall": "2026-09-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick before 7.1.2-31 and before 6.9.13-56 contains a policy byp ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93588",
+"pkg": "imagemagick",
+"wall": "2026-09-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick before 7.1.2-31 and before 6.9.13-56 contains a NULL point ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93589",
+"pkg": "imagemagick",
+"wall": "2026-09-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick before 7.1.2-31 and 6.9.13-56 contains a division-by-zero  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93590",
+"pkg": "imagemagick",
+"wall": "2026-09-01",
+"bw_version": "8:6.9.11.60+dfsg-1.6+deb12u13",
+"desc": "ImageMagick before 7.1.2-31 contains a policy bypass vulnerability in  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93653",
+"pkg": "poppler",
+"wall": "2026-09-01",
+"bw_version": "22.12.0-2+deb12u3",
+"desc": "A denial of service flaw was found in Poppler's Splash backend. A craf ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93658",
+"pkg": "rust-coreutils",
+"wall": "2026-09-01",
+"bw_version": "0.0.17-2",
+"desc": "uutils coreutils versions before 0.10.0 apply setuid or setgid mode to ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93682",
+"pkg": "php8.2",
+"wall": "2026-09-01",
+"bw_version": "8.2.33-1~deb12u1",
+"desc": "When the HTTP stream wrapper follows a redirect and the response carri ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93687",
+"pkg": "node-braces",
+"wall": "2026-09-01",
+"bw_version": "3.0.2+~3.0.1-1",
+"desc": "braces through 3.0.3 contains a stack overflow vulnerability in the re ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93711",
+"pkg": "libdancer2-perl",
+"wall": "2026-09-01",
+"bw_version": "0.400001+dfsg-1",
+"desc": "Dancer2 versions before 2.2.0 for Perl do not strip CR and LF from res ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93712",
+"pkg": "libdancer2-perl",
+"wall": "2026-09-01",
+"bw_version": "0.400001+dfsg-1",
+"desc": "Dancer2 versions from 2.1.0 before 2.2.0 for Perl serve files from out ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93750",
+"pkg": "node-got",
+"wall": "2026-09-01",
+"bw_version": "11.8.5+~cs58.13.36-3",
+"desc": "http-cache-semantics through 4.2.0 contains a cache validation vulnera ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93853",
+"pkg": "barman",
+"wall": "2026-09-01",
+"bw_version": "3.4.0-1",
+"desc": "Unverified ownership in Barman snapshot backup deletion allows a princ ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93894",
+"pkg": "varnish",
+"wall": "2026-09-01",
+"bw_version": "7.1.1-2+deb12u1",
+"desc": "In Vinyl Cache before 9.0,2, workspace buffer overflow vulnerability w ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-93990",
+"pkg": "expat",
+"wall": "2026-09-01",
+"bw_version": "2.5.0-1+deb12u3",
+"desc": "Expat before 2.8.5 fails to validate that a high surrogate in UTF-16 i ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-94114",
+"pkg": "bcel",
+"wall": "2026-10-01",
+"bw_version": "6.5.0-2",
+"desc": "Symbolic name not mapping to correct class.    BCEL caches attacker-co ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-94265",
+"pkg": "curl",
+"wall": "2026-10-01",
+"bw_version": "7.88.1-10+deb12u15",
+"desc": "When processing an HTTP redirect to a URL containing userinfo (a `user ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-94285",
+"pkg": "libx11",
+"wall": "2026-09-01",
+"bw_version": "2:1.8.4-2+deb12u2",
+"desc": "An out-of-bounds read in libX11's byte-oriented codeset parser in libX ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-94422",
+"pkg": "xdg-dbus-proxy",
+"wall": "2026-09-01",
+"bw_version": "0.1.4-3+deb12u1",
+"desc": "",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-94571",
+"pkg": "octavia",
+"wall": "2026-09-01",
+"bw_version": "11.0.0-2",
+"desc": "In OpenStack Octavia before 18.0.1, the Amphora provider driver did no ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-94574",
+"pkg": "wget",
+"wall": "2026-09-01",
+"bw_version": "1.21.3-1+deb12u1",
+"desc": "A local cross-user code execution vulnerability exists in GNU wget (Wi ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-95512",
+"pkg": "freetype",
+"wall": "2026-10-01",
+"bw_version": "2.12.1+dfsg-5+deb12u4",
+"desc": "A flaw was found in FreeType, specifically within its CID font loader. ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-95619",
+"pkg": "gcc-12",
+"wall": "2026-09-01",
+"bw_version": "12.2.0-14+deb12u1",
+"desc": "A flaw was found in libstdc++. An integer overflow can occur when proc ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-96543",
+"pkg": "gimp",
+"wall": "2026-09-01",
+"bw_version": "2.10.34-1+deb12u10",
+"desc": "",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-96544",
+"pkg": "gimp",
+"wall": "2026-09-01",
+"bw_version": "2.10.34-1+deb12u10",
+"desc": "",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-96545",
+"pkg": "gimp",
+"wall": "2026-09-01",
+"bw_version": "2.10.34-1+deb12u10",
+"desc": "An out-of-bounds heap read flaw was found in GIMP's TIM image loader.  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-96674",
+"pkg": "alsa-lib",
+"wall": "2026-09-01",
+"bw_version": "1.2.8-1",
+"desc": "alsa-lib through 1.2.16.1 computes combined topology element size usin ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-96675",
+"pkg": "alsa-lib",
+"wall": "2026-09-01",
+"bw_version": "1.2.8-1",
+"desc": "alsa-lib through 1.2.16.1 contains a denial of service vulnerability i ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-9669",
+"pkg": "python3.11",
+"wall": "2026-06-01",
+"bw_version": "3.11.2-6+deb12u7",
+"desc": "bz2.BZ2Decompressor objects could be reused after a decompression erro ...",
+"desc_from_snapshot": "2026-07-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-96747",
+"pkg": "pymongo",
+"wall": "2026-09-01",
+"bw_version": "3.11.0-1+deb12u1",
+"desc": "The client-side field level encryption support in the MongoDB Python D ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-97030",
+"pkg": "golang-1.19",
+"wall": "2026-10-01",
+"bw_version": "1.19.8-2",
+"desc": "A trusted template author may have previously written a valid template ...",
+"desc_from_snapshot": "now",
+"scope": ""
+},
+{
+"cve": "CVE-2026-97059",
+"pkg": "dcmtk",
+"wall": "2026-09-01",
+"bw_version": "3.6.7-9~deb12u4",
+"desc": "DCMTK through 3.7.0 contains a heap over-read vulnerability in Concate ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+},
+{
+"cve": "CVE-2026-97688",
+"pkg": "python-urllib3",
+"wall": "2026-09-01",
+"bw_version": "1.26.12-1+deb12u4",
+"desc": "urllib3 is an HTTP client library for Python. From 2.6.2 until 2.8.0,  ...",
+"desc_from_snapshot": "2026-10-01",
+"scope": ""
+}
+]

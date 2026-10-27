@@ -1,0 +1,1987 @@
+{
+"CVE-2022-25869|angular.js": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-8367|aria2": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-38528|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-46632|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-48423|assimp": {
+"met": true,
+"sources": [
+"(a) unstable fixed 6.0.2+ds-1",
+"(b) https://github.com/assimp/assimp/commit/f12e52198669239af525e525ebb68407977f8e34 in tag v6.0.5"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-48424|assimp": {
+"met": true,
+"sources": [
+"(a) unstable fixed 6.0.2+ds-1",
+"(b) https://github.com/assimp/assimp/commit/2b773f0f5a726c38dda72307b5311c14fc3a76ae in tag v6.0.5"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-48425|assimp": {
+"met": true,
+"sources": [
+"(a) unstable fixed 6.0.2+ds-1",
+"(b) https://github.com/assimp/assimp/commit/ecdf8d24b85367b22ba353b4f82299d4af7f1f97 in tag v6.0.5"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-48426|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-53425|assimp": {
+"met": true,
+"sources": [
+"(a) unstable fixed 6.0.2+ds-1",
+"(b) https://github.com/assimp/assimp/commit/ecc8a1c8695560df108d6adc00b3d7b1ba15df9f in tag v6.0.5"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-11274|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-11275|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-15538|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-15666|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-2151|assimp": {
+"met": true,
+"sources": [
+"(a) unstable fixed 6.0.2+ds-1",
+"(b) https://github.com/assimp/assimp/commit/d2c6e64a1122884570caf4aaa589d810f5351f28 in tag v6.0.5"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-2152|assimp": {
+"met": true,
+"sources": [
+"(a) unstable fixed 6.0.2+ds-1",
+"(b) https://github.com/assimp/assimp/commit/9182879e1f2cb6e64f158ee935f0e0a68a9a8104 in tag v6.0.5"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-2591|assimp": {
+"met": true,
+"sources": [
+"(a) unstable fixed 6.0.2+ds-1",
+"(b) https://github.com/assimp/assimp/commit/bcf11c252a9635af83c0f48b5ebdfad8e1ab5522 in tag v6.0.5"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-2592|assimp": {
+"met": true,
+"sources": [
+"(a) unstable fixed 6.0.2+ds-1",
+"(b) https://github.com/assimp/assimp/commit/2690e354da0c681db000cfd892a55226788f2743 in tag v6.0.5"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-2750|assimp": {
+"met": true,
+"sources": [
+"(a) unstable fixed 6.0.2+ds-1",
+"(b) https://github.com/assimp/assimp/commit/269987085fbeef43af877f5eab8945a872ded650 in tag v6.0.5"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-2751|assimp": {
+"met": true,
+"sources": [
+"(a) unstable fixed 6.0.2+ds-1",
+"(b) https://github.com/assimp/assimp/commit/177797c77b027a6de080fb3bacbd8822617e11d8 in tag v6.0.5"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-2752|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-2753|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-2754|assimp": {
+"met": true,
+"sources": [
+"(b) https://github.com/assimp/assimp/commit/ae6633ef8a8b686a7a080e9ad65fc77fd712e4b4 in tag v6.0.5"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-2755|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-2756|assimp": {
+"met": true,
+"sources": [
+"(b) https://github.com/assimp/assimp/commit/ae6633ef8a8b686a7a080e9ad65fc77fd712e4b4 in tag v6.0.5"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-2757|assimp": {
+"met": true,
+"sources": [
+"(a) unstable fixed 6.0.2+ds-1",
+"(b) https://github.com/assimp/assimp/commit/5be336779d81b1d71b290bc004eb5d1593c328c5 in tag v6.0.5"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-3158|assimp": {
+"met": true,
+"sources": [
+"(a) unstable fixed 6.0.2+ds-1",
+"(b) https://github.com/assimp/assimp/commit/357b5baabbd0af01cbe712c6506ee1d06d2da8de in tag v6.0.5"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-5167|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-5168|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-5169|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-5200|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-5201|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-5202|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-5203|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-5204|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-6119|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-6120|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-10198|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-10200|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-10201|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-10229|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-10230|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-10231|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-10232|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-10233|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-14604|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-19967|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": false
+},
+"CVE-2026-19969|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": false
+},
+"CVE-2026-19970|assimp": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": false
+},
+"CVE-2025-50950|audiofile": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-59529|avahi": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-44431|bluez": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-51580|bluez": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-51589|bluez": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-51592|bluez": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-51594|bluez": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-51596|bluez": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-42366|busybox": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1:1.37.0-8"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-58251|busybox": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1:1.37.0-9"
+],
+"kind": "generic",
+"checkable_beyond_a": false
+},
+"CVE-2025-46394|busybox": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1:1.37.0-8"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-60876|busybox": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1:1.37.0-8"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-46490|cacti": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1.2.26+ds1-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2019-10735|claws-mail": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-45321|cpanminus": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-88264|crun": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-88265|crun": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-69872|diskcache": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-12216|duktape": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": false
+},
+"CVE-2024-13745|edk2": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2026.05-3"
+],
+"kind": "generic",
+"checkable_beyond_a": false
+},
+"CVE-2023-50671|exiftags": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-66382|expat": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-49528|ffmpeg": {
+"met": false,
+"sources": [],
+"kind": "branch",
+"checkable_beyond_a": true
+},
+"CVE-2023-6601|ffmpeg": {
+"met": false,
+"sources": [],
+"kind": "branch",
+"checkable_beyond_a": true
+},
+"CVE-2023-6605|ffmpeg": {
+"met": true,
+"sources": [
+"branch: fix in release/5.1 tag"
+],
+"kind": "branch",
+"checkable_beyond_a": true
+},
+"CVE-2024-31578|ffmpeg": {
+"met": false,
+"sources": [],
+"kind": "branch",
+"checkable_beyond_a": true
+},
+"CVE-2024-35369|ffmpeg": {
+"met": false,
+"sources": [],
+"kind": "branch",
+"checkable_beyond_a": true
+},
+"CVE-2024-36615|ffmpeg": {
+"met": false,
+"sources": [],
+"kind": "branch",
+"checkable_beyond_a": true
+},
+"CVE-2025-10256|ffmpeg": {
+"met": false,
+"sources": [],
+"kind": "branch",
+"checkable_beyond_a": true
+},
+"CVE-2025-22921|ffmpeg": {
+"met": true,
+"sources": [
+"branch: fix in release/5.1 tag"
+],
+"kind": "branch",
+"checkable_beyond_a": true
+},
+"CVE-2026-30997|ffmpeg": {
+"met": true,
+"sources": [
+"branch: fix in release/5.1 tag"
+],
+"kind": "branch",
+"checkable_beyond_a": true
+},
+"CVE-2026-6385|ffmpeg": {
+"met": false,
+"sources": [],
+"kind": "branch",
+"checkable_beyond_a": true
+},
+"CVE-2024-56169|fort-validator": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-56170|fort-validator": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2019-12212|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2019-12214|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2020-21426|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2020-24292|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2020-24293|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2020-24294|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2020-24295|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2021-40262|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2021-40263|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2021-40264|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2021-40265|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2021-40266|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-47992|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-47993|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-47994|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-47995|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-47996|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-47997|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28562|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28563|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28564|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28565|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28566|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28567|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28568|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28569|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28570|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28571|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28572|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28573|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28574|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28575|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28576|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28577|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28578|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28579|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28580|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28581|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28582|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28583|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28584|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-9029|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": false
+},
+"CVE-2025-65803|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-70968|freeimage": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-61103|frr": {
+"met": true,
+"sources": [
+"(a) unstable fixed 10.5.1-3"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-61104|frr": {
+"met": true,
+"sources": [
+"(a) unstable fixed 10.5.1-3"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-61106|frr": {
+"met": true,
+"sources": [
+"(a) unstable fixed 10.5.1-3"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-61107|frr": {
+"met": true,
+"sources": [
+"(a) unstable fixed 10.5.1-3"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-52762|ganglia-web": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-52763|ganglia-web": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-3650|gdcm": {
+"met": true,
+"sources": [
+"(a) unstable fixed 3.0.24-11",
+"(b) https://github.com/malaterre/GDCM/commit/9d65a217c958968a74c14b10388d03ca61953a74 in tag v3.2.11"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-10028|glib-networking": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.90.0-1"
+],
+"kind": "generic",
+"checkable_beyond_a": false
+},
+"CVE-2023-5616|gnome-control-center": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-46565|gobgp": {
+"met": true,
+"sources": [
+"(a) unstable fixed 4.3.0-1",
+"(c) GO-2024-3124 Go:github.com/osrg/gobgp/v3 fixed 3.20.0"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-56738|grub2": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-14683|hdrhistogram": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.2.2-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-14684|hdrhistogram": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.2.2-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-14685|hdrhistogram": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.2.2-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-14686|hdrhistogram": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.2.2-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-5072|jenkins-json": {
+"met": true,
+"sources": [
+"(b) https://github.com/stleary/JSON-java/commit/dbb113176b143b519ad0a50b033a9997cc2248fe in tag 20260814",
+"(b) https://github.com/stleary/JSON-java/commit/16967f322ee65c301b48fa79bb681e38896fd212 in tag 20260814",
+"(b) https://github.com/stleary/JSON-java/commit/661114c50dcfd53bb041aab66f14bb91e0a87c8a in tag 20260814",
+"(c) GHSA-4jq9-2xhw-jpx7 Maven:org.json:json fixed 20231013"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-34623|jtidy": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-XXXX#[exposes .zip passwords while (un)archiving]|krusader": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": false
+},
+"CVE-2013-10075|libapache-session-perl": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": false
+},
+"CVE-2025-40931|libapache-session-perl": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-5081|libapache-session-perl": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": false
+},
+"CVE-2026-6659|libcrypt-passwdmd5-perl": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1.44-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-48570|libcrypto++": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-50979|libcrypto++": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-50981|libcrypto++": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-28285|libcrypto++": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": false
+},
+"CVE-2024-38949|libde265": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1.1.1-1",
+"(b) https://github.com/strukturag/libde265/commit/4089de0845e0009e019be4ca5cbebaf2aee0a8ce in tag v1.1.3"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-38950|libde265": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1.1.1-1",
+"(b) https://github.com/strukturag/libde265/commit/4089de0845e0009e019be4ca5cbebaf2aee0a8ce in tag v1.1.3"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-5072|libjettison-java": {
+"met": true,
+"sources": [
+"(b) https://github.com/stleary/JSON-java/commit/dbb113176b143b519ad0a50b033a9997cc2248fe in tag 20260814",
+"(b) https://github.com/stleary/JSON-java/commit/16967f322ee65c301b48fa79bb681e38896fd212 in tag 20260814",
+"(b) https://github.com/stleary/JSON-java/commit/661114c50dcfd53bb041aab66f14bb91e0a87c8a in tag 20260814",
+"(c) GHSA-4jq9-2xhw-jpx7 Maven:org.json:json fixed 20231013"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-46998|libjs-bootbox": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-5072|libjson-java": {
+"met": true,
+"sources": [
+"(a) unstable fixed 3.1.0+dfsg-1",
+"(b) https://github.com/stleary/JSON-java/commit/dbb113176b143b519ad0a50b033a9997cc2248fe in tag 20260814",
+"(b) https://github.com/stleary/JSON-java/commit/16967f322ee65c301b48fa79bb681e38896fd212 in tag 20260814",
+"(b) https://github.com/stleary/JSON-java/commit/661114c50dcfd53bb041aab66f14bb91e0a87c8a in tag 20260814",
+"(c) GHSA-4jq9-2xhw-jpx7 Maven:org.json:json fixed 20231013"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-71225|libkcapi": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1.5.1-1",
+"(b) https://github.com/smuellerDD/libkcapi/commit/017adba8f54f36f92e1919687fb67a89c4d299c6 in tag v1.5.1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-71226|libkcapi": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1.5.1-1",
+"(b) https://github.com/smuellerDD/libkcapi/commit/cd966ffa08cf605ae5853d2f9a42fdd2b6df8bb4 in tag v1.5.1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-71227|libkcapi": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1.5.1-1",
+"(b) https://github.com/smuellerDD/libkcapi/commit/9a29cc2ce0fa87ec212d58118402eafe07db3f60 in tag v1.5.1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-2337|libmatio": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1.5.28-2",
+"(b) https://github.com/tbeu/matio/commit/67a922f83467d694fa6e9759ac9a30b6ab82aec4 in tag v1.6.0",
+"(b) https://github.com/tbeu/matio/commit/67000893b627205c42abc125d7917b6b2d18f84f in tag v1.6.0"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-50343|libmatio": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2021-47155|libnetwork-ipv4addr-perl": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": false
+},
+"CVE-2021-30469|libpodofo": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2021-30472|libpodofo": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2021-46700|libsixel": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-29977|libsixel": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1:1.8.7-1",
+"(b) https://github.com/saitoha/libsixel/commit/d6bc4ef88015d3a4922d63b9b4655c6b5cc340cd in tag v1.8.7",
+"(b) https://github.com/saitoha/libsixel/commit/1c58a6ea708b6fa793ffb5a10798ccfea36e8eed in tag v1.8.7"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-29978|libsixel": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1:1.8.7-1",
+"(b) https://github.com/saitoha/libsixel/commit/07ab2354d5b1678e7857d40f61832c9847f3f473 in tag v1.8.7"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-50613|libsndfile": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-37555|libsndfile": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-42118|libspf2": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-45661|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-45662|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-45663|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-45664|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-45666|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-45667|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-45675|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-45676|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-45677|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-45678|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-45679|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-45680|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-45681|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-45682|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-47212|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-3406|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-3407|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-3408|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-3409|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-5185|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": false
+},
+"CVE-2026-79516|libstb": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": false
+},
+"CVE-2026-5673|libtheora": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": false
+},
+"CVE-2026-1991|libuvc": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-57868|libweb-api-perl": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-10911|libxslt": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1.1.43-0.3"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2019-15213|linux": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2019-16089|linux": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2019-19449|linux": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2019-20794|linux": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-15571|lrzip": {
+"met": true,
+"sources": [
+"(a) unstable fixed 0.660-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-15537|mapnik": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-72854|msgpack-c": {
+"met": true,
+"sources": [
+"(a) unstable fixed 7.0.2-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-6067|nasm": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-6069|nasm": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-14932|netcdf": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1:4.10.1-1",
+"(b) https://github.com/Unidata/netcdf-c/commit/60578c3ac26b93b1932cba414a2870096bbcdd3b in tag v4.10.1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-14933|netcdf": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1:4.10.1-1",
+"(b) https://github.com/Unidata/netcdf-c/commit/b06b973e040ffede8d776ff7a94d22c68074ea98 in tag v4.10.1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-14934|netcdf": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1:4.10.1-1",
+"(b) https://github.com/Unidata/netcdf-c/commit/1e22866daae12203c768a38c168b8d25c65627d9 in tag v4.10.1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-14935|netcdf": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1:4.10.1-1",
+"(b) https://github.com/Unidata/netcdf-c/commit/0b33fab5c1d7bc458bf0aead93af433e0eae5abc in tag v4.10.1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-14936|netcdf": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1:4.10.1-1",
+"(b) https://github.com/Unidata/netcdf-c/commit/b491ecd8021f510427459051ebfd7bd4cfda2371 in tag v4.10.1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-14932|netcdf-parallel": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1:4.10.1-1",
+"(b) https://github.com/Unidata/netcdf-c/commit/60578c3ac26b93b1932cba414a2870096bbcdd3b in tag v4.10.1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-14933|netcdf-parallel": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1:4.10.1-1",
+"(b) https://github.com/Unidata/netcdf-c/commit/b06b973e040ffede8d776ff7a94d22c68074ea98 in tag v4.10.1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-14934|netcdf-parallel": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1:4.10.1-1",
+"(b) https://github.com/Unidata/netcdf-c/commit/1e22866daae12203c768a38c168b8d25c65627d9 in tag v4.10.1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-14935|netcdf-parallel": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1:4.10.1-1",
+"(b) https://github.com/Unidata/netcdf-c/commit/0b33fab5c1d7bc458bf0aead93af433e0eae5abc in tag v4.10.1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-14936|netcdf-parallel": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1:4.10.1-1",
+"(b) https://github.com/Unidata/netcdf-c/commit/b491ecd8021f510427459051ebfd7bd4cfda2371 in tag v4.10.1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-36050|nix": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-39705|nltk": {
+"met": true,
+"sources": [
+"(a) unstable fixed 3.9.1-1",
+"(c) GHSA-cgvx-9447-vcch PyPI:nltk fixed 3.9",
+"(c) PYSEC-2024-167 PyPI:nltk fixed 3.9"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-14505|node-elliptic": {
+"met": true,
+"sources": [
+"(a) unstable fixed 6.6.1+dfsg+~6.4.18-2"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-4232|ofono": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.14-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-4233|ofono": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.10-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-4234|ofono": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.10-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-4235|ofono": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.14-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-7537|ofono": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.16-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-7538|ofono": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.14-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-7539|ofono": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.14-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-7540|ofono": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.14-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-7541|ofono": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.14-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-7542|ofono": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.14-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-7543|ofono": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.14-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-7544|ofono": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.14-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-7545|ofono": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.14-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-7546|ofono": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.14-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-7547|ofono": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.14-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2020-21724|oggvideotools": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-37331|openbabel": {
+"met": true,
+"sources": [
+"(c) GHSA-vr3p-gg26-45v9 PyPI:openbabel fixed 3.2.0",
+"(c) PYSEC-2026-2793 PyPI:openbabel fixed 3.2.0"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-41793|openbabel": {
+"met": true,
+"sources": [
+"(c) GHSA-p594-7xw4-g76p PyPI:openbabel fixed 3.2.0",
+"(c) PYSEC-2026-2788 PyPI:openbabel fixed 3.2.0"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-42885|openbabel": {
+"met": true,
+"sources": [
+"(c) GHSA-mw5r-wq2m-397c PyPI:openbabel fixed 3.2.0",
+"(c) PYSEC-2026-2787 PyPI:openbabel fixed 3.2.0"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-43467|openbabel": {
+"met": true,
+"sources": [
+"(c) GHSA-f29h-2h58-48r7 PyPI:openbabel fixed 3.2.0",
+"(c) PYSEC-2026-2779 PyPI:openbabel fixed 3.2.0"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-43607|openbabel": {
+"met": true,
+"sources": [
+"(c) GHSA-vjg6-gm8m-v5g6 PyPI:openbabel fixed 3.2.0",
+"(c) PYSEC-2026-2792 PyPI:openbabel fixed 3.2.0"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-44451|openbabel": {
+"met": true,
+"sources": [
+"(c) GHSA-jr2x-6qf6-q5mc PyPI:openbabel fixed 3.2.0",
+"(c) PYSEC-2026-2784 PyPI:openbabel fixed 3.2.0"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-46280|openbabel": {
+"met": true,
+"sources": [
+"(c) GHSA-8qxc-57hf-hc9j PyPI:openbabel fixed 3.2.0",
+"(c) PYSEC-2026-2777 PyPI:openbabel fixed 3.2.0"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-46289|openbabel": {
+"met": true,
+"sources": [
+"(c) GHSA-rj4c-r689-cm87 PyPI:openbabel fixed 3.2.0",
+"(c) PYSEC-2026-2790 PyPI:openbabel fixed 3.2.0"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-46290|openbabel": {
+"met": true,
+"sources": [
+"(c) GHSA-5rff-8f7c-8jmw PyPI:openbabel fixed 3.2.0",
+"(c) PYSEC-2026-2773 PyPI:openbabel fixed 3.2.0"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-46291|openbabel": {
+"met": true,
+"sources": [
+"(c) GHSA-jg3h-pv7c-4f9c PyPI:openbabel fixed 3.2.0",
+"(c) PYSEC-2026-2783 PyPI:openbabel fixed 3.2.0"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-46292|openbabel": {
+"met": true,
+"sources": [
+"(c) GHSA-55f6-pf8r-c2f4 PyPI:openbabel fixed 3.2.0",
+"(c) PYSEC-2026-2771 PyPI:openbabel fixed 3.2.0"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-46293|openbabel": {
+"met": true,
+"sources": [
+"(c) GHSA-7h6r-6p76-68c9 PyPI:openbabel fixed 3.2.0",
+"(c) PYSEC-2026-2775 PyPI:openbabel fixed 3.2.0"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-46294|openbabel": {
+"met": true,
+"sources": [
+"(c) GHSA-mjmg-352j-f456 PyPI:openbabel fixed 3.2.0",
+"(c) PYSEC-2026-2786 PyPI:openbabel fixed 3.2.0"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-46295|openbabel": {
+"met": true,
+"sources": [
+"(c) GHSA-f8h2-c479-vqxf PyPI:openbabel fixed 3.2.0",
+"(c) PYSEC-2026-2780 PyPI:openbabel fixed 3.2.0"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-12495|openexr": {
+"met": true,
+"sources": [
+"(a) unstable fixed 3.4.6+ds-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-12839|openexr": {
+"met": true,
+"sources": [
+"(a) unstable fixed 3.4.6+ds-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-12840|openexr": {
+"met": true,
+"sources": [
+"(a) unstable fixed 3.4.6+ds-1"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2019-6988|openjpeg2": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-39327|openjpeg2": {
+"met": true,
+"sources": [
+"(b) https://github.com/uclouvain/openjpeg/commit/822562d689f491ae5d012627ba00ac235d399b9e in tag v2.5.4"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-39328|openjpeg2": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-39329|openjpeg2": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2019-25076|openvswitch": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2026-10294|packagekit": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1.3.6-1",
+"(b) https://github.com/PackageKit/PackageKit/commit/4c1994d0545dea8a66cc56d9457ff740965abaf0 in tag v1.4.0"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-26240|pdfkit": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": false
+},
+"CVE-2024-9101|phpldapadmin": {
+"met": true,
+"sources": [
+"(a) unstable fixed 1.2.6.7-4"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-28858|python-redis": {
+"met": true,
+"sources": [
+"(a) unstable fixed 5.2.1-1",
+"(c) GHSA-24wv-mv5m-xv4h PyPI:redis fixed 4.4.3",
+"(c) GHSA-24wv-mv5m-xv4h PyPI:redis fixed 4.5.3",
+"(c) GHSA-24wv-mv5m-xv4h PyPI:redis fixed 4.3.6"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2019-12067|qemu": {
+"met": true,
+"sources": [
+"(b) https://github.com/qemu/qemu/commit/659142ecf71a0da240ab0ff7cf929ee25c32b9bc in tag v11.1.2"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2020-25741|qemu": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2020-25742|qemu": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2020-25743|qemu": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2020-35503|qemu": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2021-3735|qemu": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-3872|qemu": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-1386|qemu": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-39684|rapidjson": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-47081|requests": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2.32.4+dfsg-1",
+"(b) https://github.com/psf/requests/commit/96ba401c1296ab1dda74a2365ef36d88f7d144ef in tag v2.34.2",
+"(b) https://github.com/psf/requests/commit/7bc45877a86192af77645e156eb3744f95b47dae in tag v2.34.2",
+"(c) GHSA-9hjg-9r4m-mvj7 PyPI:requests fixed 2.32.4",
+"(c) PYSEC-2026-1872 PyPI:requests fixed 2.32.4"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2020-28594|slic3r-prusa": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2020-28595|slic3r-prusa": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2020-28596|slic3r-prusa": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2020-28598|slic3r-prusa": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2021-27211|steghide": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2021-37746|sylpheed": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-6496|tidy-html5": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-6497|tidy-html5": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2025-6498|tidy-html5": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-50614|tinyxml2": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2024-42040|u-boot": {
+"met": true,
+"sources": [
+"(a) unstable fixed 2025.01-3.2",
+"(b) https://github.com/u-boot/u-boot/commit/81e5708cc2c865df606e49aed5415adb2a662171 in tag v2026.10"
+],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2021-31879|wget": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-3590|wordpress": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2020-27748|xdg-utils": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2022-4055|xdg-utils": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+},
+"CVE-2023-5574|xorg-server": {
+"met": false,
+"sources": [],
+"kind": "generic",
+"checkable_beyond_a": true
+}
+}

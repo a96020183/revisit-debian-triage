@@ -1,0 +1,242 @@
+{"kind": "zetaris", "key": "ded6882dc71f08612ffbd3af76eea4095ddde8fc947b168fc22bb4252dc11eb7", "tag": "wall_of"}
+{"kind": "zetaris", "key": "ee314041734d4866a782db0f70e4e16e99c0335a7812d3e40b0fb89035bfbea7", "tag": "wall_grant:2026_10_01"}
+{"kind": "zetaris", "key": "8ed43e52dd2a8e9f888f51df8018622d699224e0c16a2031d978a6f6276593ef", "tag": "wall_grant:2026_10_01"}
+{"kind": "zetaris", "key": "840e5edb73537a834a5144dc8ed3a5abeb9678e495c994db7389f64b262505a8", "tag": "wall_grant:2026_10_01"}
+{"kind": "zetaris", "key": "8098dfd5daa0f6ad7ac2de7e1a06041ccffb8a6f2aae51102ce7c855f668af2f", "tag": "wall_grant:2026_10_01"}
+{"kind": "zetaris", "key": "c1ed61b18bb26f6f75986dd72b2e55115b11bd764355f353c9b9586dd9bea481", "tag": "facts"}
+{"kind": "zetaris", "key": "816a8d53d94a033ac5e8ee5d4c9f75fdbfe9fdcfb487fbe1ad4980eaf633a05d", "tag": "history:2026-10-01"}
+{"kind": "zetaris", "key": "67e56f0a92a8beb5f25c9ba71f020ce51bb738facdf4a5a5df704ba89f359e09", "tag": "packages:exam"}
+{"kind": "nightshift", "key": "72c79035703b8bc4f76f193c3334c6b06d4a95fae6b86ca927ae251446d12515", "tag": "S:CVE-2026-109618:php8.2", "source": "exam", "ts": "2026-10-27T06:15:24", "text_sha": "988a5da973e8d6059e07a84b96e707df048afccf22d23320ec26e0b58ce7b807"}
+{"kind": "nightshift", "key": "ebb3f9a233621c5d506267dd85266be411cc58a9371bc9ddaae0d1f63634627a", "tag": "OURS-exec:CVE-2026-109618:php8.2", "source": "exam", "ts": "2026-10-27T06:15:24", "text_sha": "84c33f9983b58b7052517a58d06531e118d55f4a2051f8bfc46f4cbb00f13785"}
+{"kind": "zetaris", "key": "ae62c468c0fa373b4786b443792b799d700cbf61ba3ffb9a0cdb3e5400c78ba7", "tag": "triage_pack:CVE-2026-109618|php8.2"}
+{"kind": "nightshift", "key": "f12cbf2241b4f03ad7999bb48a548ff2db919b337e95cf806bb9f2b7cc762770", "tag": "planner:CVE-2026-109618|php8.2:r1", "source": "live", "ts": "2026-10-27T06:15:44", "text_sha": "6badc8b77b4ce9bc84b852dd311f7dc698471e94c49f161cff21a9c168cc1cad"}
+{"kind": "zetaris", "key": "d85bc059b907fe152a68909408aed9215879ad074030214e83876684ed529335", "tag": "triage_pack:CVE-2026-109618|php8.2"}
+{"kind": "nightshift", "key": "a6350b19f20f34a0ad26088f2230299ca255eef125233b244d7251947b9dfc04", "tag": "evaluator:CVE-2026-109618|php8.2:r1", "source": "live", "ts": "2026-10-27T06:16:03", "text_sha": "e659dd7cb75bd14ae60a4271791f46eb9cea88d84087d239b80af3fbb332eaae"}
+{"kind": "zetaris", "key": "a2330b2744dd9d6d317a2661ff90f2dfc7c4fe8540b0358a7bbf7764e3b0eb59", "tag": "wall_revoke:2026_10_01"}
+{"kind": "zetaris", "key": "ac560581ca9a2389eb157b8676910ea312b4f66e9e99ebcbb486429cc7f24026", "tag": "wall_revoke:2026_10_01"}
+{"kind": "zetaris", "key": "87b08ac98ffa0bd8985caa71fa10c7e5a82b7a36ef6b0b56eaf19077a7e6d8d4", "tag": "wall_revoke:2026_10_01"}
+{"kind": "zetaris", "key": "593a1ddfc7f00cf5ce333bb03aa84ebbfca2eed69359abbe1d45c1fe9d5218b8", "tag": "wall_revoke:2026_10_01"}
+{"kind": "zetaris", "key": "5349223acf2b0ecbe149d94dc06998b14d645591a5a6571e8d6a6d899e9835b0", "tag": "wall_of"}
+{"kind": "zetaris", "key": "ee314041734d4866a782db0f70e4e16e99c0335a7812d3e40b0fb89035bfbea7", "tag": "wall_grant:2026_10_01"}
+{"kind": "zetaris", "key": "8ed43e52dd2a8e9f888f51df8018622d699224e0c16a2031d978a6f6276593ef", "tag": "wall_grant:2026_10_01"}
+{"kind": "zetaris", "key": "840e5edb73537a834a5144dc8ed3a5abeb9678e495c994db7389f64b262505a8", "tag": "wall_grant:2026_10_01"}
+{"kind": "zetaris", "key": "8098dfd5daa0f6ad7ac2de7e1a06041ccffb8a6f2aae51102ce7c855f668af2f", "tag": "wall_grant:2026_10_01"}
+{"kind": "zetaris", "key": "61d35eae9f4827ad42c1a4491f93a177af399000cb09408ee9a4f6f7793cafb2", "tag": "facts"}
+{"kind": "nightshift", "key": "799ed11e84b2bb5503dd65159f9dc8655ec65b04d50474871d283de311a79735", "tag": "S:CVE-2026-109619:php8.2", "source": "exam", "ts": "2026-10-27T06:16:03", "text_sha": "ffdaa55d51aaed00b26e5c00345fb5d65ddf8f75f2736b43db6f1c384524b5e4"}
+{"kind": "nightshift", "key": "6bbbc7ee66f83542a7fc860922d02b182fff16c204cc23f620d690c448d67c9d", "tag": "OURS-exec:CVE-2026-109619:php8.2", "source": "exam", "ts": "2026-10-27T06:16:03", "text_sha": "781f6e396013fe85029d3b3b900b7ecb1476c009c028cc560d4f2580c8fedab6"}
+{"kind": "zetaris", "key": "a1c56b3e56d2b6b6f3423db9e25af15f886691898690ea866f01335fed9eae72", "tag": "triage_pack:CVE-2026-109619|php8.2"}
+{"kind": "nightshift", "key": "c0fc0bef86181c6c2796eeb705f9d204589d52a3136044f98e4bbad7cb67e9a4", "tag": "planner:CVE-2026-109619|php8.2:r1", "source": "live", "ts": "2026-10-27T06:16:12", "text_sha": "a4a530f64a4a76e7dcbe9dabf4c0a7fd56a0353f8812245b2ce3130a1a85a48d"}
+{"kind": "zetaris", "key": "dfca1234a91da457fd3e3f7eff92bf1dc29e19e194b44bb16ec4605c5941698e", "tag": "triage_pack:CVE-2026-109619|php8.2"}
+{"kind": "nightshift", "key": "dfbdc4ab5950d2f5a9aedbd7af56bd8df08885fdcdaa9812c48a5aa7481f3c33", "tag": "evaluator:CVE-2026-109619|php8.2:r1", "source": "live", "ts": "2026-10-27T06:17:41", "text_sha": "17c293bd2a2c8a7e9b0301b25089393613b5feda824642a87aa3dbdf9ea6ce02"}
+{"kind": "zetaris", "key": "a2330b2744dd9d6d317a2661ff90f2dfc7c4fe8540b0358a7bbf7764e3b0eb59", "tag": "wall_revoke:2026_10_01"}
+{"kind": "zetaris", "key": "ac560581ca9a2389eb157b8676910ea312b4f66e9e99ebcbb486429cc7f24026", "tag": "wall_revoke:2026_10_01"}
+{"kind": "zetaris", "key": "87b08ac98ffa0bd8985caa71fa10c7e5a82b7a36ef6b0b56eaf19077a7e6d8d4", "tag": "wall_revoke:2026_10_01"}
+{"kind": "zetaris", "key": "593a1ddfc7f00cf5ce333bb03aa84ebbfca2eed69359abbe1d45c1fe9d5218b8", "tag": "wall_revoke:2026_10_01"}
+{"kind": "zetaris", "key": "3094f468c4c51cf3ef2a152a4754510cd2cc227b57b141e84a617a8f9098904a", "tag": "wall_of"}
+{"kind": "zetaris", "key": "ee314041734d4866a782db0f70e4e16e99c0335a7812d3e40b0fb89035bfbea7", "tag": "wall_grant:2026_10_01"}
+{"kind": "zetaris", "key": "8ed43e52dd2a8e9f888f51df8018622d699224e0c16a2031d978a6f6276593ef", "tag": "wall_grant:2026_10_01"}
+{"kind": "zetaris", "key": "840e5edb73537a834a5144dc8ed3a5abeb9678e495c994db7389f64b262505a8", "tag": "wall_grant:2026_10_01"}
+{"kind": "zetaris", "key": "8098dfd5daa0f6ad7ac2de7e1a06041ccffb8a6f2aae51102ce7c855f668af2f", "tag": "wall_grant:2026_10_01"}
+{"kind": "zetaris", "key": "7cc512f788cdbebc820f1e960dfb9d47b405530bfc017c72253225c95d94b306", "tag": "facts"}
+{"kind": "nightshift", "key": "80d8a75323c696d80a98407850a29cfa54efbc3b1ec28fefae4f00a4de0b51a6", "tag": "S:CVE-2026-105083:imagemagick", "source": "exam", "ts": "2026-10-27T06:17:42", "text_sha": "cf547e03a81a9e9b0a1b574a039be45f0e67c73a9ce3d1c43b745563bf7e427e"}
+{"kind": "nightshift", "key": "4026485d2633b2adae17f460e7fef1f46f2db644de92b987d559b20d2db0abdc", "tag": "OURS-exec:CVE-2026-105083:imagemagick", "source": "exam", "ts": "2026-10-27T06:17:42", "text_sha": "dc078c9cf3fc07cf3088b3e3bc48173d0c2fe467be2065188578caee4a505561"}
+{"kind": "zetaris", "key": "d8683ad0975fa6eb9c3a98d53d74eadd28c6f768d6f526b872fce1cbe66a1026", "tag": "triage_pack:CVE-2026-105083|imagemagick"}
+{"kind": "nightshift", "key": "8dd3bac3ca8626855730f78e05eca3b26e8700167be49c0794f051954d642887", "tag": "planner:CVE-2026-105083|imagemagick:r1", "source": "live", "ts": "2026-10-27T06:17:54", "text_sha": "114fa1303458e20706951d1193a3cf92f9cd3f868dc6a2105f3da5a2ca33b88a"}
+{"kind": "zetaris", "key": "013ee6fc97da47fb87eda84bae13d29e12e81b641c3dd667ce19fe2b274ed6b4", "tag": "triage_pack:CVE-2026-105083|imagemagick"}
+{"kind": "nightshift", "key": "7ed326522490a79a860bb942ee12276d6e64ecd085d0a532dd585aeebeaab4af", "tag": "evaluator:CVE-2026-105083|imagemagick:r1", "source": "live", "ts": "2026-10-27T06:18:22", "text_sha": "e573fc126475b51367af98ec97216c7093ff3b8983c99503835a0b429f955761"}
+{"kind": "nightshift", "key": "61d802ac10123526666775cd8225ef5770e8bd245c939576c602aa485a2b311a", "tag": "evaluator:CVE-2026-105083|imagemagick:r1", "source": "live", "ts": "2026-10-27T06:18:38", "text_sha": "c8fb54b667ce02486db5aa8e6147a01013d7c5d1994d4d1cea68dfff5753991b"}
+{"kind": "zetaris", "key": "a2330b2744dd9d6d317a2661ff90f2dfc7c4fe8540b0358a7bbf7764e3b0eb59", "tag": "wall_revoke:2026_10_01"}
+{"kind": "zetaris", "key": "ac560581ca9a2389eb157b8676910ea312b4f66e9e99ebcbb486429cc7f24026", "tag": "wall_revoke:2026_10_01"}
+{"kind": "zetaris", "key": "87b08ac98ffa0bd8985caa71fa10c7e5a82b7a36ef6b0b56eaf19077a7e6d8d4", "tag": "wall_revoke:2026_10_01"}
+{"kind": "zetaris", "key": "593a1ddfc7f00cf5ce333bb03aa84ebbfca2eed69359abbe1d45c1fe9d5218b8", "tag": "wall_revoke:2026_10_01"}
+{"kind": "zetaris", "key": "833d0b097567d7d04127abbcb6118daea8ed976d48e8882f40f1195cd4b00807", "tag": "wall_of"}
+{"kind": "zetaris", "key": "af3562588457c92b5060fead80601ab881ae55004dc14cbf98e424999d4a72ed", "tag": "wall_grant:2026_06_01"}
+{"kind": "zetaris", "key": "bc3d0170493c01631817e169abb004deba0bf6c429ff2ffa5ada7c55f711eca4", "tag": "wall_grant:2026_06_01"}
+{"kind": "zetaris", "key": "9abbcb39cebbe34f7273b1770e3cec4f767572af3b09a29d977aec70f8df212f", "tag": "wall_grant:2026_06_01"}
+{"kind": "zetaris", "key": "8098dfd5daa0f6ad7ac2de7e1a06041ccffb8a6f2aae51102ce7c855f668af2f", "tag": "wall_grant:2026_06_01"}
+{"kind": "zetaris", "key": "0550ac949b560e7afaf8aef002da3d5213ec46db973ff9b4296b3081e0df8c62", "tag": "facts"}
+{"kind": "zetaris", "key": "91e396f4e239758070a996681afb3e724fda0897239d8323504437a1d8f307bf", "tag": "history:2026-06-01"}
+{"kind": "nightshift", "key": "87dad042425d3a79ad0555749096704965cbe07f1b2fd0a766726aa3eb12b440", "tag": "S:CVE-2025-26625:git-lfs", "source": "exam", "ts": "2026-10-27T06:18:40", "text_sha": "9dac9d139a0fb7593ef79f3f53b5ab4e10113a62fe00ab2c019379609bb76dc4"}
+{"kind": "nightshift", "key": "bb089d7111a98f791e9ec0ca5ca53ff2fc3fe1e9461d3d2d295c37bde78dc38c", "tag": "OURS-exec:CVE-2025-26625:git-lfs", "source": "exam", "ts": "2026-10-27T06:18:40", "text_sha": "6ac7b62ecf7491e348fe36f36374e0db44ec6edbb22d6e49bacc3e6d0067f391"}
+{"kind": "nightshift", "key": "8971ecdb8b7ebbe10848b336cf77941a865def691bd8f86624b6876332b7babd", "tag": "OURS-eval:CVE-2025-26625:git-lfs", "source": "exam", "ts": "2026-10-27T06:18:40", "text_sha": "a726833fc078661b50cfc45f365b2e0bc12dd87e821c1f948dccadf90a46d114"}
+{"kind": "zetaris", "key": "6c8bd5267969fe667bc3506a45772b5d71bb8957dad345ec354f9dcf62333d72", "tag": "triage_pack:CVE-2025-26625|git-lfs"}
+{"kind": "nightshift", "key": "f3ad94218df128137000a35fdc2ee1ad7c7e8117b1aa79bddf777ac2658d5bc4", "tag": "planner:CVE-2025-26625|git-lfs:r1", "source": "live", "ts": "2026-10-27T06:19:02", "text_sha": "83e3457634f2904aa52376612bc3a5ccaa567f472b37cc1abde550b0d13d35f6"}
+{"kind": "zetaris", "key": "3f5f196be30f17abf516b79893ae4b3b81caa411c26e3a147c5c8eee9859da27", "tag": "triage_pack:CVE-2025-26625|git-lfs"}
+{"kind": "nightshift", "key": "af609b942c3ba27f29acdb62c5f0ffc6110f80d1e9dcca0ea105551f520e7833", "tag": "evaluator:CVE-2025-26625|git-lfs:r1", "source": "live", "ts": "2026-10-27T06:19:27", "text_sha": "e5d2796707811d674701c8d27b545ba9a0633a9652dffc91667a951a3a9c058a"}
+{"kind": "zetaris", "key": "2f0e1da8b0644ea61ff8e2fee5c8e02caae6b490f89fde25eda4293ab8be11e5", "tag": "wall_revoke:2026_06_01"}
+{"kind": "zetaris", "key": "d43471a2bd8d270d2191540eb671694a8270fd93daad5b4cb11f0fc51db3b7ad", "tag": "wall_revoke:2026_06_01"}
+{"kind": "zetaris", "key": "1d66187cd1729ef1b445204642c3b1d6522060e486a9993d6814f16428942478", "tag": "wall_revoke:2026_06_01"}
+{"kind": "zetaris", "key": "593a1ddfc7f00cf5ce333bb03aa84ebbfca2eed69359abbe1d45c1fe9d5218b8", "tag": "wall_revoke:2026_06_01"}
+{"kind": "zetaris", "key": "44d388191bb80814bf6c64c6e65b1770d9cc182fc916f849396b2fe4939f6676", "tag": "wall_of"}
+{"kind": "zetaris", "key": "af3562588457c92b5060fead80601ab881ae55004dc14cbf98e424999d4a72ed", "tag": "wall_grant:2026_06_01"}
+{"kind": "zetaris", "key": "bc3d0170493c01631817e169abb004deba0bf6c429ff2ffa5ada7c55f711eca4", "tag": "wall_grant:2026_06_01"}
+{"kind": "zetaris", "key": "9abbcb39cebbe34f7273b1770e3cec4f767572af3b09a29d977aec70f8df212f", "tag": "wall_grant:2026_06_01"}
+{"kind": "zetaris", "key": "8098dfd5daa0f6ad7ac2de7e1a06041ccffb8a6f2aae51102ce7c855f668af2f", "tag": "wall_grant:2026_06_01"}
+{"kind": "zetaris", "key": "e8c5541d7f2d0c2d4288758ae293bf9fe245bb0005c7468a35455e7a1bb00b01", "tag": "facts"}
+{"kind": "nightshift", "key": "123f3ce36124499c029dd3634b3efd13120d2323e8f6c1047e9bb87c692d2650", "tag": "S:CVE-2024-28757:expat", "source": "exam", "ts": "2026-10-27T06:19:28", "text_sha": "f5f1a6f4d944a0619c4844a15ea703559ed092d22de563c5981870b4728020a8"}
+{"kind": "nightshift", "key": "d2681137bd2d8fc32cd8efee197bb501f303163911d406dba8a598ef71cd97d4", "tag": "OURS-exec:CVE-2024-28757:expat", "source": "exam", "ts": "2026-10-27T06:19:28", "text_sha": "e7adbd490dbb11afc74b95f48a8239d360b3377f113d980bc8aa009551e837c0"}
+{"kind": "zetaris", "key": "c8d57a34b172833078171758a4256a44355c783ab38a4eff9e5b0e994fa8ee08", "tag": "triage_pack:CVE-2024-28757|expat"}
+{"kind": "nightshift", "key": "7d57fdf91a58115f6b5ea5637267e7a4bba65e876b774db7e36d4db31bb06e8c", "tag": "planner:CVE-2024-28757|expat:r1", "source": "live", "ts": "2026-10-27T06:19:39", "text_sha": "8f3fe2ea92ae393ceba0284a6b602fab4dd39c912aa7d366336fe2c1c282dc09"}
+{"kind": "zetaris", "key": "1c8782affd188a41e475f06f23481969cf06eacadda7413d01c951a488bf7fbe", "tag": "triage_pack:CVE-2024-28757|expat"}
+{"kind": "nightshift", "key": "0fcf73c82540c6c17dec38050c20a6cda0cf00254527b951bfbaa05dca6805b5", "tag": "evaluator:CVE-2024-28757|expat:r1", "source": "live", "ts": "2026-10-27T06:19:46", "text_sha": "7d6adaaf89df5763fdb78f3801e22dae25c9711c3030ab81e67d6be0ff1645b0"}
+{"kind": "zetaris", "key": "2f0e1da8b0644ea61ff8e2fee5c8e02caae6b490f89fde25eda4293ab8be11e5", "tag": "wall_revoke:2026_06_01"}
+{"kind": "zetaris", "key": "d43471a2bd8d270d2191540eb671694a8270fd93daad5b4cb11f0fc51db3b7ad", "tag": "wall_revoke:2026_06_01"}
+{"kind": "zetaris", "key": "1d66187cd1729ef1b445204642c3b1d6522060e486a9993d6814f16428942478", "tag": "wall_revoke:2026_06_01"}
+{"kind": "zetaris", "key": "593a1ddfc7f00cf5ce333bb03aa84ebbfca2eed69359abbe1d45c1fe9d5218b8", "tag": "wall_revoke:2026_06_01"}
+{"kind": "zetaris", "key": "e017f817e6e6762bd8fd6579ef42f40b25b822b08d6d8d8203170a3552eb293d", "tag": "wall_of"}
+{"kind": "zetaris", "key": "8988958ca9a3d0d31c8f433956a44a2b658a0a6a4a2540faba3b8adf18db6534", "tag": "wall_grant:2026_09_01"}
+{"kind": "zetaris", "key": "6d491eb928548c970796cdd83ab20f16c134734636bb6da76d6e514c4d5422e9", "tag": "wall_grant:2026_09_01"}
+{"kind": "zetaris", "key": "917e03e453d51a923e78f9bef790cf0f3d43f4af91e52338d45022a48d3a1f4e", "tag": "wall_grant:2026_09_01"}
+{"kind": "zetaris", "key": "8098dfd5daa0f6ad7ac2de7e1a06041ccffb8a6f2aae51102ce7c855f668af2f", "tag": "wall_grant:2026_09_01"}
+{"kind": "zetaris", "key": "4b8d774d960df728055ea6264fabfebfdf24d3f5917b4e5121b03877156ac7f8", "tag": "facts"}
+{"kind": "zetaris", "key": "0e27d42c309518341f38fa142ed9e9334e00e518a7a8fb41fae56dd09e0eb081", "tag": "history:2026-09-01"}
+{"kind": "nightshift", "key": "a1a2fb9e94794ed354237cebc69e4f33ca05b2ac677fbaf825c244dbc1f1b201", "tag": "S:CVE-2024-58379:node-nodemailer", "source": "exam", "ts": "2026-10-27T06:19:48", "text_sha": "0f70925bcfd719d276cd595deb6cba906182848e30ee7d93fa37a2ce919c26f6"}
+{"kind": "nightshift", "key": "d84b054116f5b00c1d6dbf1e4f929156015902bbff42c2a145c929d359841e85", "tag": "OURS-exec:CVE-2024-58379:node-nodemailer", "source": "exam", "ts": "2026-10-27T06:19:48", "text_sha": "57ee399e34cce0a504414147067cc77ebc9bbad6a718376cbf469f018ff1caf1"}
+{"kind": "zetaris", "key": "340a24ffba57f51b169f6a04cc7152a73aaef6dd5b7fdc11ccc901cfc87160e4", "tag": "triage_pack:CVE-2024-58379|node-nodemailer"}
+{"kind": "nightshift", "key": "8600c255ae579da7b45c13c52d5f06c691eadd4f175567423ff51040b4529189", "tag": "planner:CVE-2024-58379|node-nodemailer:r1", "source": "live", "ts": "2026-10-27T06:19:55", "text_sha": "86ef994e94587620a33c320f0585552cb470d6a8e4b9cdd1725208025830883a"}
+{"kind": "zetaris", "key": "3a6bea37bae3b2a45dbfb7dfa152f8f09bdbab71149cea1c3ef219023c7a99e8", "tag": "triage_pack:CVE-2024-58379|node-nodemailer"}
+{"kind": "nightshift", "key": "b90e4de3db13cfaadabfab070812a54c2cd101c5c8ee15191b95ddea94fbb532", "tag": "evaluator:CVE-2024-58379|node-nodemailer:r1", "source": "live", "ts": "2026-10-27T06:20:23", "text_sha": "cdc9afdd642fe3ffebcb181fe3aab4c7b23e08fbd4883c546e7f463f45955a3e"}
+{"kind": "zetaris", "key": "cacf24882446d01769180b713f8ef7f93931367a5891949498c2c58ea81f671a", "tag": "wall_revoke:2026_09_01"}
+{"kind": "zetaris", "key": "0b410cd00717e0daaa3d75315b92b2e76c9e53ffa1e626c511e432636f425e58", "tag": "wall_revoke:2026_09_01"}
+{"kind": "zetaris", "key": "b192ba50a84a6e98d360447ad892c3d438355a2b9873313d10ba2401031f0a30", "tag": "wall_revoke:2026_09_01"}
+{"kind": "zetaris", "key": "593a1ddfc7f00cf5ce333bb03aa84ebbfca2eed69359abbe1d45c1fe9d5218b8", "tag": "wall_revoke:2026_09_01"}
+{"kind": "zetaris", "key": "7b63c2ab6d49fa6663cc00ac610c5f0aa04c32da28da2a5dbe0dc83c8b949601", "tag": "wall_of"}
+{"kind": "zetaris", "key": "af3562588457c92b5060fead80601ab881ae55004dc14cbf98e424999d4a72ed", "tag": "wall_grant:2026_06_01"}
+{"kind": "zetaris", "key": "bc3d0170493c01631817e169abb004deba0bf6c429ff2ffa5ada7c55f711eca4", "tag": "wall_grant:2026_06_01"}
+{"kind": "zetaris", "key": "9abbcb39cebbe34f7273b1770e3cec4f767572af3b09a29d977aec70f8df212f", "tag": "wall_grant:2026_06_01"}
+{"kind": "zetaris", "key": "8098dfd5daa0f6ad7ac2de7e1a06041ccffb8a6f2aae51102ce7c855f668af2f", "tag": "wall_grant:2026_06_01"}
+{"kind": "zetaris", "key": "ab16e96ed0a92fd5e3348affdcc9c07ea3381f58a7e7139d9e5cb83c4184dd4f", "tag": "facts"}
+{"kind": "nightshift", "key": "6cc18c056cb9bd23abfef4e0c04bfce2a8d701627ede151909793f555ad01b93", "tag": "S:CVE-2026-27590:caddy", "source": "exam", "ts": "2026-10-27T06:20:25", "text_sha": "bc07361d3f174a2ea3925eda81ce561cd3a17b148d2d6f8ce5fdf62be065aa69"}
+{"kind": "nightshift", "key": "49af72f9b41a5568457590700e7b7cc5acd5a41cf51cddf5295ee2d3e745a710", "tag": "OURS-exec:CVE-2026-27590:caddy", "source": "exam", "ts": "2026-10-27T06:20:25", "text_sha": "5bfd88b599c3492503f07da3358fc0558d1e28afc5a117b389d99a1026ea0e7d"}
+{"kind": "nightshift", "key": "e32f265bae3e041edaa22fccf6242b6c7cbe0098d41f429ba74ea02567cd1bab", "tag": "OURS-eval:CVE-2026-27590:caddy", "source": "exam", "ts": "2026-10-27T06:20:25", "text_sha": "56547593a368c02c0006a40be447f0a9326f41e091bded0510e98813be0aecb9"}
+{"kind": "zetaris", "key": "0ef095f6f541b82e602e0774c09fc01c61e53bebeb2b42ef8ac26312b311a36f", "tag": "triage_pack:CVE-2026-27590|caddy"}
+{"kind": "nightshift", "key": "e0d84cb0bc09bd4b5bc91b935359a2b04a41e8fe717733d2d30c2de2353ce1b5", "tag": "planner:CVE-2026-27590|caddy:r1", "source": "live", "ts": "2026-10-27T06:20:55", "text_sha": "0703516b7155a4ce29770eb6eb7543e7c8617e95abee0c093b3fd9971a7ae4ab"}
+{"kind": "nightshift", "key": "4c65b10e0f2acd0bead1f340d0e3b803d144bb076f976044c3a5b8852a42ba1a", "tag": "evaluator:CVE-2026-27590|caddy:r1", "source": "live", "ts": "2026-10-27T06:21:07", "text_sha": "dfc3227b6697ae8627e6b10ead9c21e838058afa7f623f5b218ea59404bac215"}
+{"kind": "nightshift", "key": "a19108ca784b5748f1086f94b6054e79ddd43eb6e4a5051d5992af85b934c453", "tag": "planner:CVE-2026-27590|caddy:r2", "source": "live", "ts": "2026-10-27T06:21:19", "text_sha": "63085a55e8de65d2c9bb71796c53dcd0c53b0456b69de24cc4fd0382bfa456d4"}
+{"kind": "zetaris", "key": "85008cff5ec15b4c7b3989b8cc34ed9f68624803f35833332b1828017c49f336", "tag": "triage_pack:CVE-2026-27590|caddy"}
+{"kind": "nightshift", "key": "3684c21cd6026a3deb2f44addbabf8067192be94086c87799bfda7492a6e0bc7", "tag": "evaluator:CVE-2026-27590|caddy:r2", "source": "live", "ts": "2026-10-27T06:21:31", "text_sha": "7e45d166f591669fdb2cda88cb72543a4468498e3304b22ebee35ad3f00255ae"}
+{"kind": "nightshift", "key": "d1d172a9f25b24fccbe2246a386a3115b03cd1a610b8307ff877bf8bbe7e59b0", "tag": "planner:CVE-2026-27590|caddy:r3", "source": "live", "ts": "2026-10-27T06:21:39", "text_sha": "38e5234419322602dbab3d763189784cd3e8fe3c72e8771566bf3e32fc9aab8d"}
+{"kind": "zetaris", "key": "3747eafde8f2bf5eaa46956d85df7a36d70505a38ff1ed7f98d5626315280ef1", "tag": "triage_pack:CVE-2026-27590|caddy"}
+{"kind": "nightshift", "key": "7c2c0acff4785d9c84179fa5052220c52728f0beedcb7c2785d7f9c6aeeff14b", "tag": "evaluator:CVE-2026-27590|caddy:r3", "source": "live", "ts": "2026-10-27T06:22:01", "text_sha": "36a628ff9691cbad46608c563b5dbf4b87703688fa36fa8dc4829f491e030ae6"}
+{"kind": "zetaris", "key": "2f0e1da8b0644ea61ff8e2fee5c8e02caae6b490f89fde25eda4293ab8be11e5", "tag": "wall_revoke:2026_06_01"}
+{"kind": "zetaris", "key": "d43471a2bd8d270d2191540eb671694a8270fd93daad5b4cb11f0fc51db3b7ad", "tag": "wall_revoke:2026_06_01"}
+{"kind": "zetaris", "key": "1d66187cd1729ef1b445204642c3b1d6522060e486a9993d6814f16428942478", "tag": "wall_revoke:2026_06_01"}
+{"kind": "zetaris", "key": "593a1ddfc7f00cf5ce333bb03aa84ebbfca2eed69359abbe1d45c1fe9d5218b8", "tag": "wall_revoke:2026_06_01"}
+{"kind": "zetaris", "key": "1b46376b9d6623d31ad4da8befe6e6f8442d0bf4cdca4996bade390c92dc7bf5", "tag": "wall_of"}
+{"kind": "zetaris", "key": "d0e39d0378ee140b2d0fe81e1479e0540c9c4c6fdc800d2a711c74b3a7b1cd7c", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "39e33f77cc3e91c1e94777fe7647751e3126c5d984ad1889a6585d01210cd467", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "39f4abd0b5160c85f420777ef1dfe9e86ef5f413c3148809f5c7c4080670f8d7", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "4d9d739a62d8f5ed5696c87bc713dcebaf094e6ece46425188e48804280980b5", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "8098dfd5daa0f6ad7ac2de7e1a06041ccffb8a6f2aae51102ce7c855f668af2f", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "b36ee43da96386adbe503b0f7cbc102422ee9a4ecc7237296d3fce0354a2b4e0", "tag": "facts"}
+{"kind": "zetaris", "key": "62067abdcf555d4679a432feb51b33e31e4335520de50f51b5c84a0d5cb084c2", "tag": "history:2026-10-26"}
+{"kind": "zetaris", "key": "9b3d50da54ca93623a0665f842af007ad49b27eab48822a71e8d753138ce812c", "tag": "packages:today"}
+{"kind": "nightshift", "key": "691a983dabd6b34e760db6caeeae231c25f910e0bd7a66fdd1dff730db96dec0", "tag": "S:CVE-2026-116013:lua-nginx-dns", "source": "live", "ts": "2026-10-27T06:22:23", "text_sha": "d460e20310a4748cbf1e052cba1b1dc1838cce43c4fb48ae4604ef96aed3d217"}
+{"kind": "nightshift", "key": "728b9d226a77cfd82899913e20211f5ab38d89ac2c1852c235af2c08b83ca02a", "tag": "OURS-exec:CVE-2026-116013:lua-nginx-dns", "source": "live", "ts": "2026-10-27T06:22:42", "text_sha": "56773db576c8d26fbbb16bcbc6a1ead45e14b29566ece74b2f4f618fe05aec69"}
+{"kind": "zetaris", "key": "f20b2fa2d594f7b7a73e27b9226ab5e765dd1163572f30a8e69907ec04a35ce7", "tag": "triage_pack:CVE-2026-116013|lua-nginx-dns"}
+{"kind": "nightshift", "key": "80b26e4619dbee85f71407c334d0efb45ad1caf256a23344f09b9e85970d05d2", "tag": "planner:CVE-2026-116013|lua-nginx-dns:r1", "source": "live", "ts": "2026-10-27T06:22:54", "text_sha": "35af7126759d59146d21b025fc6cab4371f9f2d326558735fab06a004aa36486"}
+{"kind": "zetaris", "key": "8c76d39fce3a826f167f67ba7d627e118ddc4e9c54dceb3ac4f90bf4799ae762", "tag": "triage_pack:CVE-2026-116013|lua-nginx-dns"}
+{"kind": "nightshift", "key": "1945a970491c73295e2adba3a92a8841e9130b100534d64976e67678a166c8d0", "tag": "evaluator:CVE-2026-116013|lua-nginx-dns:r1", "source": "live", "ts": "2026-10-27T06:23:30", "text_sha": "2a463503c393cc5ae4d5cbd85d53c6c075c3dae9fa18dee716f9d5e10981c64f"}
+{"kind": "nightshift", "key": "1d6b98dae7f110eb66f12e8a09fcd717a33df54771040c54d29c78355f032d2f", "tag": "planner:CVE-2026-116013|lua-nginx-dns:r2", "source": "live", "ts": "2026-10-27T06:23:41", "text_sha": "2b9eb672ee7ebae5305cbc5870358c2e09c9f0ce91a6040267f89e8a647bceb1"}
+{"kind": "zetaris", "key": "28924cc8b337f804f9bae0460b17188bc1a53ba5ea001225a80402c234408212", "tag": "triage_pack:CVE-2026-116013|lua-nginx-dns"}
+{"kind": "nightshift", "key": "c80b49c1dab2d10c634b2ddd0e47b6e03e66061e21e851f9fd11ca8c183b35db", "tag": "evaluator:CVE-2026-116013|lua-nginx-dns:r2", "source": "live", "ts": "2026-10-27T06:24:14", "text_sha": "fca19665614b04dea3ed66ba90a9a331dc1ce43e1ba92c92141433cbc2183651"}
+{"kind": "zetaris", "key": "6aac431483b65b5346bdf13d7d1789090bab1687f7b5eef4396a03143e8f23a1", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "c7687fb1f21f0fe96383076fdad38162a3ac545dec3396870b970fe99aee24f4", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "c2c4d1ea503f2acd6de1c7b5ae34c7ad8818e0b6a3bf475b1f4012bc43bb0975", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "1ed15da7a7afaef06c3c72c92eb93ccaa7aeebf171bb953407a2e266c3a9fdac", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "593a1ddfc7f00cf5ce333bb03aa84ebbfca2eed69359abbe1d45c1fe9d5218b8", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "1e0c1c5ea585dc881e4ad79ccced18d1a4b4bba17f5e962e27a375ba8b371b6e", "tag": "wall_of"}
+{"kind": "zetaris", "key": "d0e39d0378ee140b2d0fe81e1479e0540c9c4c6fdc800d2a711c74b3a7b1cd7c", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "39e33f77cc3e91c1e94777fe7647751e3126c5d984ad1889a6585d01210cd467", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "39f4abd0b5160c85f420777ef1dfe9e86ef5f413c3148809f5c7c4080670f8d7", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "4d9d739a62d8f5ed5696c87bc713dcebaf094e6ece46425188e48804280980b5", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "8098dfd5daa0f6ad7ac2de7e1a06041ccffb8a6f2aae51102ce7c855f668af2f", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "090ca67f53c69834fa63c81fe638042fe6c7551e685d7341b4beeff49a28d36f", "tag": "facts"}
+{"kind": "nightshift", "key": "1beeca4cc08d298562d8bf1a7dda2d781413399f73362a0482de4b5092411418", "tag": "S:CVE-2026-115877:twisted", "source": "live", "ts": "2026-10-27T06:24:32", "text_sha": "f970458250b3ecdb0ee6fd3d85abfd00533acb63ce7597a9a420ca4f87f7c6d9"}
+{"kind": "nightshift", "key": "4b16e10d5a3f0b3eb458d667daf45eaf13913dc36943d03fcde263ee472b61e6", "tag": "OURS-exec:CVE-2026-115877:twisted", "source": "live", "ts": "2026-10-27T06:24:54", "text_sha": "a828aff47401c9a1378b36e2ce2f6ebbe7967454b5dae2f42f93bf2e287c6eb7"}
+{"kind": "zetaris", "key": "8a076d88d90ed0563408e642ec141ae52d3310b8d0ca11932bc83680ea159d76", "tag": "triage_pack:CVE-2026-115877|twisted"}
+{"kind": "nightshift", "key": "1f0ac60d811f5b8240a2bdfc1049d0f0c90bde27224c386411704516a9ad53b7", "tag": "planner:CVE-2026-115877|twisted:r1", "source": "live", "ts": "2026-10-27T06:25:09", "text_sha": "dd897291e3c14aaf9822add93d64570cef013ec2a3f6d6581187b0d139435d54"}
+{"kind": "zetaris", "key": "e0ed6232993f6f308094e008105db587a286dc2673c6a96ec39015dcb4286b6b", "tag": "triage_pack:CVE-2026-115877|twisted"}
+{"kind": "nightshift", "key": "a5fdff10889bb6dc697a78ea1d38030288d6e8c44d4f0e7de8048396903577f4", "tag": "evaluator:CVE-2026-115877|twisted:r1", "source": "live", "ts": "2026-10-27T06:25:43", "text_sha": "c4a07a39113f2f50c870ca839930a66d5082854590a3566c6bd3d37b1204fb80"}
+{"kind": "zetaris", "key": "6aac431483b65b5346bdf13d7d1789090bab1687f7b5eef4396a03143e8f23a1", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "c7687fb1f21f0fe96383076fdad38162a3ac545dec3396870b970fe99aee24f4", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "c2c4d1ea503f2acd6de1c7b5ae34c7ad8818e0b6a3bf475b1f4012bc43bb0975", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "1ed15da7a7afaef06c3c72c92eb93ccaa7aeebf171bb953407a2e266c3a9fdac", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "593a1ddfc7f00cf5ce333bb03aa84ebbfca2eed69359abbe1d45c1fe9d5218b8", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "4c395ec0eb62dc29f05b1e51ce411a8691b68f0903bd89b2790a9d6c82cf62a4", "tag": "wall_of"}
+{"kind": "zetaris", "key": "d0e39d0378ee140b2d0fe81e1479e0540c9c4c6fdc800d2a711c74b3a7b1cd7c", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "39e33f77cc3e91c1e94777fe7647751e3126c5d984ad1889a6585d01210cd467", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "39f4abd0b5160c85f420777ef1dfe9e86ef5f413c3148809f5c7c4080670f8d7", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "4d9d739a62d8f5ed5696c87bc713dcebaf094e6ece46425188e48804280980b5", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "8098dfd5daa0f6ad7ac2de7e1a06041ccffb8a6f2aae51102ce7c855f668af2f", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "068e8839a8b216526783ab4da58219924ed7c6990ef781949e94cea43aeba112", "tag": "facts"}
+{"kind": "nightshift", "key": "9c23e26df522ac2e9401765cf466902e3ea93e22f89fae29bbaa3229f444b781", "tag": "S:CVE-2026-115863:connman", "source": "live", "ts": "2026-10-27T06:26:07", "text_sha": "bb43d81d6e5014bb73c8b1fcc8782841d065f6d7ec6d7d02657353ba06d1bd24"}
+{"kind": "nightshift", "key": "1c1a8521062a36931c82f67d91c9d6f655696f6148a30a1c85c3bc3e170f0c9a", "tag": "OURS-exec:CVE-2026-115863:connman", "source": "live", "ts": "2026-10-27T06:26:14", "text_sha": "ca1913a6b8eaa89deda50d1f731cdcd4cd2a7b49af934f70bc8f3163f22d6e5f"}
+{"kind": "zetaris", "key": "a1307cb20bb3c35ffa0d2cd2868f0a0cc480ac843bdaea494f8817420098ddf0", "tag": "triage_pack:CVE-2026-115863|connman"}
+{"kind": "nightshift", "key": "087f21087fae1c32f19ce893577628d26df90fe14dd2e212912b7a7fa1edff85", "tag": "planner:CVE-2026-115863|connman:r1", "source": "live", "ts": "2026-10-27T06:26:24", "text_sha": "1e464f79237b06fa06c7611b6fca252bbe2dba6e8ccfdd49f4bcdc5d808e6de2"}
+{"kind": "zetaris", "key": "78aafa04446b8a950e461ff581733d9831c02e4062d088d4cd3161c349fe9188", "tag": "triage_pack:CVE-2026-115863|connman"}
+{"kind": "nightshift", "key": "6759ef2f61bf67c5c262332a867784fc4c61bde2a0d34b4f8e8ca930e964318e", "tag": "evaluator:CVE-2026-115863|connman:r1", "source": "live", "ts": "2026-10-27T06:26:34", "text_sha": "b29db770a63e36398d358fad6b11f67a9f6fd71ab54dab7563ab567772abdce0"}
+{"kind": "zetaris", "key": "6aac431483b65b5346bdf13d7d1789090bab1687f7b5eef4396a03143e8f23a1", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "c7687fb1f21f0fe96383076fdad38162a3ac545dec3396870b970fe99aee24f4", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "c2c4d1ea503f2acd6de1c7b5ae34c7ad8818e0b6a3bf475b1f4012bc43bb0975", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "1ed15da7a7afaef06c3c72c92eb93ccaa7aeebf171bb953407a2e266c3a9fdac", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "593a1ddfc7f00cf5ce333bb03aa84ebbfca2eed69359abbe1d45c1fe9d5218b8", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "8e82d8e2f53f7c948284d96a7dc157a1e5bce88394781553691cb210b7d8f0ac", "tag": "wall_of"}
+{"kind": "zetaris", "key": "d0e39d0378ee140b2d0fe81e1479e0540c9c4c6fdc800d2a711c74b3a7b1cd7c", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "39e33f77cc3e91c1e94777fe7647751e3126c5d984ad1889a6585d01210cd467", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "39f4abd0b5160c85f420777ef1dfe9e86ef5f413c3148809f5c7c4080670f8d7", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "4d9d739a62d8f5ed5696c87bc713dcebaf094e6ece46425188e48804280980b5", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "8098dfd5daa0f6ad7ac2de7e1a06041ccffb8a6f2aae51102ce7c855f668af2f", "tag": "wall_grant:2026_10_26"}
+{"kind": "zetaris", "key": "52a79064959c69333915d31c4645cd3bf7d5b861fb86576d5bfc4c17b34795e9", "tag": "facts"}
+{"kind": "nightshift", "key": "b6023975b00d73834b6d5ae7225d8d2d7154815da0f48d6b2729955e5ae08c8f", "tag": "S:CVE-2026-115778:twisted", "source": "live", "ts": "2026-10-27T06:26:51", "text_sha": "343658818678a2492c4a0d8ee3d983d58d529f8a5b13c035f3dffe3cfa292784"}
+{"kind": "nightshift", "key": "a945eedd0a4d354cfed6f8e6a1723bfd891d36fe5d8a978ff4e1d47c7d4a7997", "tag": "OURS-exec:CVE-2026-115778:twisted", "source": "live", "ts": "2026-10-27T06:26:57", "text_sha": "7b803feb397dd0894b8319746b1f7e52dd82202382d5405ffb01bed382ac9524"}
+{"kind": "nightshift", "key": "73b8e55335e7b2d60b4f4497ce4c4291cb871ecaf16e3f2a65afa3e97f91bfeb", "tag": "OURS-eval:CVE-2026-115778:twisted", "source": "live", "ts": "2026-10-27T06:27:04", "text_sha": "5645aa1ab88c1c5ba3067bd3c04e3279261126b04ef0b3baa190a8a766edcc21"}
+{"kind": "zetaris", "key": "6c49662a590fce25eb124e09b310dbaefe9d49c28add4377341e4b81c7beee45", "tag": "triage_pack:CVE-2026-115778|twisted"}
+{"kind": "nightshift", "key": "1ec1d50c7110542021822899c646f9799c87d9fbbed4be22b76154f98e213720", "tag": "planner:CVE-2026-115778|twisted:r1", "source": "live", "ts": "2026-10-27T06:27:18", "text_sha": "77ab233b1ad6b818934a84856b3efa4047101d647719323e71f4c58c11a9b294"}
+{"kind": "zetaris", "key": "76b4108961284103f2d59f7f1b1a43101fc34241f63d8abc61b37876faf5523f", "tag": "triage_pack:CVE-2026-115778|twisted"}
+{"kind": "nightshift", "key": "a2f96c4f9bc70bc2a235f0ce6fc5736d5dacac7fb31d484eeb4763f917e4f14b", "tag": "evaluator:CVE-2026-115778|twisted:r1", "source": "live", "ts": "2026-10-27T06:27:41", "text_sha": "125928b56af1a1d0209c352b723e2626e8eac4627dd0666db7fbff3563f1b64b"}
+{"kind": "zetaris", "key": "6aac431483b65b5346bdf13d7d1789090bab1687f7b5eef4396a03143e8f23a1", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "c7687fb1f21f0fe96383076fdad38162a3ac545dec3396870b970fe99aee24f4", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "c2c4d1ea503f2acd6de1c7b5ae34c7ad8818e0b6a3bf475b1f4012bc43bb0975", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "1ed15da7a7afaef06c3c72c92eb93ccaa7aeebf171bb953407a2e266c3a9fdac", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "593a1ddfc7f00cf5ce333bb03aa84ebbfca2eed69359abbe1d45c1fe9d5218b8", "tag": "wall_revoke:2026_10_26"}
+{"kind": "zetaris", "key": "e6cef42de3f8ff5fd0690a9bbfd75b1a23b8da4acd24d150ee55907a5b950122", "tag": "resolved"}
+{"kind": "zetaris", "key": "3a3df92950dd50e057bb821f1d24a18ca69ef822c1de6eacf447c44ff90a2447", "tag": "reopen_due_v2"}
+{"kind": "zetaris", "key": "e723adc91c023fee48acf7164c7963e9ca8a783f18776da304f6a463f7807b31", "tag": "waits"}
+{"kind": "zetaris", "key": "55571621fee084d80b7767f0c39e5449b89e9d15f5cf9dfc90ec2ed0fe008812", "tag": "reopen_pack:CVE-2025-14932|netcdf"}
+{"kind": "nightshift", "key": "7dc1491feabc1685355b62ebe68ec8ce7bca27cd1954755a60934005e4ec88c3", "tag": "reopen_judge:CVE-2025-14932|netcdf", "source": "live", "ts": "2026-10-27T06:27:57", "text_sha": "ec4c46adcad8d9a24190802b6c673be013243a42ab4b3ba8e881b88c12a2eb7c"}
+{"kind": "zetaris", "key": "9625e193d586e2e62b95000e15a4d1f3011c164dfa429eff0e823de57c645ee4", "tag": "reopen_pack:CVE-2022-29977|libsixel"}
+{"kind": "nightshift", "key": "a624e4fa95d83b134298e9eb7623c151ace6d32fef73f32fde280de33099d6ad", "tag": "reopen_judge:CVE-2022-29977|libsixel", "source": "live", "ts": "2026-10-27T06:28:14", "text_sha": "4030a8289768f42f27477a52e17b492dd683bb94aea6c797e49dddf46480d995"}
+{"kind": "zetaris", "key": "e6cef42de3f8ff5fd0690a9bbfd75b1a23b8da4acd24d150ee55907a5b950122", "tag": "resolved"}
+{"kind": "zetaris", "key": "3a3df92950dd50e057bb821f1d24a18ca69ef822c1de6eacf447c44ff90a2447", "tag": "reopen_due_v2"}
+{"kind": "zetaris", "key": "4ab7345d3c6fc01659729541aba019dc7dc906f80fafcdbf96fc81b94161ccfb", "tag": "reopen_due"}
+{"kind": "zetaris", "key": "17d0b1c2e7a0002de5857a533fa8b01eef8556a500269b4794b1d06fc533c9d8", "tag": "waits"}
+{"kind": "zetaris", "key": "a1009b1d5e6b9a216cdf37687be8ea864e51c115f7a3a4cd8b4832c06d088f0d", "tag": "reopen_pack:CVE-2025-14932|netcdf"}
+{"kind": "nightshift", "key": "be554799edeeb0da30b337c368698908d923646b97d1b787c0c085039349d77d", "tag": "reopen_judge:CVE-2025-14932|netcdf", "source": "live", "ts": "2026-10-27T08:34:54", "text_sha": "16873b3550b342733b0e309f798eb6fcfe05d6e3713fcedd4cc387283ce5696d"}
+{"kind": "zetaris", "key": "d6cb654048dbaf7e1bc0853b8d3083e4141d121a9cde477e99297313ef8d3a1f", "tag": "reopen_pack:CVE-2024-13745|edk2"}
+{"kind": "nightshift", "key": "b047b72f88657c3e09ba331f7e3e2880ca2dfcc26b7f94764ec8bf504537c883", "tag": "reopen_judge:CVE-2024-13745|edk2", "source": "live", "ts": "2026-10-27T08:35:13", "text_sha": "1e6e236eaee8ba7835c7cfd68bb083780dac3fad02e74b84e041a26c2705c8c7"}
+{"kind": "zetaris", "key": "be06af06da3926cb718f02b5bc2cb989dfdaf779b024a244ff99879e1ddb5235", "tag": "reopen_pack:CVE-2019-12067|qemu"}
+{"kind": "zetaris", "key": "ce3c9ed84cd406a643993203efe5e9b6bdb0036bd414cd3a66c5c4699c130bda", "tag": "reopen_pack:CVE-2023-28858|python-redis"}
+{"kind": "zetaris", "key": "8e2a4822801b64b011ca733d93e03c086c6e323fa3819ffcf920c8e5ad2410c2", "tag": "reopen_pack:CVE-2022-29977|libsixel"}
+{"kind": "zetaris", "key": "e6cef42de3f8ff5fd0690a9bbfd75b1a23b8da4acd24d150ee55907a5b950122", "tag": "resolved"}
+{"kind": "zetaris", "key": "3a3df92950dd50e057bb821f1d24a18ca69ef822c1de6eacf447c44ff90a2447", "tag": "reopen_due_v2"}
+{"kind": "zetaris", "key": "4ab7345d3c6fc01659729541aba019dc7dc906f80fafcdbf96fc81b94161ccfb", "tag": "reopen_due"}
+{"kind": "zetaris", "key": "17d0b1c2e7a0002de5857a533fa8b01eef8556a500269b4794b1d06fc533c9d8", "tag": "waits"}
+{"kind": "zetaris", "key": "0768bfe87bd1431164aee3fd906b756e0da20d21237aaaa4a2e921d6dd980d44", "tag": "reopen_pack:CVE-2025-14932|netcdf"}
+{"kind": "nightshift", "key": "0e93168ddf2f45f41dfb1b066d12f870ade1ca6cd9f964eb5c36e95c52234a80", "tag": "reopen_judge:CVE-2025-14932|netcdf", "source": "live", "ts": "2026-10-27T08:45:32", "text_sha": "bbe1608de06938259517a491dd38f93a1fcf7d08e553fc7aff5858169e265b0c"}
+{"kind": "zetaris", "key": "577672185660a6367d6e9cc0c0e9b84dac44879b5bb1de3a7b5dfdb1729fa8f7", "tag": "reopen_pack:CVE-2024-13745|edk2"}
+{"kind": "nightshift", "key": "b047b72f88657c3e09ba331f7e3e2880ca2dfcc26b7f94764ec8bf504537c883", "tag": "reopen_judge:CVE-2024-13745|edk2", "source": "live", "ts": "2026-10-27T08:45:46", "text_sha": "e55009ca4aeb2201d59f6619e8a6c7754e775819c47de91679ba0c42377a2265"}
+{"kind": "zetaris", "key": "abbddac108ab577d0ec0ec4993937923ca9a4474705a51fc2749904e1555c95b", "tag": "reopen_pack:CVE-2019-12067|qemu"}
+{"kind": "zetaris", "key": "23b64f7be6b29e263b5ba924574e192ffdc2908590483beefec2e8c8d599362b", "tag": "reopen_pack:CVE-2023-28858|python-redis"}
+{"kind": "zetaris", "key": "7d750e0e62649d8beecbdbc4c2acc05316127499c071817600fd18fc3b6ee41b", "tag": "reopen_pack:CVE-2022-29977|libsixel"}
+{"kind": "zetaris", "key": "e6cef42de3f8ff5fd0690a9bbfd75b1a23b8da4acd24d150ee55907a5b950122", "tag": "resolved"}
+{"kind": "zetaris", "key": "3a3df92950dd50e057bb821f1d24a18ca69ef822c1de6eacf447c44ff90a2447", "tag": "reopen_due_v2"}
+{"kind": "zetaris", "key": "4ab7345d3c6fc01659729541aba019dc7dc906f80fafcdbf96fc81b94161ccfb", "tag": "reopen_due"}
+{"kind": "zetaris", "key": "17d0b1c2e7a0002de5857a533fa8b01eef8556a500269b4794b1d06fc533c9d8", "tag": "waits"}
+{"kind": "zetaris", "key": "fd6bd916628372fba5fdbbbf8ea49536c70157b7c3c64db3cd51f6e310286dbf", "tag": "reopen_pack:CVE-2025-14932|netcdf"}
+{"kind": "nightshift", "key": "3a968cd7c28568070e74ffc9e0d40df406b19835e725233f4848fc3104702d2e", "tag": "reopen_judge:CVE-2025-14932|netcdf", "source": "live", "ts": "2026-10-27T09:12:41", "text_sha": "d42e618b09ccb6c1804bce989882209f94070027909b0f1fe431d65272220fba"}
+{"kind": "zetaris", "key": "dff3a3b537384e6c5c3a96def45fa58ce9325e8b06698b0517bcd3f688d76c2d", "tag": "reopen_pack:CVE-2024-13745|edk2"}
+{"kind": "nightshift", "key": "8d41bb1c1525cb7c73c1420d2d62f80d743e794cefaba8cb04a08078c16f539c", "tag": "reopen_judge:CVE-2024-13745|edk2", "source": "live", "ts": "2026-10-27T09:13:07", "text_sha": "9605386a3762ee24d94de197e5e632de0080b6202b80f21e035ebe668c3f934a"}
+{"kind": "zetaris", "key": "bbaa168e1c08ed3afcf997f4143104f15efb6a40b2de929151c0e2ca2de35c26", "tag": "reopen_pack:CVE-2019-12067|qemu"}
+{"kind": "zetaris", "key": "d1d5fafd182de2e99761c7baf0bcb454a2b3fb2dc804ad0dd31da72a6c426c97", "tag": "reopen_pack:CVE-2023-28858|python-redis"}
+{"kind": "zetaris", "key": "4cfc9ce67681fab3844ae3b084f4a10739883444362b7bdf9d8c9d2b7f61db5d", "tag": "reopen_pack:CVE-2022-29977|libsixel"}

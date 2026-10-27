@@ -1,0 +1,12 @@
+Scout memory-reliability equivalence vs frozen core/gate.py decide(). Command: python -I test/test_scout_equivalence.py   run at 2026-10-26T08:45:57Z, Python 3.9.12, node v24.18.0
+core/gate.py sha256 f6245d66723f9c34dc6bdf5a609b2496d914e58f926be18e9348ec3192de1db4  (prereg_news.json input_hashes: f6245d66723f9c34dc6bdf5a609b2496d914e58f926be18e9348ec3192de1db4)
+data/news_feat.json sha256 335f78309ddb03e43e50b20bbac92ede8471ee0b4b21514c2fac26efe23c33d1
+
+reference: core/gate.py decide()  |  records: 570 real + 6 synthetic  |  pairs per record: 16
+scout: registryVersion=1 digest=2f1691a9152cb228 selfTest={'ok': True, 'probes': 8, 'maxMs': 0.1, 'budgetMs': 16} secret=random-per-process
+decisions compared: 9216  (10.4 s, 1.13 ms each over the bridge)
+by rule: {'agree': 2304, 'trust_memory': 3300, 'class_unreliable': 1728, 'memory_disagrees_with_itself': 1884}
+by tool: {'decision.adopt_memory': 5604, 'decision.adopt_evidence': 3612}
+contracts spot-verified at a boundary: 96 (signature + scope ok; execution refused until user-confirm approval)
+RESULT: PASS - Scout picked exactly what core/gate.py decide() picks, with the same rule name, on all 9216 inputs.
+exit code: 0

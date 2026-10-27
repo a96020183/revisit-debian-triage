@@ -1,0 +1,83 @@
+{
+ "note": "Which urgent news items already had a bookworm DSA/DLA for the same (CVE, package) before 2026-10-01? (QA round 3)\nThose are fixes re-issued or regressions fixed again in October, not newly tracked CVEs.",
+ "n": 7,
+ "items": [
+  {
+   "cve": "CVE-2026-23631",
+   "pkg": "redis",
+   "wall": "2026-06-01",
+   "earlier": [
+    {
+     "adv": "DLA-4682-1",
+     "date": "2026-07-13"
+    }
+   ]
+  },
+  {
+   "cve": "CVE-2026-25243",
+   "pkg": "redis",
+   "wall": "2026-06-01",
+   "earlier": [
+    {
+     "adv": "DLA-4682-1",
+     "date": "2026-07-13"
+    }
+   ]
+  },
+  {
+   "cve": "CVE-2026-25971",
+   "pkg": "imagemagick",
+   "wall": "2026-06-01",
+   "earlier": [
+    {
+     "adv": "DSA-6245-1",
+     "date": "2026-05-03"
+    }
+   ]
+  },
+  {
+   "cve": "CVE-2026-32316",
+   "pkg": "jq",
+   "wall": "2026-06-01",
+   "earlier": [
+    {
+     "adv": "DLA-4662-1",
+     "date": "2026-07-01"
+    }
+   ]
+  },
+  {
+   "cve": "CVE-2026-45363",
+   "pkg": "ruby-jwt",
+   "wall": "2026-07-01",
+   "earlier": [
+    {
+     "adv": "DLA-4787-1",
+     "date": "2026-09-18"
+    }
+   ]
+  },
+  {
+   "cve": "CVE-2026-76957",
+   "pkg": "expat",
+   "wall": "2026-08-01",
+   "earlier": [
+    {
+     "adv": "DLA-4765-1",
+     "date": "2026-08-31"
+    }
+   ]
+  },
+  {
+   "cve": "CVE-2026-81934",
+   "pkg": "redis",
+   "wall": "2026-08-01",
+   "earlier": [
+    {
+     "adv": "DLA-4794-1",
+     "date": "2026-09-24"
+    }
+   ]
+  }
+ ]
+}

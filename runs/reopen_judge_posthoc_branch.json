@@ -1,0 +1,23 @@
+{
+ "note": "POST-HOC (not sealed): after the addendum was scored, the per-wait evidence query gained the upstream branch-fix rows it had been missing; the judge was re-asked only for the 3 waits it had dropped.",
+ "cards": [
+  {
+   "wait": "CVE-2023-6605|ffmpeg",
+   "status": "reopen",
+   "met": "yes",
+   "reason": "The fix commit is contained in upstream release tags n5.1.7, n5.1.8, n5.1.9 (E3), and the upstream release/5.1 branch has the fix with released versions 5.1.7, 5.1.8, 5.1.9 (E6). The deferral condition is identical in original and latest note (E9)."
+  },
+  {
+   "wait": "CVE-2025-22921|ffmpeg",
+   "status": "reopen",
+   "met": "yes",
+   "reason": "The upstream release/5.1 branch contains the fix and has a release tag n5.1.10, satisfying the condition to wait until fixed in the 5.1 branch. Both the original and current deferral conditions are identical and are met."
+  },
+  {
+   "wait": "CVE-2026-30997|ffmpeg",
+   "status": "reopen",
+   "met": "yes",
+   "reason": "E2 confirms the fix is on the upstream release/5.1 branch with released tags n5.1.9 and n5.1.10. E5 shows the original and latest deferral conditions are identical and both require the fix in the 5.1 branch, which is now satisfied."
+  }
+ ]
+}

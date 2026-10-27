@@ -1,0 +1,29 @@
+{
+ "n": 286,
+ "flagged_by_watch": 85,
+ "watch_only": {
+  "F1": 0.9189,
+  "tp": 85,
+  "fp": 0,
+  "fn": 15,
+  "flagged": 85
+ },
+ "watch_plus_judge": {
+  "F1": 0.9011,
+  "tp": 82,
+  "fp": 0,
+  "fn": 18,
+  "flagged": 82
+ },
+ "judge": {
+  "yes": 82,
+  "no": 3,
+  "needs_lead": 0
+ },
+ "dropped_true": [
+  "CVE-2023-6605|ffmpeg",
+  "CVE-2025-22921|ffmpeg",
+  "CVE-2026-30997|ffmpeg"
+ ],
+ "verifier_send_backs": 4
+}

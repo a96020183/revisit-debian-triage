@@ -1,0 +1,211 @@
+{
+ "(Minor issue, revisit when fix is merged upstream": {
+  "template": "patch_available",
+  "branch": null,
+  "fallback": false,
+  "served": "nvidia/nemotron-3-ultra-550b-a55b",
+  "usage": {
+   "prompt_tokens": 158,
+   "completion_tokens": 580,
+   "estimated": true
+  }
+ },
+ "Minor issue": {
+  "template": "needs_human",
+  "branch": null,
+  "fallback": false,
+  "served": "nvidia/nemotron-3-ultra-550b-a55b",
+  "usage": {
+   "prompt_tokens": 148,
+   "completion_tokens": 244,
+   "estimated": true
+  }
+ },
+ "Minor issue, OOB read, revisit when/if fixed upstream": {
+  "template": "upstream_fix",
+  "branch": null,
+  "fallback": false,
+  "served": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+  "usage": {
+   "prompt_tokens": 159,
+   "completion_tokens": 11,
+   "estimated": true
+  }
+ },
+ "Minor issue, revisit once fixed upstream": {
+  "template": "upstream_fix",
+  "branch": null,
+  "fallback": false,
+  "served": "nvidia/nemotron-3-ultra-550b-a55b",
+  "usage": {
+   "prompt_tokens": 156,
+   "completion_tokens": 205,
+   "estimated": true
+  }
+ },
+ "Minor issue, revisit when addressed upstream": {
+  "template": "upstream_fix",
+  "branch": null,
+  "fallback": false,
+  "served": "nvidia/nemotron-3-ultra-550b-a55b",
+  "usage": {
+   "prompt_tokens": 157,
+   "completion_tokens": 396,
+   "estimated": true
+  }
+ },
+ "Minor issue, revisit when fixed upstream": {
+  "template": "upstream_fix",
+  "branch": null,
+  "fallback": false,
+  "served": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "usage": {
+   "prompt_tokens": 156,
+   "completion_tokens": 11,
+   "estimated": true
+  }
+ },
+ "Minor issue, revisit when/if fixed upstream": {
+  "template": "upstream_fix",
+  "branch": null,
+  "fallback": false,
+  "served": "nvidia/nemotron-3-ultra-550b-a55b",
+  "usage": {
+   "prompt_tokens": 156,
+   "completion_tokens": 210,
+   "estimated": true
+  }
+ },
+ "Minor issue, untrusted-input DoS/integrity; unfixed upstream, revisit when fixed": {
+  "template": "upstream_fix",
+  "branch": null,
+  "fallback": false,
+  "served": "nvidia/nemotron-3-ultra-550b-a55b",
+  "usage": {
+   "prompt_tokens": 166,
+   "completion_tokens": 255,
+   "estimated": true
+  }
+ },
+ "Minor issue, wait until it's fixed in the 5.1 branch": {
+  "template": "branch_fix",
+  "branch": "5.1",
+  "fallback": false,
+  "served": "nvidia/nemotron-3-ultra-550b-a55b",
+  "usage": {
+   "prompt_tokens": 159,
+   "completion_tokens": 206,
+   "estimated": true
+  }
+ },
+ "Minor issue; regression potential; revisit when fixed upstream": {
+  "template": "upstream_fix",
+  "branch": null,
+  "fallback": false,
+  "served": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+  "usage": {
+   "prompt_tokens": 161,
+   "completion_tokens": 11,
+   "estimated": true
+  }
+ },
+ "Minor issue; revisit when fixed upstream": {
+  "template": "upstream_fix",
+  "branch": null,
+  "fallback": false,
+  "served": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+  "usage": {
+   "prompt_tokens": 156,
+   "completion_tokens": 11,
+   "estimated": true
+  }
+ },
+ "Pick up when fixed in 5.1.x": {
+  "template": "branch_fix",
+  "branch": "5.1",
+  "fallback": false,
+  "served": "nvidia/nemotron-3-ultra-550b-a55b",
+  "usage": {
+   "prompt_tokens": 152,
+   "completion_tokens": 183,
+   "estimated": true
+  }
+ },
+ "Revisit once upstream and ZDI status is clarfied": {
+  "template": "needs_human",
+  "branch": null,
+  "fallback": false,
+  "served": "nvidia/nemotron-3-ultra-550b-a55b",
+  "usage": {
+   "prompt_tokens": 158,
+   "completion_tokens": 250,
+   "estimated": true
+  }
+ },
+ "Revisit when correctly fixed upstream": {
+  "template": "upstream_fix",
+  "branch": null,
+  "fallback": false,
+  "served": "nvidia/nemotron-3-ultra-550b-a55b",
+  "usage": {
+   "prompt_tokens": 155,
+   "completion_tokens": 271,
+   "estimated": true
+  }
+ },
+ "Revisit when fixed upstream": {
+  "template": "upstream_fix",
+  "branch": null,
+  "fallback": false,
+  "served": "nvidia/nemotron-3-ultra-550b-a55b",
+  "usage": {
+   "prompt_tokens": 152,
+   "completion_tokens": 212,
+   "estimated": true
+  }
+ },
+ "Revisit when more details are available": {
+  "template": "needs_human",
+  "branch": null,
+  "fallback": false,
+  "served": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+  "usage": {
+   "prompt_tokens": 156,
+   "completion_tokens": 11,
+   "estimated": true
+  }
+ },
+ "Revisit when patches are available": {
+  "template": "patch_available",
+  "branch": null,
+  "fallback": false,
+  "served": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+  "usage": {
+   "prompt_tokens": 154,
+   "completion_tokens": 12,
+   "estimated": true
+  }
+ },
+ "Revisit when upstream fixes are available": {
+  "template": "upstream_fix",
+  "branch": null,
+  "fallback": false,
+  "served": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+  "usage": {
+   "prompt_tokens": 156,
+   "completion_tokens": 11,
+   "estimated": true
+  }
+ },
+ "Revisit when/if fixed upstream": {
+  "template": "upstream_fix",
+  "branch": null,
+  "fallback": false,
+  "served": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "usage": {
+   "prompt_tokens": 153,
+   "completion_tokens": 11,
+   "estimated": true
+  }
+ }
+}

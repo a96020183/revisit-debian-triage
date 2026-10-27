@@ -1,0 +1,772 @@
+[
+ {
+  "step": "register revisit_pg tables",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "count rv3_cve_facts",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "count rv3_decisions",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "count rv3_advisories",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "count rv3_kev",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "count rv3_waits",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "count rv3_tracker_now",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "count rv3_upstream",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "count rv3_branch_fix",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "count rv3_resolved",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "count rv3_cve_tracker",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "lightning db rv3_up",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A database named \\\"RV3_UP\\\" already exists.\"}"
+ },
+ {
+  "step": "container rv3",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A container named \\\"rv3\\\" already exists.\"}"
+ },
+ {
+  "step": "view rv3.reopen_due (daily watch)",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "view rv3.reopen_due_v2 (watch minus resolved waits)",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.decisions_2026_06_01",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.advisories_2026_06_01",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.kev_2026_06_01",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.decisions_2026_07_01",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.advisories_2026_07_01",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.kev_2026_07_01",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.decisions_2026_08_01",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.advisories_2026_08_01",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.kev_2026_08_01",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.decisions_2026_09_01",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.advisories_2026_09_01",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.kev_2026_09_01",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.decisions_2026_10_01",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.advisories_2026_10_01",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.kev_2026_10_01",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.decisions_2026_10_26",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.advisories_2026_10_26",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.kev_2026_10_26",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "wall view rv3.cve_tracker_2026_10_26",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "role rv3_planner",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A role named \\\"rv3_planner\\\" already exists.\"}"
+ },
+ {
+  "step": "role rv3_executor",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A role named \\\"rv3_executor\\\" already exists.\"}"
+ },
+ {
+  "step": "role rv3_watcher",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A role named \\\"rv3_watcher\\\" already exists.\"}"
+ },
+ {
+  "step": "count reopen_due",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "flagged waits",
+  "ok": true,
+  "error": ""
+ },
+ {
+  "step": "REST osv_cve_2019_12067",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2019_12067\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2019_12214",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2019_12214\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2022_29977",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2022_29977\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2022_29978",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2022_29978\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2022_37331",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2022_37331\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2023_28858",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2023_28858\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2023_39327",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2023_39327\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2023_4232",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2023_4232\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2023_4233",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2023_4233\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2023_4234",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2023_4234\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2023_4235",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2023_4235\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2023_42366",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2023_42366\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2023_46565",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2023_46565\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2023_5072",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2023_5072\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2023_6605",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2023_6605\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_13745",
+  "ok": false,
+  "error": "HTTP 400 {\"msg\":\"REST API call failed: https://api.osv.dev/v1/vulns/CVE-2024-13745\\n  URL: GET https://api.osv.dev/v1/vulns/CVE-2024-13745\\n  Content-Type: application/x-www-form-urlencoded\\n  Headers: Map()\\n  Request body: Map()\\n  Response body: {\\\"code\\\":5,\\\"message\\\":\\\"Vulnerability not found\\\""
+ },
+ {
+  "step": "REST osv_cve_2024_38949",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_38949\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_38950",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_38950\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_39705",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_39705\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_42040",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_42040\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_47081",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_47081\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_48423",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_48423\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_48424",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_48424\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_48425",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_48425\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_53425",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_53425\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_58251",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_58251\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_7537",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_7537\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_7538",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_7538\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_7539",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_7539\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_7540",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_7540\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_7541",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_7541\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_7542",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_7542\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_7543",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_7543\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_7544",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_7544\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_7545",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_7545\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_7546",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_7546\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_7547",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_7547\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2024_9101",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2024_9101\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_10911",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_10911\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_12495",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_12495\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_12839",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_12839\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_12840",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_12840\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_14505",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_14505\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_14932",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_14932\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_14933",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_14933\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_14934",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_14934\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_14935",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_14935\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_14936",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_14936\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_15571",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_15571\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_2151",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_2151\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_2152",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_2152\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_22921",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_22921\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_2337",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_2337\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_2591",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_2591\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_2592",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_2592\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_2750",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_2750\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_2751",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_2751\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_2754",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_2754\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_2756",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_2756\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_2757",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_2757\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_3158",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_3158\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_46394",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_46394\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_60876",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_60876\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_61103",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_61103\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_61104",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_61104\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_61106",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_61106\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2025_61107",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2025_61107\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2026_10028",
+  "ok": false,
+  "error": "HTTP 400 {\"msg\":\"REST API call failed: https://api.osv.dev/v1/vulns/CVE-2026-10028\\n  URL: GET https://api.osv.dev/v1/vulns/CVE-2026-10028\\n  Content-Type: application/x-www-form-urlencoded\\n  Headers: Map()\\n  Request body: Map()\\n  Response body: {\\\"code\\\":5,\\\"message\\\":\\\"Vulnerability not found\\\""
+ },
+ {
+  "step": "REST osv_cve_2026_10294",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2026_10294\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2026_14683",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2026_14683\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2026_14684",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2026_14684\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2026_14685",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2026_14685\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2026_14686",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2026_14686\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2026_30997",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2026_30997\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2026_3650",
+  "ok": false,
+  "error": "HTTP 400 {\"msg\":\"REST API call failed: https://api.osv.dev/v1/vulns/CVE-2026-3650\\n  URL: GET https://api.osv.dev/v1/vulns/CVE-2026-3650\\n  Content-Type: application/x-www-form-urlencoded\\n  Headers: Map()\\n  Request body: Map()\\n  Response body: {\\\"code\\\":5,\\\"message\\\":\\\"Vulnerability not found\\\"}\\"
+ },
+ {
+  "step": "REST osv_cve_2026_6659",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2026_6659\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2026_71225",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2026_71225\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2026_71226",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2026_71226\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2026_71227",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2026_71227\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST osv_cve_2026_72854",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"osv_cve_2026_72854\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_assimp",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_assimp\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_busybox",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_busybox\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_edk2",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_edk2\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_ffmpeg",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_ffmpeg\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_freeimage",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_freeimage\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_frr",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_frr\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_gdcm",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_gdcm\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_glib_networking",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_glib_networking\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_gobgp",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_gobgp\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_hdrhistogram",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_hdrhistogram\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_jenkins_json",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_jenkins_json\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_libcrypt_passwdmd5_perl",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_libcrypt_passwdmd5_perl\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_libde265",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_libde265\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_libjettison_java",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_libjettison_java\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_libjson_java",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_libjson_java\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_libkcapi",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_libkcapi\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_libmatio",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_libmatio\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_libsixel",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_libsixel\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_libxslt",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_libxslt\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_lrzip",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_lrzip\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_msgpack_c",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_msgpack_c\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_netcdf",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_netcdf\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_netcdf_parallel",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_netcdf_parallel\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_nltk",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_nltk\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_node_elliptic",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_node_elliptic\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_ofono",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_ofono\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_openbabel",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_openbabel\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_openexr",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_openexr\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_openjpeg2",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_openjpeg2\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_packagekit",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_packagekit\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_phpldapadmin",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_phpldapadmin\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_python_redis",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_python_redis\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_qemu",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_qemu\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_requests",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_requests\\\" already exists in database \\\"rv3_up\\\".\"}"
+ },
+ {
+  "step": "REST rm_u_boot",
+  "ok": true,
+  "error": "HTTP 400 {\"msg\":\"A table named \\\"rm_u_boot\\\" already exists in database \\\"rv3_up\\\".\"}"
+ }
+]

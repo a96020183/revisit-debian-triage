@@ -1,0 +1,1071 @@
+{
+ "n_pairs": 285,
+ "n_items": 570,
+ "gold": {
+  "URGENT": 251,
+  "NOTAFF": 110,
+  "WONTFIX": 3,
+  "NEXT": 206
+ },
+ "coverage": {
+  "S": 570,
+  "OURS": 570,
+  "total_items": 570
+ },
+ "arms": {
+  "S": {
+   "URGENT_F1": 0.2798,
+   "URGENT_recall": 0.1873,
+   "URGENT_precision": 0.5529,
+   "macroF1": 0.3543,
+   "acc": 0.4368,
+   "per_class": {
+    "URGENT": {
+     "tp": 47,
+     "pred": 85,
+     "gold": 251,
+     "precision": 0.5529,
+     "recall": 0.1873,
+     "f1": 0.2798
+    },
+    "NEXT": {
+     "tp": 135,
+     "pred": 336,
+     "gold": 206,
+     "precision": 0.4018,
+     "recall": 0.6553,
+     "f1": 0.4982
+    },
+    "WONTFIX": {
+     "tp": 1,
+     "pred": 20,
+     "gold": 3,
+     "precision": 0.05,
+     "recall": 0.3333,
+     "f1": 0.087
+    },
+    "NOTAFF": {
+     "tp": 66,
+     "pred": 129,
+     "gold": 110,
+     "precision": 0.5116,
+     "recall": 0.6,
+     "f1": 0.5523
+    }
+   }
+  },
+  "OURS": {
+   "URGENT_F1": 0.4539,
+   "URGENT_recall": 0.3625,
+   "URGENT_precision": 0.6067,
+   "macroF1": 0.3999,
+   "acc": 0.4912,
+   "per_class": {
+    "URGENT": {
+     "tp": 91,
+     "pred": 150,
+     "gold": 251,
+     "precision": 0.6067,
+     "recall": 0.3625,
+     "f1": 0.4539
+    },
+    "NEXT": {
+     "tp": 125,
+     "pred": 280,
+     "gold": 206,
+     "precision": 0.4464,
+     "recall": 0.6068,
+     "f1": 0.5144
+    },
+    "WONTFIX": {
+     "tp": 1,
+     "pred": 25,
+     "gold": 3,
+     "precision": 0.04,
+     "recall": 0.3333,
+     "f1": 0.0714
+    },
+    "NOTAFF": {
+     "tp": 63,
+     "pred": 115,
+     "gold": 110,
+     "precision": 0.5478,
+     "recall": 0.5727,
+     "f1": 0.56
+    }
+   }
+  },
+  "GATED": {
+   "URGENT_F1": 0.4339,
+   "URGENT_recall": 0.3267,
+   "URGENT_precision": 0.6457,
+   "macroF1": 0.3915,
+   "acc": 0.4825,
+   "per_class": {
+    "URGENT": {
+     "tp": 82,
+     "pred": 127,
+     "gold": 251,
+     "precision": 0.6457,
+     "recall": 0.3267,
+     "f1": 0.4339
+    },
+    "NEXT": {
+     "tp": 127,
+     "pred": 291,
+     "gold": 206,
+     "precision": 0.4364,
+     "recall": 0.6165,
+     "f1": 0.5111
+    },
+    "WONTFIX": {
+     "tp": 1,
+     "pred": 30,
+     "gold": 3,
+     "precision": 0.0333,
+     "recall": 0.3333,
+     "f1": 0.0606
+    },
+    "NOTAFF": {
+     "tp": 65,
+     "pred": 122,
+     "gold": 110,
+     "precision": 0.5328,
+     "recall": 0.5909,
+     "f1": 0.5603
+    }
+   }
+  },
+  "NN": {
+   "URGENT_F1": 0.4481,
+   "URGENT_recall": 0.3267,
+   "URGENT_precision": 0.713,
+   "macroF1": 0.3606,
+   "acc": 0.4684,
+   "per_class": {
+    "URGENT": {
+     "tp": 82,
+     "pred": 115,
+     "gold": 251,
+     "precision": 0.713,
+     "recall": 0.3267,
+     "f1": 0.4481
+    },
+    "NEXT": {
+     "tp": 138,
+     "pred": 291,
+     "gold": 206,
+     "precision": 0.4742,
+     "recall": 0.6699,
+     "f1": 0.5553
+    },
+    "WONTFIX": {
+     "tp": 1,
+     "pred": 39,
+     "gold": 3,
+     "precision": 0.0256,
+     "recall": 0.3333,
+     "f1": 0.0476
+    },
+    "NOTAFF": {
+     "tp": 46,
+     "pred": 125,
+     "gold": 110,
+     "precision": 0.368,
+     "recall": 0.4182,
+     "f1": 0.3915
+    }
+   }
+  },
+  "R1": {
+   "URGENT_F1": 0.131,
+   "URGENT_recall": 0.0757,
+   "URGENT_precision": 0.4872,
+   "macroF1": 0.2646,
+   "acc": 0.3632,
+   "per_class": {
+    "URGENT": {
+     "tp": 19,
+     "pred": 39,
+     "gold": 251,
+     "precision": 0.4872,
+     "recall": 0.0757,
+     "f1": 0.131
+    },
+    "NEXT": {
+     "tp": 146,
+     "pred": 334,
+     "gold": 206,
+     "precision": 0.4371,
+     "recall": 0.7087,
+     "f1": 0.5407
+    },
+    "WONTFIX": {
+     "tp": 2,
+     "pred": 57,
+     "gold": 3,
+     "precision": 0.0351,
+     "recall": 0.6667,
+     "f1": 0.0667
+    },
+    "NOTAFF": {
+     "tp": 40,
+     "pred": 140,
+     "gold": 110,
+     "precision": 0.2857,
+     "recall": 0.3636,
+     "f1": 0.32
+    }
+   }
+  },
+  "pkg_mode": {
+   "URGENT_F1": 0.4525,
+   "URGENT_recall": 0.3227,
+   "URGENT_precision": 0.757,
+   "macroF1": 0.3687,
+   "acc": 0.4754,
+   "per_class": {
+    "URGENT": {
+     "tp": 81,
+     "pred": 107,
+     "gold": 251,
+     "precision": 0.757,
+     "recall": 0.3227,
+     "f1": 0.4525
+    },
+    "NEXT": {
+     "tp": 134,
+     "pred": 243,
+     "gold": 206,
+     "precision": 0.5514,
+     "recall": 0.6505,
+     "f1": 0.5969
+    },
+    "WONTFIX": {
+     "tp": 1,
+     "pred": 35,
+     "gold": 3,
+     "precision": 0.0286,
+     "recall": 0.3333,
+     "f1": 0.0526
+    },
+    "NOTAFF": {
+     "tp": 55,
+     "pred": 185,
+     "gold": 110,
+     "precision": 0.2973,
+     "recall": 0.5,
+     "f1": 0.3729
+    }
+   }
+  },
+  "ablation_gate_without_HMEM_rule": {
+   "URGENT_F1": 0.4511,
+   "URGENT_recall": 0.3586,
+   "URGENT_precision": 0.6081,
+   "macroF1": 0.391,
+   "acc": 0.4807,
+   "per_class": {
+    "URGENT": {
+     "tp": 90,
+     "pred": 148,
+     "gold": 251,
+     "precision": 0.6081,
+     "recall": 0.3586,
+     "f1": 0.4511
+    },
+    "NEXT": {
+     "tp": 121,
+     "pred": 276,
+     "gold": 206,
+     "precision": 0.4384,
+     "recall": 0.5874,
+     "f1": 0.5021
+    },
+    "WONTFIX": {
+     "tp": 1,
+     "pred": 32,
+     "gold": 3,
+     "precision": 0.0312,
+     "recall": 0.3333,
+     "f1": 0.0571
+    },
+    "NOTAFF": {
+     "tp": 62,
+     "pred": 114,
+     "gold": 110,
+     "precision": 0.5439,
+     "recall": 0.5636,
+     "f1": 0.5536
+    }
+   }
+  }
+ },
+ "diffs_URGENT_F1": {
+  "GATED-S": {
+   "point": 0.1541,
+   "ci95": [
+    0.0835,
+    0.2263
+   ],
+   "ci95_package_clusters": [
+    -0.0279,
+    0.2942
+   ]
+  },
+  "GATED-OURS": {
+   "point": -0.02,
+   "ci95": [
+    -0.0514,
+    0.0082
+   ],
+   "ci95_package_clusters": [
+    -0.0474,
+    0.0183
+   ]
+  },
+  "GATED-NN": {
+   "point": -0.0142,
+   "ci95": [
+    -0.0878,
+    0.0564
+   ],
+   "ci95_package_clusters": [
+    -0.1272,
+    0.1245
+   ]
+  },
+  "GATED-R1": {
+   "point": 0.3028,
+   "ci95": [
+    0.2357,
+    0.3691
+   ],
+   "ci95_package_clusters": [
+    0.1378,
+    0.4329
+   ]
+  },
+  "GATED-pkg_mode": {
+   "point": -0.0187,
+   "ci95": [
+    -0.0877,
+    0.0471
+   ],
+   "ci95_package_clusters": [
+    -0.1758,
+    0.1785
+   ]
+  },
+  "GATED-ablation_gate_without_HMEM_rule": {
+   "point": -0.0173,
+   "ci95": [
+    -0.0466,
+    0.0097
+   ],
+   "ci95_package_clusters": [
+    -0.0446,
+    0.0214
+   ]
+  }
+ },
+ "diffs_URGENT_recall": {
+  "GATED-S": {
+   "point": 0.1394,
+   "ci95": [
+    0.0776,
+    0.2008
+   ]
+  },
+  "GATED-OURS": {
+   "point": -0.0359,
+   "ci95": [
+    -0.0646,
+    -0.0086
+   ]
+  },
+  "GATED-NN": {
+   "point": 0.0,
+   "ci95": [
+    -0.0664,
+    0.0677
+   ]
+  },
+  "GATED-R1": {
+   "point": 0.251,
+   "ci95": [
+    0.1949,
+    0.3089
+   ]
+  }
+ },
+ "diffs_macroF1": {
+  "GATED-S": {
+   "point": 0.0372,
+   "ci95": [
+    0.0077,
+    0.0648
+   ]
+  },
+  "GATED-OURS": {
+   "point": -0.0084,
+   "ci95": [
+    -0.0254,
+    0.0074
+   ]
+  },
+  "GATED-NN": {
+   "point": 0.0308,
+   "ci95": [
+    -0.0054,
+    0.0668
+   ]
+  }
+ },
+ "news_half_only": {
+  "S": {
+   "URGENT_F1": 0.3144,
+   "URGENT_recall": 0.1873,
+   "URGENT_precision": 0.9792,
+   "macroF1": 0.2056,
+   "acc": 0.2491,
+   "per_class": {
+    "URGENT": {
+     "tp": 47,
+     "pred": 48,
+     "gold": 251,
+     "precision": 0.9792,
+     "recall": 0.1873,
+     "f1": 0.3144
+    },
+    "NEXT": {
+     "tp": 20,
+     "pred": 185,
+     "gold": 25,
+     "precision": 0.1081,
+     "recall": 0.8,
+     "f1": 0.1905
+    },
+    "WONTFIX": {
+     "tp": 1,
+     "pred": 7,
+     "gold": 3,
+     "precision": 0.1429,
+     "recall": 0.3333,
+     "f1": 0.2
+    },
+    "NOTAFF": {
+     "tp": 3,
+     "pred": 45,
+     "gold": 6,
+     "precision": 0.0667,
+     "recall": 0.5,
+     "f1": 0.1176
+    }
+   }
+  },
+  "OURS": {
+   "URGENT_F1": 0.52,
+   "URGENT_recall": 0.3625,
+   "URGENT_precision": 0.9192,
+   "macroF1": 0.2502,
+   "acc": 0.386,
+   "per_class": {
+    "URGENT": {
+     "tp": 91,
+     "pred": 99,
+     "gold": 251,
+     "precision": 0.9192,
+     "recall": 0.3625,
+     "f1": 0.52
+    },
+    "NEXT": {
+     "tp": 15,
+     "pred": 141,
+     "gold": 25,
+     "precision": 0.1064,
+     "recall": 0.6,
+     "f1": 0.1807
+    },
+    "WONTFIX": {
+     "tp": 1,
+     "pred": 10,
+     "gold": 3,
+     "precision": 0.1,
+     "recall": 0.3333,
+     "f1": 0.1538
+    },
+    "NOTAFF": {
+     "tp": 3,
+     "pred": 35,
+     "gold": 6,
+     "precision": 0.0857,
+     "recall": 0.5,
+     "f1": 0.1463
+    }
+   }
+  },
+  "GATED": {
+   "URGENT_F1": 0.4838,
+   "URGENT_recall": 0.3267,
+   "URGENT_precision": 0.9318,
+   "macroF1": 0.237,
+   "acc": 0.3579,
+   "per_class": {
+    "URGENT": {
+     "tp": 82,
+     "pred": 88,
+     "gold": 251,
+     "precision": 0.9318,
+     "recall": 0.3267,
+     "f1": 0.4838
+    },
+    "NEXT": {
+     "tp": 16,
+     "pred": 148,
+     "gold": 25,
+     "precision": 0.1081,
+     "recall": 0.64,
+     "f1": 0.185
+    },
+    "WONTFIX": {
+     "tp": 1,
+     "pred": 11,
+     "gold": 3,
+     "precision": 0.0909,
+     "recall": 0.3333,
+     "f1": 0.1429
+    },
+    "NOTAFF": {
+     "tp": 3,
+     "pred": 38,
+     "gold": 6,
+     "precision": 0.0789,
+     "recall": 0.5,
+     "f1": 0.1364
+    }
+   }
+  },
+  "NN": {
+   "URGENT_F1": 0.4838,
+   "URGENT_recall": 0.3267,
+   "URGENT_precision": 0.9318,
+   "macroF1": 0.2187,
+   "acc": 0.3579,
+   "per_class": {
+    "URGENT": {
+     "tp": 82,
+     "pred": 88,
+     "gold": 251,
+     "precision": 0.9318,
+     "recall": 0.3267,
+     "f1": 0.4838
+    },
+    "NEXT": {
+     "tp": 17,
+     "pred": 130,
+     "gold": 25,
+     "precision": 0.1308,
+     "recall": 0.68,
+     "f1": 0.2194
+    },
+    "WONTFIX": {
+     "tp": 1,
+     "pred": 17,
+     "gold": 3,
+     "precision": 0.0588,
+     "recall": 0.3333,
+     "f1": 0.1
+    },
+    "NOTAFF": {
+     "tp": 2,
+     "pred": 50,
+     "gold": 6,
+     "precision": 0.04,
+     "recall": 0.3333,
+     "f1": 0.0714
+    }
+   }
+  },
+  "R1": {
+   "URGENT_F1": 0.1392,
+   "URGENT_recall": 0.0757,
+   "URGENT_precision": 0.8636,
+   "macroF1": 0.11,
+   "acc": 0.1298,
+   "per_class": {
+    "URGENT": {
+     "tp": 19,
+     "pred": 22,
+     "gold": 251,
+     "precision": 0.8636,
+     "recall": 0.0757,
+     "f1": 0.1392
+    },
+    "NEXT": {
+     "tp": 15,
+     "pred": 158,
+     "gold": 25,
+     "precision": 0.0949,
+     "recall": 0.6,
+     "f1": 0.1639
+    },
+    "WONTFIX": {
+     "tp": 2,
+     "pred": 33,
+     "gold": 3,
+     "precision": 0.0606,
+     "recall": 0.6667,
+     "f1": 0.1111
+    },
+    "NOTAFF": {
+     "tp": 1,
+     "pred": 72,
+     "gold": 6,
+     "precision": 0.0139,
+     "recall": 0.1667,
+     "f1": 0.0256
+    }
+   }
+  }
+ },
+ "gate_rules": {
+  "agree": {
+   "n": 411,
+   "chosen_right": 198,
+   "OURS_right": 198,
+   "S_right": 198
+  },
+  "class_unreliable": {
+   "n": 7,
+   "chosen_right": 0,
+   "OURS_right": 6,
+   "S_right": 0
+  },
+  "memory_disagrees_with_itself": {
+   "n": 33,
+   "chosen_right": 13,
+   "OURS_right": 12,
+   "S_right": 13
+  },
+  "trust_memory": {
+   "n": 119,
+   "chosen_right": 64,
+   "OURS_right": 64,
+   "S_right": 38
+  }
+ },
+ "cost": {
+  "S": {
+   "calls_per_item": 1.0,
+   "prompt_tokens_per_item_estimated": 1353,
+   "served": {
+    "nvidia/nemotron-3-ultra-550b-a55b": 514,
+    "nvidia/nemotron-3.5-super-vl-120b-a12b": 37,
+    "nvidia/nemotron-3.5-lightning-30b-a3b": 19
+   }
+  },
+  "OURS": {
+   "calls_per_item": 1.339,
+   "prompt_tokens_per_item_estimated": 1460,
+   "served": {
+    "nvidia/nemotron-3-ultra-550b-a55b": 705,
+    "nvidia/nemotron-3.5-super-vl-120b-a12b": 24,
+    "nvidia/nemotron-3.5-lightning-30b-a3b": 34
+   }
+  },
+  "GATED_calls_per_item": 2.339
+ },
+ "gate": {
+  "rule": "GATED - S URGENT F1, paired bootstrap 2,000 (seed 11) lower 95% bound > 0, with >= 50 complete pairs",
+  "ci95": [
+   0.0835,
+   0.2263
+  ],
+  "n_pairs": 285,
+  "evaluable": true,
+  "pass_": true
+ },
+ "php2shell": [
+  {
+   "cve": "CVE-2026-109618",
+   "pkg": "php8.2",
+   "gold": "URGENT",
+   "S": "URGENT",
+   "OURS": "URGENT",
+   "GATED": "URGENT",
+   "rule": "agree"
+  },
+  {
+   "cve": "CVE-2026-109619",
+   "pkg": "php8.2",
+   "gold": "URGENT",
+   "S": "URGENT",
+   "OURS": "URGENT",
+   "GATED": "URGENT",
+   "rule": "agree"
+  }
+ ],
+ "blocked": [
+  {
+   "cve": "CVE-2025-26625",
+   "pkg": "git-lfs",
+   "gold": "URGENT",
+   "OURS": "URGENT",
+   "S": "WONTFIX",
+   "GATED": "WONTFIX",
+   "rule": "class_unreliable"
+  },
+  {
+   "cve": "CVE-2025-58150",
+   "pkg": "xen",
+   "gold": "URGENT",
+   "OURS": "URGENT",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-106567",
+   "pkg": "imagemagick",
+   "gold": "URGENT",
+   "OURS": "URGENT",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-106570",
+   "pkg": "imagemagick",
+   "gold": "URGENT",
+   "OURS": "URGENT",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-106574",
+   "pkg": "imagemagick",
+   "gold": "NOTAFF",
+   "OURS": "URGENT",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-106572",
+   "pkg": "imagemagick",
+   "gold": "URGENT",
+   "OURS": "URGENT",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-90949",
+   "pkg": "gimp",
+   "gold": "NOTAFF",
+   "OURS": "URGENT",
+   "S": "NOTAFF",
+   "GATED": "NOTAFF",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-105083",
+   "pkg": "imagemagick",
+   "gold": "NEXT",
+   "OURS": "URGENT",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-86143",
+   "pkg": "libxml2",
+   "gold": "NEXT",
+   "OURS": "URGENT",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-61814",
+   "pkg": "jawn",
+   "gold": "NEXT",
+   "OURS": "NEXT",
+   "S": "WONTFIX",
+   "GATED": "WONTFIX",
+   "rule": "class_unreliable"
+  },
+  {
+   "cve": "CVE-2026-23554",
+   "pkg": "xen",
+   "gold": "URGENT",
+   "OURS": "URGENT",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-93653",
+   "pkg": "poppler",
+   "gold": "NEXT",
+   "OURS": "URGENT",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-34475",
+   "pkg": "varnish",
+   "gold": "NEXT",
+   "OURS": "URGENT",
+   "S": "WONTFIX",
+   "GATED": "WONTFIX",
+   "rule": "class_unreliable"
+  },
+  {
+   "cve": "CVE-2026-108830",
+   "pkg": "janus",
+   "gold": "NEXT",
+   "OURS": "NEXT",
+   "S": "WONTFIX",
+   "GATED": "WONTFIX",
+   "rule": "class_unreliable"
+  },
+  {
+   "cve": "CVE-2026-42488",
+   "pkg": "xen",
+   "gold": "URGENT",
+   "OURS": "URGENT",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-82662",
+   "pkg": "node-nodemailer",
+   "gold": "NEXT",
+   "OURS": "URGENT",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-89136",
+   "pkg": "wolfssl",
+   "gold": "NOTAFF",
+   "OURS": "NOTAFF",
+   "S": "WONTFIX",
+   "GATED": "WONTFIX",
+   "rule": "class_unreliable"
+  },
+  {
+   "cve": "CVE-2026-81871",
+   "pkg": "golang-opentelemetry-otel",
+   "gold": "NOTAFF",
+   "OURS": "NEXT",
+   "S": "NOTAFF",
+   "GATED": "NOTAFF",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-82531",
+   "pkg": "smarty3",
+   "gold": "NEXT",
+   "OURS": "NOTAFF",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-76178",
+   "pkg": "ocsinventory-server",
+   "gold": "NEXT",
+   "OURS": "WONTFIX",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-82208",
+   "pkg": "curl",
+   "gold": "NOTAFF",
+   "OURS": "NEXT",
+   "S": "NOTAFF",
+   "GATED": "NOTAFF",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-52720",
+   "pkg": "gst-plugins-bad1.0",
+   "gold": "URGENT",
+   "OURS": "URGENT",
+   "S": "NOTAFF",
+   "GATED": "NOTAFF",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-86141",
+   "pkg": "libxml2",
+   "gold": "NOTAFF",
+   "OURS": "URGENT",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-53702",
+   "pkg": "gst-plugins-bad1.0",
+   "gold": "URGENT",
+   "OURS": "URGENT",
+   "S": "NOTAFF",
+   "GATED": "NOTAFF",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-86137",
+   "pkg": "libxml2",
+   "gold": "NOTAFF",
+   "OURS": "URGENT",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-62993",
+   "pkg": "smarty3",
+   "gold": "NEXT",
+   "OURS": "URGENT",
+   "S": "NOTAFF",
+   "GATED": "NOTAFF",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-59847",
+   "pkg": "libssh",
+   "gold": "URGENT",
+   "OURS": "NEXT",
+   "S": "URGENT",
+   "GATED": "URGENT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-95512",
+   "pkg": "freetype",
+   "gold": "NEXT",
+   "OURS": "NEXT",
+   "S": "NOTAFF",
+   "GATED": "NOTAFF",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-62431",
+   "pkg": "xen",
+   "gold": "URGENT",
+   "OURS": "URGENT",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-93750",
+   "pkg": "node-got",
+   "gold": "NEXT",
+   "OURS": "NEXT",
+   "S": "WONTFIX",
+   "GATED": "WONTFIX",
+   "rule": "class_unreliable"
+  },
+  {
+   "cve": "CVE-2026-82049",
+   "pkg": "python3.11",
+   "gold": "NOTAFF",
+   "OURS": "NOTAFF",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-74222",
+   "pkg": "u-boot",
+   "gold": "NOTAFF",
+   "OURS": "URGENT",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-73433",
+   "pkg": "gst-plugins-good1.0",
+   "gold": "URGENT",
+   "OURS": "URGENT",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-75806",
+   "pkg": "openssl",
+   "gold": "URGENT",
+   "OURS": "NEXT",
+   "S": "NOTAFF",
+   "GATED": "NOTAFF",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-79603",
+   "pkg": "xen",
+   "gold": "NEXT",
+   "OURS": "URGENT",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-78689",
+   "pkg": "libnginx-mod-js",
+   "gold": "NEXT",
+   "OURS": "URGENT",
+   "S": "NOTAFF",
+   "GATED": "NOTAFF",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-8328",
+   "pkg": "python3.11",
+   "gold": "URGENT",
+   "OURS": "WONTFIX",
+   "S": "NEXT",
+   "GATED": "NEXT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-85150",
+   "pkg": "gst-plugins-base1.0",
+   "gold": "URGENT",
+   "OURS": "NEXT",
+   "S": "URGENT",
+   "GATED": "URGENT",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-72897",
+   "pkg": "openssl",
+   "gold": "NOTAFF",
+   "OURS": "URGENT",
+   "S": "NOTAFF",
+   "GATED": "NOTAFF",
+   "rule": "memory_disagrees_with_itself"
+  },
+  {
+   "cve": "CVE-2026-95619",
+   "pkg": "gcc-12",
+   "gold": "NEXT",
+   "OURS": "NEXT",
+   "S": "WONTFIX",
+   "GATED": "WONTFIX",
+   "rule": "class_unreliable"
+  }
+ ]
+}

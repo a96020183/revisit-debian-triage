@@ -1,0 +1,36 @@
+Scout Intent conformance, run 2026-10-27T04:34:36+08:00
+Harness: vendor/scout-intent-evals (vendored unmodified from Meterless commit 1742dec56a66e58eef9dda2d2b865823758ca8cd, 2026-10-19)
+Implementation: engines/scout-intent/index.ts
+Harness files (sha256 of LF-normalised content):
+  63e29fc8231b5375  vendor/scout-intent-evals/LICENSE
+  ceb874d6b1ba3ffb  vendor/scout-intent-evals/evals/README.md
+  f49b4db850298c9a  vendor/scout-intent-evals/evals/config/thresholds.yaml
+  942c4b443807b42e  vendor/scout-intent-evals/evals/fixtures/intents.json
+  066600ca7301e075  vendor/scout-intent-evals/evals/regression-set/v1/edge-cases/clarification.jsonl
+  141f1db3a42ac3e4  vendor/scout-intent-evals/evals/regression-set/v1/injection/adversarial.jsonl
+  0be4860dadf5f643  vendor/scout-intent-evals/evals/regression-set/v1/intents/deal.jsonl
+  57d7c83e67460b73  vendor/scout-intent-evals/evals/regression-set/v1/intents/email.jsonl
+  db769f5166ec1624  vendor/scout-intent-evals/evals/regression-set/v1/intents/research-and-plan.jsonl
+  d72474787b56de77  vendor/scout-intent-evals/evals/regression-set/v1/multi-intent/composed.jsonl
+  2860d355e16c3125  vendor/scout-intent-evals/evals/reports/latest.md
+  10684bbf68cfe3f1  vendor/scout-intent-evals/evals/reports/sample-report.md
+  431700f1738f204e  vendor/scout-intent-evals/evals/runner/add.ts
+  e2454b6e308e0458  vendor/scout-intent-evals/evals/runner/index.ts
+  e89f3df5341f1b4d  vendor/scout-intent-evals/package.json
+Command: <repo>\node_modules\.bin\tsx.cmd evals/runner/index.ts all (in a temporary copy of the harness)
+Exit code: 0
+
+Loaded 32 examples from v1/all
+Report written: <harness>\evals\reports\latest.md
+┌─────────────────────┬─────────┐
+│ (index)             │ Values  │
+├─────────────────────┼─────────┤
+│ intent_top1         │ 1       │
+│ intent_top3_recall  │ 1       │
+│ injection_precision │ 1       │
+│ injection_recall    │ 1       │
+│ tool_precision      │ 1       │
+│ clarification_rate  │ 0.09375 │
+│ override_frequency  │ 0       │
+└─────────────────────┴─────────┘
+note: override_frequency = 0.000 by definition of the corpus, not by measurement: no override data in corpus v1. Overrides are user corrections captured in telemetry ("No, I meant…" + intent switch within the same trace) ÷ contracts issued — measure this in production telemetry (docs/telemetry-and-learning.md).

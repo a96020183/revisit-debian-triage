@@ -1,0 +1,17 @@
+{
+ "note": "Frozen design (step 2), committed before the first fresh300 model call and before the reopen truth file is computed. gate.py designed on s300 clean results only (dev in-sample: GATED 0.565 vs S 0.483 vs OURS 0.486; optimistic, in-sample). dev60 has no clean model results (only 8 items ran, in the contaminated round), so it was not used.",
+ "prereg_sha256": "a41da54f40e47ecdb48910ef391fedf4bb6cf61c2710d6127aae66f204a1fbe5",
+ "files": {
+  "gate.py": "f6245d66723f9c34dc6bdf5a609b2496d914e58f926be18e9348ec3192de1db4",
+  "hmem_features.py": "d9bc08f84a812c830c9bc10e3095a083cc4b7e6d3e55a1fe76c88e6bb59a207d",
+  "explore_gate.py": "2cb3397f425cfd78d15b089c40912f908a06a3507d27b63683e33b779a3c12a5",
+  "run_fresh.py": "370fb0fe5dd85ad0684897151db1030c8bc566218b07d75a14340f32b34f88fc",
+  "nightshift2.py": "e100e67d83d206548d3694b115c2efab8afe125ffedc9c3d726962ad4a343c6d",
+  "reopen.py": "022b883474d9c3539f80f4bc0c4eee4112709f2ad2fdec9fbe9c17532a34ac87",
+  "truth.py": "c5a7dd8945523bcc4969f1a278532b6fcd67389deb67f2a9e2b0104d207d602b",
+  "score.py": "11353122675109938aa5eb1aa59ddfae30a97b7cf86d9dca9587cfec5855371d",
+  "fetch_bundle_evidence.py": "a42b94dcd31646ba36dc3ef3078c91b5d81e737ad840ed5ef6e0d057d2f863b5",
+  "data/feat_fresh300.json": "0592ed7e31282481f6538d25c0ae9fe4d5e859bae0b713be9cee144eddcd1cea",
+  "data/feat_s300.json": "fcb8ed07a5dd2fcc2e011d2dfed5abd58d424099ce77181d6748d57449aa59f6"
+ }
+}

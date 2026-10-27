@@ -1,0 +1,13 @@
+{
+ "prereg_sha256": "282b0ff702c7e998bc75e88df777de012a150f86261d22c36b9a6757f8a1d9db",
+ "outcome_files_sha256": {
+  "list.txt": "aea9a7a654ef842815d93f810ce88dce57ffce9bf17e89cb27152ed616e836ea",
+  "dsa.txt": "f74c93c2296662f06093a59e2ce06d86b31a09d66576e8140395d02d47ca366f",
+  "dla.txt": "f56cfd11a49ead5e90b70449aa9b04aa3b557dd260c6891e38ad99d486540f6c"
+ },
+ "waits_scored": 275,
+ "positives": 0,
+ "positives_detail": {},
+ "threshold": 10,
+ "verdict": "no F1 reported: fewer than 10 waits had a Debian action in the window; the reopen feature is shown as cases only"
+}

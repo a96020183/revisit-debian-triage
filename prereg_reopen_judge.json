@@ -1,0 +1,40 @@
+{
+ "title": "Revisit 3 addendum: reopen judge measurement (sealed before any judge call)",
+ "written": "2026-10-26 (Asia/Taipei)",
+ "set": "every wait the daily Zetaris view rv3.reopen_due flags on the 2026-10-23 tracker (85 of the 286 conditional deferrals of revisit2; the view reproduces revisit2's \"original or latest condition\" flags exactly)",
+ "truth": "evidence/from_revisit2/reopen_truth.json (objective: Debian unstable fixed / fix commit in an upstream release tag / OSV fixed version; computed 2026-10-24)",
+ "procedure": "app/pipeline.py Revisit.reopen over those waits: one federated Zetaris query per wait, Nemotron reopen judge via Nightshift (iso scope, one request in flight), code Verifier with one send-back. A wait is reopened only if the judge says met and the Verifier accepts.",
+ "report": [
+  "F1 of watch-only vs watch+judge over the 286 waits",
+  "how many truly-met waits the judge drops",
+  "verifier send-backs"
+ ],
+ "not_a_gate": "All 85 flagged waits are truly met in this set, so the judge can only keep or lose recall here; this run measures that cost. Nothing about the earlier claims changes with the result. Reported as measured.",
+ "input_hashes": {
+  "exam/run_reopen_judge.py": "edcf543fb403857a4d1a3c46d7e1e95798436f6a6faf48deb78d3b77ab779e3a",
+  "app/pipeline.py": "c12fb0542dc460b297f931958f4e08e1923d77cee54b6971480c6e1626001daa",
+  "app/agents.py": "e1ff1bb06d7f2b2f24c533fc9b5c34efe51caf88746a780d394419903ca7c552",
+  "app/evidence.py": "ee4e6e55545de93bf97b4be7d52cd6e9cd48ae3cf71f0c2a07de6687dafcd657",
+  "app/llm.py": "07a982f399c65f7671d0b2b2face789e0793116fcf6ad4e902c95abdb7268053",
+  "app/zetaris.py": "f343f78a8c56c3c3aa56f3816b3eda485596d7d7205edd1829d14f01333690a8",
+  "app/sql/reopen_due.sql": "1a1a227b4722d61feff94b3df715e02db506b6ffa4bc15c7bde62368f232f2a3",
+  "evidence/from_revisit2/reopen_truth.json": "68f7d3a5bfbacecbb2f31561115410b6d1ada274ac87e35f75bcb3084d6bfd59",
+  "evidence/rest_tables.json": "9608a471efc94cb9a9076195c931f9e30fddaee40d7acad8853406c6c864f544"
+ },
+ "amendment_1": {
+  "date": "2026-10-27 02:15 (Asia/Taipei)",
+  "before_any_judge_call": true,
+  "what": "Zetaris reads now go through non-admin users per agent role (scripts/setup_governance.py): the watcher identity reads rv3.reopen_due, the deferral tables and REST tables; trace events carry the identity. Judge prompt, Verifier, truth and metrics unchanged.",
+  "previous_input_hashes": {
+   "exam/run_reopen_judge.py": "edcf543fb403857a4d1a3c46d7e1e95798436f6a6faf48deb78d3b77ab779e3a",
+   "app/pipeline.py": "30a8f0411eedabc4f3996349543e756b47b5659ac46e597517ac497717bca695",
+   "app/agents.py": "e1ff1bb06d7f2b2f24c533fc9b5c34efe51caf88746a780d394419903ca7c552",
+   "app/evidence.py": "7c34f0c19d8f1fd8439eb843df9f82c5d58c26a4684ba29c77bd9bcbd5fc3236",
+   "app/llm.py": "07a982f399c65f7671d0b2b2face789e0793116fcf6ad4e902c95abdb7268053",
+   "app/zetaris.py": "378b30fe78e42615cd7af2e41cf051941e3b24f4b6d764a30436f82feaebbad4",
+   "app/sql/reopen_due.sql": "1a1a227b4722d61feff94b3df715e02db506b6ffa4bc15c7bde62368f232f2a3",
+   "evidence/from_revisit2/reopen_truth.json": "68f7d3a5bfbacecbb2f31561115410b6d1ada274ac87e35f75bcb3084d6bfd59",
+   "evidence/rest_tables.json": "9608a471efc94cb9a9076195c931f9e30fddaee40d7acad8853406c6c864f544"
+  }
+ }
+}

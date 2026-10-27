@@ -1,0 +1,32 @@
+Scout unit tests (node:test). Command: node --import tsx --test test/scout.test.ts   run at 2026-10-26T08:45:57Z, node v24.18.0
+
+✔ registry: examples are mandatory, ids follow category.name, compose sums versions (3.8104ms)
+✔ Stage-1 startup self-test runs under the 16 ms budget (10.4366ms)
+✔ contract: signed, verifies after a JSON round trip, refuses tampering, wrong secret and unsigned (13.3695ms)
+✔ contract: expires after the 5-minute TTL (expired, not extended) (6.3189ms)
+✔ contract: executor refuses capabilities and tools outside the scope (contract.refused logged) (5.4635ms)
+✔ replan: new contract keeps the trace id, carries parentId, and routes around the unavailable tool (4.5961ms)
+✔ injection: override, role-confusion tags, out-of-band tool refs and escaped bidi controls are blocked (5.9594ms)
+✔ injection: a normal Debian triage sentence with 'ignore the previous' is not a false positive (7.1049ms)
+✔ clarification: Reject band falls back to GENERAL and offers options (never guesses) (3.5877ms)
+✔ clarification rule 3: an unresolved reference ('the thing we talked about') asks instead of acting (4.6438ms)
+✔ clarification rule 2: top-2 within 0.05 in the Medium band (2.1729ms)
+✔ clarification rule 4: high-risk below 0.95 issues a contract that executors refuse until user-confirm (9.0305ms)
+✔ multi-intent: two clauses with disjoint spans become one plan (6.7563ms)
+✔ RBAC: a viewer cannot commit a triage decision; a triager can; a viewer can query evidence (7.8261ms)
+✔ scope: an intent invoked from a surface it is not registered for is blocked (3.5914ms)
+✔ PII: emails and phone numbers are redacted; credentials force local model routing (5.585ms)
+✔ rate limit: an 11th high-risk commit in one minute from the same user is blocked (8.7229ms)
+✔ read-only SQL: evidence.query refuses write statements (3.5697ms)
+✔ memoryReliabilityGuard: the four rules of core/gate.py (0.3307ms)
+✔ commit decision through decide(): route, risk flag, outcome and signed contract agree with the rule (4.3905ms)
+✔ commit decision without the two proposals asks for them instead of committing (2.6777ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 423.6977
+exit code: 0

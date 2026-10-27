@@ -1,0 +1,68 @@
+{
+ "CVE-2023-6605|ffmpeg": {
+  "how": "advisory",
+  "ref": "DSA-5985-1",
+  "date": "2025-08-25",
+  "version": "7:5.1.7-0+deb12u1"
+ },
+ "CVE-2026-30997|ffmpeg": {
+  "how": "advisory",
+  "ref": "DSA-6276-1",
+  "date": "2026-05-15",
+  "version": "7:5.1.9-0+deb12u1"
+ },
+ "CVE-2025-61103|frr": {
+  "how": "advisory",
+  "ref": "DSA-6322-1",
+  "date": "2026-06-05",
+  "version": "8.4.4-1.1~deb12u2"
+ },
+ "CVE-2025-61104|frr": {
+  "how": "advisory",
+  "ref": "DSA-6322-1",
+  "date": "2026-06-05",
+  "version": "8.4.4-1.1~deb12u2"
+ },
+ "CVE-2025-61106|frr": {
+  "how": "advisory",
+  "ref": "DSA-6322-1",
+  "date": "2026-06-05",
+  "version": "8.4.4-1.1~deb12u2"
+ },
+ "CVE-2025-61107|frr": {
+  "how": "advisory",
+  "ref": "DSA-6322-1",
+  "date": "2026-06-05",
+  "version": "8.4.4-1.1~deb12u2"
+ },
+ "CVE-2024-38949|libde265": {
+  "how": "advisory",
+  "ref": "DLA-4789-1",
+  "date": "2026-09-20",
+  "version": "1.0.11-1+deb12u3"
+ },
+ "CVE-2024-38950|libde265": {
+  "how": "advisory",
+  "ref": "DLA-4789-1",
+  "date": "2026-09-20",
+  "version": "1.0.11-1+deb12u3"
+ },
+ "CVE-2025-2337|libmatio": {
+  "how": "advisory",
+  "ref": "DLA-4644-1",
+  "date": "2026-06-24",
+  "version": "1.5.23-2+deb12u1"
+ },
+ "CVE-2021-37746|sylpheed": {
+  "how": "bookworm_fixed_line",
+  "ref": "tracker 2026-10-23",
+  "date": "",
+  "version": "3.8.0~beta1-1+deb12u1"
+ },
+ "CVE-2024-42040|u-boot": {
+  "how": "advisory",
+  "ref": "DLA-4642-1",
+  "date": "2026-06-23",
+  "version": "2023.01+dfsg-2+deb12u3"
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "note": "Demo set. Triage cases are news-exam items (their recorded Nemotron answers come from the sealed run). Reopen cases are waits from the 286-wait set measured in revisit2.",
+ "triage": [
+  "CVE-2026-109618|php8.2",
+  "CVE-2026-109619|php8.2",
+  "CVE-2026-105083|imagemagick",
+  "CVE-2025-26625|git-lfs",
+  "CVE-2024-28757|expat",
+  "CVE-2024-58379|node-nodemailer",
+  "CVE-2026-27590|caddy"
+ ],
+ "reopen": [
+  "CVE-2025-14932|netcdf",
+  "CVE-2024-13745|edk2",
+  "CVE-2023-6605|ffmpeg",
+  "CVE-2019-12067|qemu",
+  "CVE-2023-28858|python-redis",
+  "CVE-2022-29977|libsixel",
+  "CVE-2019-12214|freeimage",
+  "CVE-2022-37331|openbabel"
+ ],
+ "rm_names": {
+  "libstb": "stb",
+  "netcdf": "netcdf",
+  "libde265": "libde265",
+  "busybox": "busybox",
+  "freeimage": "freeimage",
+  "openbabel": "openbabel",
+  "qemu": "qemu",
+  "ffmpeg": "ffmpeg",
+  "libsixel": "libsixel",
+  "edk2": "edk2",
+  "python-redis": "python-redis"
+ },
+ "triage_why": {
+  "CVE-2026-109618|php8.2": "PHP2Shell",
+  "CVE-2026-109619|php8.2": "PHP2Shell",
+  "CVE-2026-105083|imagemagick": "Scout overruled memory and was right",
+  "CVE-2025-26625|git-lfs": "Scout overruled memory and was wrong",
+  "CVE-2024-28757|expat": "an urgent CVE Revisit missed",
+  "CVE-2024-58379|node-nodemailer": "a routine deferral",
+  "CVE-2026-27590|caddy": "the review loop sent work back (first such item of the 30-item review-rate sample)"
+ },
+ "rule": "Pick the demo cases by fixed rules. Written 2026-10-27 after the sealed exam was scored (03:06 first version; this version\nafter QA round 1). \"first\" always means first in sorted (CVE, package) order unless stated. No package is named in a rule;\nPHP2Shell is named because the brief asked for that replay.\n\nTriage (sealed-exam items; the paths' answers are the exam's own):\n  1. both PHP2Shell items (CVE-2026-109618, CVE-2026-109619, php8.2)\n  2. Scout overruled memory and was right (first)\n  3. Scout overruled memory and was wrong (first)\n  4. an urgent news item Revisit missed (first)\n  5. a routine deferral both paths agreed on, answer NEXT (first mix item)\n  6. from the 30-item review-rate sample (exam/run_review_rate.py): the first item, in sample order, whose loop had an Evaluator\n     send-back; if none had one, the first with a Verifier send-back; if neither, nothing is added and README says so\nToday (undecided in the 2026-10-26 tracker; nobody knows the answer yet): the first 4 rows of evidence.today_queue order (newest\nfirst: first tracker snapshot listing the CVE, then CVE number).\nReopen (the 286 waits; watch date 2026-10-23; the watch is rv3.reopen_due_v2):\n  a. a wait the watch fires on only through the original commitment (its note was rewritten later) (first)\n  b. a wait the watch fires on through the latest note too (first)\n  c. a wait bookworm had already fixed that the sealed watch flagged: it must be closed, not reopened (first)\n  d. a wait the sealed watch flagged only through a linked commit that is not the fix by the rule (first)\n  g. a wait the sealed watch flagged only through signals already there when Debian deferred (first; QA round 5)\n  h. a wait the sealed watch flagged through an unstable fix on another version line (first; QA round 5)\n  e. a wait the watch does not fire on although the plain-table LLM baseline said met (first)\n  f. a wait the watch does not fire on although OSV lists a fixed version (the watch does not read OSV) (first)\nThe QA round 5 sets (d, g, h) come from evidence/watch_drops.json (scripts/check_watch.py).",
+ "today": [
+  "CVE-2026-116013|lua-nginx-dns",
+  "CVE-2026-115877|twisted",
+  "CVE-2026-115863|connman",
+  "CVE-2026-115778|twisted"
+ ],
+ "review_loop_case": "CVE-2026-27590|caddy",
+ "v2_flags": [
+  "CVE-2024-13745|edk2",
+  "CVE-2025-14932|netcdf",
+  "CVE-2025-14932|netcdf-parallel",
+  "CVE-2025-14933|netcdf",
+  "CVE-2025-14933|netcdf-parallel",
+  "CVE-2025-14934|netcdf",
+  "CVE-2025-14934|netcdf-parallel",
+  "CVE-2025-14935|netcdf",
+  "CVE-2025-14935|netcdf-parallel",
+  "CVE-2025-14936|netcdf",
+  "CVE-2025-14936|netcdf-parallel",
+  "CVE-2025-22921|ffmpeg",
+  "CVE-2026-10028|glib-networking",
+  "CVE-2026-3650|gdcm",
+  "CVE-2026-6659|libcrypt-passwdmd5-perl",
+  "CVE-2026-72854|msgpack-c"
+ ],
+ "reopen_why": {
+  "CVE-2025-14932|netcdf": "the watch fires only through the original commitment (the note was rewritten later)",
+  "CVE-2024-13745|edk2": "the watch fires through the latest note too",
+  "CVE-2023-6605|ffmpeg": "bookworm had already fixed it: close, do not reopen",
+  "CVE-2019-12067|qemu": "the sealed watch flagged it through a linked commit that is not the fix",
+  "CVE-2023-28858|python-redis": "the sealed watch flagged it through signals that were already there when Debian deferred",
+  "CVE-2022-29977|libsixel": "the sealed watch flagged it through an unstable fix on another version line",
+  "CVE-2019-12214|freeimage": "the plain-table LLM baseline said met; the watch does not fire",
+  "CVE-2022-37331|openbabel": "OSV lists a fixed version only under PyPI (GHSA-vr3p-gg26-45v9, PYSEC-2026-2793); OSV's Debian ranges list none, and the watch does not read OSV"
+ }
+}

@@ -1,0 +1,1470 @@
+{
+ "CVE-2024-48423|assimp": {
+  "sid": {
+   "fixed": "6.0.2+ds-1",
+   "since": "2025-08-29",
+   "bookworm": [
+    "5.2.5~ds0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/assimp/assimp/commit/f12e52198669239af525e525ebb68407977f8e34": {
+    "tag": "v6.0.0",
+    "date": "2025-05-31",
+    "listed": 6,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2024-48424|assimp": {
+  "sid": {
+   "fixed": "6.0.2+ds-1",
+   "since": "2025-08-29",
+   "bookworm": [
+    "5.2.5~ds0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/assimp/assimp/commit/2b773f0f5a726c38dda72307b5311c14fc3a76ae": {
+    "tag": "v6.0.0",
+    "date": "2025-05-31",
+    "listed": 6,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2024-48425|assimp": {
+  "sid": {
+   "fixed": "6.0.2+ds-1",
+   "since": "2025-08-29",
+   "bookworm": [
+    "5.2.5~ds0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/assimp/assimp/commit/ecdf8d24b85367b22ba353b4f82299d4af7f1f97": {
+    "tag": "v6.0.0",
+    "date": "2025-05-31",
+    "listed": 6,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2024-53425|assimp": {
+  "sid": {
+   "fixed": "6.0.2+ds-1",
+   "since": "2025-08-29",
+   "bookworm": [
+    "5.2.5~ds0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/assimp/assimp/commit/ecc8a1c8695560df108d6adc00b3d7b1ba15df9f": {
+    "tag": "v6.0.0",
+    "date": "2025-05-31",
+    "listed": 6,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-2151|assimp": {
+  "sid": {
+   "fixed": "6.0.2+ds-1",
+   "since": "2025-08-29",
+   "bookworm": [
+    "5.2.5~ds0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/assimp/assimp/commit/d2c6e64a1122884570caf4aaa589d810f5351f28": {
+    "tag": "v6.0.0",
+    "date": "2025-05-31",
+    "listed": 6,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-2152|assimp": {
+  "sid": {
+   "fixed": "6.0.2+ds-1",
+   "since": "2025-08-29",
+   "bookworm": [
+    "5.2.5~ds0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/assimp/assimp/commit/9182879e1f2cb6e64f158ee935f0e0a68a9a8104": {
+    "tag": "v6.0.0",
+    "date": "2025-05-31",
+    "listed": 6,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-2591|assimp": {
+  "sid": {
+   "fixed": "6.0.2+ds-1",
+   "since": "2025-08-29",
+   "bookworm": [
+    "5.2.5~ds0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/assimp/assimp/commit/bcf11c252a9635af83c0f48b5ebdfad8e1ab5522": {
+    "tag": "v6.0.0",
+    "date": "2025-05-31",
+    "listed": 6,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-2592|assimp": {
+  "sid": {
+   "fixed": "6.0.2+ds-1",
+   "since": "2025-08-29",
+   "bookworm": [
+    "5.2.5~ds0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/assimp/assimp/commit/2690e354da0c681db000cfd892a55226788f2743": {
+    "tag": "v6.0.0",
+    "date": "2025-05-31",
+    "listed": 6,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-2750|assimp": {
+  "sid": {
+   "fixed": "6.0.2+ds-1",
+   "since": "2025-08-29",
+   "bookworm": [
+    "5.2.5~ds0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/assimp/assimp/commit/269987085fbeef43af877f5eab8945a872ded650": {
+    "tag": "v6.0.2",
+    "date": "2025-06-08",
+    "listed": 4,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-2751|assimp": {
+  "sid": {
+   "fixed": "6.0.2+ds-1",
+   "since": "2025-08-29",
+   "bookworm": [
+    "5.2.5~ds0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/assimp/assimp/commit/177797c77b027a6de080fb3bacbd8822617e11d8": {
+    "tag": "v6.0.2",
+    "date": "2025-06-08",
+    "listed": 4,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-2754|assimp": {
+  "tags": {
+   "https://github.com/assimp/assimp/commit/ae6633ef8a8b686a7a080e9ad65fc77fd712e4b4": {
+    "tag": "v6.0.5",
+    "date": "2026-04-30",
+    "listed": 1,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-2756|assimp": {
+  "tags": {
+   "https://github.com/assimp/assimp/commit/ae6633ef8a8b686a7a080e9ad65fc77fd712e4b4": {
+    "tag": "v6.0.5",
+    "date": "2026-04-30",
+    "listed": 1,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-2757|assimp": {
+  "sid": {
+   "fixed": "6.0.2+ds-1",
+   "since": "2025-08-29",
+   "bookworm": [
+    "5.2.5~ds0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/assimp/assimp/commit/5be336779d81b1d71b290bc004eb5d1593c328c5": {
+    "tag": "v6.0.2",
+    "date": "2025-06-08",
+    "listed": 4,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-3158|assimp": {
+  "sid": {
+   "fixed": "6.0.2+ds-1",
+   "since": "2025-08-29",
+   "bookworm": [
+    "5.2.5~ds0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/assimp/assimp/commit/357b5baabbd0af01cbe712c6506ee1d06d2da8de": {
+    "tag": "v6.0.2",
+    "date": "2025-06-08",
+    "listed": 4,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2023-42366|busybox": {
+  "sid": {
+   "fixed": "1:1.37.0-8",
+   "since": "2026-02-01",
+   "bookworm": [
+    "1:1.35.0-4+deb12u1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2024-58251|busybox": {
+  "sid": {
+   "fixed": "1:1.37.0-9",
+   "since": "2026-02-01",
+   "bookworm": [
+    "1:1.35.0-4+deb12u1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2025-46394|busybox": {
+  "sid": {
+   "fixed": "1:1.37.0-8",
+   "since": "2026-02-01",
+   "bookworm": [
+    "1:1.35.0-4+deb12u1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2025-60876|busybox": {
+  "sid": {
+   "fixed": "1:1.37.0-8",
+   "since": "2026-02-01",
+   "bookworm": [
+    "1:1.35.0-4+deb12u1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2023-46490|cacti": {
+  "sid": {
+   "fixed": "1.2.26+ds1-1",
+   "since": "2023-12-26",
+   "bookworm": [
+    "1.2.24+ds1-1+deb12u5"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2024-13745|edk2": {
+  "sid": {
+   "fixed": "2026.05-3",
+   "since": "2026-09-22",
+   "bookworm": [
+    "2022.11-6+deb12u1",
+    "2022.11-6+deb12u2"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2023-49528|ffmpeg": {
+  "sid": {
+   "fixed": "7:7.0.1-3",
+   "since": "2024-07-28",
+   "bookworm": [
+    "7:5.1.9-0+deb12u1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/FFmpeg/FFmpeg/commit/f05c52985cf80d565c6e91fb4749e57dd8977d3e": {
+    "tag": "n8.0",
+    "date": "2025-08-22",
+    "listed": 15,
+    "bound": "at_most",
+    "note": "tag list may be cut short; released on or before this date"
+   }
+  }
+ },
+ "CVE-2023-6601|ffmpeg": {
+  "sid": {
+   "fixed": "7:6.1-1",
+   "since": "2023-11-11",
+   "bookworm": [
+    "7:5.1.9-0+deb12u1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/FFmpeg/FFmpeg/commit/d09f50c0f5f045dec35f0ca22c2212fae2378dba": {
+    "tag": "n8.0",
+    "date": "2025-08-22",
+    "listed": 15,
+    "bound": "at_most",
+    "note": "tag list may be cut short; released on or before this date"
+   }
+  }
+ },
+ "CVE-2023-6605|ffmpeg": {
+  "sid": {
+   "fixed": "7:7.1.1-1",
+   "since": "2025-03-08",
+   "bookworm": [
+    "7:5.1.9-0+deb12u1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2024-31578|ffmpeg": {
+  "sid": {
+   "fixed": "7:7.0.1-3",
+   "since": "2024-07-28",
+   "bookworm": [
+    "7:5.1.9-0+deb12u1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2024-35369|ffmpeg": {
+  "sid": {
+   "fixed": "7:7.0.1-3",
+   "since": "2024-07-28",
+   "bookworm": [
+    "7:5.1.9-0+deb12u1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2024-36615|ffmpeg": {
+  "sid": {
+   "fixed": "7:7.1-3",
+   "since": "2024-10-27",
+   "bookworm": [
+    "7:5.1.9-0+deb12u1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/FFmpeg/FFmpeg/commit/8c62d77139ca07390414fcfd26b2a4d506fed3b9": {
+    "tag": "n8.0",
+    "date": "2025-08-22",
+    "listed": 15,
+    "bound": "at_most",
+    "note": "tag list may be cut short; released on or before this date"
+   }
+  }
+ },
+ "CVE-2025-10256|ffmpeg": {
+  "sid": {
+   "fixed": "7:7.1.2-1",
+   "since": "2025-09-21",
+   "bookworm": [
+    "7:5.1.9-0+deb12u1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2025-22921|ffmpeg": {
+  "sid": {
+   "fixed": "7:8.0.1-2",
+   "since": "2025-12-13",
+   "bookworm": [
+    "7:5.1.9-0+deb12u1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "branch": {
+   "tag": "n5.1.10",
+   "date": "2026-06-21"
+  }
+ },
+ "CVE-2026-30997|ffmpeg": {
+  "sid": {
+   "fixed": "7:8.1.1-1",
+   "since": "2026-05-08",
+   "bookworm": [
+    "7:5.1.9-0+deb12u1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2025-61103|frr": {
+  "sid": {
+   "fixed": "10.5.1-3",
+   "since": "2026-02-14",
+   "bookworm": [
+    "8.4.4-1.1~deb12u2"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2025-61104|frr": {
+  "sid": {
+   "fixed": "10.5.1-3",
+   "since": "2026-02-14",
+   "bookworm": [
+    "8.4.4-1.1~deb12u2"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2025-61106|frr": {
+  "sid": {
+   "fixed": "10.5.1-3",
+   "since": "2026-02-14",
+   "bookworm": [
+    "8.4.4-1.1~deb12u2"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2025-61107|frr": {
+  "sid": {
+   "fixed": "10.5.1-3",
+   "since": "2026-02-14",
+   "bookworm": [
+    "8.4.4-1.1~deb12u2"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2026-3650|gdcm": {
+  "sid": {
+   "fixed": "3.0.24-11",
+   "since": "2026-06-26",
+   "bookworm": [
+    "3.0.21-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/malaterre/GDCM/commit/9d65a217c958968a74c14b10388d03ca61953a74": {
+    "tag": "v3.2.6",
+    "date": "2026-05-06",
+    "listed": 6,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2026-10028|glib-networking": {
+  "sid": {
+   "fixed": "2.90.0-1",
+   "since": "2026-09-19",
+   "bookworm": [
+    "2.74.0-4"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2023-46565|gobgp": {
+  "sid": {
+   "fixed": "4.3.0-1",
+   "since": "2026-03-26",
+   "bookworm": [
+    "3.10.0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2026-14683|hdrhistogram": {
+  "sid": {
+   "fixed": "2.2.2-1",
+   "since": "2026-07-27",
+   "bookworm": [
+    "2.1.11-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2026-14684|hdrhistogram": {
+  "sid": {
+   "fixed": "2.2.2-1",
+   "since": "2026-07-27",
+   "bookworm": [
+    "2.1.11-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2026-14685|hdrhistogram": {
+  "sid": {
+   "fixed": "2.2.2-1",
+   "since": "2026-07-27",
+   "bookworm": [
+    "2.1.11-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2026-14686|hdrhistogram": {
+  "sid": {
+   "fixed": "2.2.2-1",
+   "since": "2026-07-27",
+   "bookworm": [
+    "2.1.11-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2023-5072|jenkins-json": {
+  "tags": {
+   "https://github.com/stleary/JSON-java/commit/dbb113176b143b519ad0a50b033a9997cc2248fe": {
+    "tag": "20231013",
+    "date": "2023-10-13",
+    "listed": 10,
+    "bound": "",
+    "note": ""
+   },
+   "https://github.com/stleary/JSON-java/commit/16967f322ee65c301b48fa79bb681e38896fd212": {
+    "tag": "20231013",
+    "date": "2023-10-13",
+    "listed": 10,
+    "bound": "",
+    "note": ""
+   },
+   "https://github.com/stleary/JSON-java/commit/661114c50dcfd53bb041aab66f14bb91e0a87c8a": {
+    "tag": "20231013",
+    "date": "2023-10-13",
+    "listed": 10,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2026-6659|libcrypt-passwdmd5-perl": {
+  "sid": {
+   "fixed": "1.44-1",
+   "since": "2026-07-07",
+   "bookworm": [
+    "1.42-2"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2024-38949|libde265": {
+  "sid": {
+   "fixed": "1.1.1-1",
+   "since": "2026-07-01",
+   "bookworm": [
+    "1.0.11-1+deb12u2",
+    "1.0.11-1+deb12u3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2024-38950|libde265": {
+  "sid": {
+   "fixed": "1.1.1-1",
+   "since": "2026-07-01",
+   "bookworm": [
+    "1.0.11-1+deb12u2",
+    "1.0.11-1+deb12u3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2023-5072|libjettison-java": {
+  "tags": {
+   "https://github.com/stleary/JSON-java/commit/dbb113176b143b519ad0a50b033a9997cc2248fe": {
+    "tag": "20231013",
+    "date": "2023-10-13",
+    "listed": 10,
+    "bound": "",
+    "note": ""
+   },
+   "https://github.com/stleary/JSON-java/commit/16967f322ee65c301b48fa79bb681e38896fd212": {
+    "tag": "20231013",
+    "date": "2023-10-13",
+    "listed": 10,
+    "bound": "",
+    "note": ""
+   },
+   "https://github.com/stleary/JSON-java/commit/661114c50dcfd53bb041aab66f14bb91e0a87c8a": {
+    "tag": "20231013",
+    "date": "2023-10-13",
+    "listed": 10,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2023-5072|libjson-java": {
+  "sid": {
+   "fixed": "3.1.0+dfsg-1",
+   "since": "2024-12-09",
+   "bookworm": [
+    "2.4-3.1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/stleary/JSON-java/commit/dbb113176b143b519ad0a50b033a9997cc2248fe": {
+    "tag": "20231013",
+    "date": "2023-10-13",
+    "listed": 10,
+    "bound": "",
+    "note": ""
+   },
+   "https://github.com/stleary/JSON-java/commit/16967f322ee65c301b48fa79bb681e38896fd212": {
+    "tag": "20231013",
+    "date": "2023-10-13",
+    "listed": 10,
+    "bound": "",
+    "note": ""
+   },
+   "https://github.com/stleary/JSON-java/commit/661114c50dcfd53bb041aab66f14bb91e0a87c8a": {
+    "tag": "20231013",
+    "date": "2023-10-13",
+    "listed": 10,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2026-71225|libkcapi": {
+  "sid": {
+   "fixed": "1.5.1-1",
+   "since": "2026-09-19",
+   "bookworm": [
+    "1.4.0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/smuellerDD/libkcapi/commit/017adba8f54f36f92e1919687fb67a89c4d299c6": {
+    "tag": "v1.5.1",
+    "date": "2026-08-08",
+    "listed": 1,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2026-71226|libkcapi": {
+  "sid": {
+   "fixed": "1.5.1-1",
+   "since": "2026-09-19",
+   "bookworm": [
+    "1.4.0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/smuellerDD/libkcapi/commit/cd966ffa08cf605ae5853d2f9a42fdd2b6df8bb4": {
+    "tag": "v1.5.1",
+    "date": "2026-08-08",
+    "listed": 1,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2026-71227|libkcapi": {
+  "sid": {
+   "fixed": "1.5.1-1",
+   "since": "2026-09-19",
+   "bookworm": [
+    "1.4.0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/smuellerDD/libkcapi/commit/9a29cc2ce0fa87ec212d58118402eafe07db3f60": {
+    "tag": "v1.5.1",
+    "date": "2026-08-08",
+    "listed": 1,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-2337|libmatio": {
+  "sid": {
+   "fixed": "1.5.28-2",
+   "since": "2025-04-29",
+   "bookworm": [
+    "1.5.23-2+deb12u1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2022-29977|libsixel": {
+  "sid": {
+   "fixed": "1:1.8.7-1",
+   "since": "2026-03-12",
+   "bookworm": [
+    "1.10.3-3"
+   ],
+   "same_line": false,
+   "fix_newer": false,
+   "line_note": "unstable 1:1.8.7-1 (epoch 1) is not on bookworm's line (1.10.3-3, epoch 0)"
+  },
+  "tags": {
+   "https://github.com/saitoha/libsixel/commit/d6bc4ef88015d3a4922d63b9b4655c6b5cc340cd": {
+    "tag": "v1.8.7",
+    "date": "2025-08-31",
+    "listed": 5,
+    "bound": "",
+    "note": ""
+   },
+   "https://github.com/saitoha/libsixel/commit/1c58a6ea708b6fa793ffb5a10798ccfea36e8eed": {
+    "tag": "v1.8.7",
+    "date": "2025-08-31",
+    "listed": 5,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2022-29978|libsixel": {
+  "sid": {
+   "fixed": "1:1.8.7-1",
+   "since": "2026-03-12",
+   "bookworm": [
+    "1.10.3-3"
+   ],
+   "same_line": false,
+   "fix_newer": false,
+   "line_note": "unstable 1:1.8.7-1 (epoch 1) is not on bookworm's line (1.10.3-3, epoch 0)"
+  },
+  "tags": {
+   "https://github.com/saitoha/libsixel/commit/07ab2354d5b1678e7857d40f61832c9847f3f473": {
+    "tag": "v1.8.7",
+    "date": "2025-08-31",
+    "listed": 5,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-10911|libxslt": {
+  "sid": {
+   "fixed": "1.1.43-0.3",
+   "since": "2025-10-24",
+   "bookworm": [
+    "1.1.35-1+deb12u3",
+    "1.1.35-1+deb12u4"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2025-15571|lrzip": {
+  "sid": {
+   "fixed": "0.660-1",
+   "since": "2026-02-15",
+   "bookworm": [
+    "0.651-2"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2026-72854|msgpack-c": {
+  "sid": {
+   "fixed": "7.0.2-1",
+   "since": "2026-10-12",
+   "bookworm": [
+    "4.0.0-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2025-14932|netcdf": {
+  "sid": {
+   "fixed": "1:4.10.1-1",
+   "since": "2026-07-10",
+   "bookworm": [
+    "1:4.9.0-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/Unidata/netcdf-c/commit/60578c3ac26b93b1932cba414a2870096bbcdd3b": {
+    "tag": "v4.10.1",
+    "date": "2026-07-09",
+    "listed": 1,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-14933|netcdf": {
+  "sid": {
+   "fixed": "1:4.10.1-1",
+   "since": "2026-07-10",
+   "bookworm": [
+    "1:4.9.0-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/Unidata/netcdf-c/commit/b06b973e040ffede8d776ff7a94d22c68074ea98": {
+    "tag": "v4.10.1",
+    "date": "2026-07-09",
+    "listed": 1,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-14934|netcdf": {
+  "sid": {
+   "fixed": "1:4.10.1-1",
+   "since": "2026-07-10",
+   "bookworm": [
+    "1:4.9.0-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/Unidata/netcdf-c/commit/1e22866daae12203c768a38c168b8d25c65627d9": {
+    "tag": "v4.10.1",
+    "date": "2026-07-09",
+    "listed": 1,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-14935|netcdf": {
+  "sid": {
+   "fixed": "1:4.10.1-1",
+   "since": "2026-07-10",
+   "bookworm": [
+    "1:4.9.0-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/Unidata/netcdf-c/commit/0b33fab5c1d7bc458bf0aead93af433e0eae5abc": {
+    "tag": "v4.10.1",
+    "date": "2026-07-09",
+    "listed": 1,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-14936|netcdf": {
+  "sid": {
+   "fixed": "1:4.10.1-1",
+   "since": "2026-07-10",
+   "bookworm": [
+    "1:4.9.0-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/Unidata/netcdf-c/commit/b491ecd8021f510427459051ebfd7bd4cfda2371": {
+    "tag": "v4.10.1",
+    "date": "2026-07-09",
+    "listed": 1,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-14932|netcdf-parallel": {
+  "sid": {
+   "fixed": "1:4.10.1-1",
+   "since": "2026-08-04",
+   "bookworm": [
+    "1:4.9.0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/Unidata/netcdf-c/commit/60578c3ac26b93b1932cba414a2870096bbcdd3b": {
+    "tag": "v4.10.1",
+    "date": "2026-07-09",
+    "listed": 1,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-14933|netcdf-parallel": {
+  "sid": {
+   "fixed": "1:4.10.1-1",
+   "since": "2026-08-04",
+   "bookworm": [
+    "1:4.9.0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/Unidata/netcdf-c/commit/b06b973e040ffede8d776ff7a94d22c68074ea98": {
+    "tag": "v4.10.1",
+    "date": "2026-07-09",
+    "listed": 1,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-14934|netcdf-parallel": {
+  "sid": {
+   "fixed": "1:4.10.1-1",
+   "since": "2026-08-04",
+   "bookworm": [
+    "1:4.9.0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/Unidata/netcdf-c/commit/1e22866daae12203c768a38c168b8d25c65627d9": {
+    "tag": "v4.10.1",
+    "date": "2026-07-09",
+    "listed": 1,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-14935|netcdf-parallel": {
+  "sid": {
+   "fixed": "1:4.10.1-1",
+   "since": "2026-08-04",
+   "bookworm": [
+    "1:4.9.0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/Unidata/netcdf-c/commit/0b33fab5c1d7bc458bf0aead93af433e0eae5abc": {
+    "tag": "v4.10.1",
+    "date": "2026-07-09",
+    "listed": 1,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2025-14936|netcdf-parallel": {
+  "sid": {
+   "fixed": "1:4.10.1-1",
+   "since": "2026-08-04",
+   "bookworm": [
+    "1:4.9.0-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/Unidata/netcdf-c/commit/b491ecd8021f510427459051ebfd7bd4cfda2371": {
+    "tag": "v4.10.1",
+    "date": "2026-07-09",
+    "listed": 1,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2024-39705|nltk": {
+  "sid": {
+   "fixed": "3.9.1-1",
+   "since": "2024-10-02",
+   "bookworm": [
+    "3.8-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2025-14505|node-elliptic": {
+  "sid": {
+   "fixed": "6.6.1+dfsg+~6.4.18-2",
+   "since": "2026-04-06",
+   "bookworm": [
+    "6.5.4~dfsg-2"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2023-4232|ofono": {
+  "sid": {
+   "fixed": "2.14-1",
+   "since": "2025-01-06",
+   "bookworm": [
+    "1.31-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2023-4233|ofono": {
+  "sid": {
+   "fixed": "2.10-1",
+   "since": "2024-09-17",
+   "bookworm": [
+    "1.31-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2023-4234|ofono": {
+  "sid": {
+   "fixed": "2.10-1",
+   "since": "2024-09-17",
+   "bookworm": [
+    "1.31-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2023-4235|ofono": {
+  "sid": {
+   "fixed": "2.14-1",
+   "since": "2025-01-06",
+   "bookworm": [
+    "1.31-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2024-7537|ofono": {
+  "sid": {
+   "fixed": "2.16-1",
+   "since": "2025-04-10",
+   "bookworm": [
+    "1.31-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2024-7538|ofono": {
+  "sid": {
+   "fixed": "2.14-1",
+   "since": "2025-01-06",
+   "bookworm": [
+    "1.31-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2024-7539|ofono": {
+  "sid": {
+   "fixed": "2.14-1",
+   "since": "2025-01-06",
+   "bookworm": [
+    "1.31-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2024-7540|ofono": {
+  "sid": {
+   "fixed": "2.14-1",
+   "since": "2025-01-06",
+   "bookworm": [
+    "1.31-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2024-7541|ofono": {
+  "sid": {
+   "fixed": "2.14-1",
+   "since": "2025-01-06",
+   "bookworm": [
+    "1.31-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2024-7542|ofono": {
+  "sid": {
+   "fixed": "2.14-1",
+   "since": "2025-01-06",
+   "bookworm": [
+    "1.31-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2024-7543|ofono": {
+  "sid": {
+   "fixed": "2.14-1",
+   "since": "2025-01-06",
+   "bookworm": [
+    "1.31-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2024-7544|ofono": {
+  "sid": {
+   "fixed": "2.14-1",
+   "since": "2025-01-06",
+   "bookworm": [
+    "1.31-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2024-7545|ofono": {
+  "sid": {
+   "fixed": "2.14-1",
+   "since": "2025-01-06",
+   "bookworm": [
+    "1.31-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2024-7546|ofono": {
+  "sid": {
+   "fixed": "2.14-1",
+   "since": "2025-01-06",
+   "bookworm": [
+    "1.31-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2024-7547|ofono": {
+  "sid": {
+   "fixed": "2.14-1",
+   "since": "2025-01-06",
+   "bookworm": [
+    "1.31-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2025-12495|openexr": {
+  "sid": {
+   "fixed": "3.4.6+ds-1",
+   "since": "2026-03-12",
+   "bookworm": [
+    "3.1.5-5"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2025-12839|openexr": {
+  "sid": {
+   "fixed": "3.4.6+ds-1",
+   "since": "2026-03-12",
+   "bookworm": [
+    "3.1.5-5"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2025-12840|openexr": {
+  "sid": {
+   "fixed": "3.4.6+ds-1",
+   "since": "2026-03-12",
+   "bookworm": [
+    "3.1.5-5"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2023-39327|openjpeg2": {
+  "tags": {
+   "https://github.com/uclouvain/openjpeg/commit/822562d689f491ae5d012627ba00ac235d399b9e": {
+    "tag": "v2.5.3",
+    "date": "2024-12-09",
+    "listed": 2,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2026-10294|packagekit": {
+  "sid": {
+   "fixed": "1.3.6-1",
+   "since": "2026-06-17",
+   "bookworm": [
+    "1.2.6-5+deb12u1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/PackageKit/PackageKit/commit/4c1994d0545dea8a66cc56d9457ff740965abaf0": {
+    "tag": "v1.3.6",
+    "date": "2026-06-16",
+    "listed": 2,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2024-9101|phpldapadmin": {
+  "sid": {
+   "fixed": "1.2.6.7-4",
+   "since": "2025-04-11",
+   "bookworm": [
+    "1.2.6.3-0.3+deb12u1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2023-28858|python-redis": {
+  "sid": {
+   "fixed": "5.2.1-1",
+   "since": "2025-04-10",
+   "bookworm": [
+    "4.3.4-3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ },
+ "CVE-2019-12067|qemu": {
+  "tags": {
+   "https://github.com/qemu/qemu/commit/659142ecf71a0da240ab0ff7cf929ee25c32b9bc": {
+    "tag": "v11.0.0",
+    "date": "2026-04-21",
+    "listed": 15,
+    "bound": "at_most",
+    "note": "tag list may be cut short; released on or before this date"
+   }
+  }
+ },
+ "CVE-2024-47081|requests": {
+  "sid": {
+   "fixed": "2.32.4+dfsg-1",
+   "since": "2025-08-18",
+   "bookworm": [
+    "2.28.1+dfsg-1"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  },
+  "tags": {
+   "https://github.com/psf/requests/commit/96ba401c1296ab1dda74a2365ef36d88f7d144ef": {
+    "tag": "v2.32.4",
+    "date": "2025-06-09",
+    "listed": 8,
+    "bound": "",
+    "note": ""
+   },
+   "https://github.com/psf/requests/commit/7bc45877a86192af77645e156eb3744f95b47dae": {
+    "tag": "v2.32.4",
+    "date": "2025-06-09",
+    "listed": 8,
+    "bound": "",
+    "note": ""
+   }
+  }
+ },
+ "CVE-2024-42040|u-boot": {
+  "sid": {
+   "fixed": "2025.01-3.2",
+   "since": "2026-06-15",
+   "bookworm": [
+    "2023.01+dfsg-2+deb12u3"
+   ],
+   "same_line": true,
+   "fix_newer": true,
+   "line_note": ""
+  }
+ }
+}

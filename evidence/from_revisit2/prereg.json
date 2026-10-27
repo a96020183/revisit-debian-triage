@@ -1,0 +1,1879 @@
+{
+ "title": "Revisit 2.0 pre-registration (sealed before any fresh300 model call)",
+ "written": "2026-10-23",
+ "no_human_labels": "All answers are the Debian tracker / DSA / DLA records (gold rule of ../revisit/prep_data.py gold_label) or objective upstream release data. No human or AI labels.",
+ "fresh300": {
+  "source": "Debian LTS main volume (bookworm, CVEs first seen after the 2026-07-01 freeze), 2,439 items; linux, chromium, firefox-esr, thunderbird, webkit2gtk, wpewebkit already excluded",
+  "exclusions": "every (CVE, pkg) of s300, dev60, sub127 (472 items, ../revisit/data/items.json) and every item sharing a CVE with them (457 CVEs) -> pool 1,884",
+  "strata": "same rule as s300 (v7scripts/r7_deb.py): k = round(300 * n_class / 2439) per class over the full volume -> URGENT 42, NEXT 130, WONTFIX 69, NOTAFF 59",
+  "seed": 20261023,
+  "script": "make_fresh300.py",
+  "n": 300,
+  "class_counts": {
+   "NEXT": 130,
+   "NOTAFF": 59,
+   "WONTFIX": 69,
+   "URGENT": 42
+  },
+  "items": [
+   {
+    "cve": "CVE-2025-71408",
+    "pkg": "nltk",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-100350",
+    "pkg": "golang-github-getkin-kin-openapi",
+    "answer": "NOTAFF",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-101904",
+    "pkg": "node-axios",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-101906",
+    "pkg": "node-axios",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-101909",
+    "pkg": "node-axios",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102276",
+    "pkg": "node-brace-expansion",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102342",
+    "pkg": "rust-ammonia",
+    "answer": "NEXT",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-102414",
+    "pkg": "node-pbkdf2",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102474",
+    "pkg": "dash",
+    "answer": "WONTFIX",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102504",
+    "pkg": "libimager-perl",
+    "answer": "NEXT",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-102555",
+    "pkg": "libsoup3",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102601",
+    "pkg": "php-league-flysystem",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102607",
+    "pkg": "zoneminder",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-102620",
+    "pkg": "poppler",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102635",
+    "pkg": "imagemagick",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-102969",
+    "pkg": "mediawiki",
+    "answer": "NOTAFF",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-102991",
+    "pkg": "mako",
+    "answer": "NOTAFF",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-102997",
+    "pkg": "pypdf",
+    "answer": "NEXT",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-103399",
+    "pkg": "libsoup3",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-104198",
+    "pkg": "zoneminder",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106452",
+    "pkg": "lz4-java",
+    "answer": "NEXT",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-106454",
+    "pkg": "twisted",
+    "answer": "NEXT",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-107466",
+    "pkg": "flatpak-builder",
+    "answer": "NEXT",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-107635",
+    "pkg": "dislocker",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-107675",
+    "pkg": "ffmpeg",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-107698",
+    "pkg": "ffmpeg",
+    "answer": "URGENT",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-110642",
+    "pkg": "xhtml2pdf",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-110736",
+    "pkg": "godot",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-111158",
+    "pkg": "libmseed",
+    "answer": "NOTAFF",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-112259",
+    "pkg": "gimp",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-112278",
+    "pkg": "rdesktop",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-11721",
+    "pkg": "bind9",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-12261",
+    "pkg": "nltk",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-12478",
+    "pkg": "libsoup3",
+    "answer": "NOTAFF",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-12932",
+    "pkg": "openvpn",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-14191",
+    "pkg": "unrar-nonfree",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-14604",
+    "pkg": "assimp",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-14681",
+    "pkg": "postgresql-15",
+    "answer": "NOTAFF",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-15043",
+    "pkg": "libdbi-perl",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-15060",
+    "pkg": "systemd",
+    "answer": "NOTAFF",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-15337",
+    "pkg": "python-django",
+    "answer": "URGENT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-15340",
+    "pkg": "lwip",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-15711",
+    "pkg": "libsoup3",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-15741",
+    "pkg": "postgresql-15",
+    "answer": "URGENT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-16028",
+    "pkg": "libprotocol-http2-perl",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-16238",
+    "pkg": "postgresql-15",
+    "answer": "NOTAFF",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-16658",
+    "pkg": "ansible",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-16728",
+    "pkg": "node-undici",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-16768",
+    "pkg": "gdk-pixbuf",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-17573",
+    "pkg": "hdf5",
+    "answer": "WONTFIX",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-17615",
+    "pkg": "resteasy3.0",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-18238",
+    "pkg": "libpcap",
+    "answer": "WONTFIX",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-18477",
+    "pkg": "tar",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-18508",
+    "pkg": "tar",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-18536",
+    "pkg": "libdata-entropy-perl",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-19024",
+    "pkg": "hdf5",
+    "answer": "WONTFIX",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-19387",
+    "pkg": "gst-plugins-bad1.0",
+    "answer": "URGENT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-19614",
+    "pkg": "libnanoxml2-java",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-19694",
+    "pkg": "wireshark",
+    "answer": "NOTAFF",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-19695",
+    "pkg": "wireshark",
+    "answer": "NOTAFF",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-19954",
+    "pkg": "libnet-whois-raw-perl",
+    "answer": "NEXT",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-20707",
+    "pkg": "intel-microcode",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-20760",
+    "pkg": "intel-microcode",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-22590",
+    "pkg": "fastdds",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-38344",
+    "pkg": "ffmpeg",
+    "answer": "URGENT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-42493",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-42495",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-43971",
+    "pkg": "erlang-cowlib",
+    "answer": "NOTAFF",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-44950",
+    "pkg": "libxfont",
+    "answer": "WONTFIX",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-46471",
+    "pkg": "gst-plugins-good1.0",
+    "answer": "NEXT",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-46581",
+    "pkg": "mojarra",
+    "answer": "NOTAFF",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-47084",
+    "pkg": "cyrus-imapd",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-47489",
+    "pkg": "nvidia-open-gpu-kernel-modules",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47500",
+    "pkg": "nvidia-graphics-drivers-tesla-535",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47506",
+    "pkg": "nvidia-graphics-drivers-tesla-535",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47509",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47509",
+    "pkg": "nvidia-graphics-drivers-tesla-535",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47510",
+    "pkg": "nvidia-graphics-drivers-tesla-535",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47513",
+    "pkg": "nvidia-open-gpu-kernel-modules",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47514",
+    "pkg": "nvidia-graphics-drivers-tesla-535",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47524",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47527",
+    "pkg": "nvidia-graphics-drivers-tesla-535",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47530",
+    "pkg": "nvidia-open-gpu-kernel-modules",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47531",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47532",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47540",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47540",
+    "pkg": "nvidia-open-gpu-kernel-modules",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47551",
+    "pkg": "nvidia-open-gpu-kernel-modules",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47552",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47557",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47560",
+    "pkg": "nvidia-open-gpu-kernel-modules",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47563",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47586",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47594",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47595",
+    "pkg": "nvidia-graphics-drivers-tesla-535",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47597",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47602",
+    "pkg": "nvidia-open-gpu-kernel-modules",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-47737",
+    "pkg": "puma",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-47884",
+    "pkg": "libspring-java",
+    "answer": "WONTFIX",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-47887",
+    "pkg": "libspring-java",
+    "answer": "WONTFIX",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-48120",
+    "pkg": "kakoune",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-48548",
+    "pkg": "nagios4",
+    "answer": "URGENT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-48978",
+    "pkg": "golang-oras-oras-go",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-49114",
+    "pkg": "onnx",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-49282",
+    "pkg": "capstone",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-49844",
+    "pkg": "apache-log4j2",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-50579",
+    "pkg": "mbedtls",
+    "answer": "WONTFIX",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-50586",
+    "pkg": "mbedtls",
+    "answer": "WONTFIX",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-50736",
+    "pkg": "pglogical",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-53467",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-53533",
+    "pkg": "aiosmtplib",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-53585",
+    "pkg": "libgit2",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-53683",
+    "pkg": "freeipa",
+    "answer": "WONTFIX",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-54163",
+    "pkg": "ruby-secure-headers",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-54464",
+    "pkg": "ruby-websocket-driver",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-54465",
+    "pkg": "ruby-websocket-driver",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-54522",
+    "pkg": "ruby-msgpack",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-54634",
+    "pkg": "hamlib",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-54898",
+    "pkg": "ruby-oj",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-54909",
+    "pkg": "golang-github-pion-stun",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-55063",
+    "pkg": "fastdds",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-55404",
+    "pkg": "yt-dlp",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-55595",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-55995",
+    "pkg": "open-isns",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-56000",
+    "pkg": "xwayland",
+    "answer": "WONTFIX",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-56002",
+    "pkg": "libxfont",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-56363",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-56373",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-56392",
+    "pkg": "coreutils",
+    "answer": "WONTFIX",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-56857",
+    "pkg": "golang-1.19",
+    "answer": "NOTAFF",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-56858",
+    "pkg": "golang-1.19",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-57218",
+    "pkg": "rabbitmq-server",
+    "answer": "NOTAFF",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-57433",
+    "pkg": "perl",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-58016",
+    "pkg": "glib2.0",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-58023",
+    "pkg": "thrift",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-58040",
+    "pkg": "nodejs",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-58469",
+    "pkg": "wget",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59173",
+    "pkg": "trafficserver",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59180",
+    "pkg": "apprise",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59203",
+    "pkg": "pillow",
+    "answer": "NOTAFF",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59248",
+    "pkg": "erlang-cowlib",
+    "answer": "NOTAFF",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59282",
+    "pkg": "libspring-java",
+    "answer": "WONTFIX",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-59676",
+    "pkg": "selinux-python",
+    "answer": "NOTAFF",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59692",
+    "pkg": "gst-plugins-bad1.0",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59785",
+    "pkg": "zabbix",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-59843",
+    "pkg": "libssh",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59884",
+    "pkg": "pyasn1",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59889",
+    "pkg": "jackson-databind",
+    "answer": "NOTAFF",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59928",
+    "pkg": "mistune",
+    "answer": "NOTAFF",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59930",
+    "pkg": "mistune",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-59935",
+    "pkg": "pypdf",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-60001",
+    "pkg": "openssh",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-60137",
+    "pkg": "wordpress",
+    "answer": "NOTAFF",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-61548",
+    "pkg": "rsyslog",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-61818",
+    "pkg": "pg-partman",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-61864",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-61870",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62429",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62430",
+    "pkg": "xen",
+    "answer": "URGENT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-62439",
+    "pkg": "gimp",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-62986",
+    "pkg": "openexr",
+    "answer": "NOTAFF",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-63030",
+    "pkg": "wordpress",
+    "answer": "NOTAFF",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-63075",
+    "pkg": "openssl",
+    "answer": "NOTAFF",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-63311",
+    "pkg": "nltk",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-63347",
+    "pkg": "suricata-update",
+    "answer": "URGENT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-63380",
+    "pkg": "libevent",
+    "answer": "NOTAFF",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-63385",
+    "pkg": "libevent",
+    "answer": "URGENT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-63650",
+    "pkg": "openvpn",
+    "answer": "WONTFIX",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-63676",
+    "pkg": "libyaml-perl",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-6464",
+    "pkg": "postgresql-15",
+    "answer": "URGENT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-65819",
+    "pkg": "golang-github-gopacket-gopacket",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-66035",
+    "pkg": "libssh2",
+    "answer": "NOTAFF",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-66339",
+    "pkg": "libsoup2.4",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-66373",
+    "pkg": "redis",
+    "answer": "NOTAFF",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-6694",
+    "pkg": "gimp",
+    "answer": "NOTAFF",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-6695",
+    "pkg": "gimp",
+    "answer": "NOTAFF",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-67194",
+    "pkg": "courier",
+    "answer": "NEXT",
+    "wall": "2026-07-01"
+   },
+   {
+    "cve": "CVE-2026-67218",
+    "pkg": "rabbitmq-server",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-6727",
+    "pkg": "libtpms",
+    "answer": "WONTFIX",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-67549",
+    "pkg": "openimageio",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-67693",
+    "pkg": "gnutls28",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-69220",
+    "pkg": "rabbitmq-java-client",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-69245",
+    "pkg": "guzzle",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-69247",
+    "pkg": "python-cryptography",
+    "answer": "NOTAFF",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-70906",
+    "pkg": "openjdk-17",
+    "answer": "NOTAFF",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-70907",
+    "pkg": "openjdk-17",
+    "answer": "URGENT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-71219",
+    "pkg": "gfs2-utils",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-71223",
+    "pkg": "gfs2-utils",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-71227",
+    "pkg": "libkcapi",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-71478",
+    "pkg": "php-league-commonmark",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-71513",
+    "pkg": "nltk",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-71847",
+    "pkg": "ruby-json",
+    "answer": "NOTAFF",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-72522",
+    "pkg": "expat",
+    "answer": "URGENT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-73030",
+    "pkg": "unearth",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-73071",
+    "pkg": "vim",
+    "answer": "NOTAFF",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-73154",
+    "pkg": "svxlink",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-73194",
+    "pkg": "libdbi-perl",
+    "answer": "URGENT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-73196",
+    "pkg": "freeipa",
+    "answer": "WONTFIX",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-73282",
+    "pkg": "openssh",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-73434",
+    "pkg": "gst-plugins-good1.0",
+    "answer": "URGENT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-73566",
+    "pkg": "node-tar",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-75140",
+    "pkg": "jsoup",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-75432",
+    "pkg": "yaml-cpp",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-75466",
+    "pkg": "libjpeg-turbo",
+    "answer": "NOTAFF",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-75516",
+    "pkg": "rabbitmq-java-client",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-76014",
+    "pkg": "busybox",
+    "answer": "WONTFIX",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-76151",
+    "pkg": "qtbase-opensource-src",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-76175",
+    "pkg": "ocsinventory-server",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-77354",
+    "pkg": "golang-github-getkin-kin-openapi",
+    "answer": "WONTFIX",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-77408",
+    "pkg": "golang-github-rabbitmq-amqp091-go",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-77422",
+    "pkg": "jline2",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-77506",
+    "pkg": "znuny",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-77638",
+    "pkg": "tor",
+    "answer": "URGENT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-77651",
+    "pkg": "rust-arrayref",
+    "answer": "NOTAFF",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-77680",
+    "pkg": "libsoup2.4",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-78221",
+    "pkg": "openvpn",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-78253",
+    "pkg": "qtbase-opensource-src",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-78659",
+    "pkg": "golang-1.19",
+    "answer": "NEXT",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-78659",
+    "pkg": "golang-golang-x-net",
+    "answer": "NEXT",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-78662",
+    "pkg": "golang-go.crypto",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-78669",
+    "pkg": "golang-golang-x-net",
+    "answer": "NEXT",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-79312",
+    "pkg": "webpy",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-79616",
+    "pkg": "qt6-declarative",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-79616",
+    "pkg": "qtdeclarative-opensource-src",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-79678",
+    "pkg": "freeipa",
+    "answer": "WONTFIX",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-79780",
+    "pkg": "rclone",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-79921",
+    "pkg": "golang-github-rabbitmq-amqp091-go",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-80158",
+    "pkg": "ansible",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-80206",
+    "pkg": "nltk",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-81725",
+    "pkg": "nltk",
+    "answer": "NEXT",
+    "wall": "2026-08-01"
+   },
+   {
+    "cve": "CVE-2026-81872",
+    "pkg": "golang-opentelemetry-otel",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-82531",
+    "pkg": "smarty3",
+    "answer": "NEXT",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-82631",
+    "pkg": "redis",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-82662",
+    "pkg": "node-nodemailer",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-82821",
+    "pkg": "flvmeta",
+    "answer": "WONTFIX",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-83612",
+    "pkg": "node-xmldom",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-83613",
+    "pkg": "node-xmldom",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-83617",
+    "pkg": "node-xmldom",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-83618",
+    "pkg": "node-xmldom",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84185",
+    "pkg": "python-jwcrypto",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84303",
+    "pkg": "golang-google-grpc",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84304",
+    "pkg": "golang-google-grpc",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84308",
+    "pkg": "php-phpseclib",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84394",
+    "pkg": "node-ajv",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84784",
+    "pkg": "openssl",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-84947",
+    "pkg": "node-undici",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-85013",
+    "pkg": "modules",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-85484",
+    "pkg": "libhtml-formhandler-perl",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-85493",
+    "pkg": "thrift",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-85534",
+    "pkg": "libsoup2.4",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-85644",
+    "pkg": "libxs-parse-keyword-perl",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-85769",
+    "pkg": "libtpms",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86246",
+    "pkg": "tomcat-native",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86420",
+    "pkg": "imagemagick",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86537",
+    "pkg": "thrift",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-86564",
+    "pkg": "dpdk",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-86818",
+    "pkg": "node-ajv",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-87736",
+    "pkg": "ocaml-mirage-crypto",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-87776",
+    "pkg": "node-compression",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-87824",
+    "pkg": "zstd-jni-java",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-87825",
+    "pkg": "zstd-jni-java",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-88017",
+    "pkg": "rclone",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-88029",
+    "pkg": "pymongo",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-88038",
+    "pkg": "node-cookies",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-88044",
+    "pkg": "rclone",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-88647",
+    "pkg": "gnutls28",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-89136",
+    "pkg": "wolfssl",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-89147",
+    "pkg": "net-snmp",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-90804",
+    "pkg": "binutils",
+    "answer": "WONTFIX",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-90815",
+    "pkg": "ffmpeg",
+    "answer": "URGENT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-90828",
+    "pkg": "binutils",
+    "answer": "WONTFIX",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-90831",
+    "pkg": "binutils",
+    "answer": "WONTFIX",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-91769",
+    "pkg": "php8.2",
+    "answer": "URGENT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-91786",
+    "pkg": "gnome-shell",
+    "answer": "WONTFIX",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-91949",
+    "pkg": "freerdp2",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-91960",
+    "pkg": "freerdp2",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-92415",
+    "pkg": "jackrabbit",
+    "answer": "NEXT",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-92745",
+    "pkg": "cockpit-machines",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93314",
+    "pkg": "poppler",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93337",
+    "pkg": "network-manager-l2tp",
+    "answer": "URGENT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93393",
+    "pkg": "mongo-c-driver",
+    "answer": "WONTFIX",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93520",
+    "pkg": "xwayland",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-93682",
+    "pkg": "php8.2",
+    "answer": "URGENT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93748",
+    "pkg": "node-got",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93753",
+    "pkg": "node-deepmerge",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-93987",
+    "pkg": "rclone",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-94106",
+    "pkg": "php-getid3",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-94291",
+    "pkg": "epiphany-browser",
+    "answer": "NEXT",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-94645",
+    "pkg": "thrift",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-94656",
+    "pkg": "thrift",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-95391",
+    "pkg": "wireshark",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-95507",
+    "pkg": "libslirp",
+    "answer": "NOTAFF",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-95508",
+    "pkg": "libslirp",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-95516",
+    "pkg": "zbar",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-95521",
+    "pkg": "rpm",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-96277",
+    "pkg": "thrift",
+    "answer": "WONTFIX",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-96284",
+    "pkg": "flatpak",
+    "answer": "URGENT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-96748",
+    "pkg": "pymongo",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   },
+   {
+    "cve": "CVE-2026-97394",
+    "pkg": "golang-github-getkin-kin-openapi",
+    "answer": "NOTAFF",
+    "wall": "2026-10-01"
+   },
+   {
+    "cve": "CVE-2026-97711",
+    "pkg": "node-serialize-javascript",
+    "answer": "NEXT",
+    "wall": "2026-09-01"
+   }
+  ]
+ },
+ "arms": {
+  "S": "strong baseline: same Nemotron lane via Nightshift, policy + item facts + the package's 20 most recent raw tracker decision events before the time wall; no Meterless (../revisit/triage_agent.py run_S, unchanged)",
+  "OURS": "always use memory: Planner reads H-MEM (current stances, supersession, relevance recall, stance changes) -> Executor -> Evaluator (../revisit/triage_agent.py run_OURS, unchanged)",
+  "GATED": "memory gatekeeper: for each item a frozen gate function (H-MEM features + the two arms' proposals; never the answer) chooses the OURS answer (trust memory) or the S answer (path without memory). Gate code is written only from s300 clean results + dev60, and its SHA-256 is committed BEFORE the first fresh300 model call. GATED reuses the fresh300 S and OURS runs; its cost per item = S + OURS calls.",
+  "NN": "time-walled TF-IDF nearest neighbour inside the package (../revisit/eval_gates.py base_preds), no model"
+ },
+ "run_rules": {
+  "nightshift": "all model calls only through Nightshift; header meterless-scope = iso-<uuid4> per request; at most 1 request in flight; HTTP 404/502 and timeouts retried with backoff",
+  "model": "nvidia/nemotron-3-super-120b-a12b requested (same lane as s300); served model logged per call",
+  "replay": "chronological, wall by wall; H-MEM only holds snapshots up to the item's wall",
+  "complete": "all three gates need all 300 items predicted by S and OURS (n_common = 300); otherwise every gate fails. Unparsed replies count as the parser default (NEXT), as on s300."
+ },
+ "metric": {
+  "main": "macro-F1 over URGENT, NEXT, WONTFIX, NOTAFF",
+  "bootstrap": "paired bootstrap, 2,000 resamples of the 300 items, random.Random(11), 95% interval = sorted[50], sorted[1949] (../revisit/eval_gates.py boot)"
+ },
+ "gates": {
+  "G1": "GATED - S macro-F1 difference: lower 95% bound > 0",
+  "G2": "GATED - OURS macro-F1 difference: lower 95% bound >= 0",
+  "G3": "GATED - NN macro-F1 difference: lower 95% bound > 0",
+  "submit_rule": "topic 3 is submitted only if G1, G2, G3 and the reopen gate all pass. Thresholds are not changed after this file is sealed.",
+  "side_metrics_reported_not_deciding": [
+   "URGENT F1",
+   "WONTFIX F1",
+   "model calls and tokens per item"
+  ]
+ },
+ "reopen": {
+  "set": "volume B: all 286 conditional bookworm deferrals (../revisit/data/volB.json; \"revisit when fixed upstream\" etc.)",
+  "eval_date": "Debian tracker list.txt of 2026-10-23 (now); upstream data fetched 2026-10-23/24",
+  "truth": {
+   "rule": "condition met by the eval date, decided automatically from objective records only (no AI, no human labels)",
+   "generic": "met if ANY of: (a) Debian tracker now: the unstable (sid) line of this (CVE, pkg) is a fixed version; (b) a GitHub fix commit linked in the tracker NOTE of this CVE is contained in at least one upstream release tag of that repository; (c) OSV.dev record of the CVE or its aliases lists a \"fixed\" version in an ECOSYSTEM/SEMVER range of a non-distribution ecosystem (Debian, Ubuntu, Alpine, Red Hat, SUSE, AlmaLinux, Rocky, Mageia, openEuler, Chainguard, Wolfi and other distros excluded; GIT ranges excluded).",
+   "branch": "conditions naming a branch (\"fixed in the 5.1 branch\", \"fixed in 5.1.x\"): met only if the fix is on that upstream branch in a release tag (../revisit/data/ffmpeg51.json, git release/5.1); (a) and (c) do not count",
+   "dates": "condition date = earliest of: tracker git commit that first shows the sid fixed version; earliest release tag date containing the fix (reported, not gating)",
+   "unknown": "no objective source says fixed -> not met (primary). Sensitivity reported: items with no source other than (a) excluded."
+  },
+  "arms": {
+   "R0": "copy the trigger: unstable fixed at any monthly snapshot or now",
+   "R1": "LTS script from_next_lts: trixie DSA, or a trixie fixed line",
+   "R2": "plain table (cve, pkg, condition text as recorded at deferral, deferred_at) + the same Nemotron via Nightshift reads the same evidence bundle as OURS and answers met / not met; no Meterless",
+   "OURS": "Revisit watcher: Nemotron compiles each distinct condition text into a query template once; waits and condition events live in the World Model, H-MEM holds the current condition per wait (supersession) and a re-review memory per fired event; the daily watcher runs the templates over the evidence bundle. Code SHA-256 committed before the truth file is computed."
+  },
+  "evidence_bundle": "identical for R2 and OURS: tracker now lines (sid, trixie, bookworm) for the pair; for every URL in the CVE NOTE: GitHub issue/PR state, merged_at, closed reason; GitHub commit existence and the release tags containing it; other pages: title + status keywords. OSV is NOT in the bundle (independent truth source).",
+  "metric": "F1 of the reopen flag against truth on all 286; paired bootstrap 2,000, random.Random(11)",
+  "gate": "OURS - R2 F1 difference: lower 95% bound > 0. R0 and R1 reported."
+ },
+ "input_hashes": {
+  "data/fresh300_items.json": "70abaa47dcaf3865029d3f0ddcfa23687a1d045c3b93b4e59ca6cb64dd2e84a8",
+  "make_fresh300.py": "aa11a092d00f1cc770cb496e48c0da979253e19a88445dc7b1bb9fb320fd8883",
+  "../revisit/data/volume.json": "ebf4caab290fc9bc98228927f0f5b7a4b5e80bf6450c8316b6d56ee16f656d46",
+  "../revisit/data/items.json": "7b6ffca618d0b30de6224b58e52cbe60e06e292272b64d7201d20ad605464651",
+  "../revisit/data/events.json": "0be8dc0ab53a972a4778df4afdaf0ba52e71f37b26e7064768fea7005a4a2b94",
+  "../revisit/data/volB.json": "b4e0d3bafcbcdfe527eb2aebf5ad689bb21eca1e0e66366926902ea86a881a82",
+  "../revisit/triage_agent.py": "080b79f4ed4f9974119d7cf17e5cb24ce05790d1176b3c46a6a68706fbc95799",
+  "../revisit/eval_gates.py": "849a02222f55e012040a7464089aa9dd57d37ef6e566a290250fb96c9b8746f4",
+  "../revisit/data/ffmpeg51.json": "1f761eeed90327d7c9ba68cd8c3cc3103846c557c6503e2be7b21b1fae1eb850"
+ }
+}

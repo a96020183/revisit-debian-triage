@@ -1,0 +1,2 @@
+sealed facts: items checked 570 leaking 11 [('curl', '7.88.1-10+deb12u15'), ('imagemagick', '8:6.9.11.60+dfsg-1.6+deb12u11'), ('jq', '1.6-2.1+deb12u2'), ('mariadb', '1:10.11.18-0+deb12u1')]
+walled facts leaking 0 ; versions snapshot.debian.org could not date: 0 []

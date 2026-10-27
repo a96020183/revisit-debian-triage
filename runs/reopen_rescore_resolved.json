@@ -1,0 +1,255 @@
+{
+ "note": "Re-score the reopen task with the QA round-1 correction (POST-HOC; not part of any sealed procedure).\nCorrection: a wait that bookworm had already resolved by 2026-10-23 (data/reopen_resolved.json: a DSA/DLA for the CVE and\npackage, or a fixed +deb12u bookworm line) must NOT be reopened. The original truth counted these as \"condition met\",\nso every arm that flagged them got credit. Corrected truth = met AND not resolved.\n\nArms (flags exactly as recorded; nothing re-run):\n  watch_sealed        Revisit's watch as measured (rv3.reopen_due = revisit2 original-or-latest watcher, 85 flags)\n  watch_fixed         the same watch with resolved waits removed (rv3.reopen_due_v2; the fix is POST-HOC)\n  judge_sealed        watch + Nemotron judge as sealed in prereg_reopen_judge.json\n  judge_fixed         judge_sealed with resolved waits removed (POST-HOC)\n  latest_only, R0, R1, R2   revisit2's arms\nEach arm is scored against both the original and the corrected truth. Paired bootstrap 2,000, seed 11.",
+ "resolved": {
+  "CVE-2023-6605|ffmpeg": {
+   "how": "advisory",
+   "ref": "DSA-5985-1",
+   "date": "2025-08-25",
+   "version": "7:5.1.7-0+deb12u1"
+  },
+  "CVE-2026-30997|ffmpeg": {
+   "how": "advisory",
+   "ref": "DSA-6276-1",
+   "date": "2026-05-15",
+   "version": "7:5.1.9-0+deb12u1"
+  },
+  "CVE-2025-61103|frr": {
+   "how": "advisory",
+   "ref": "DSA-6322-1",
+   "date": "2026-06-05",
+   "version": "8.4.4-1.1~deb12u2"
+  },
+  "CVE-2025-61104|frr": {
+   "how": "advisory",
+   "ref": "DSA-6322-1",
+   "date": "2026-06-05",
+   "version": "8.4.4-1.1~deb12u2"
+  },
+  "CVE-2025-61106|frr": {
+   "how": "advisory",
+   "ref": "DSA-6322-1",
+   "date": "2026-06-05",
+   "version": "8.4.4-1.1~deb12u2"
+  },
+  "CVE-2025-61107|frr": {
+   "how": "advisory",
+   "ref": "DSA-6322-1",
+   "date": "2026-06-05",
+   "version": "8.4.4-1.1~deb12u2"
+  },
+  "CVE-2024-38949|libde265": {
+   "how": "advisory",
+   "ref": "DLA-4789-1",
+   "date": "2026-09-20",
+   "version": "1.0.11-1+deb12u3"
+  },
+  "CVE-2024-38950|libde265": {
+   "how": "advisory",
+   "ref": "DLA-4789-1",
+   "date": "2026-09-20",
+   "version": "1.0.11-1+deb12u3"
+  },
+  "CVE-2025-2337|libmatio": {
+   "how": "advisory",
+   "ref": "DLA-4644-1",
+   "date": "2026-06-24",
+   "version": "1.5.23-2+deb12u1"
+  },
+  "CVE-2021-37746|sylpheed": {
+   "how": "bookworm_fixed_line",
+   "ref": "tracker 2026-10-23",
+   "date": "",
+   "version": "3.8.0~beta1-1+deb12u1"
+  },
+  "CVE-2024-42040|u-boot": {
+   "how": "advisory",
+   "ref": "DLA-4642-1",
+   "date": "2026-06-23",
+   "version": "2023.01+dfsg-2+deb12u3"
+  }
+ },
+ "resolved_flagged_by_watch": [
+  "CVE-2023-6605|ffmpeg",
+  "CVE-2024-38949|libde265",
+  "CVE-2024-38950|libde265",
+  "CVE-2024-42040|u-boot",
+  "CVE-2025-2337|libmatio",
+  "CVE-2025-61103|frr",
+  "CVE-2025-61104|frr",
+  "CVE-2025-61106|frr",
+  "CVE-2025-61107|frr",
+  "CVE-2026-30997|ffmpeg"
+ ],
+ "original": {
+  "watch_sealed": {
+   "F1": 0.9189,
+   "tp": 85,
+   "fp": 0,
+   "fn": 15,
+   "flagged": 85
+  },
+  "watch_fixed": {
+   "F1": 0.8571,
+   "tp": 75,
+   "fp": 0,
+   "fn": 25,
+   "flagged": 75
+  },
+  "judge_sealed": {
+   "F1": 0.9011,
+   "tp": 82,
+   "fp": 0,
+   "fn": 18,
+   "flagged": 82
+  },
+  "judge_fixed": {
+   "F1": 0.8506,
+   "tp": 74,
+   "fp": 0,
+   "fn": 26,
+   "flagged": 74
+  },
+  "latest_only": {
+   "F1": 0.8827,
+   "tp": 79,
+   "fp": 0,
+   "fn": 21,
+   "flagged": 79
+  },
+  "R0": {
+   "F1": 0.8556,
+   "tp": 80,
+   "fp": 7,
+   "fn": 20,
+   "flagged": 87
+  },
+  "R1": {
+   "F1": 0.1786,
+   "tp": 10,
+   "fp": 2,
+   "fn": 90,
+   "flagged": 12
+  },
+  "R2": {
+   "F1": 0.7345,
+   "tp": 65,
+   "fp": 12,
+   "fn": 35,
+   "flagged": 77
+  },
+  "watch_fixed_minus_R2": {
+   "point": 0.1226,
+   "ci95": [
+    0.0447,
+    0.203
+   ]
+  },
+  "watch_fixed_minus_R0": {
+   "point": 0.0015,
+   "ci95": [
+    -0.055,
+    0.0578
+   ]
+  },
+  "watch_fixed_minus_watch_sealed": {
+   "point": -0.0618,
+   "ci95": [
+    -0.1047,
+    -0.0254
+   ]
+  },
+  "watch_sealed_minus_R2": {
+   "point": 0.1844,
+   "ci95": [
+    0.1248,
+    0.2526
+   ]
+  }
+ },
+ "corrected": {
+  "watch_sealed": {
+   "F1": 0.8571,
+   "tp": 75,
+   "fp": 10,
+   "fn": 15,
+   "flagged": 85
+  },
+  "watch_fixed": {
+   "F1": 0.9091,
+   "tp": 75,
+   "fp": 0,
+   "fn": 15,
+   "flagged": 75
+  },
+  "judge_sealed": {
+   "F1": 0.8605,
+   "tp": 74,
+   "fp": 8,
+   "fn": 16,
+   "flagged": 82
+  },
+  "judge_fixed": {
+   "F1": 0.9024,
+   "tp": 74,
+   "fp": 0,
+   "fn": 16,
+   "flagged": 74
+  },
+  "latest_only": {
+   "F1": 0.8166,
+   "tp": 69,
+   "fp": 10,
+   "fn": 21,
+   "flagged": 79
+  },
+  "R0": {
+   "F1": 0.791,
+   "tp": 70,
+   "fp": 17,
+   "fn": 20,
+   "flagged": 87
+  },
+  "R1": {
+   "F1": 0.0392,
+   "tp": 2,
+   "fp": 10,
+   "fn": 88,
+   "flagged": 12
+  },
+  "R2": {
+   "F1": 0.6587,
+   "tp": 55,
+   "fp": 22,
+   "fn": 35,
+   "flagged": 77
+  },
+  "watch_fixed_minus_R2": {
+   "point": 0.2504,
+   "ci95": [
+    0.1804,
+    0.3297
+   ]
+  },
+  "watch_fixed_minus_R0": {
+   "point": 0.1181,
+   "ci95": [
+    0.0654,
+    0.1762
+   ]
+  },
+  "watch_fixed_minus_watch_sealed": {
+   "point": 0.052,
+   "ci95": [
+    0.0211,
+    0.0885
+   ]
+  },
+  "watch_sealed_minus_R2": {
+   "point": 0.1984,
+   "ci95": [
+    0.1335,
+    0.2723
+   ]
+  }
+ }
+}

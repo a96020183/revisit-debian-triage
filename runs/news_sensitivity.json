@@ -1,0 +1,120 @@
+{
+ "note": "Post-hoc sensitivity analyses of the sealed news exam (NOT part of the sealed procedure; QA round 1). Same scorer\n(exam/score_news.py), restricted item sets; results in runs/news_score_<name>.json and runs/news_sensitivity.json.\n  excl_postwall  drop every pair whose inputs carried data from after the time wall: the items whose shown bookworm version first\n                 appeared in any Debian archive after the item's wall (snapshot.debian.org; runs/leak_check_versions.json; for jq\n                 CVE-2026-32316 that version is the CVE's own fix) and the 6 wall-2026-10-01 items of nodejs (4) and expat (2) whose\n                 history holds URGENT labels resting on a DLA dated the wall day itself. Both decision paths saw the same facts; the history reached both (raw for S, via H-MEM for OURS).\n  same_period    keep only pairs whose news item has wall 2026-09-01 or 2026-10-01, the walls where mix items exist (the mix pool\n                 was drawn from CVEs first seen after 2026-09-01, the news set from any wall)",
+ "bad_pairs": [
+  "CVE-2026-111497|nodejs",
+  "CVE-2026-18298|gst-plugins-good1.0",
+  "CVE-2026-25971|imagemagick",
+  "CVE-2026-32316|jq",
+  "CVE-2026-47023|mariadb",
+  "CVE-2026-56846|nodejs",
+  "CVE-2026-56848|nodejs",
+  "CVE-2026-58042|nodejs",
+  "CVE-2026-60184|mariadb",
+  "CVE-2026-60331|mariadb",
+  "CVE-2026-60585|mariadb",
+  "CVE-2026-60747|mariadb",
+  "CVE-2026-61081|mariadb",
+  "CVE-2026-77214|expat",
+  "CVE-2026-8286|curl",
+  "CVE-2026-8924|curl",
+  "CVE-2026-8927|curl"
+ ],
+ "results": {
+  "excl_postwall": {
+   "n_pairs": 268,
+   "gold": {
+    "URGENT": 238,
+    "NOTAFF": 104,
+    "WONTFIX": 2,
+    "NEXT": 192
+   },
+   "gate": {
+    "rule": "GATED - S URGENT F1, paired bootstrap 2,000 (seed 11) lower 95% bound > 0, with >= 50 complete pairs",
+    "ci95": [
+     0.0776,
+     0.2256
+    ],
+    "n_pairs": 268,
+    "evaluable": true,
+    "pass_": true
+   },
+   "URGENT_F1": {
+    "GATED": 0.4444,
+    "S": 0.2928,
+    "OURS": 0.4648,
+    "NN": 0.4496,
+    "pkg_mode": 0.4575
+   },
+   "GATED_minus_S": {
+    "point": 0.1516,
+    "ci95": [
+     0.0776,
+     0.2256
+    ],
+    "ci95_package_clusters": [
+     -0.0315,
+     0.2897
+    ]
+   },
+   "GATED_minus_OURS": {
+    "point": -0.0203,
+    "ci95": [
+     -0.0518,
+     0.0098
+    ],
+    "ci95_package_clusters": [
+     -0.0493,
+     0.022
+    ]
+   }
+  },
+  "same_period": {
+   "n_pairs": 73,
+   "gold": {
+    "URGENT": 63,
+    "NEXT": 56,
+    "NOTAFF": 26,
+    "WONTFIX": 1
+   },
+   "gate": {
+    "rule": "GATED - S URGENT F1, paired bootstrap 2,000 (seed 11) lower 95% bound > 0, with >= 50 complete pairs",
+    "ci95": [
+     0.1269,
+     0.4064
+    ],
+    "n_pairs": 73,
+    "evaluable": true,
+    "pass_": true
+   },
+   "URGENT_F1": {
+    "GATED": 0.6239,
+    "S": 0.3571,
+    "OURS": 0.6207,
+    "NN": 0.7009,
+    "pkg_mode": 0.7869
+   },
+   "GATED_minus_S": {
+    "point": 0.2667,
+    "ci95": [
+     0.1269,
+     0.4064
+    ],
+    "ci95_package_clusters": [
+     -0.0283,
+     0.4123
+    ]
+   },
+   "GATED_minus_OURS": {
+    "point": 0.0032,
+    "ci95": [
+     -0.0509,
+     0.055
+    ],
+    "ci95_package_clusters": [
+     -0.0472,
+     0.0857
+    ]
+   }
+  }
+ }
+}

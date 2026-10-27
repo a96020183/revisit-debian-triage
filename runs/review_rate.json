@@ -1,0 +1,319 @@
+{
+ "rule": "How often does the review loop actually loop? (QA round 1: the recorded demo never showed a send-back.)\nDraws 30 sealed-exam items with random.Random(20261027).sample over the sorted item keys (fixed before running), runs the full\nproduct triage on each in --record mode (iso scope; the two decision paths reuse the sealed exam's own answers; Planner,\nEvaluator and Verifier run live through Nightshift, one request at a time), and counts what the loop did. Nothing is forced:\nthe prompts and loop are the product's. Writes runs/review_rate/*.json and runs/review_rate.json.",
+ "keys": [
+  "CVE-2026-19387|gst-plugins-bad1.0",
+  "CVE-2026-102993|pypdf2",
+  "CVE-2026-1502|python3.11",
+  "CVE-2026-27590|caddy",
+  "CVE-2026-27587|caddy",
+  "CVE-2026-82854|node-nodemailer",
+  "CVE-2026-108978|rlottie",
+  "CVE-2026-42772|openssl",
+  "CVE-2026-100659|netty",
+  "CVE-2026-100691|hugo",
+  "CVE-2026-89258|hugo",
+  "CVE-2026-84268|gvfs",
+  "CVE-2026-84267|gvfs",
+  "CVE-2026-97030|golang-1.19",
+  "CVE-2026-102556|libsoup3",
+  "CVE-2026-106572|imagemagick",
+  "CVE-2026-84947|node-undici",
+  "CVE-2026-46471|gst-plugins-good1.0",
+  "CVE-2026-8927|curl",
+  "CVE-2026-33195|rails",
+  "CVE-2026-49275|exiv2",
+  "CVE-2026-79516|libstb",
+  "CVE-2026-20346|clamav",
+  "CVE-2026-32778|expat",
+  "CVE-2026-89058|resteasy3.0",
+  "CVE-2026-66066|rails",
+  "CVE-2026-82853|node-nodemailer",
+  "CVE-2026-52720|gst-plugins-bad1.0",
+  "CVE-2026-77281|caddy",
+  "CVE-2026-62993|smarty3"
+ ],
+ "counts": {
+  "items": 30,
+  "evaluator_send_back_items": 2,
+  "evaluator_send_backs": 2,
+  "verifier_send_back_items": 0,
+  "verifier_send_backs": 0,
+  "planner_rounds": 32,
+  "status_escalated": 6,
+  "evaluator_escalate": 6,
+  "status_proposed": 24,
+  "evaluator_accept": 24
+ },
+ "items": [
+  {
+   "key": "CVE-2026-19387|gst-plugins-bad1.0",
+   "status": "escalated",
+   "evaluator": "escalate",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "Evaluator asked only for sources already read; Zetaris holds nothing more for this CVE before its time wall: Bookworm's gst-plugins-bad1.0 1.22.0-4+deb12u7 received fixes for CVE-2026-2923 and CVE-202"
+  },
+  {
+   "key": "CVE-2026-102993|pypdf2",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "The vulnerability is a local DoS/memory consumption issue in pypdf2 triggered by crafted PDF page labels, matching the pattern of numerous prior CVEs in bookworm all deferred as NEXT (E2-E13). The CVE"
+  },
+  {
+   "key": "CVE-2026-1502|python3.11",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "CVE-2026-1502 has a local attack vector (E4) and the package history shows a consistent pattern of deferring similar minor issues in python3.11 for bookworm as NEXT with <no-dsa> (E5, E6, E8, E11, E13"
+  },
+  {
+   "key": "CVE-2026-27590|caddy",
+   "status": "escalated",
+   "evaluator": "escalate",
+   "send_backs": 1,
+   "verifier_send_backs": 0,
+   "planner_rounds": 2,
+   "reason": "Evaluator asked only for sources already read; Zetaris holds nothing more for this CVE before its time wall: Evidence row E1 confirms CVE-2026-27590 affects bookworm's caddy 2.6.2-5 with a local attac"
+  },
+  {
+   "key": "CVE-2026-27587|caddy",
+   "status": "escalated",
+   "evaluator": "escalate",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "E1 confirms bookworm ships vulnerable caddy 2.6.2-5 with a local attack vector, but the vulnerability requires specific conditions (percent-escape sequences in path patterns) to bypass access controls"
+  },
+  {
+   "key": "CVE-2026-82854|node-nodemailer",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "The vulnerability requires attacker-controlled input to the envelope.size parameter, which is not used by default (E1). Prior CVEs in this package (CVE-2025-14874 and CVE-2025-13033) were also deferre"
+  },
+  {
+   "key": "CVE-2026-108978|rlottie",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "The cve_facts row E10 confirms this CVE is a local-scope issue with limited security support for bookworm. The package_history rows E12-E22 show a consistent pattern of deferring similar rlottie heap/"
+  },
+  {
+   "key": "CVE-2026-42772|openssl",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "Bookworm ships openssl 3.0.20 (E13) and multiple QUIC-related CVEs from the same advisory batch (CVE-2026-42768, CVE-2026-42769) and prior batches are consistently marked NOTAFF for bookworm with 'Vul"
+  },
+  {
+   "key": "CVE-2026-100659|netty",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "Bookworm ships netty 1:4.1.48-7+deb12u2 (E1), which is version 4.1.48, while the vulnerability affects only the HTTP/3 codec introduced in Netty 4.2.0 through 4.2.17.Final; thus the affected component"
+  },
+  {
+   "key": "CVE-2026-100691|hugo",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "Bookworm's hugo 0.111.3-1 falls within the vulnerable range 0.75.0–0.165.x (E1), but the XSS requires untrusted contributors, contrary to Hugo's trusted-content model. Prior similar code-fence XSS iss"
+  },
+  {
+   "key": "CVE-2026-89258|hugo",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "Bookworm ships Hugo 0.111.3-1, which predates the vulnerable code introduced in v0.123.0 as confirmed by multiple CVE assessments (E1, E4, E6). Therefore, the package is not affected by CVE-2026-89258"
+  },
+  {
+   "key": "CVE-2026-84268|gvfs",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "Evidence rows E5 and E6 confirm that the two prior gvfs backend vulnerabilities (CVE-2026-28295, CVE-2026-28296) were deferred as NEXT for bookworm, not fixed via DLA; the current SFTP heap overflow ("
+  },
+  {
+   "key": "CVE-2026-84267|gvfs",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "The similar malicious SFTP server vulnerabilities CVE-2026-28295 and CVE-2026-28296 were deferred as NEXT for bookworm (E4, E5), and this CVE is a comparable heap information leak in the same backend,"
+  },
+  {
+   "key": "CVE-2026-97030|golang-1.19",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "The CVE facts confirm a local-scope template escaping issue in golang-1.19 1.19.8-2 with limited security support (E1). Prior template escaping bugs in golang-1.19 for bookworm have been consistently "
+  },
+  {
+   "key": "CVE-2026-102556|libsoup3",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "The CVE facts confirm a local attack scope and that bookworm ships libsoup3 3.2.3-0+deb12u2 (E1). The package history shows a consistent pattern of 10 recent libsoup3 CVEs in bookworm all deferred as "
+  },
+  {
+   "key": "CVE-2026-106572|imagemagick",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "The CVE facts (E11) indicate limited security support for this local stack-exhaustion issue, and the package history shows a consistent pattern of deferring similar ImageMagick vulnerabilities as mino"
+  },
+  {
+   "key": "CVE-2026-84947|node-undici",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "E1 confirms bookworm ships undici 5.15.0, which predates the vulnerable range (7.1.0+). This version gap, consistent with the Debian LTS tracker's version-gap handling, fully supports the NOTAFF decis"
+  },
+  {
+   "key": "CVE-2026-46471|gst-plugins-good1.0",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "The evidence shows CVE-2026-46471 is a local heap buffer over-read in the same component (qtdemux_parse_uuid) as CVE-2025-47219 and CVE-2025-47183, which were both classified as minor issues and defer"
+  },
+  {
+   "key": "CVE-2026-8927|curl",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "Bookworm ships curl 7.88.1-10+deb12u15 (E13), and the two cited analogous CVEs (CVE-2026-7168 and CVE-2026-6253) were both classified as NEXT with <no-dsa> for bookworm as minor issues (E14, E17). The"
+  },
+  {
+   "key": "CVE-2026-33195|rails",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "Bookworm ships rails 2:6.1.7.10 (E1) and the last 8 Active Storage CVEs in rails for bookworm were all deferred as NEXT with <no-dsa> (Minor issue) (E2-E9), establishing a consistent pattern for this "
+  },
+  {
+   "key": "CVE-2026-49275|exiv2",
+   "status": "escalated",
+   "evaluator": "escalate",
+   "send_backs": 1,
+   "verifier_send_backs": 0,
+   "planner_rounds": 2,
+   "reason": "The package history for exiv2 in bookworm shows five CVEs deferred as NEXT with <no-dsa> (Minor issue) (E14-E18), one NOTAFF due to vulnerable code introduced later (E19), and two WONTFIX as minor iss"
+  },
+  {
+   "key": "CVE-2026-79516|libstb",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "CVE-2026-79516 is a local out-of-bounds read DoS in stbsp_vsnprintf (E1), and all prior libstb vulnerabilities in bookworm have been consistently deferred as minor issues with <no-dsa> or <postponed> "
+  },
+  {
+   "key": "CVE-2026-20346|clamav",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "Package history for bookworm shows all recent clamav CVEs (including PDF parser flaws CVE-2025-20260, CVE-2024-20505) were deferred (NEXT) and addressed via regular updates, not DLAs. The DLAs cited ("
+  },
+  {
+   "key": "CVE-2026-32778|expat",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "The evidence shows CVE-2026-32778 is a local NULL pointer dereference DoS in expat (E1), and the LTS team has consistently marked similar expat parser crashes as minor issues with <no-dsa> for bookwor"
+  },
+  {
+   "key": "CVE-2026-89058|resteasy3.0",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "The evidence confirms the CORS flaw requires a specific insecure configuration (allow all origins '*') per the description, and package history shows prior CVEs (CVE-2023-0482, CVE-2020-25633) were ma"
+  },
+  {
+   "key": "CVE-2026-66066|rails",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "Bookworm ships Rails 6.1.x (E13) which is affected per the fixed version thresholds, but the LTS team has consistently deferred similar Active Storage CVEs (CVE-2026-33174, CVE-2026-33176, and others)"
+  },
+  {
+   "key": "CVE-2026-82853|node-nodemailer",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "The bookworm version 6.8.0 is affected and the attack scope is local (E1). Previous similar vulnerabilities in node-nodemailer were deferred as minor issues (E2, E3), establishing a consistent pattern"
+  },
+  {
+   "key": "CVE-2026-52720|gst-plugins-bad1.0",
+   "status": "escalated",
+   "evaluator": "escalate",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "Evaluator asked only for sources already read; Zetaris holds nothing more for this CVE before its time wall: Past decisions for gst-plugins-bad1.0 in bookworm are inconsistent: some high-severity vuln"
+  },
+  {
+   "key": "CVE-2026-77281|caddy",
+   "status": "escalated",
+   "evaluator": "escalate",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "Evaluator asked only for sources already read; Zetaris holds nothing more for this CVE before its time wall: The cve_facts row (E9) confirms bookworm ships caddy 2.6.2-5 but does not state affected st"
+  },
+  {
+   "key": "CVE-2026-62993|smarty3",
+   "status": "proposed",
+   "evaluator": "accept",
+   "send_backs": 0,
+   "verifier_send_backs": 0,
+   "planner_rounds": 1,
+   "reason": "The vulnerability description specifies it affects Smarty 4.x and 5.x release lines (fixed in 4.5.7 and 5.8.2), while bookworm ships 3.1.47. The sid assessment for CVE-2026-62996 explicitly states 'Vu"
+  }
+ ]
+}

@@ -1,0 +1,188 @@
+{
+ "n_pairs": 285,
+ "gate": {
+  "rule": "GATED - S URGENT F1, paired bootstrap 2,000 (seed 11) lower 95% bound > 0, with >= 50 complete pairs",
+  "ci95": [
+   0.0835,
+   0.2263
+  ],
+  "n_pairs": 285,
+  "evaluable": true,
+  "pass_": true
+ },
+ "URGENT_F1": {
+  "S": 0.2798,
+  "OURS": 0.4539,
+  "GATED": 0.4339,
+  "NN": 0.4481,
+  "R1": 0.131,
+  "pkg_mode": 0.4525,
+  "ablation_gate_without_HMEM_rule": 0.4511
+ },
+ "URGENT_recall": {
+  "S": 0.1873,
+  "OURS": 0.3625,
+  "GATED": 0.3267,
+  "NN": 0.3267,
+  "R1": 0.0757,
+  "pkg_mode": 0.3227,
+  "ablation_gate_without_HMEM_rule": 0.3586
+ }
+}
+{
+ "n_pairs": 285,
+ "gate": {
+  "rule": "GATED - S URGENT F1, paired bootstrap 2,000 (seed 11) lower 95% bound > 0, with >= 50 complete pairs",
+  "ci95": [
+   0.0971,
+   0.2362
+  ],
+  "n_pairs": 285,
+  "evaluable": true,
+  "pass_": true
+ },
+ "URGENT_F1": {
+  "S": 0.244,
+  "OURS": 0.4473,
+  "GATED": 0.413,
+  "NN": 0.4481,
+  "R1": 0.131,
+  "pkg_mode": 0.4525,
+  "ablation_gate_without_HMEM_rule": 0.4508
+ },
+ "URGENT_recall": {
+  "S": 0.1633,
+  "OURS": 0.3466,
+  "GATED": 0.3028,
+  "NN": 0.3267,
+  "R1": 0.0757,
+  "pkg_mode": 0.3227,
+  "ablation_gate_without_HMEM_rule": 0.3466
+ }
+}
+{
+ "n_pairs": 285,
+ "gate": {
+  "rule": "GATED - S URGENT F1, paired bootstrap 2,000 (seed 11) lower 95% bound > 0, with >= 50 complete pairs",
+  "ci95": [
+   0.0835,
+   0.2263
+  ],
+  "n_pairs": 285,
+  "evaluable": true,
+  "pass_": true
+ },
+ "URGENT_F1": {
+  "S": 0.2798,
+  "OURS": 0.4539,
+  "GATED": 0.4339,
+  "NN": 0.4481,
+  "R1": 0.131,
+  "pkg_mode": 0.4525,
+  "ablation_gate_without_HMEM_rule": 0.4511
+ },
+ "URGENT_recall": {
+  "S": 0.1873,
+  "OURS": 0.3625,
+  "GATED": 0.3267,
+  "NN": 0.3267,
+  "R1": 0.0757,
+  "pkg_mode": 0.3227,
+  "ablation_gate_without_HMEM_rule": 0.3586
+ }
+}
+{
+ "lines": {
+  "S": 1120,
+  "OURS": 1119
+ },
+ "distinct": {
+  "S": 570,
+  "OURS": 570
+ },
+ "items_with_two_answers": {
+  "S": 550,
+  "OURS": 549
+ },
+ "two_answers_disagree": {
+  "S": 68,
+  "OURS": 75
+ },
+ "scoring": {
+  "last": {
+   "n_pairs": 285,
+   "gate": {
+    "rule": "GATED - S URGENT F1, paired bootstrap 2,000 (seed 11) lower 95% bound > 0, with >= 50 complete pairs",
+    "ci95": [
+     0.0835,
+     0.2263
+    ],
+    "n_pairs": 285,
+    "evaluable": true,
+    "pass_": true
+   },
+   "URGENT_F1": {
+    "GATED": 0.4339,
+    "S": 0.2798,
+    "OURS": 0.4539,
+    "NN": 0.4481,
+    "R1": 0.131
+   },
+   "URGENT_recall": {
+    "GATED": 0.3267,
+    "S": 0.1873,
+    "OURS": 0.3625
+   }
+  },
+  "first": {
+   "n_pairs": 285,
+   "gate": {
+    "rule": "GATED - S URGENT F1, paired bootstrap 2,000 (seed 11) lower 95% bound > 0, with >= 50 complete pairs",
+    "ci95": [
+     0.0971,
+     0.2362
+    ],
+    "n_pairs": 285,
+    "evaluable": true,
+    "pass_": true
+   },
+   "URGENT_F1": {
+    "GATED": 0.413,
+    "S": 0.244,
+    "OURS": 0.4473,
+    "NN": 0.4481,
+    "R1": 0.131
+   },
+   "URGENT_recall": {
+    "GATED": 0.3028,
+    "S": 0.1633,
+    "OURS": 0.3466
+   }
+  },
+  "second_or_only": {
+   "n_pairs": 285,
+   "gate": {
+    "rule": "GATED - S URGENT F1, paired bootstrap 2,000 (seed 11) lower 95% bound > 0, with >= 50 complete pairs",
+    "ci95": [
+     0.0835,
+     0.2263
+    ],
+    "n_pairs": 285,
+    "evaluable": true,
+    "pass_": true
+   },
+   "URGENT_F1": {
+    "GATED": 0.4339,
+    "S": 0.2798,
+    "OURS": 0.4539,
+    "NN": 0.4481,
+    "R1": 0.131
+   },
+   "URGENT_recall": {
+    "GATED": 0.3267,
+    "S": 0.1873,
+    "OURS": 0.3625
+   }
+  }
+ }
+}

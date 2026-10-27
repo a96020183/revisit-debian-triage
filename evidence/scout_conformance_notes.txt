@@ -1,0 +1,18 @@
+== how the fixture registry was used (read before quoting the numbers)
+- The runner constructs Scout with the official evals/fixtures/intents.json, unmodified. No overlay, no extra triggers.
+- Stage 1 triggers are derived automatically from each intent's id, description and examples (IDF-weighted); a small
+  general synonym table (email/mail, summarize/recap, schedule/calendar, ...) is built into the engine. No eval prompt,
+  id or expected label appears anywhere in the engine code.
+- In this official fixture every intent-labeled v1 prompt is also listed verbatim as an intent example (Meterless:
+  examples are "classifier seeds AND eval fixtures"; corpus v1 is described as a 32-example smoke set, not a benchmark).
+  So intent_top1 = 1.000 here partly measures recognition of seen examples.
+- Leave-one-out check (test/scout_loo.ts, evidence/scout_loo.txt; not part of the official harness): each labeled prompt
+  removed from the registry before it is classified. See that file for the numbers.
+- Injection metrics do not depend on the registry examples (pattern + role-drift + out-of-band tool-ref layers).
+- tool_precision only checks expected capabilities are a subset of the emitted plan; Scout emits each intent's declared
+  capabilities (plus transitive deps swarm.run -> memory.recall, markovian.chain), so this metric is easy to satisfy.
+- clarification_rate 0.094 = 3/32: edge-amb-001 (Reject band, options offered), edge-amb-002 (unresolved reference),
+  deal-update-001 (high-risk below 0.95: contract issued but unexecutable until user-confirm).
+- Multi-intent: multi-002 and multi-003 return two-intent plans; multi-001 stays single-intent because its second clause
+  ("draft a board email") is ambiguous in this registry (deal.recover 0.374 vs email.draft 0.362). The v1 runner does
+  not score multi-intent plans.

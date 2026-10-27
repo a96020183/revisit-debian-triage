@@ -1,0 +1,182 @@
+{
+  "registryVersion": 1,
+  "note": "Revisit domain registry for Scout Intent. Debian LTS security triage for bookworm: decide new CVEs, commit one of two proposed decisions, watch and recall deferred decisions, query evidence (Zetaris) and memory (H-MEM).",
+  "intents": [
+    {
+      "id": "GENERAL",
+      "category": "general",
+      "description": "Safe fallback when no registered intent clears the Reject band. Answers conversationally, routes to no tools, never guesses a high-risk intent.",
+      "parameters": { "type": "object", "properties": {} },
+      "capabilities": [],
+      "riskClass": "low",
+      "surfaces": ["chat", "api", "scheduled"],
+      "roles": ["*"],
+      "examples": ["hello", "what can you do?", "thanks, that's all"],
+      "version": 1
+    },
+    {
+      "id": "triage.new_cve",
+      "category": "triage",
+      "description": "Decide a new CVE for Debian bookworm: propose URGENT, NEXT, WONTFIX or NOTAFF from tracker evidence and team memory.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "cve": { "type": "string", "pattern": "CVE-\\d{4}-\\d{4,}" },
+          "package": { "type": "string", "pattern": "[a-z0-9][a-z0-9+.~_-]*", "x-after": ["in", "for", "package"] },
+          "release": { "enum": ["bookworm", "trixie", "bullseye"] }
+        },
+        "required": ["cve"]
+      },
+      "capabilities": ["evidence.query", "memory.recall", "reason.llm"],
+      "riskClass": "medium",
+      "surfaces": ["chat", "api", "scheduled"],
+      "roles": ["lts_triager", "lts_lead"],
+      "examples": [
+        "Triage CVE-2026-1234 in openssl for bookworm",
+        "Decide what to do with the new CVE in libxml2",
+        "New vulnerability in curl: is it urgent for bookworm?",
+        "Classify CVE-2026-5555 for Debian bookworm as URGENT, NEXT, WONTFIX or NOTAFF",
+        "Should this new nginx CVE be fixed now or in the next point release?"
+      ],
+      "triggers": { "triage": 2, "new cve": 2.5, "classify": 1.5, "point release": 1.5, "urgent": 1 },
+      "dataClass": "public",
+      "modelNeeds": ["text"],
+      "version": 1
+    },
+    {
+      "id": "triage.commit_decision",
+      "category": "triage",
+      "description": "Adopt one of two proposed decisions for a CVE (the evidence path's or the memory path's) and record it. High impact: the decision is written to team memory and the world model.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "cve": { "type": "string", "pattern": "CVE-\\d{4}-\\d{4,}" },
+          "package": { "type": "string", "pattern": "[a-z0-9][a-z0-9+.~_-]*", "x-after": ["in", "for", "package"] },
+          "evidenceProposal": { "enum": ["URGENT", "NEXT", "WONTFIX", "NOTAFF"], "x-context": "evidence" },
+          "memoryProposal": { "enum": ["URGENT", "NEXT", "WONTFIX", "NOTAFF"], "x-context": "memory" }
+        },
+        "required": ["cve", "evidenceProposal", "memoryProposal"]
+      },
+      "capabilities": ["decision.commit", "memory.commit", "world.assert"],
+      "riskClass": "high",
+      "surfaces": ["chat", "api"],
+      "roles": ["lts_triager", "lts_lead"],
+      "examples": [
+        "Commit the triage decision for CVE-2026-1234 in openssl",
+        "Adopt one of the two proposed decisions for this CVE",
+        "Pick between the evidence proposal and the memory proposal and record it",
+        "Finalize the decision for CVE-2026-5555 in curl",
+        "Record the gatekeeper's choice for libxml2"
+      ],
+      "triggers": { "commit decision": 3, "commit": 2, "proposal": 1.5, "gatekeeper": 2, "record decision": 2 },
+      "context": ["features", "evidence", "memory"],
+      "dataClass": "public",
+      "modelNeeds": [],
+      "version": 1
+    },
+    {
+      "id": "reopen.check_conditions",
+      "category": "reopen",
+      "description": "Daily watch over deferred CVE decisions: check whether any reopen condition (upstream fix, exploit, severity change) has fired.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "window": { "type": "string" },
+          "package": { "type": "string", "pattern": "[a-z0-9][a-z0-9+.~_-]*", "x-after": ["for", "package"] }
+        }
+      },
+      "capabilities": ["world.query", "evidence.query", "memory.recall"],
+      "riskClass": "low",
+      "surfaces": ["scheduled", "api", "chat"],
+      "roles": ["lts_triager", "lts_lead"],
+      "examples": [
+        "Run the daily watch over deferred CVEs",
+        "Check whether any deferred decision's reopen conditions fired today",
+        "Did anything change for the postponed CVEs?",
+        "Scan deferred items for new upstream fixes or exploits"
+      ],
+      "triggers": { "daily watch": 3, "reopen condition": 3, "watch": 1.5, "condition": 1.5 },
+      "dataClass": "internal",
+      "modelNeeds": [],
+      "version": 1
+    },
+    {
+      "id": "reopen.recall",
+      "category": "reopen",
+      "description": "Bring a deferred decision back into the triage queue so it is decided again with today's evidence.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "cve": { "type": "string", "pattern": "CVE-\\d{4}-\\d{4,}" },
+          "package": { "type": "string", "pattern": "[a-z0-9][a-z0-9+.~_-]*", "x-after": ["for", "package", "the"] }
+        }
+      },
+      "capabilities": ["memory.recall", "world.assert", "memory.commit"],
+      "riskClass": "medium",
+      "surfaces": ["chat", "api", "scheduled"],
+      "roles": ["lts_triager", "lts_lead"],
+      "examples": [
+        "Bring back the deferred decision for CVE-2026-1234",
+        "Reopen the postponed openssl CVE",
+        "Revisit the WONTFIX we parked for curl last month",
+        "Pull the deferred libxml2 decision back into the queue"
+      ],
+      "triggers": { "bring back": 3, "reopen": 2, "revisit": 2, "back into the queue": 3 },
+      "dataClass": "internal",
+      "modelNeeds": [],
+      "version": 1
+    },
+    {
+      "id": "evidence.query",
+      "category": "evidence",
+      "description": "Run a read-only federated SQL query on Zetaris over the security tracker, advisories and package data.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "cve": { "type": "string", "pattern": "CVE-\\d{4}-\\d{4,}" },
+          "package": { "type": "string", "pattern": "[a-z0-9][a-z0-9+.~_-]*", "x-after": ["in", "for", "package"] }
+        }
+      },
+      "capabilities": ["evidence.query"],
+      "riskClass": "low",
+      "surfaces": ["chat", "api", "scheduled"],
+      "roles": ["lts_triager", "lts_lead", "viewer"],
+      "examples": [
+        "Run a federated SQL query on Zetaris for all open CVEs in openssl",
+        "Query Zetaris: which bookworm packages have a fix upstream?",
+        "Select from the tracker table where status is open",
+        "Show the evidence rows for CVE-2026-1234 from the data lake"
+      ],
+      "triggers": { "zetaris": 3, "sql": 2.5, "federated": 2, "select from": 2.5, "evidence rows": 2, "data lake": 2 },
+      "dataClass": "internal",
+      "modelNeeds": [],
+      "version": 1
+    },
+    {
+      "id": "memory.recall",
+      "category": "memory",
+      "description": "Look up H-MEM: earlier team decisions, current stances and similar past CVEs for a package.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "cve": { "type": "string", "pattern": "CVE-\\d{4}-\\d{4,}" },
+          "package": { "type": "string", "pattern": "[a-z0-9][a-z0-9+.~_-]*", "x-after": ["for", "on", "in", "package"] }
+        }
+      },
+      "capabilities": ["memory.recall"],
+      "riskClass": "low",
+      "surfaces": ["chat", "api", "scheduled"],
+      "roles": ["lts_triager", "lts_lead", "viewer"],
+      "examples": [
+        "What did we decide last time for openssl?",
+        "Look up H-MEM for earlier decisions on curl",
+        "Recall the stance memory holds for libxml2",
+        "Search memory for similar CVEs in nginx"
+      ],
+      "triggers": { "memory": 2.5, "last time": 2, "earlier decision": 2, "stance": 2, "look up": 1 },
+      "dataClass": "internal",
+      "modelNeeds": [],
+      "version": 1
+    }
+  ]
+}

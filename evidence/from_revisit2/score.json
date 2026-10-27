@@ -1,0 +1,1013 @@
+{
+ "fresh300": {
+  "n_common": 300,
+  "S": {
+   "macroF1": 0.4904,
+   "ci95": [
+    0.4307,
+    0.5486
+   ],
+   "acc": 0.54,
+   "URGENT_F1": 0.268,
+   "WONTFIX_F1": 0.5,
+   "per_class": {
+    "URGENT": {
+     "tp": 11,
+     "pred": 40,
+     "gold": 42,
+     "f1": 0.268
+    },
+    "NEXT": {
+     "tp": 84,
+     "pred": 141,
+     "gold": 130,
+     "f1": 0.62
+    },
+    "WONTFIX": {
+     "tp": 26,
+     "pred": 35,
+     "gold": 69,
+     "f1": 0.5
+    },
+    "NOTAFF": {
+     "tp": 41,
+     "pred": 84,
+     "gold": 59,
+     "f1": 0.573
+    }
+   }
+  },
+  "OURS": {
+   "macroF1": 0.5027,
+   "ci95": [
+    0.4408,
+    0.5618
+   ],
+   "acc": 0.5433,
+   "URGENT_F1": 0.442,
+   "WONTFIX_F1": 0.32,
+   "per_class": {
+    "URGENT": {
+     "tp": 19,
+     "pred": 44,
+     "gold": 42,
+     "f1": 0.442
+    },
+    "NEXT": {
+     "tp": 85,
+     "pred": 150,
+     "gold": 130,
+     "f1": 0.607
+    },
+    "WONTFIX": {
+     "tp": 16,
+     "pred": 31,
+     "gold": 69,
+     "f1": 0.32
+    },
+    "NOTAFF": {
+     "tp": 43,
+     "pred": 75,
+     "gold": 59,
+     "f1": 0.642
+    }
+   }
+  },
+  "GATED": {
+   "macroF1": 0.564,
+   "ci95": [
+    0.5029,
+    0.6233
+   ],
+   "acc": 0.59,
+   "URGENT_F1": 0.465,
+   "WONTFIX_F1": 0.513,
+   "per_class": {
+    "URGENT": {
+     "tp": 20,
+     "pred": 44,
+     "gold": 42,
+     "f1": 0.465
+    },
+    "NEXT": {
+     "tp": 85,
+     "pred": 135,
+     "gold": 130,
+     "f1": 0.642
+    },
+    "WONTFIX": {
+     "tp": 30,
+     "pred": 48,
+     "gold": 69,
+     "f1": 0.513
+    },
+    "NOTAFF": {
+     "tp": 42,
+     "pred": 73,
+     "gold": 59,
+     "f1": 0.636
+    }
+   }
+  },
+  "NN": {
+   "macroF1": 0.4611,
+   "ci95": [
+    0.3976,
+    0.5211
+   ],
+   "acc": 0.5267,
+   "URGENT_F1": 0.4,
+   "WONTFIX_F1": 0.36,
+   "per_class": {
+    "URGENT": {
+     "tp": 15,
+     "pred": 33,
+     "gold": 42,
+     "f1": 0.4
+    },
+    "NEXT": {
+     "tp": 99,
+     "pred": 172,
+     "gold": 130,
+     "f1": 0.656
+    },
+    "WONTFIX": {
+     "tp": 20,
+     "pred": 42,
+     "gold": 69,
+     "f1": 0.36
+    },
+    "NOTAFF": {
+     "tp": 24,
+     "pred": 53,
+     "gold": 59,
+     "f1": 0.429
+    }
+   }
+  },
+  "pkg_mode": {
+   "macroF1": 0.4567,
+   "ci95": [
+    0.3931,
+    0.5202
+   ],
+   "acc": 0.5167,
+   "URGENT_F1": 0.475,
+   "WONTFIX_F1": 0.33,
+   "per_class": {
+    "URGENT": {
+     "tp": 19,
+     "pred": 38,
+     "gold": 42,
+     "f1": 0.475
+    },
+    "NEXT": {
+     "tp": 97,
+     "pred": 167,
+     "gold": 130,
+     "f1": 0.653
+    },
+    "WONTFIX": {
+     "tp": 18,
+     "pred": 40,
+     "gold": 69,
+     "f1": 0.33
+    },
+    "NOTAFF": {
+     "tp": 21,
+     "pred": 55,
+     "gold": 59,
+     "f1": 0.368
+    }
+   }
+  },
+  "ablation_gate_without_HMEM": {
+   "macroF1": 0.5564,
+   "ci95": [
+    0.4948,
+    0.6126
+   ],
+   "acc": 0.5833,
+   "URGENT_F1": 0.447,
+   "WONTFIX_F1": 0.513,
+   "per_class": {
+    "URGENT": {
+     "tp": 19,
+     "pred": 43,
+     "gold": 42,
+     "f1": 0.447
+    },
+    "NEXT": {
+     "tp": 84,
+     "pred": 135,
+     "gold": 130,
+     "f1": 0.634
+    },
+    "WONTFIX": {
+     "tp": 30,
+     "pred": 48,
+     "gold": 69,
+     "f1": 0.513
+    },
+    "NOTAFF": {
+     "tp": 42,
+     "pred": 74,
+     "gold": 59,
+     "f1": 0.632
+    }
+   }
+  },
+  "ablation_gate_HMEM_no_supersession": {
+   "macroF1": 0.564,
+   "ci95": [
+    0.5029,
+    0.6233
+   ],
+   "acc": 0.59,
+   "URGENT_F1": 0.465,
+   "WONTFIX_F1": 0.513,
+   "per_class": {
+    "URGENT": {
+     "tp": 20,
+     "pred": 44,
+     "gold": 42,
+     "f1": 0.465
+    },
+    "NEXT": {
+     "tp": 85,
+     "pred": 135,
+     "gold": 130,
+     "f1": 0.642
+    },
+    "WONTFIX": {
+     "tp": 30,
+     "pred": 48,
+     "gold": 69,
+     "f1": 0.513
+    },
+    "NOTAFF": {
+     "tp": 42,
+     "pred": 73,
+     "gold": 59,
+     "f1": 0.636
+    }
+   }
+  },
+  "GATED_minus_S": {
+   "point": 0.0735,
+   "ci95": [
+    0.0239,
+    0.1208
+   ]
+  },
+  "GATED_minus_OURS": {
+   "point": 0.0613,
+   "ci95": [
+    0.0275,
+    0.0963
+   ]
+  },
+  "GATED_minus_NN": {
+   "point": 0.1028,
+   "ci95": [
+    0.0315,
+    0.1784
+   ]
+  },
+  "OURS_minus_S": {
+   "point": 0.0123,
+   "ci95": [
+    -0.0532,
+    0.0702
+   ]
+  },
+  "gate_rules": {
+   "agree": 218,
+   "class_unreliable": 17,
+   "trust_memory": 57,
+   "memory_disagrees_with_itself": 8
+  },
+  "gate_rule_outcomes": {
+   "agree": {
+    "n": 218,
+    "chosen_right": 128,
+    "OURS_right": 128,
+    "S_right": 128
+   },
+   "class_unreliable": {
+    "n": 17,
+    "chosen_right": 14,
+    "OURS_right": 2,
+    "S_right": 14
+   },
+   "memory_disagrees_with_itself": {
+    "n": 8,
+    "chosen_right": 5,
+    "OURS_right": 3,
+    "S_right": 5
+   },
+   "trust_memory": {
+    "n": 57,
+    "chosen_right": 30,
+    "OURS_right": 30,
+    "S_right": 15
+   }
+  },
+  "cost": {
+   "S": {
+    "calls_per_item": 1.0,
+    "prompt_tokens_per_item": 1264,
+    "completion_tokens_per_item": 759,
+    "served": {
+     "nvidia/nemotron-3-ultra-550b-a55b": 208,
+     "nvidia/nemotron-3.5-super-vl-120b-a12b": 35,
+     "nvidia/nemotron-3.5-lightning-30b-a3b": 57
+    }
+   },
+   "OURS": {
+    "calls_per_item": 1.333,
+    "prompt_tokens_per_item": 1373,
+    "completion_tokens_per_item": 778,
+    "served": {
+     "nvidia/nemotron-3.5-lightning-30b-a3b": 75,
+     "nvidia/nemotron-3-ultra-550b-a55b": 285,
+     "nvidia/nemotron-3.5-super-vl-120b-a12b": 40
+    }
+   },
+   "GATED": {
+    "calls_per_item": 2.333,
+    "prompt_tokens_per_item": 2637,
+    "completion_tokens_per_item": 1537
+   }
+  },
+  "gates": {
+   "G1": {
+    "rule": "GATED-S lower95 > 0",
+    "ci": [
+     0.0239,
+     0.1208
+    ],
+    "pass_": true
+   },
+   "G2": {
+    "rule": "GATED-OURS lower95 >= 0",
+    "ci": [
+     0.0275,
+     0.0963
+    ],
+    "pass_": true
+   },
+   "G3": {
+    "rule": "GATED-NN lower95 > 0",
+    "ci": [
+     0.0315,
+     0.1784
+    ],
+    "pass_": true
+   }
+  },
+  "blocked_right": [
+   {
+    "cve": "CVE-2026-103399",
+    "pkg": "libsoup3",
+    "answer": "WONTFIX",
+    "OURS": "NEXT",
+    "S": "WONTFIX",
+    "rule": "class_unreliable",
+    "OURS_reason": "libsoup3's bookworm history consistently defers similar SoupServer HTTP request-smuggling flaws as minor/<no-dsa> (e.g., CVE-2026-1760 and CVE-2026-1801, both NEXT), so this Expect: 100-continue smuggling issue should be deferred rather than expedited as a DLA.",
+    "S_reason": "This vulnerability affects SoupServer, which has limited support in Debian bookworm; past decisions consistently mark server-side libsoup3 issues as ignored due to limited support (e.g., CVE-2026-66338).",
+    "mem": {
+     "n": 64,
+     "cnt": {
+      "NEXT": 61,
+      "NOTAFF": 2,
+      "WONTFIX": 1
+     },
+     "top": [
+      "NEXT",
+      "NEXT",
+      "NEXT"
+     ]
+    },
+    "desc": "A flaw was found in SoupServer (libsoup). When an HTTP/1.x client sends a request with Expect: 100-continue and a request body, and SoupServer returns an early final (non-1xx) response before the body is read, the server neither drains the declared body bytes nor closes the connection. On a keep-ali"
+   },
+   {
+    "cve": "CVE-2026-16658",
+    "pkg": "ansible",
+    "answer": "NOTAFF",
+    "OURS": "NEXT",
+    "S": "NOTAFF",
+    "rule": "memory_disagrees_with_itself",
+    "OURS_reason": "Recent 2026 CVEs for ansible (CVE-2026-16566, CVE-2025-14010) were marked NOTAFF because vulnerable code was not present in the bookworm version; CVE-2026-16658 is numerically adjacent and likely similar.",
+    "S_reason": "The ansible package in bookworm (7.7.0) is significantly older than versions in sid; the tracker shows a consistent pattern of marking CVEs as not-affected for bookworm because vulnerable code was introduced in later upstream versions (CVE-2026-16566, CVE-2025-14010, CVE-2020-25646).",
+    "mem": {
+     "n": 16,
+     "cnt": {
+      "NOTAFF": 8,
+      "NEXT": 3,
+      "WONTFIX": 5
+     },
+     "top": [
+      "NOTAFF",
+      "NOTAFF",
+      "WONTFIX"
+     ]
+    },
+    "desc": ""
+   },
+   {
+    "cve": "CVE-2026-47489",
+    "pkg": "nvidia-open-gpu-kernel-modules",
+    "answer": "WONTFIX",
+    "OURS": "NEXT",
+    "S": "WONTFIX",
+    "rule": "class_unreliable",
+    "OURS_reason": "bookworm's nvidia-open-gpu-kernel-modules history is overwhelmingly NEXT (22 of 23 decisions), deferring local-scope kernel-driver issues rather than shipping DLAs; this CVE matches that pattern and is not the NOTAFF case where vulnerable code is absent from the 535 series.",
+    "S_reason": "The nvidia-open-gpu-kernel-modules package resides in contrib, and the LTS team's recent practice for this package in bookworm is to mark vulnerabilities <no-dsa> with \"Contrib not supported\", declining to issue DLAs regardless of severity.",
+    "mem": {
+     "n": 23,
+     "cnt": {
+      "NEXT": 22,
+      "NOTAFF": 1
+     },
+     "top": [
+      "NEXT",
+      "NEXT",
+      "NOTAFF"
+     ]
+    },
+    "desc": "NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer where permissions on read-only memory might not be preserved. A successful exploit of this vulnerability might lead to code execution, denial of service, escalation of privileges, information disclosure, and data t"
+   },
+   {
+    "cve": "CVE-2026-47506",
+    "pkg": "nvidia-graphics-drivers-tesla-535",
+    "answer": "WONTFIX",
+    "OURS": "NEXT",
+    "S": "WONTFIX",
+    "rule": "class_unreliable",
+    "OURS_reason": "Non-free package not supported by LTS; consistent with previous decisions to defer with <no-dsa>.",
+    "S_reason": "The package nvidia-graphics-drivers-tesla-535 resides in non-free, which is not supported by Debian LTS; all prior CVEs for this package in bookworm were marked <no-dsa> with the explicit reason 'Non-free not supported'.",
+    "mem": {
+     "n": 14,
+     "cnt": {
+      "NEXT": 14
+     },
+     "top": [
+      "NEXT",
+      "NEXT",
+      "NEXT"
+     ]
+    },
+    "desc": "NVIDIA GPU Display Driver for Windows contains a vulnerability in the kernel-mode color transform path where excessive kernel stack use occurs when evaluating YCbCr420 display emulation. A successful exploit of this vulnerability might lead to denial of service."
+   },
+   {
+    "cve": "CVE-2026-47509",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "OURS": "NEXT",
+    "S": "WONTFIX",
+    "rule": "class_unreliable",
+    "OURS_reason": "The nvidia-graphics-drivers-tesla-470 package resides in non-free, which is not supported by Debian LTS; all previous CVEs for this package in bookworm have been marked <no-dsa> and deferred (NEXT).",
+    "S_reason": "The package nvidia-graphics-drivers-tesla-470 resides in non-free, which is not supported by Debian LTS; all recent CVEs for this package in bookworm are marked <no-dsa> (Non-free not supported).",
+    "mem": {
+     "n": 22,
+     "cnt": {
+      "NEXT": 22
+     },
+     "top": [
+      "NEXT",
+      "NEXT",
+      "NEXT"
+     ]
+    },
+    "desc": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer, where a user could cause an out-of-bounds write. A successful exploit of this vulnerability might lead to code execution, denial of service, escalation of privileges, information disclosure, and data t"
+   },
+   {
+    "cve": "CVE-2026-47509",
+    "pkg": "nvidia-graphics-drivers-tesla-535",
+    "answer": "WONTFIX",
+    "OURS": "NEXT",
+    "S": "WONTFIX",
+    "rule": "class_unreliable",
+    "OURS_reason": "This package's 14 prior bookworm decisions are all NEXT/<no-dsa> because the non-free NVIDIA Tesla driver is not covered by DSA security support; this local kernel-mode out-of-bounds write follows the same deferred handling pattern.",
+    "S_reason": "The package nvidia-graphics-drivers-tesla-535 resides in non-free, which is not supported by the Debian LTS team; all prior CVEs for this package in bookworm were marked <no-dsa> with the explicit reason 'Non-free not supported'.",
+    "mem": {
+     "n": 14,
+     "cnt": {
+      "NEXT": 14
+     },
+     "top": [
+      "NEXT",
+      "NEXT",
+      "NEXT"
+     ]
+    },
+    "desc": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer, where a user could cause an out-of-bounds write. A successful exploit of this vulnerability might lead to code execution, denial of service, escalation of privileges, information disclosure, and data t"
+   },
+   {
+    "cve": "CVE-2026-47510",
+    "pkg": "nvidia-graphics-drivers-tesla-535",
+    "answer": "WONTFIX",
+    "OURS": "NEXT",
+    "S": "WONTFIX",
+    "rule": "class_unreliable",
+    "OURS_reason": "This package's established bookworm stance is <no-dsa> (non-free not supported), and all 14 prior decisions for nvidia-graphics-drivers-tesla-535 are NEXT/deferred, so this local-scope kernel driver issue should be deferred rather than shipped as a DLA.",
+    "S_reason": "The nvidia-graphics-drivers-tesla-535 package is in the non-free repository, which is not supported by Debian LTS; all previous CVEs for this package in bookworm were marked <no-dsa> with the explicit reason 'Non-free not supported'.",
+    "mem": {
+     "n": 14,
+     "cnt": {
+      "NEXT": 14
+     },
+     "top": [
+      "NEXT",
+      "NEXT",
+      "NEXT"
+     ]
+    },
+    "desc": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer, where a user could cause an integer overflow leading to an out-of-bounds write to GPU memory. A successful exploit of this vulnerability might lead to code execution, denial of service, escalation of p"
+   },
+   {
+    "cve": "CVE-2026-47524",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "OURS": "NEXT",
+    "S": "WONTFIX",
+    "rule": "class_unreliable",
+    "OURS_reason": "The package resides in non-free, which is not supported by Debian LTS; all previous CVEs for this package were deferred with <no-dsa> (Non-free not supported).",
+    "S_reason": "The package is in non-free and not supported by LTS; all recent CVEs are marked <no-dsa> (Non-free not supported).",
+    "mem": {
+     "n": 22,
+     "cnt": {
+      "NEXT": 22
+     },
+     "top": [
+      "NEXT",
+      "NEXT",
+      "NEXT"
+     ]
+    },
+    "desc": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer where an attacker could cause an out-of-bounds read. A successful exploit of this vulnerability might lead to code execution, denial of service, escalation of privileges, information disclosure, and dat"
+   },
+   {
+    "cve": "CVE-2026-47531",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "OURS": "NEXT",
+    "S": "WONTFIX",
+    "rule": "class_unreliable",
+    "OURS_reason": "This package has 22 prior bookworm decisions, all NEXT/<no-dsa> because the non-free NVIDIA driver is not supported by Debian LTS/DSA; this local kernel-mode null-pointer dereference DoS matches previously deferred issues such as CVE-2025-23332 and CVE-2023-31022, so it should be deferred rather than warranting a DLA.",
+    "S_reason": "The package nvidia-graphics-drivers-tesla-470 is in non-free, which is not supported by Debian LTS; all recent CVEs for this package in bookworm are marked <no-dsa> with reason 'Non-free not supported'.",
+    "mem": {
+     "n": 22,
+     "cnt": {
+      "NEXT": 22
+     },
+     "top": [
+      "NEXT",
+      "NEXT",
+      "NEXT"
+     ]
+    },
+    "desc": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer where an attacker could cause a null pointer dereference. A successful exploit of this vulnerability might lead to denial of service."
+   },
+   {
+    "cve": "CVE-2026-47532",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "OURS": "NEXT",
+    "S": "WONTFIX",
+    "rule": "class_unreliable",
+    "OURS_reason": "The nvidia-graphics-drivers-tesla-470 package is in non-free and not supported by Debian LTS; all previous CVEs for this package in bookworm were deferred with <no-dsa> (Non-free not supported).",
+    "S_reason": "The package nvidia-graphics-drivers-tesla-470 resides in non-free, which is not supported by Debian LTS; all recent CVEs for this package in bookworm are marked <no-dsa> (Non-free not supported).",
+    "mem": {
+     "n": 22,
+     "cnt": {
+      "NEXT": 22
+     },
+     "top": [
+      "NEXT",
+      "NEXT",
+      "NEXT"
+     ]
+    },
+    "desc": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer where an attacker could cause an out-of-bounds write. A successful exploit of this vulnerability might lead to code execution, denial of service, escalation of privileges, information disclosure, and da"
+   },
+   {
+    "cve": "CVE-2026-47540",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "OURS": "NEXT",
+    "S": "WONTFIX",
+    "rule": "class_unreliable",
+    "OURS_reason": "Package nvidia-graphics-drivers-tesla-470 is in non-free and not on Debian's limited-security-support list; all prior CVEs were deferred with \"Non-free not supported\", indicating LTS will not provide security updates.",
+    "S_reason": "Package is in non-free, which is not supported by Debian LTS; all recent CVEs for this package in bookworm are marked <no-dsa> (Non-free not supported).",
+    "mem": {
+     "n": 22,
+     "cnt": {
+      "NEXT": 22
+     },
+     "top": [
+      "NEXT",
+      "NEXT",
+      "NEXT"
+     ]
+    },
+    "desc": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer where an attacker could cause an integer underflow. A successful exploit of this vulnerability might lead to code execution, denial of service, escalation of privileges, information disclosure, and data"
+   },
+   {
+    "cve": "CVE-2026-47557",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "OURS": "NEXT",
+    "S": "WONTFIX",
+    "rule": "class_unreliable",
+    "OURS_reason": "The vulnerability's local NULL pointer dereference impact aligns with the package's established LTS treatment; all 22 prior bookworm CVEs for nvidia-graphics-drivers-tesla-470 were marked NEXT, including CVE-2023-31022 and CVE-2024-0090, which addressed similar kernel-mode dereference issues. LTS batches minor/local issues and prioritizes DLAs for real-impact fixes.",
+    "S_reason": "The package nvidia-graphics-drivers-tesla-470 is non-free and consistently marked <no-dsa> (Non-free not supported) in the Debian security tracker, indicating no security updates are provided; this aligns with WONTFIX for unsupported/limited-support packages.",
+    "mem": {
+     "n": 22,
+     "cnt": {
+      "NEXT": 22
+     },
+     "top": [
+      "NEXT",
+      "NEXT",
+      "NEXT"
+     ]
+    },
+    "desc": "NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer where an unprivileged user could cause a NULL pointer dereference. A successful exploit of this vulnerability might lead to denial of service."
+   },
+   {
+    "cve": "CVE-2026-47563",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "OURS": "NEXT",
+    "S": "WONTFIX",
+    "rule": "class_unreliable",
+    "OURS_reason": "The package nvidia-graphics-drivers-tesla-470 has a uniform history of 22 NEXT decisions in H-MEM, all marked <no-dsa> or NEXT due to its non-free status and local-scope vulnerabilities. CVE-2026-47563 follows this established pattern, and the LTS team defers non-free driver issues unless they pose urgent, cross-boundary risks.",
+    "S_reason": "The package is in non-free, which is not supported by Debian LTS; all recent CVEs for this package in bookworm are marked <no-dsa> (Non-free not supported), indicating no fix will be provided.",
+    "mem": {
+     "n": 22,
+     "cnt": {
+      "NEXT": 22
+     },
+     "top": [
+      "NEXT",
+      "NEXT",
+      "NEXT"
+     ]
+    },
+    "desc": "NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer where a user could cause a NULL pointer dereference. A successful exploit of this vulnerability might lead to code execution, denial of service, escalation of privileges, information disclosure, and data tampering."
+   },
+   {
+    "cve": "CVE-2026-47586",
+    "pkg": "nvidia-graphics-drivers-tesla-470",
+    "answer": "WONTFIX",
+    "OURS": "NEXT",
+    "S": "WONTFIX",
+    "rule": "class_unreliable",
+    "OURS_reason": "The package is a non-free NVIDIA driver; Debian LTS has consistently marked all 22 prior CVE decisions for this package as NEXT with <no-dsa> (Non-free not supported), and this new CVE follows the same historical treatment.",
+    "S_reason": "The nvidia-graphics-drivers-tesla-470 package is in the non-free repository, which is not supported by the Debian LTS team; all previous CVEs for this package in bookworm were marked <no-dsa> with the explicit reason 'Non-free not supported'.",
+    "mem": {
+     "n": 22,
+     "cnt": {
+      "NEXT": 22
+     },
+     "top": [
+      "NEXT",
+      "NEXT",
+      "NEXT"
+     ]
+    },
+    "desc": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel module where an attacker could cause a use-after-free. A successful exploit of this vulnerability might lead to code execution, denial of service, escalation of privileges, information disclosure, and data tamperi"
+   },
+   {
+    "cve": "CVE-2026-47595",
+    "pkg": "nvidia-graphics-drivers-tesla-535",
+    "answer": "WONTFIX",
+    "OURS": "NEXT",
+    "S": "WONTFIX",
+    "rule": "class_unreliable",
+    "OURS_reason": "The package resides in non-free and is not supported by Debian LTS; all prior decisions for this package are NEXT with <no-dsa> (Non-free not supported).",
+    "S_reason": "The package nvidia-graphics-drivers-tesla-535 resides in non-free, which is not supported by Debian LTS; all previous CVEs for this package in bookworm were marked <no-dsa> with the explicit reason 'Non-free not supported'.",
+    "mem": {
+     "n": 14,
+     "cnt": {
+      "NEXT": 14
+     },
+     "top": [
+      "NEXT",
+      "NEXT",
+      "NEXT"
+     ]
+    },
+    "desc": "NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer where an unprivileged user can write to read-only memory because the memory's permissions are not preserved. A successful exploit of this vulnerability might lead to code execution, escalation of privileges, denial"
+   },
+   {
+    "cve": "CVE-2026-56373",
+    "pkg": "imagemagick",
+    "answer": "URGENT",
+    "OURS": "NEXT",
+    "S": "URGENT",
+    "rule": "memory_disagrees_with_itself",
+    "OURS_reason": "The vulnerability is a local use-after-free in the PDB decoder with limited impact (crash or single zero-byte write), similar to CVE-2026-56379 which was deferred (NEXT) for bookworm; LTS batches such minor issues.",
+    "S_reason": "Bookworm's imagemagick 6.9.11.60 is older than the 6.9.13-40 fix version for the 6.x branch (per CVE-2026-56379), and the PDB decoder use-after-free is a memory corruption issue with local attack scope. The LTS team recently issued a DLA for a similar decoder vulnerability (CVE-2026-56379).",
+    "mem": {
+     "n": 259,
+     "cnt": {
+      "URGENT": 91,
+      "NOTAFF": 74,
+      "NEXT": 13,
+      "WONTFIX": 81
+     },
+     "top": [
+      "NEXT",
+      "URGENT",
+      "URGENT"
+     ]
+    },
+    "desc": "ImageMagick before 7.1.2-15 contains a use-after-free vulnerability in the PDB decoder that uses a stale pointer when memory allocation fails. Attackers can trigger this vulnerability by processing malicious PDB files to cause crashes or write a single zero byte to freed memory."
+   },
+   {
+    "cve": "CVE-2026-82531",
+    "pkg": "smarty3",
+    "answer": "NEXT",
+    "OURS": "NOTAFF",
+    "S": "NEXT",
+    "rule": "memory_disagrees_with_itself",
+    "OURS_reason": "Bookworm ships smarty3 3.1.47, and CVE-2026-82531 affects Smarty 4.x and 5.x; the vulnerable code is not present in this version, matching the NOTAFF precedent for CVE-2026-62996.",
+    "S_reason": "The vulnerability affects Smarty 3.x (bookworm ships 3.1.47), but the LTS team has consistently deferred similar code-injection issues in smarty3 as minor/postponed (CVE-2026-62993, CVE-2026-62992). Attack scope is local and the package is not on limited-security-support.",
+    "mem": {
+     "n": 5,
+     "cnt": {
+      "URGENT": 2,
+      "NOTAFF": 1,
+      "NEXT": 2
+     },
+     "top": [
+      "NEXT",
+      "NEXT",
+      "URGENT"
+     ]
+    },
+    "desc": "Smarty before 4.5.8 and 5.x before 5.8.5 contains a code injection vulnerability where the top-level nocache_hash is never restored during extends:/multi-component template inheritance, leaving it null. Attackers can supply assigned data containing a forged SmartyNocache marker that is copied verbat"
+   },
+   {
+    "cve": "CVE-2026-86564",
+    "pkg": "dpdk",
+    "answer": "NEXT",
+    "OURS": "URGENT",
+    "S": "NEXT",
+    "rule": "memory_disagrees_with_itself",
+    "OURS_reason": "This CVE describes an out-of-bounds read in the virtio-net control-queue handler in lib/vhost, allowing a guest to crash the host process — a direct parallel to CVE-2024-11614 (URGENT) which was an out-of-bounds read in Vhost checksum offload enabling guest-to-host crash.",
+    "S_reason": "Previous DPDK vulnerability (CVE-2025-23259) in bookworm was marked <no-dsa> as a minor issue; this out-of-bounds read causing host process crash in vhost library is similarly a local DoS issue likely to be deferred.",
+    "mem": {
+     "n": 2,
+     "cnt": {
+      "NEXT": 1,
+      "URGENT": 1
+     },
+     "top": [
+      "URGENT",
+      "NEXT"
+     ]
+    },
+    "desc": "A flaw was found in DPDK lib/vhost. Missing length validation before reading command_data in the virtio-net control-queue handler can cause an out-of-bounds read and a host process crash."
+   },
+   {
+    "cve": "CVE-2026-97711",
+    "pkg": "node-serialize-javascript",
+    "answer": "NEXT",
+    "OURS": "NOTAFF",
+    "S": "NEXT",
+    "rule": "memory_disagrees_with_itself",
+    "OURS_reason": "Bookworm ships version 6.0.0, which is prior to the affected version range 7.1.1-7.1.2; the vulnerability was introduced later.",
+    "S_reason": "The vulnerability affects function serialization in serialize-javascript, but Debian's LTS history for this package shows CVE-2026-34043 and CVE-2024-11831 were both marked <no-dsa> as minor issues, indicating a pattern of deferring non-critical serialize-javascript vulnerabilities.",
+    "mem": {
+     "n": 2,
+     "cnt": {
+      "NEXT": 2
+     },
+     "top": [
+      "NEXT",
+      "NEXT"
+     ]
+    },
+    "desc": "Serialize JavaScript serializes JavaScript values to a superset of JSON that includes regular expressions and functions. From 7.1.1 until 7.1.2, function values serialized by serialize-javascript are not fully protected against script-closing tags in attacker-influenced function source because SCRIP"
+   }
+  ],
+  "blocked_wrong": 5
+ },
+ "reopen": {
+  "primary": {
+   "n": 286,
+   "positives": 100,
+   "OURS": {
+    "F1": 0.8827,
+    "tp": 79,
+    "fp": 0,
+    "fn": 21,
+    "precision": 1.0,
+    "recall": 0.79,
+    "flagged": 79
+   },
+   "R0": {
+    "F1": 0.8556,
+    "tp": 80,
+    "fp": 7,
+    "fn": 20,
+    "precision": 0.92,
+    "recall": 0.8,
+    "flagged": 87
+   },
+   "R1": {
+    "F1": 0.1786,
+    "tp": 10,
+    "fp": 2,
+    "fn": 90,
+    "precision": 0.833,
+    "recall": 0.1,
+    "flagged": 12
+   },
+   "R2": {
+    "F1": 0.7345,
+    "tp": 65,
+    "fp": 12,
+    "fn": 35,
+    "precision": 0.844,
+    "recall": 0.65,
+    "flagged": 77
+   },
+   "OURS_no_supersession": {
+    "F1": 0.8827,
+    "tp": 79,
+    "fp": 0,
+    "fn": 21,
+    "precision": 1.0,
+    "recall": 0.79,
+    "flagged": 79
+   },
+   "OURS_deferral_condition": {
+    "F1": 0.9189,
+    "tp": 85,
+    "fp": 0,
+    "fn": 15,
+    "precision": 1.0,
+    "recall": 0.85,
+    "flagged": 85
+   },
+   "OURS_minus_R0": {
+    "point": 0.0271,
+    "ci95": [
+     -0.0249,
+     0.0772
+    ]
+   },
+   "OURS_minus_R1": {
+    "point": 0.7041,
+    "ci95": [
+     0.604,
+     0.8004
+    ]
+   },
+   "OURS_minus_R2": {
+    "point": 0.1482,
+    "ci95": [
+     0.078,
+     0.2222
+    ]
+   },
+   "OURS_minus_OURS_no_supersession": {
+    "point": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "OURS_minus_OURS_deferral_condition": {
+    "point": -0.0362,
+    "ci95": [
+     -0.0699,
+     -0.0117
+    ]
+   }
+  },
+  "sensitivity_checkable_only": {
+   "n": 269,
+   "positives": 97,
+   "OURS": {
+    "F1": 0.8786,
+    "tp": 76,
+    "fp": 0,
+    "fn": 21,
+    "precision": 1.0,
+    "recall": 0.784,
+    "flagged": 76
+   },
+   "R0": {
+    "F1": 0.8508,
+    "tp": 77,
+    "fp": 7,
+    "fn": 20,
+    "precision": 0.917,
+    "recall": 0.794,
+    "flagged": 84
+   },
+   "R1": {
+    "F1": 0.1835,
+    "tp": 10,
+    "fp": 2,
+    "fn": 87,
+    "precision": 0.833,
+    "recall": 0.103,
+    "flagged": 12
+   },
+   "R2": {
+    "F1": 0.7399,
+    "tp": 64,
+    "fp": 12,
+    "fn": 33,
+    "precision": 0.842,
+    "recall": 0.66,
+    "flagged": 76
+   },
+   "OURS_no_supersession": {
+    "F1": 0.8786,
+    "tp": 76,
+    "fp": 0,
+    "fn": 21,
+    "precision": 1.0,
+    "recall": 0.784,
+    "flagged": 76
+   },
+   "OURS_deferral_condition": {
+    "F1": 0.9162,
+    "tp": 82,
+    "fp": 0,
+    "fn": 15,
+    "precision": 1.0,
+    "recall": 0.845,
+    "flagged": 82
+   },
+   "OURS_minus_R0": {
+    "point": 0.0278,
+    "ci95": [
+     -0.0253,
+     0.084
+    ]
+   },
+   "OURS_minus_R1": {
+    "point": 0.6951,
+    "ci95": [
+     0.5865,
+     0.7989
+    ]
+   },
+   "OURS_minus_R2": {
+    "point": 0.1387,
+    "ci95": [
+     0.0671,
+     0.2176
+    ]
+   },
+   "OURS_minus_OURS_no_supersession": {
+    "point": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "OURS_minus_OURS_deferral_condition": {
+    "point": -0.0376,
+    "ci95": [
+     -0.0704,
+     -0.0117
+    ]
+   }
+  },
+  "gate": {
+   "rule": "OURS-R2 lower95 > 0 on all 286",
+   "n": 286,
+   "ci": [
+    0.078,
+    0.2222
+   ],
+   "pass_": true
+  },
+  "R2_cost": {
+   "calls": 286,
+   "prompt_tokens_per_item": 395,
+   "parse_fail": 6
+  },
+  "OURS_cost": {
+   "compile_calls": 19,
+   "per_wait_calls": 0
+  }
+ },
+ "verdict": {
+  "G1": true,
+  "G2": true,
+  "G3": true,
+  "reopen": true,
+  "submit": true
+ }
+}

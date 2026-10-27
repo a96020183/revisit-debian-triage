@@ -1,0 +1,6 @@
+# Fixed line endings: every text file is stored and checked out with LF on every OS.
+# The sealed SHA-256s in prereg_*.json were computed on the Windows working copies (some LF, some CRLF);
+# scripts/verify_prereg.py checks them against the committed git blobs in both forms. See README "Verifying the seal".
+* text=auto eol=lf
+*.png binary
+*.xz binary

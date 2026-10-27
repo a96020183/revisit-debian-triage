@@ -1,0 +1,22 @@
+World Model conformance, run 2026-10-27T04:34:36+08:00
+Harness: vendor/world-model-conformance (vendored unmodified from Meterless commit 1742dec56a66e58eef9dda2d2b865823758ca8cd, 2026-10-19)
+Implementation: engines/world-model/index.ts
+Harness files (sha256 of LF-normalised content):
+  23e3cdcf3eab2967  vendor/world-model-conformance/README.md
+  7cd3b80d62d45d16  vendor/world-model-conformance/runner.ts
+Command: <repo>\node_modules\.bin\tsx.cmd runner.ts (in a temporary copy of the harness)
+Exit code: 0
+
+
+World Model conformance: implementation = <repo>/engines/world-model/index.ts
+
+  PASS sid-001 stable ids: diacritics and NBSP normalize identically (NFKD + strip marks)
+  PASS sid-002 stable ids: distinct names stay distinct (no over-normalization)
+  PASS band-001 merge bands at the boundaries: 0.85 auto, 0.84 review, 0.82 review, 0.81 new
+  PASS prov-001 writes without provenance are rejected
+  PASS idem-001 ingest idempotency: same batch twice produces an empty diff
+  PASS idem-002 the idempotency check can fail: a mutated batch changes the shape
+  PASS bitemp-001 bitemporal edges: a superseding edge closes the old one; point-in-time queries respect validity
+  PASS audit-001 every mutation writes an audit entry in order
+
+  8/8 checks passed

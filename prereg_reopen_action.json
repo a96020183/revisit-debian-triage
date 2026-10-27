@@ -1,0 +1,11 @@
+{
+ "title": "Revisit 3 addendum 2: an independent truth for the reopen watch (sealed before the outcome data is fetched)",
+ "written": "2026-10-27 06:20 (Asia/Taipei)",
+ "why": "QA round 4: the reopen truth used so far (revisit2: unstable fixed / fix commit in an upstream release tag / OSV fixed version) shares its signals with the watch, so the watch's F1 against it measures how well the condition templates were parsed, not whether reopening was right.",
+ "truth": "Debian's own later action: a wait counts as 'should have been reopened' if, after the watch date 2026-10-23 and on or before the cutoff 2026-10-27, Debian published a fix for that (CVE, package) in bookworm: a DSA or DLA naming bookworm, or a bookworm / bookworm-security line in the tracker that is a fixed +deb12u version (point release or security upload). Waits already fixed in bookworm on or before 2026-10-23 are excluded (they are closed, not reopened).",
+ "cutoff": "2026-10-27",
+ "data": "data/DSA/list, data/DLA/list and data/CVE/list fetched from salsa.debian.org after this file is committed; their SHA-256 are recorded in the result file.",
+ "arms": ["Revisit watch as sealed (rv3.reopen_due)", "Revisit watch, post-hoc fixes (rv3.reopen_due_v2: already-fixed waits closed, commit links count as fixes only when marked 'Fixed by', naming the CVE, or dated after the deferral)", "plain table + same Nemotron (revisit2 R2)", "copy unstable (R0)"],
+ "rule": "If fewer than 10 waits have such a Debian action in the window, no F1 or comparison is reported: four days is too short for Debian to act on enough waits, and the reopen feature is shown as cases only, with this reason in the README. Otherwise F1 of each arm against this truth is reported with a paired bootstrap (2,000, seed 11).",
+ "no_changes": "The truth, cutoff, threshold and arms are not changed after this file is committed."
+}

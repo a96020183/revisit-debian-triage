@@ -1,0 +1,1146 @@
+{
+"CVE-2022-25869|angular.js": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-8367|aria2": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-38528|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-46632|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-48423|assimp": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-48424|assimp": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-48425|assimp": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-48426|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-53425|assimp": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-11274|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-11275|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-15538|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-15666|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-2151|assimp": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-2152|assimp": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-2591|assimp": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-2592|assimp": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-2750|assimp": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-2751|assimp": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-2752|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-2753|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-2754|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-2755|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-2756|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-2757|assimp": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-3158|assimp": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-5167|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-5168|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-5169|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-5200|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-5201|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-5202|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-5203|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-5204|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-6119|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-6120|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-10198|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-10200|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-10201|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-10229|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-10230|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-10231|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-10232|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-10233|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-14604|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-19967|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-19969|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-19970|assimp": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-50950|audiofile": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-59529|avahi": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-44431|bluez": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-51580|bluez": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-51589|bluez": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-51592|bluez": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-51594|bluez": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-51596|bluez": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-42366|busybox": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-58251|busybox": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-46394|busybox": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-60876|busybox": {
+"R0": true,
+"R1": false
+},
+"CVE-2023-46490|cacti": {
+"R0": true,
+"R1": false
+},
+"CVE-2019-10735|claws-mail": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-45321|cpanminus": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-88264|crun": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-88265|crun": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-69872|diskcache": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-12216|duktape": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-13745|edk2": {
+"R0": true,
+"R1": false
+},
+"CVE-2023-50671|exiftags": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-66382|expat": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-49528|ffmpeg": {
+"R0": true,
+"R1": false
+},
+"CVE-2023-6601|ffmpeg": {
+"R0": true,
+"R1": false
+},
+"CVE-2023-6605|ffmpeg": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-31578|ffmpeg": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-35369|ffmpeg": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-36615|ffmpeg": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-10256|ffmpeg": {
+"R0": true,
+"R1": true
+},
+"CVE-2025-22921|ffmpeg": {
+"R0": true,
+"R1": true
+},
+"CVE-2026-30997|ffmpeg": {
+"R0": true,
+"R1": true
+},
+"CVE-2026-6385|ffmpeg": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-56169|fort-validator": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-56170|fort-validator": {
+"R0": false,
+"R1": false
+},
+"CVE-2019-12212|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2019-12214|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2020-21426|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2020-24292|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2020-24293|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2020-24294|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2020-24295|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2021-40262|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2021-40263|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2021-40264|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2021-40265|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2021-40266|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-47992|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-47993|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-47994|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-47995|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-47996|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-47997|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28562|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28563|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28564|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28565|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28566|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28567|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28568|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28569|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28570|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28571|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28572|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28573|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28574|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28575|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28576|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28577|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28578|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28579|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28580|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28581|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28582|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28583|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28584|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-9029|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-65803|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-70968|freeimage": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-61103|frr": {
+"R0": true,
+"R1": true
+},
+"CVE-2025-61104|frr": {
+"R0": true,
+"R1": true
+},
+"CVE-2025-61106|frr": {
+"R0": true,
+"R1": true
+},
+"CVE-2025-61107|frr": {
+"R0": true,
+"R1": true
+},
+"CVE-2024-52762|ganglia-web": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-52763|ganglia-web": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-3650|gdcm": {
+"R0": true,
+"R1": false
+},
+"CVE-2026-10028|glib-networking": {
+"R0": true,
+"R1": false
+},
+"CVE-2023-5616|gnome-control-center": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-46565|gobgp": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-56738|grub2": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-14683|hdrhistogram": {
+"R0": true,
+"R1": false
+},
+"CVE-2026-14684|hdrhistogram": {
+"R0": true,
+"R1": false
+},
+"CVE-2026-14685|hdrhistogram": {
+"R0": true,
+"R1": false
+},
+"CVE-2026-14686|hdrhistogram": {
+"R0": true,
+"R1": false
+},
+"CVE-2023-5072|jenkins-json": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-34623|jtidy": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-XXXX#[exposes .zip passwords while (un)archiving]|krusader": {
+"R0": false,
+"R1": false
+},
+"CVE-2013-10075|libapache-session-perl": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-40931|libapache-session-perl": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-5081|libapache-session-perl": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-6659|libcrypt-passwdmd5-perl": {
+"R0": true,
+"R1": false
+},
+"CVE-2022-48570|libcrypto++": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-50979|libcrypto++": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-50981|libcrypto++": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-28285|libcrypto++": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-38949|libde265": {
+"R0": true,
+"R1": true
+},
+"CVE-2024-38950|libde265": {
+"R0": true,
+"R1": true
+},
+"CVE-2023-5072|libjettison-java": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-46998|libjs-bootbox": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-5072|libjson-java": {
+"R0": true,
+"R1": false
+},
+"CVE-2026-71225|libkcapi": {
+"R0": true,
+"R1": false
+},
+"CVE-2026-71226|libkcapi": {
+"R0": true,
+"R1": false
+},
+"CVE-2026-71227|libkcapi": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-2337|libmatio": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-50343|libmatio": {
+"R0": true,
+"R1": false
+},
+"CVE-2021-47155|libnetwork-ipv4addr-perl": {
+"R0": false,
+"R1": false
+},
+"CVE-2021-30469|libpodofo": {
+"R0": false,
+"R1": false
+},
+"CVE-2021-30472|libpodofo": {
+"R0": false,
+"R1": false
+},
+"CVE-2021-46700|libsixel": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-29977|libsixel": {
+"R0": true,
+"R1": false
+},
+"CVE-2022-29978|libsixel": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-50613|libsndfile": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-37555|libsndfile": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-42118|libspf2": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-45661|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-45662|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-45663|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-45664|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-45666|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-45667|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-45675|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-45676|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-45677|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-45678|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-45679|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-45680|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-45681|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-45682|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-47212|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-3406|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-3407|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-3408|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-3409|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-5185|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-79516|libstb": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-5673|libtheora": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-1991|libuvc": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-57868|libweb-api-perl": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-10911|libxslt": {
+"R0": true,
+"R1": false
+},
+"CVE-2019-15213|linux": {
+"R0": false,
+"R1": false
+},
+"CVE-2019-16089|linux": {
+"R0": false,
+"R1": false
+},
+"CVE-2019-19449|linux": {
+"R0": false,
+"R1": false
+},
+"CVE-2019-20794|linux": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-15571|lrzip": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-15537|mapnik": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-72854|msgpack-c": {
+"R0": true,
+"R1": false
+},
+"CVE-2026-6067|nasm": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-6069|nasm": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-14932|netcdf": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-14933|netcdf": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-14934|netcdf": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-14935|netcdf": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-14936|netcdf": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-14932|netcdf-parallel": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-14933|netcdf-parallel": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-14934|netcdf-parallel": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-14935|netcdf-parallel": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-14936|netcdf-parallel": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-36050|nix": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-39705|nltk": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-14505|node-elliptic": {
+"R0": true,
+"R1": false
+},
+"CVE-2023-4232|ofono": {
+"R0": true,
+"R1": false
+},
+"CVE-2023-4233|ofono": {
+"R0": true,
+"R1": false
+},
+"CVE-2023-4234|ofono": {
+"R0": true,
+"R1": false
+},
+"CVE-2023-4235|ofono": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-7537|ofono": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-7538|ofono": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-7539|ofono": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-7540|ofono": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-7541|ofono": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-7542|ofono": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-7543|ofono": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-7544|ofono": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-7545|ofono": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-7546|ofono": {
+"R0": true,
+"R1": false
+},
+"CVE-2024-7547|ofono": {
+"R0": true,
+"R1": false
+},
+"CVE-2020-21724|oggvideotools": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-37331|openbabel": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-41793|openbabel": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-42885|openbabel": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-43467|openbabel": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-43607|openbabel": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-44451|openbabel": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-46280|openbabel": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-46289|openbabel": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-46290|openbabel": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-46291|openbabel": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-46292|openbabel": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-46293|openbabel": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-46294|openbabel": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-46295|openbabel": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-12495|openexr": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-12839|openexr": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-12840|openexr": {
+"R0": true,
+"R1": false
+},
+"CVE-2019-6988|openjpeg2": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-39327|openjpeg2": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-39328|openjpeg2": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-39329|openjpeg2": {
+"R0": false,
+"R1": false
+},
+"CVE-2019-25076|openvswitch": {
+"R0": false,
+"R1": false
+},
+"CVE-2026-10294|packagekit": {
+"R0": true,
+"R1": false
+},
+"CVE-2025-26240|pdfkit": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-9101|phpldapadmin": {
+"R0": true,
+"R1": false
+},
+"CVE-2023-28858|python-redis": {
+"R0": true,
+"R1": false
+},
+"CVE-2019-12067|qemu": {
+"R0": false,
+"R1": false
+},
+"CVE-2020-25741|qemu": {
+"R0": false,
+"R1": false
+},
+"CVE-2020-25742|qemu": {
+"R0": false,
+"R1": false
+},
+"CVE-2020-25743|qemu": {
+"R0": false,
+"R1": false
+},
+"CVE-2020-35503|qemu": {
+"R0": false,
+"R1": false
+},
+"CVE-2021-3735|qemu": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-3872|qemu": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-1386|qemu": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-39684|rapidjson": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-47081|requests": {
+"R0": true,
+"R1": true
+},
+"CVE-2020-28594|slic3r-prusa": {
+"R0": false,
+"R1": false
+},
+"CVE-2020-28595|slic3r-prusa": {
+"R0": false,
+"R1": false
+},
+"CVE-2020-28596|slic3r-prusa": {
+"R0": false,
+"R1": false
+},
+"CVE-2020-28598|slic3r-prusa": {
+"R0": false,
+"R1": false
+},
+"CVE-2021-27211|steghide": {
+"R0": false,
+"R1": false
+},
+"CVE-2021-37746|sylpheed": {
+"R0": false,
+"R1": true
+},
+"CVE-2025-6496|tidy-html5": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-6497|tidy-html5": {
+"R0": false,
+"R1": false
+},
+"CVE-2025-6498|tidy-html5": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-50614|tinyxml2": {
+"R0": false,
+"R1": false
+},
+"CVE-2024-42040|u-boot": {
+"R0": true,
+"R1": true
+},
+"CVE-2021-31879|wget": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-3590|wordpress": {
+"R0": false,
+"R1": false
+},
+"CVE-2020-27748|xdg-utils": {
+"R0": false,
+"R1": false
+},
+"CVE-2022-4055|xdg-utils": {
+"R0": false,
+"R1": false
+},
+"CVE-2023-5574|xorg-server": {
+"R0": false,
+"R1": false
+}
+}
