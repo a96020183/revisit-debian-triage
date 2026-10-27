@@ -1,0 +1,2285 @@
+{
+  "title": "Revisit live forecast: sealed predictions",
+  "prereg_sha256": "5bd9407c8b6b5c994cfad64d02aa87293cf68120c76558ed346f0b967eeca981",
+  "snapshot": {
+    "fetched_at": "2026-10-27T04:34:40Z",
+    "wall": "2026-10-27",
+    "sources": {
+      "list.txt": "[external source URL omitted]",
+      "dsa.txt": "[external source URL omitted]",
+      "dla.txt": "[external source URL omitted]",
+      "tracker.json": "[external source URL omitted]",
+      "ss13.txt": "[external source URL omitted]"
+    },
+    "sha256": {
+      "list.txt": "a5c8dbaf804bf0b5f4620f2a77e44f8946a2cb2533518942541ccaa6d57390d9",
+      "dsa.txt": "01b0c5659c82d8b26f5ad76b9a57ef97590e11ce4bd3331a868a9b4826ae780f",
+      "dla.txt": "fd1b9e5feeb8c025a71cf26f9b578645262d99055b1684e7ba3d7eca0b12c2d9",
+      "tracker.json": "af2c8492db234adaaea0e30e4cee66c53262ed141063bba318623b5d574517d2",
+      "ss13.txt": "aca27559e633deecb69b5a769857b98bd78d3ce7bcaf2a97204b902279987296"
+    },
+    "note": "The snapshot files are not in the repository (150 MB); their SHA-256 are registered here. The time wall of every input is this snapshot."
+  },
+  "N_registered": 150,
+  "K_sealed": 150,
+  "sealed_at": "2026-10-27T06:52:29+00:00",
+  "arms": {
+    "GATED": "primary: the frozen product decision path. Evidence path (core/triage_agent.py run_S) + memory path (run_OURS, H-MEM loaded up to the snapshot) + the frozen gatekeeper core/gate.py over the two answers and H-MEM features (core/hmem_features.py); the same program as the sealed exam",
+    "pkg_mode": "baseline, no model: the package's most common decision in its history up to the snapshot (core/eval_core.py base_preds; NEXT when the package has no history)",
+    "S": "secondary, reported: the evidence path alone (computed anyway as part of GATED)",
+    "OURS": "secondary, reported: the memory path alone (computed anyway as part of GATED)"
+  },
+  "outcome": "urgent = bookworm fixed through bookworm-security (DSA/DLA); not urgent = <postponed>/<ignored>/<no-dsa>; undecided and other outcomes excluded and counted",
+  "items": [
+    {
+      "n": 1,
+      "cve": "CVE-2019-20201",
+      "pkg": "mapcache",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "CVE-2019-20201 is a 2019 vulnerability in ezXML 0.8.3-0.8.6; Debian 12 bookworm (2023) ships mapcache 1.14.0 which either uses a patched system ezXML or does not bundle the vulnerable ezXML code, and the package is not on the limited-securi",
+      "reason_memory_path": "CVE-2019-20201 is an older (2019) DoS issue in ezXML (infinite loop with memory allocation) with unknown attack scope; mapcache 1.14.0 in bookworm likely bundles or depends on a vulnerable ezXML version, but the issue is minor and can be de",
+      "predicted_at": "2026-10-27T04:39:16+00:00"
+    },
+    {
+      "n": 2,
+      "cve": "CVE-2009-3580",
+      "pkg": "sql-ledger",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "WONTFIX",
+        "S": "WONTFIX",
+        "OURS": "WONTFIX"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The sql-ledger package is on Debian's limited-security-support list, and previous similar vulnerabilities (CVE-2008-4078, CVE-2008-4077) were marked 'unimportant' for sid with no bookworm action, indicating the team considers such issues lo",
+      "reason_memory_path": "sql-ledger is on Debian's limited-security-support list and has a consistent history of WONTFIX decisions for security issues classified as 'unimportant' (CVE-2008-4078, CVE-2008-4077). This CSRF vulnerability follows the same pattern and d",
+      "predicted_at": "2026-10-27T04:40:13+00:00"
+    },
+    {
+      "n": 3,
+      "cve": "CVE-2026-103399",
+      "pkg": "libsoup2.4",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "NEXT",
+        "S": "WONTFIX",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "class_unreliable",
+      "reason_evidence_path": "The vulnerability affects SoupServer, which is considered unsupported in libsoup2.4 for LTS (as previously decided for CVE-2026-66338).",
+      "reason_memory_path": "This HTTP request smuggling vulnerability in SoupServer is similar to CVE-2026-1760 and CVE-2026-1801, which were both triaged as minor issues (NEXT) for bookworm. The LTS team consistently batches such smuggling flaws in libsoup2.4.",
+      "predicted_at": "2026-10-27T04:40:41+00:00"
+    },
+    {
+      "n": 4,
+      "cve": "CVE-2026-114620",
+      "pkg": "python-authlib",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "URGENT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "The vulnerability enables SSRF in deployments that follow the documented example, representing a real security impact; the LTS team has consistently backported fixes for python-authlib in bookworm (e.g., CVE-2026-28498, CVE-2026-28490, CVE-",
+      "reason_memory_path": "The library itself performs no network request; exploitation depends on an integrator implementing get_request_object() as an unrestricted outbound fetch, making this conditional and lower impact. This matches the LTS team's established pat",
+      "predicted_at": "2026-10-27T04:42:33+00:00"
+    },
+    {
+      "n": 5,
+      "cve": "CVE-2026-76816",
+      "pkg": "netty",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "NOTAFF",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm's netty 1:4.1.48-7+deb12u2 is well below the fixed 4.1.137.Final, and the MQTT encoder null-byte validation flaw has real security impact (routing/access-control/identity mismatches) for network-facing applications. The LTS team pr",
+      "reason_memory_path": "Bookworm ships netty 4.1.48 which is well before the fixed version 4.1.137.Final; the vulnerable MqttEncoder is part of the netty-codec-mqtt module present in the 4.1.x series, and the LTS team has consistently issued URGENT fixes for netty",
+      "predicted_at": "2026-10-27T04:44:00+00:00"
+    },
+    {
+      "n": 6,
+      "cve": "CVE-2026-107080",
+      "pkg": "openjpeg2",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "WONTFIX",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Based on past decisions for openjpeg2 in bookworm, multiple CVEs (CVE-2023-39329, CVE-2023-39328, CVE-2023-39327, CVE-2019-6988) were postponed as minor issues; this CVE likely falls into the same category and will be deferred.",
+      "reason_memory_path": "Bookworm ships openjpeg2 2.5.0 which falls within the affected range 2.4.0-2.5.4; similar vulnerabilities fixed in later point releases (e.g., CVE-2025-50952 fixed in 2.5.1) were deferred as minor issues.",
+      "predicted_at": "2026-10-27T04:44:37+00:00"
+    },
+    {
+      "n": 7,
+      "cve": "CVE-2026-109676",
+      "pkg": "freerdp2",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships freerdp2 2.11.7, which is prior to the affected version range 3.0.0-beta1 to 3.32.0; the vulnerability only affects FreeRDP 3.x series.",
+      "reason_memory_path": "The vulnerability affects FreeRDP from 3.0.0-beta1 before 3.32.0, but bookworm ships version 2.11.7 which predates the vulnerable code introduction.",
+      "predicted_at": "2026-10-27T04:45:04+00:00"
+    },
+    {
+      "n": 8,
+      "cve": "CVE-2026-47530",
+      "pkg": "[organization omitted]-graphics-drivers",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "NEXT",
+        "S": "WONTFIX",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "class_unreliable",
+      "reason_evidence_path": "The [organization omitted]-graphics-drivers package is in non-free and not on the limited-security-support list; past CVEs for bookworm are consistently marked <no-dsa> with reason 'Non-free not supported', indicating the LTS team does not provide security",
+      "reason_memory_path": "This is a kernel mode layer out-of-bounds write vulnerability leading to code execution and privilege escalation, matching the pattern of recent URGENT decisions for similar kernel-mode driver flaws (CVE-2025-23280, CVE-2025-33219). The LTS",
+      "predicted_at": "2026-10-27T04:46:03+00:00"
+    },
+    {
+      "n": 9,
+      "cve": "CVE-2026-33930",
+      "pkg": "trafficserver",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "URGENT",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "CVE-2026-33930 is a stack-based buffer overflow in redirect handling when an over-long Host header is copied without bounds; this memory corruption vulnerability affects the bookworm version 9.2.5 (within the vulnerable range 9.0.0\u20139.2.14) ",
+      "reason_memory_path": "The vulnerability is a stack-based buffer overflow in redirect handling when processing an over-long Host header, affecting the bookworm version (9.2.5). Similar input validation and Host header issues in trafficserver have consistently bee",
+      "predicted_at": "2026-10-27T04:46:29+00:00"
+    },
+    {
+      "n": 10,
+      "cve": "CVE-2019-16227",
+      "pkg": "py-lmdb",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The Debian security tracker already marks bookworm py-lmdb for CVE-2019-16227 as <no-dsa> (Minor issue), matching the team's pattern of deferring these py-lmdb issues rather than shipping a DLA.",
+      "reason_memory_path": "This CVE was previously triaged as NEXT (<no-dsa>, Minor issue) for bookworm, consistent with all other py-lmdb CVEs which require an attacker-supplied data.mdb file and are treated as low-impact issues suitable for batching.",
+      "predicted_at": "2026-10-27T04:46:39+00:00"
+    },
+    {
+      "n": 11,
+      "cve": "CVE-2026-47569",
+      "pkg": "[organization omitted]-graphics-drivers",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "NEXT",
+        "S": "WONTFIX",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "class_unreliable",
+      "reason_evidence_path": "The [organization omitted]-graphics-drivers package is in non-free, and Debian LTS does not provide security updates for non-free packages; multiple recent CVEs (2025) were explicitly marked 'Non-free not supported' with <no-dsa>.",
+      "reason_memory_path": "High-severity kernel-mode vulnerability (type confusion via handle recycle race) with potential for code execution and privilege escalation; recent LTS practice upgrades similar kernel-mode issues in [organization omitted]-graphics-drivers to URGENT.",
+      "predicted_at": "2026-10-27T04:47:23+00:00"
+    },
+    {
+      "n": 12,
+      "cve": "CVE-2026-114046",
+      "pkg": "freerdp2",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships FreeRDP 2.11.7, which predates the 3.0.0 release where the vulnerable smartcard emulation code was introduced. The CVE affects FreeRDP 3.0.0 through 3.31.0 only.",
+      "reason_memory_path": "The vulnerability affects FreeRDP 3.0.0 before 3.32.0, but bookworm ships version 2.11.7 which is prior to the 3.x series and therefore not affected.",
+      "predicted_at": "2026-10-27T04:47:42+00:00"
+    },
+    {
+      "n": 13,
+      "cve": "CVE-2018-1000546",
+      "pkg": "triplea",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The XXE vulnerability in TripleA's game data import requires user interaction and is considered a minor client-side issue; LTS typically batches such low-impact game vulnerabilities.",
+      "reason_memory_path": "The XXE vulnerability requires user interaction (importing a crafted game data file) and affects a non-critical game package; LTS policy defers such minor issues for batch updates.",
+      "predicted_at": "2026-10-27T04:48:30+00:00"
+    },
+    {
+      "n": 14,
+      "cve": "CVE-2005-0838",
+      "pkg": "icecast2",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "CVE-2005-0838 affects IceCast 2.20 from 2005; bookworm ships version 2.4.4-4 which is many releases newer and would have incorporated upstream fixes for this ancient vulnerability.",
+      "reason_memory_path": "CVE-2005-0838 affects IceCast 2.20 (2005), while bookworm ships version 2.4.4-4; the vulnerable XSL parser buffer overflows were fixed upstream long before the bookworm release.",
+      "predicted_at": "2026-10-27T04:48:52+00:00"
+    },
+    {
+      "n": 15,
+      "cve": "CVE-2026-109240",
+      "pkg": "freerdp2",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships FreeRDP 2.11.7, while CVE-2026-109240 affects FreeRDP 3.11.0 and later; the 2.x series does not contain the vulnerable urb_isoch_transfer code.",
+      "reason_memory_path": "The vulnerability affects FreeRDP 3.11.0 through 3.32.1 (3.x series), but bookworm ships version 2.11.7 (2.x series). All recent freerdp2 CVEs affecting 3.x versions have been marked NOTAFF for bookworm.",
+      "predicted_at": "2026-10-27T04:49:52+00:00"
+    },
+    {
+      "n": 16,
+      "cve": "CVE-2026-33227",
+      "pkg": "activemq",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NOTAFF",
+        "S": "NEXT",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "The vulnerability affects the web console (not shipped in Debian per #702670) and Stomp consumer classpath validation; requires authentication and chaining for exploit, similar to CVE-2025-27533 which was postponed as a minor issue.",
+      "reason_memory_path": "The described classpath traversal is tied to the ActiveMQ Web console, which Debian's activemq package does not ship or enable; this matches past bookworm NOTAFF calls for activemq where the web/admin console was absent from the .deb.",
+      "predicted_at": "2026-10-27T04:50:57+00:00"
+    },
+    {
+      "n": 17,
+      "cve": "CVE-2021-21897",
+      "pkg": "horizon-eda",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability is in the dxflib library (CVE-2021-21897), not in horizon-eda itself; horizon-eda uses the system dxflib, so the fix belongs to the dxflib package.",
+      "reason_memory_path": "The vulnerability resides in Ribbonsoft dxflib (CVE-2021-21897), not in horizon-eda itself. In Debian, horizon-eda dynamically links against the system dxflib library, so the vulnerable code is not part of the horizon-eda source package.",
+      "predicted_at": "2026-10-27T04:52:10+00:00"
+    },
+    {
+      "n": 18,
+      "cve": "CVE-2026-66859",
+      "pkg": "thrift",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "WONTFIX",
+        "S": "WONTFIX",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "class_unreliable",
+      "reason_evidence_path": "The vulnerability affects c_glib bindings; past decisions for similar binding vulnerabilities in thrift (e.g., NULL pointer dereference in PHP bindings, resource allocation issues in Erlang bindings) are consistently marked 'unimportant', i",
+      "reason_memory_path": "This NULL pointer dereference and uninitialized variable in c_glib bindings mirrors CVE-2026-58023 (out-of-bounds read in c_glib), which was postponed as a minor issue; the LTS team consistently defers such memory-safety bugs in thrift bind",
+      "predicted_at": "2026-10-27T04:52:48+00:00"
+    },
+    {
+      "n": 19,
+      "cve": "CVE-2026-95702",
+      "pkg": "golang-gvisor-gvisor",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NOTAFF",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability allows code execution in the host sentry process, but the sentry remains confined by seccomp and namespaces; past CVEs in this package (CVE-2025-2713, CVE-2023-7258) were deferred as minor issues, indicating the team treat",
+      "reason_memory_path": "This use-after-free allows code execution in the host sentry process but remains confined by seccomp/namespace boundaries; similar container-escape issues in this package (CVE-2023-7258, CVE-2025-2713) were deferred as minor issues under LT",
+      "predicted_at": "2026-10-27T04:53:45+00:00"
+    },
+    {
+      "n": 20,
+      "cve": "CVE-2018-20453",
+      "pkg": "catdoc",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "WONTFIX",
+        "S": "WONTFIX",
+        "OURS": "WONTFIX"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "CVE-2018-20453 is a heap-based buffer over-read causing DoS via crafted file in a document conversion tool; all similar catdoc CVEs (CVE-2023-46345, CVE-2023-41633, CVE-2023-31979, CVE-2019-7233, CVE-2019-7156) have been marked 'unimportant",
+      "reason_memory_path": "CVE-2018-20453 is a heap-based buffer over-read causing application crash (DoS) in a CLI tool, consistent with multiple prior catdoc CVEs marked WONTFIX as unimportant (crash in CLI tool, no security impact).",
+      "predicted_at": "2026-10-27T04:54:12+00:00"
+    },
+    {
+      "n": 21,
+      "cve": "CVE-2016-8678",
+      "pkg": "imagemagick",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "URGENT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "CVE-2016-8678 affects ImageMagick 7.0.3.0 (Q64 build) and the vendor states they do not support Q64; bookworm ships version 6.9.11.60 which does not contain the vulnerable code.",
+      "reason_memory_path": "The vulnerability affects ImageMagick 7.x (IsPixelMonochrome in pixel-accessor.h) and the vendor notes it is a Q64 issue they do not support; bookworm ships version 6.9.11 which is not affected.",
+      "predicted_at": "2026-10-27T04:55:14+00:00"
+    },
+    {
+      "n": 22,
+      "cve": "CVE-2025-48517",
+      "pkg": "amd64-microcode",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "This SEV firmware issue requires a malicious hypervisor and causes only partial loss of confidentiality; similar SEV/hypervisor vulnerabilities (CVE-2023-31356, CVE-2023-20592) were fixed in bookworm via batched microcode updates rather tha",
+      "reason_memory_path": "This SEV firmware access control issue requires a malicious hypervisor (privileged attacker), similar to previous SEV-related CVEs (CVE-2023-31356, CVE-2023-20592) that were deferred to batch microcode updates.",
+      "predicted_at": "2026-10-27T04:56:00+00:00"
+    },
+    {
+      "n": 23,
+      "cve": "CVE-2026-90994",
+      "pkg": "sssd",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "This is a local denial-of-service vulnerability requiring access to the PAM responder's UNIX socket; similar local issues in sssd have been treated as minor and deferred (postponed/no-dsa).",
+      "reason_memory_path": "This is a local denial-of-service vulnerability in the PAM responder requiring access to its UNIX socket, similar to CVE-2026-12610 which was deferred as a minor issue. The LTS team consistently batches such local DoS flaws in sssd.",
+      "predicted_at": "2026-10-27T04:56:20+00:00"
+    },
+    {
+      "n": 24,
+      "cve": "CVE-2026-109941",
+      "pkg": "freerdp2",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm's freerdp2 2.11.7 is within the affected range (2.3.0\u20133.32.0), but the LTS team has consistently treated similar DoS and memory-safety issues in this package as minor (<no-dsa>), batching them for later point releases.",
+      "reason_memory_path": "Bookworm's freerdp2 2.11.7 falls within the affected range (2.3.0 before 3.32.0), so the code is present and affected, but the issue is a client-side denial-of-service (infinite loop/hang via a malicious RD Gateway) rather than remote code ",
+      "predicted_at": "2026-10-27T04:57:24+00:00"
+    },
+    {
+      "n": 25,
+      "cve": "CVE-2026-5795",
+      "pkg": "jetty9",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "URGENT",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "CVE-2026-5795 describes a privilege escalation via ThreadLocal leakage in JASPIAuthenticator, a real security impact. Past bookworm decisions for jetty9 (CVE-2025-11143, CVE-2024-6763) show the team triages CVEs but defers only minor issues",
+      "reason_memory_path": "CVE-2026-5795 describes an authentication bypass and privilege escalation via uncleared ThreadLocals in JASPIAuthenticator, a high-impact access control flaw. The LTS team has consistently issued URGENT DLAs for jetty9 for similar high-seve",
+      "predicted_at": "2026-10-27T04:58:25+00:00"
+    },
+    {
+      "n": 26,
+      "cve": "CVE-2026-111378",
+      "pkg": "freerdp2",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships FreeRDP 2.11.7, while the vulnerability affects versions 3.0.0 through 3.31.0; the vulnerable code is not present in the bookworm version.",
+      "reason_memory_path": "The vulnerability affects FreeRDP versions 3.0.0 through 3.32.0, but bookworm ships version 2.11.7 which does not contain the vulnerable code.",
+      "predicted_at": "2026-10-27T04:58:55+00:00"
+    },
+    {
+      "n": 27,
+      "cve": "CVE-2026-55191",
+      "pkg": "freerdp2",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "This integer overflow in the H.264 decoder (avc444_ensure_buffer) is nearly identical to CVE-2026-33986 (yuv_ensure_buffer) and other heap overflows in freerdp2 that the LTS team has consistently triaged as <no-dsa> Minor issue for bookworm",
+      "reason_memory_path": "This heap buffer overflow in the H.264 decoder backend is similar to multiple recent freerdp2 CVEs (CVE-2026-26955, CVE-2026-44421, CVE-2026-29774) that were all classified as minor issues and deferred with <no-dsa>. The LTS team consistent",
+      "predicted_at": "2026-10-27T04:59:31+00:00"
+    },
+    {
+      "n": 28,
+      "cve": "CVE-2025-2309",
+      "pkg": "hdf5",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "WONTFIX",
+        "S": "NOTAFF",
+        "OURS": "WONTFIX"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "Bookworm ships hdf5 1.10.8, while CVE-2025-2309 is reported against HDF5 1.14.6; the vulnerable code in H5T__bit_copy was likely introduced after 1.10.8, and recent tracker entries show many CVEs with '(no bookworm line)' indicating bookwor",
+      "reason_memory_path": "HDF5 is on Debian's limited-security-support list; this heap-based buffer overflow in type conversion requires a crafted HDF5 file, consistent with numerous past CVEs in bookworm that were marked unimportant and WONTFIX.",
+      "predicted_at": "2026-10-27T05:00:18+00:00"
+    },
+    {
+      "n": 29,
+      "cve": "CVE-2025-70292",
+      "pkg": "u-boot",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "WONTFIX",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The most recent bookworm triage decisions for u-boot (CVE-2026-46728 <no-dsa>, CVE-2024-42040 <postponed>) deferred action as minor issues; without a description indicating high impact, this CVE follows the pattern of batching minor issues.",
+      "reason_memory_path": "CVE-2025-70292 is a 2025 CVE likely affecting U-Boot 2023.01 (bookworm's version), similar to the 2024 squashfs/ext4fs integer overflow CVEs (CVE-2024-57254, CVE-2024-57255, CVE-2024-57256, CVE-2024-57257, CVE-2024-57258) which were all mar",
+      "predicted_at": "2026-10-27T05:02:26+00:00"
+    },
+    {
+      "n": 30,
+      "cve": "CVE-2026-111817",
+      "pkg": "trafficserver",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "URGENT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "This DoS vulnerability only triggers when the non-default 'drop_chunked_trailers' option is enabled (off by default in 9.2.x), matching the pattern of CVE-2026-59173 which was postponed as a minor DoS issue.",
+      "reason_memory_path": "This is a DoS issue where the vulnerable feature (drop_chunked_trailers) is off by default in 9.2.x; bookworm's 9.2.5 is only affected if explicitly enabled. The previous DoS issue for trafficserver in LTS (CVE-2026-59173) was marked NEXT a",
+      "predicted_at": "2026-10-27T05:03:03+00:00"
+    },
+    {
+      "n": 31,
+      "cve": "CVE-2026-67290",
+      "pkg": "freerdp2",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability is a heap out-of-bounds read causing a crash (DoS) in the TSMF FFmpeg decoder, similar to numerous prior CVEs in freerdp2 that the LTS team classified as minor issues and deferred with <no-dsa> for bookworm.",
+      "reason_memory_path": "This heap out-of-bounds read in the TSMF FFmpeg decoder is a client-side denial-of-service issue similar to previous freerdp2 CVEs in bookworm that were deferred as minor issues (no-dsa).",
+      "predicted_at": "2026-10-27T05:03:40+00:00"
+    },
+    {
+      "n": 32,
+      "cve": "CVE-2026-53917",
+      "pkg": "activemq",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NOTAFF",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "This is an authenticated-user DoS via OpenWire size validation, nearly identical to CVE-2025-27533 which was postponed as a minor issue for bookworm.",
+      "reason_memory_path": "This is a DoS vulnerability requiring authentication in OpenWire unmarshalling, nearly identical to CVE-2025-27533 which was deferred as a minor issue (NEXT) by the LTS team.",
+      "predicted_at": "2026-10-27T05:04:14+00:00"
+    },
+    {
+      "n": 33,
+      "cve": "CVE-2026-47527",
+      "pkg": "[organization omitted]-graphics-drivers",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "NEXT",
+        "S": "WONTFIX",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "class_unreliable",
+      "reason_evidence_path": "[organization omitted]-graphics-drivers resides in non-free, which is explicitly not supported by Debian LTS; all recent CVEs for bookworm are marked <no-dsa> with reason \"Non-free not supported\", indicating no security updates will be issued.",
+      "reason_memory_path": "This firmware out-of-bounds read vulnerability allows code execution and privilege escalation, matching the severity of recent [organization omitted] driver flaws (CVE-2025-23345, CVE-2025-23280, CVE-2025-33219) that the LTS team upgraded to URGENT for boo",
+      "predicted_at": "2026-10-27T05:05:47+00:00"
+    },
+    {
+      "n": 34,
+      "cve": "CVE-2026-47244",
+      "pkg": "netty",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "NOTAFF",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability allows unbounded concurrent HTTP/2 streams causing DoS, similar to CVE-2023-44487 which was fixed in bookworm via DLA (1:4.1.48-7+deb12u2). Netty is a core library and the LTS team has previously issued security updates fo",
+      "reason_memory_path": "Bookworm's netty 4.1.48 is affected by this HTTP/2 concurrent streams DoS vulnerability (fixed upstream in 4.1.135.Final), which enables resource exhaustion and Rapid-Reset amplification; similar HTTP/2 DoS issues in netty (CVE-2025-55163) ",
+      "predicted_at": "2026-10-27T05:06:49+00:00"
+    },
+    {
+      "n": 35,
+      "cve": "CVE-2026-112911",
+      "pkg": "python-filelock",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships python-filelock 3.9.0, which is prior to the affected version range (3.30.0+ for StrictSoftFileLock, 4.0.0+ for SoftReadWriteLock). The vulnerable code was introduced after the bookworm version.",
+      "reason_memory_path": "Bookworm ships python-filelock 3.9.0, but the vulnerability affects versions from 3.30.0 onwards (StrictSoftFileLock) and 4.0.0 onwards (SoftReadWriteLock). The vulnerable code was introduced after the bookworm version.",
+      "predicted_at": "2026-10-27T05:07:13+00:00"
+    },
+    {
+      "n": 36,
+      "cve": "CVE-2026-47529",
+      "pkg": "[organization omitted]-graphics-drivers",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "memory_disagrees_with_itself",
+      "reason_evidence_path": "[organization omitted]-graphics-drivers resides in non-free, which the Debian LTS team does not support; recent CVEs for bookworm are consistently marked <no-dsa> with reason \"Non-free not supported\".",
+      "reason_memory_path": "Kernel mode out-of-bounds write vulnerability with high impact (code execution, privilege escalation); the LTS team has recently reclassified similar kernel-mode driver flaws as URGENT.",
+      "predicted_at": "2026-10-27T05:07:55+00:00"
+    },
+    {
+      "n": 37,
+      "cve": "CVE-2026-113722",
+      "pkg": "python-virtualenv",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability requires an attacker to control the virtualenv destination path (with spaces or long shebang) and the user to later run a generated launcher; similar command injection and TOCTOU issues in python-virtualenv were previously",
+      "reason_memory_path": "This command injection in generated launchers requires an attacker to control the environment destination path (spaces or long shebang), a constrained condition similar to past virtualenv issues consistently deferred as minor (no-dsa/postpo",
+      "predicted_at": "2026-10-27T05:08:27+00:00"
+    },
+    {
+      "n": 38,
+      "cve": "CVE-2026-105923",
+      "pkg": "qtbase-opensource-src",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability is a denial-of-service (null-pointer dereference via integer overflow) in SVG handling for VectorImage QML Type; similar DoS issues in Qt (XML parsing, out-of-bounds reads, XML injection, uncontrolled recursion) have been ",
+      "reason_memory_path": "This is a DoS/crash issue (null-pointer dereference via malicious SVG in VectorImage QML Type) similar to multiple past CVEs in qtbase-opensource-src that were all deferred as minor issues (NEXT). The LTS team consistently batches such pars",
+      "predicted_at": "2026-10-27T05:08:56+00:00"
+    },
+    {
+      "n": 39,
+      "cve": "CVE-2026-85090",
+      "pkg": "freerdp2",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "This heap out-of-bounds read in the AVC444 chroma reconstruction affects the 2.11.x series in bookworm and requires a malicious RDP server; the LTS team has consistently classified similar memory-safety issues in freerdp2 as minor (<no-dsa>",
+      "reason_memory_path": "This heap out-of-bounds read in the 2.x branch is similar to previous client-side RFX/AVC444 vulnerabilities that the LTS team has deferred as minor issues (<no-dsa>).",
+      "predicted_at": "2026-10-27T05:09:29+00:00"
+    },
+    {
+      "n": 40,
+      "cve": "CVE-2018-5709",
+      "pkg": "krb5",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "CVE-2018-5709 affects MIT Kerberos 5 through version 1.16, but bookworm ships version 1.20.1 which is newer and includes the upstream fix.",
+      "reason_memory_path": "CVE-2018-5709 affects MIT Kerberos 5 through version 1.16, but bookworm ships krb5 1.20.1 which is newer and includes the upstream fix; the vulnerable code is not present in this version.",
+      "predicted_at": "2026-10-27T05:10:03+00:00"
+    },
+    {
+      "n": 41,
+      "cve": "CVE-2026-113789",
+      "pkg": "pypdf2",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "The vulnerability affects pypdf (version 6.x) form field retrieval, but bookworm ships pypdf2 2.12.1 which is a different codebase; previous CVEs for features introduced in pypdf 3.x+ were consistently marked not-affected for pypdf2 in book",
+      "reason_memory_path": "This is a DoS issue (large memory/long runtime when retrieving form fields) fixed in upstream 6.21.0, but bookworm ships 2.12.1; backporting would require a major version upgrade. All prior pypdf2 CVEs in bookworm have been deferred as mino",
+      "predicted_at": "2026-10-27T05:10:47+00:00"
+    },
+    {
+      "n": 42,
+      "cve": "CVE-2009-3560",
+      "pkg": "cadaver",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "CVE-2009-3560 concerns Expat 2.0.1's big2_toUtf8 as used in Perl's XML::Twig module; cadaver 0.24+dfsg-1 in bookworm is a C WebDAV client that does not ship that Expat version or the XML::Twig feature, so the vulnerable code is not present ",
+      "reason_memory_path": "CVE-2009-3560 is a 2009 vulnerability in Expat 2.0.1 triggered via Perl's XML::Twig; bookworm ships a modern libexpat (2.5.x) and cadaver is a C WebDAV client not using the vulnerable code path.",
+      "predicted_at": "2026-10-27T05:12:42+00:00"
+    },
+    {
+      "n": 43,
+      "cve": "CVE-2026-107280",
+      "pkg": "async-http-client",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NOTAFF",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The LTS team has consistently deferred similar async-http-client issues (cookie handling, redirect following, proxy auth) as minor issues requiring specific conditions (hostile server, MITM, authenticated proxy). This public-suffix cookie i",
+      "reason_memory_path": "Bookworm's async-http-client 2.12.3 is vulnerable (fixed in 2.16.1), but the public-suffix cookie injection issue requires an attacker to control a subdomain of a public suffix (e.g., co.uk) and is considered a minor client-side issue; past",
+      "predicted_at": "2026-10-27T05:13:23+00:00"
+    },
+    {
+      "n": 44,
+      "cve": "CVE-2022-35482",
+      "pkg": "texlive-bin",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "WONTFIX",
+        "S": "WONTFIX",
+        "OURS": "WONTFIX"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "This CVE describes a segmentation fault in the OTFCC font tool (otfccdump), which is considered unimportant as it affects only a font conversion utility and crosses no security boundary; the Debian security tracker shows numerous similar OT",
+      "reason_memory_path": "This CVE is another OTFCC segmentation fault in the otfccdump CLI tool, identical in nature to previous CVEs (CVE-2022-35065, CVE-2022-35029, etc.) that were marked WONTFIX as unimportant \u2014 crash in a standalone utility with no security imp",
+      "predicted_at": "2026-10-27T05:13:58+00:00"
+    },
+    {
+      "n": 45,
+      "cve": "CVE-2026-29009",
+      "pkg": "u-boot",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "WONTFIX",
+        "S": "NEXT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "This NFS buffer overflow in the bootloader's network client is analogous to CVE-2024-42040 (BOOTP buffer overflow), which the LTS team marked as <postponed> (Minor issue, revisit when fixed upstream) for bookworm; such network-facing bootlo",
+      "reason_memory_path": "This is a buffer overflow in network-facing NFS client code (net/nfs-common.c) that allows a malicious NFS server to corrupt memory and potentially control the client state machine; the LTS team recently upgraded similar network buffer over",
+      "predicted_at": "2026-10-27T05:14:38+00:00"
+    },
+    {
+      "n": 46,
+      "cve": "CVE-2026-6068",
+      "pkg": "nasm",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "WONTFIX",
+        "S": "NEXT",
+        "OURS": "WONTFIX"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "NASM vulnerabilities in bookworm are consistently treated as minor issues and deferred (postponed or no-dsa), as they require user interaction to assemble malicious files and do not cross security boundaries in typical use.",
+      "reason_memory_path": "NASM is a command-line assembler (build tool) with no security boundary; this heap use-after-free in response file processing requires a crafted local input file and leads at most to a crash or local code execution during assembly, which is",
+      "predicted_at": "2026-10-27T05:15:17+00:00"
+    },
+    {
+      "n": 47,
+      "cve": "CVE-2026-104036",
+      "pkg": "sssd",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability is a local out-of-bounds write in the NFS idmap plugin causing DoS and possible memory corruption; past decisions for similar local memory corruption issues in sssd (e.g., CVE-2026-12610, CVE-2026-14476) were deferred as m",
+      "reason_memory_path": "This out-of-bounds write in the NFS idmap plugin is a local DoS/memory corruption issue similar to previous sssd flaws (use-after-free crash, path traversal) that were deferred as minor issues.",
+      "predicted_at": "2026-10-27T05:16:18+00:00"
+    },
+    {
+      "n": 48,
+      "cve": "CVE-2023-45929",
+      "pkg": "slang2",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "Bookworm ships slang2 version 2.3.3, while CVE-2023-45929 affects S-Lang 2.3.2; the vulnerable code is not present in the shipped package version.",
+      "reason_memory_path": "The segmentation fault in fixup_tgetstr() appears to be a denial-of-service issue with unknown exploitability; LTS policy batches such minor issues for later point releases.",
+      "predicted_at": "2026-10-27T05:17:17+00:00"
+    },
+    {
+      "n": 49,
+      "cve": "CVE-2026-109942",
+      "pkg": "freerdp2",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "This NULL pointer dereference DoS in the RD Gateway client code affects bookworm's freerdp2 2.11.7, but similar vulnerabilities in this package have consistently been treated as minor issues and deferred (<no-dsa>) by the LTS team.",
+      "reason_memory_path": "This is a client-side NULL pointer dereference DoS vulnerability triggered by a malicious RD Gateway, similar to multiple previous CVEs in freerdp2 (CVE-2026-23948, CVE-2026-25959, CVE-2026-25952, CVE-2026-24684) that were marked NEXT as mi",
+      "predicted_at": "2026-10-27T05:17:49+00:00"
+    },
+    {
+      "n": 50,
+      "cve": "CVE-2017-5666",
+      "pkg": "mp3splt",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "WONTFIX",
+        "S": "WONTFIX",
+        "OURS": "WONTFIX"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "CVE-2017-5666 is a denial-of-service via crafted media file (invalid free/crash in free_options); similar CVEs in mp3splt (CVE-2017-5851, CVE-2017-5665) were marked 'unimportant' in sid, indicating the team treats these as non-security-boun",
+      "reason_memory_path": "This CVE is a denial-of-service crash in the mp3splt CLI tool when processing a crafted file, identical in nature to CVE-2017-5851 and CVE-2017-5665 which were both marked WONTFIX as 'unimportant' \u2014 crashes in a command-line audio splitter ",
+      "predicted_at": "2026-10-27T05:18:05+00:00"
+    },
+    {
+      "n": 51,
+      "cve": "CVE-2026-94636",
+      "pkg": "thrift",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "WONTFIX",
+        "S": "WONTFIX",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "class_unreliable",
+      "reason_evidence_path": "All recent thrift CVEs in the tracker are marked 'unimportant' for sid with no bookworm action, indicating the LTS team treats these binding-specific issues as not crossing security boundaries in Debian's context.",
+      "reason_memory_path": "This CVE affects Python bindings with data amplification (DoS) similar to CVE-2026-41608 which was deferred as a minor issue; thrift's Python binding issues are consistently triaged as NEXT for bookworm.",
+      "predicted_at": "2026-10-27T05:18:51+00:00"
+    },
+    {
+      "n": 52,
+      "cve": "CVE-2026-88048",
+      "pkg": "tesseract",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm's tesseract 5.3.0-2 is affected (vulnerable in 5.5.3 and earlier), but previous similar CVEs in this package were classified as minor issues and postponed; with no upstream fix yet available, this should be deferred for batch handl",
+      "reason_memory_path": "This heap OOB issue in FullyConnected::DeSerialize requires a crafted .traineddata file to be loaded by the user, similar to the two prior tesseract CVEs that were postponed as minor issues; no upstream fix is available yet.",
+      "predicted_at": "2026-10-27T05:19:25+00:00"
+    },
+    {
+      "n": 53,
+      "cve": "CVE-2026-58155",
+      "pkg": "trafficserver",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "URGENT",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm's trafficserver 9.2.5 is within the affected range (9.0.0\u20139.2.14) and the vulnerability enables request smuggling and policy bypass, which are high-impact issues. The package is not on limited-security-support, and a prior input va",
+      "reason_memory_path": "Bookworm's trafficserver 9.2.5 is within the affected range (9.0.0\u20139.2.14) and the vulnerability enables request smuggling and policy bypass, which are high-impact security issues. Previous similar CVEs in this package (request smuggling, i",
+      "predicted_at": "2026-10-27T05:19:50+00:00"
+    },
+    {
+      "n": 54,
+      "cve": "CVE-2009-3720",
+      "pkg": "matanza",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "CVE-2009-3720 affects Expat 2.0.1 (released 2009), but bookworm ships a much newer expat (2.4.x series) where this buffer over-read was fixed long ago; matanza uses system expat and is not independently vulnerable.",
+      "reason_memory_path": "CVE-2009-3720 is a vulnerability in libexpat (Expat 2.0.1); matanza in bookworm uses the system libexpat which is not vulnerable (fixed in later versions), and the vulnerable code is not present in the matanza package itself.",
+      "predicted_at": "2026-10-27T05:21:19+00:00"
+    },
+    {
+      "n": 55,
+      "cve": "CVE-2026-115722",
+      "pkg": "python-rply",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "NEXT",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability in RPly (CVE-2026-115722) allows memory corruption via crafted PLY files, which poses a significant risk for applications parsing untrusted input; the bookworm version 0.7.7-3 is likely affected as it corresponds to RPly \u2264",
+      "reason_memory_path": "The vulnerability in RPly 0.7.7 allows memory corruption when parsing crafted PLY files, which is a real security impact for a library handling untrusted input; LTS should issue a DLA.",
+      "predicted_at": "2026-10-27T05:22:32+00:00"
+    },
+    {
+      "n": 56,
+      "cve": "CVE-2026-56816",
+      "pkg": "netty",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NOTAFF",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships netty 4.1.48 (4.1.x series), while the vulnerability affects the HTTP/3 codec introduced in the 4.2.x series (fixed in 4.2.16.Final). The tracker shows multiple recent HTTP/3 CVEs marked not-affected for the same reason.",
+      "reason_memory_path": "The vulnerability affects Netty's Http3FrameCodec introduced in the 4.2.x series (4.2.0.Alpha3 through 4.2.15.Final), but bookworm ships version 4.1.48 which lacks HTTP/3 support entirely.",
+      "predicted_at": "2026-10-27T05:23:08+00:00"
+    },
+    {
+      "n": 57,
+      "cve": "CVE-2005-0837",
+      "pkg": "icecast2",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "CVE-2005-0837 affects IceCast 2.20 (2005), while bookworm ships version 2.4.4 which includes upstream fixes for this old vulnerability.",
+      "reason_memory_path": "Bookworm ships icecast2 2.4.4, which is newer than the affected version 2.20; the vulnerability was fixed upstream long before this release.",
+      "predicted_at": "2026-10-27T05:23:46+00:00"
+    },
+    {
+      "n": 58,
+      "cve": "CVE-2026-47513",
+      "pkg": "[organization omitted]-graphics-drivers",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "NEXT",
+        "S": "WONTFIX",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "class_unreliable",
+      "reason_evidence_path": "[organization omitted]-graphics-drivers is in non-free and the LTS team does not support non-free packages; all recent CVEs for bookworm are marked <no-dsa> with 'Non-free not supported'.",
+      "reason_memory_path": "This is a kernel mode layer vulnerability (out-of-bounds read in kernel heap) with high impact including code execution and privilege escalation. The LTS team has consistently treated similar kernel-mode driver vulnerabilities as URGENT sin",
+      "predicted_at": "2026-10-27T05:24:24+00:00"
+    },
+    {
+      "n": 59,
+      "cve": "CVE-2026-41044",
+      "pkg": "activemq",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NOTAFF",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability requires the admin web console which is not enabled in the Debian package, as confirmed by multiple past CVEs marked <not-affected> for this reason (CVE-2016-0734, CVE-2014-8110, CVE-2013-3060).",
+      "reason_memory_path": "The vulnerability requires the admin web console which is not provided or enabled in the Debian activemq package, consistent with multiple prior NOTAFF decisions for web console issues.",
+      "predicted_at": "2026-10-27T05:25:23+00:00"
+    },
+    {
+      "n": 60,
+      "cve": "CVE-2026-113713",
+      "pkg": "python-virtualenv",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships python-virtualenv 20.17.1+ds-1, while the vulnerability affects versions 21.14.8 through 21.14.10; the vulnerable code was introduced after the bookworm version.",
+      "reason_memory_path": "The vulnerability affects virtualenv versions 21.14.8 through 21.14.10, but bookworm ships version 20.17.1, which predates the vulnerable code introduction.",
+      "predicted_at": "2026-10-27T05:25:53+00:00"
+    },
+    {
+      "n": 61,
+      "cve": "CVE-2021-31348",
+      "pkg": "mapcache",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "CVE-2021-31348 is an out-of-bounds read in ezXML 0.8.6 (2021); mapcache 1.14.0-1 in bookworm may bundle or depend on ezXML, but the impact appears limited to DoS/information disclosure via crafted XML, and with no prior tracker history or c",
+      "reason_memory_path": "The vulnerability is an out-of-bounds read in ezXML 0.8.6 (bundled or used by mapcache) triggered by crafted XML input; impact appears limited to denial of service or local information disclosure, and LTS policy defers such minor issues for",
+      "predicted_at": "2026-10-27T05:26:54+00:00"
+    },
+    {
+      "n": 62,
+      "cve": "CVE-2012-2663",
+      "pkg": "iptables",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "WONTFIX",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships iptables 1.8.9-2, while CVE-2012-2663 affects versions through 1.4.21 only. The vulnerable code is not present in the bookworm version.",
+      "reason_memory_path": "Bookworm ships iptables 1.8.9, which is newer than the affected versions (through 1.4.21) and includes the fix from CVE-2012-6638 that mitigates this issue.",
+      "predicted_at": "2026-10-27T05:27:26+00:00"
+    },
+    {
+      "n": 63,
+      "cve": "CVE-2026-109678",
+      "pkg": "freerdp2",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability affects FreeRDP 3.0.0-beta1 through 3.32.0, but bookworm ships version 2.11.7 which predates the vulnerable code; the affected smartcard emulation assertion is not present in this version.",
+      "reason_memory_path": "The vulnerability affects FreeRDP 3.0.0-beta1 through 3.32.0, but bookworm ships version 2.11.7 which is not in the affected version range. This matches the pattern of previous NOTAFF decisions for 3.x-only vulnerabilities.",
+      "predicted_at": "2026-10-27T05:27:56+00:00"
+    },
+    {
+      "n": 64,
+      "cve": "CVE-2026-115778",
+      "pkg": "twisted",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "URGENT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Previous twisted CVEs in bookworm (CVE-2026-106454, CVE-2026-42304) were marked as minor issues and deferred (<postponed>/<no-dsa>), indicating the LTS team treats such DoS vulnerabilities in twisted as batchable minor issues.",
+      "reason_memory_path": "The Debian LTS team's recent decisions for twisted (since July 2026) consistently mark affected CVEs as NEXT, following a pattern of deferral for this package; this CVE's impact aligns with that batching approach.",
+      "predicted_at": "2026-10-27T05:28:55+00:00"
+    },
+    {
+      "n": 65,
+      "cve": "CVE-2026-111749",
+      "pkg": "python-aiohttp",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "This cookie scope issue is a minor vulnerability with limited impact; python-aiohttp in bookworm has historically received <no-dsa> (Minor issue) designations for similar flaws.",
+      "reason_memory_path": "The vulnerability is a minor cookie handling issue with limited impact (host-only scope removal by subdomain), similar to previous python-aiohttp CVEs in bookworm that were deferred as minor issues.",
+      "predicted_at": "2026-10-27T05:30:28+00:00"
+    },
+    {
+      "n": 66,
+      "cve": "CVE-2015-3875",
+      "pkg": "android-platform-frameworks-native",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "CVE-2015-3875 affects Android libutils before 5.1.1 LMY48T, while bookworm ships android-platform-frameworks-native 1:10.0.0+r36-1 (Android 10.0.0), so the vulnerable code predates and is not present in the shipped version.",
+      "reason_memory_path": "CVE-2015-3875 affects Android versions before 5.1.1; bookworm ships android-platform-frameworks-native 10.0.0+r36-1 (Android 10), which includes the upstream fix.",
+      "predicted_at": "2026-10-27T05:31:34+00:00"
+    },
+    {
+      "n": 67,
+      "cve": "CVE-2026-93578",
+      "pkg": "netty",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "NOTAFF",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability allows bypassing certificate revocation checks, an authorization bypass crossing a security boundary. Netty in bookworm (4.1.48) likely includes the vulnerable OCSP client code, and the LTS team previously issued a DLA for",
+      "reason_memory_path": "This is a high-severity authentication bypass in Netty's OCSP client that allows forged revocation responses; the 4.1.x branch has received multiple urgent security updates (e.g., CVE-2025-55163, CVE-2025-58056, CVE-2025-58057) and this fla",
+      "predicted_at": "2026-10-27T05:32:29+00:00"
+    },
+    {
+      "n": 68,
+      "cve": "CVE-2026-96286",
+      "pkg": "thrift",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "WONTFIX",
+        "S": "WONTFIX",
+        "OURS": "WONTFIX"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Uncaught exception in Perl bindings is considered unimportant per Debian's consistent handling of similar Thrift binding issues; all recent CVEs for thrift are marked <unimportant> in sid with no bookworm action.",
+      "reason_memory_path": "Uncaught exception in Perl bindings only; similar binding-specific issues in thrift have been consistently marked WONTFIX as unimportant (no security boundary crossed, limited impact).",
+      "predicted_at": "2026-10-27T05:33:10+00:00"
+    },
+    {
+      "n": 69,
+      "cve": "CVE-2023-30571",
+      "pkg": "libarchive",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "URGENT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "Bookworm ships libarchive 3.6.2 which is explicitly listed as vulnerable (through 3.6.2); the race condition in umask() leading to world-writable directories is a real security boundary issue (not DoS-only), and the LTS team has consistentl",
+      "reason_memory_path": "Race condition in umask handling leading to world-writable directories is a real but limited-impact issue; libarchive CVEs are typically deferred as minor issues for batch updates.",
+      "predicted_at": "2026-10-27T05:34:01+00:00"
+    },
+    {
+      "n": 70,
+      "cve": "CVE-2026-91104",
+      "pkg": "hplip",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "NOTAFF",
+        "S": "NEXT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "The bookworm version (3.22.10) is older than the upstream-fixed version (3.26.4) for similar recent CVEs, so it is likely affected, but the LTS team has not yet issued bookworm-specific decisions for those CVEs, indicating a batching approa",
+      "reason_memory_path": "CVE-2026-91104 describes multiple HPLIP vulnerabilities with potential for remote code execution and privilege escalation, which is real security impact consistent with hplip's past URGENT decisions for similar flaws. hplip is not on the li",
+      "predicted_at": "2026-10-27T05:35:53+00:00"
+    },
+    {
+      "n": 71,
+      "cve": "CVE-2026-33349",
+      "pkg": "node-webfont",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NOTAFF",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Previous fast-xml-parser CVEs (e.g., CVE-2026-73569) were marked not-affected for bookworm because the vulnerable code is not present in the node-webfont version shipped.",
+      "reason_memory_path": "The node-webfont package in bookworm does not contain the vulnerable fast-xml-parser code; previous CVEs in fast-xml-parser were also marked NOTAFF for this package.",
+      "predicted_at": "2026-10-27T05:36:33+00:00"
+    },
+    {
+      "n": 72,
+      "cve": "CVE-2026-58158",
+      "pkg": "trafficserver",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "URGENT",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships trafficserver 9.2.5 which is within the affected range (9.0.0 through 9.2.14) for this stack overflow vulnerability in PROXY protocol handling; the LTS team previously issued a DLA for a similar vulnerability (CVE-2023-39456)",
+      "reason_memory_path": "Bookworm ships trafficserver 9.2.5 which is within the affected range (9.0.0\u20139.2.14). The vulnerability is a stack overflow in PROXY protocol handling, a high-severity memory corruption issue. The LTS team has historically treated trafficse",
+      "predicted_at": "2026-10-27T05:36:54+00:00"
+    },
+    {
+      "n": 73,
+      "cve": "CVE-2026-56821",
+      "pkg": "netty",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "NOTAFF",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm's netty 1:4.1.48-7+deb12u2 is well below the fixed 4.1.136.Final, so the OcspServerCertificateValidator expired-OCSP replay vulnerability that allows certificate revocation bypass is present and crosses a real TLS security boundary",
+      "reason_memory_path": "Bookworm's netty 4.1.48 is affected by the OCSP validation bypass (fixed in 4.1.136.Final), and the LTS team has consistently issued DLAs for netty security issues with real impact.",
+      "predicted_at": "2026-10-27T05:38:02+00:00"
+    },
+    {
+      "n": 74,
+      "cve": "CVE-2019-6247",
+      "pkg": "svgpp",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "Bookworm ships svgpp 1.3.0+dfsg1-6, which is newer than the explicitly affected version 1.2.3 mentioned in CVE-2019-6247; the 2019 heap-based buffer overflow in AGG rendering was likely fixed upstream before the 1.3.0 release.",
+      "reason_memory_path": "Bookworm ships svgpp 1.3.0+dfsg1-6, which is newer than the affected version 1.2.3 mentioned in CVE-2019-6247; the vulnerable AGG code was likely updated or the issue fixed in the newer upstream release.",
+      "predicted_at": "2026-10-27T05:38:56+00:00"
+    },
+    {
+      "n": 75,
+      "cve": "CVE-2026-47551",
+      "pkg": "[organization omitted]-graphics-drivers",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "memory_disagrees_with_itself",
+      "reason_evidence_path": "Recent similar kernel-mode vulnerabilities in [organization omitted]-graphics-drivers (CVE-2025-23280, CVE-2025-23282, CVE-2025-23300, CVE-2025-23330, CVE-2025-23332, CVE-2025-23345, CVE-2025-33219) are marked <no-dsa> for bookworm with explicit reason 'No",
+      "reason_memory_path": "This is a kernel mode layer use-after-free vulnerability with potential for code execution and privilege escalation, nearly identical to CVE-2025-23280 which was marked URGENT. The LTS team has recently upgraded similar kernel vulnerabiliti",
+      "predicted_at": "2026-10-27T05:39:55+00:00"
+    },
+    {
+      "n": 76,
+      "cve": "CVE-2026-110264",
+      "pkg": "ruby3.1",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "CVE-2026-110264 is a vulnerability in [organization omitted] CE/EE, not in the ruby3.1 package itself. The ruby3.1 package provides the Ruby interpreter and standard library; [organization omitted] is a separate application that uses Ruby. This CVE does not affect the rub",
+      "reason_memory_path": "CVE-2026-110264 describes a vulnerability in [organization omitted] CE/EE (integer overflow in regex compilation), not in Ruby itself. The ruby3.1 package is not affected as this is an application-level issue in [organization omitted].",
+      "predicted_at": "2026-10-27T05:40:26+00:00"
+    },
+    {
+      "n": 77,
+      "cve": "CVE-2026-85977",
+      "pkg": "libtirpc",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NOTAFF",
+        "S": "NEXT",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "Client-side DoS via unbounded decoding in pmap_getmaps(); likely affects bookworm's libtirpc 1.3.3 but requires user interaction with attacker-controlled host, so LTS would treat as minor issue and defer to batch update.",
+      "reason_memory_path": "Historical decisions for libtirpc in bookworm (CVE-2013-1950, CVE-2018-14621) were both marked NOTAFF, reflecting the team's pattern of classifying similar DoS-class issues as not affecting the shipped version; this CVE follows that precede",
+      "predicted_at": "2026-10-27T05:42:34+00:00"
+    },
+    {
+      "n": 78,
+      "cve": "CVE-2026-109242",
+      "pkg": "freerdp2",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability affects freerdp2 2.11.7 in bookworm (before 3.0.0), but the LTS team has consistently treated similar heap memory rendering and buffer overflow issues in freerdp2 as minor issues, deferring fixes with <no-dsa>.",
+      "reason_memory_path": "Bookworm's freerdp2 2.11.7 is affected (version < 3.0.0), but the vulnerability causes uninitialized heap memory disclosure and client abort (DoS) via a malicious RDP server, similar to prior CVEs in this package that were triaged as minor ",
+      "predicted_at": "2026-10-27T05:43:08+00:00"
+    },
+    {
+      "n": 79,
+      "cve": "CVE-2026-29008",
+      "pkg": "u-boot",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "WONTFIX",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Network-adjacent TCP vulnerability in net/tcp.c causes bootloader crash (preventing device boot) and potential memory corruption; bookworm's u-boot 2023.01 is affected (vulnerable through 2026.04-rc3), package is not on limited-security-sup",
+      "reason_memory_path": "This is a network-adjacent integer underflow in net/tcp.c affecting the bookworm version (2023.01), allowing a local attacker to crash the bootloader and potentially corrupt memory. The LTS team has recently upgraded similar network vulnera",
+      "predicted_at": "2026-10-27T05:43:43+00:00"
+    },
+    {
+      "n": 80,
+      "cve": "CVE-2026-116124",
+      "pkg": "libgsf",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "URGENT",
+        "S": "NEXT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "Past similar integer overflow vulnerabilities in libgsf's Compound Document Binary File parser (CVE-2024-42415, CVE-2024-36474) were fixed in sid but not backported to bookworm, indicating the LTS team treats these as minor issues for batch",
+      "reason_memory_path": "The vulnerability affects libgsf up to version 1.14, which includes bookworm's 1.14.50; the LTS team has consistently treated similar integer overflow vulnerabilities in the Compound Document Binary File parser as URGENT (CVE-2024-42415, CV",
+      "predicted_at": "2026-10-27T05:44:11+00:00"
+    },
+    {
+      "n": 81,
+      "cve": "CVE-2026-91841",
+      "pkg": "network-manager-vpnc",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "NEXT",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Local privilege escalation to root via newline injection in CA-File path is a high-severity vulnerability requiring immediate fix.",
+      "reason_memory_path": "This is a local privilege escalation vulnerability allowing an unprivileged user to execute arbitrary commands as root via newline injection in the CA-File path, which crosses a security boundary and has high impact.",
+      "predicted_at": "2026-10-27T05:44:31+00:00"
+    },
+    {
+      "n": 82,
+      "cve": "CVE-2026-33870",
+      "pkg": "netty",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "NOTAFF",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships netty 4.1.48, which is vulnerable to request smuggling via HTTP/1.1 chunked encoding parsing (fixed upstream in 4.1.132.Final). The LTS team previously issued a DLA for a similar HTTP parsing flaw in bookworm (CVE-2024-29025)",
+      "reason_memory_path": "Bookworm ships netty 4.1.48, which is well before the fixed version 4.1.132.Final; this HTTP/1.1 chunked encoding parsing flaw enables request smuggling, a real-impact vulnerability. The LTS team has consistently treated similar netty proto",
+      "predicted_at": "2026-10-27T05:45:24+00:00"
+    },
+    {
+      "n": 83,
+      "cve": "CVE-2026-27820",
+      "pkg": "ruby3.1",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships ruby3.1 3.1.2-7+deb12u1, which is based on upstream 3.1.2; the CVE description states the buffer overflow in Zlib::GzipReader was fixed in version 3.1.2, so the vulnerable code is not present in bookworm.",
+      "reason_memory_path": "Bookworm ships ruby3.1 version 3.1.2-7+deb12u1 (upstream 3.1.2), and the CVE description explicitly states the vulnerability is fixed in version 3.1.2. The vulnerable versions listed are 3.0.0 and below, 3.1.0, 3.1.1, 3.2.0, and 3.2.1.",
+      "predicted_at": "2026-10-27T05:46:10+00:00"
+    },
+    {
+      "n": 84,
+      "cve": "CVE-2026-88830",
+      "pkg": "busybox",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Following the pattern of previous BusyBox vulnerabilities in bookworm (e.g., heap buffer overflows in DHCPv6, tar directory traversals) which were deferred as minor issues (no-dsa), this pre-authentication TLS heap overflow is likely to be ",
+      "reason_memory_path": "Pre-authentication heap buffer overflow in TLS ClientKeyExchange processing is a significant issue, but the LTS team's history with busybox shows consistent deferral of similar memory corruption vulnerabilities (e.g., CVE-2026-29004 heap ov",
+      "predicted_at": "2026-10-27T05:47:19+00:00"
+    },
+    {
+      "n": 85,
+      "cve": "CVE-2011-4931",
+      "pkg": "gpw",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "WONTFIX"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "gpw in bookworm is affected by CVE-2011-4931 (generates shorter passwords than requested), but the passwords are still random and this is a minor, bounded reduction in strength rather than a complete failure; with no prior tracker decisions",
+      "reason_memory_path": "CVE-2011-4931 describes a functional bug where gpw generates shorter passwords than requested; this crosses no security boundary and only affects a password-generation utility, making it unimportant for LTS.",
+      "predicted_at": "2026-10-27T05:48:13+00:00"
+    },
+    {
+      "n": 86,
+      "cve": "CVE-2026-47590",
+      "pkg": "[organization omitted]-graphics-drivers",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "NEXT",
+        "S": "WONTFIX",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "class_unreliable",
+      "reason_evidence_path": "The [organization omitted]-graphics-drivers package is in non-free, and the LTS team has consistently marked multiple CVEs as <no-dsa> with explicit reason 'Non-free not supported' for bookworm, indicating non-free packages are not supported by LTS and wil",
+      "reason_memory_path": "This use-after-free vulnerability is exploitable by an unprivileged user and can lead to code execution and privilege escalation, matching the severity of CVE-2025-23280 and CVE-2025-23282 which were both marked URGENT; the team has recentl",
+      "predicted_at": "2026-10-27T05:49:39+00:00"
+    },
+    {
+      "n": 87,
+      "cve": "CVE-2015-9019",
+      "pkg": "libxslt",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "URGENT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships libxslt 1.1.35, which is newer than the affected versions (1.1.29 and earlier). The vulnerable code is not present in the bookworm version.",
+      "reason_memory_path": "Bookworm ships libxslt 1.1.35, which is newer than the affected versions (1.1.29 and earlier). The vulnerable EXSLT math.random initialization issue was fixed upstream before the version in bookworm.",
+      "predicted_at": "2026-10-27T05:50:07+00:00"
+    },
+    {
+      "n": 88,
+      "cve": "CVE-2026-44892",
+      "pkg": "netty",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NOTAFF",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability affects Netty's HTTP/3 codec (Http3ConnectionHandler) which was introduced in the 4.2.x series; bookworm ships version 4.1.48 that does not include HTTP/3 support, so the vulnerable code is not present.",
+      "reason_memory_path": "Bookworm ships netty 4.1.48, which does not include the HTTP/3 codec (introduced in netty 4.2.x). The vulnerable Http3ConnectionHandler is not present in this version.",
+      "predicted_at": "2026-10-27T05:51:28+00:00"
+    },
+    {
+      "n": 89,
+      "cve": "CVE-2026-42245",
+      "pkg": "ruby3.1",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "This Net::IMAP DoS vulnerability is similar to previous Net::IMAP and REXML DoS issues in ruby3.1 that were consistently marked as minor issues and deferred (<no-dsa>) for bookworm.",
+      "reason_memory_path": "This Net::IMAP client-side DoS vulnerability is similar to previous net-imap issues in ruby3.1 (CVE-2025-43857, CVE-2025-25186) which were triaged as minor issues (<no-dsa>) and deferred. The attack requires a malicious server and fits the ",
+      "predicted_at": "2026-10-27T05:51:54+00:00"
+    },
+    {
+      "n": 90,
+      "cve": "CVE-2026-91964",
+      "pkg": "freerdp2",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The bookworm version (2.11.7) is affected (fixed in 3.31.0), but the LTS team has consistently treated similar client-side heap overflow vulnerabilities in freerdp2 as minor issues, marking them <no-dsa> and deferring fixes.",
+      "reason_memory_path": "This is a client-side heap buffer overflow triggered by a malicious RDP server during connection negotiation, identical in class to CVE-2026-22852, CVE-2026-26955, and CVE-2026-44421 which were all marked NEXT (<no-dsa>, Minor issue) for bo",
+      "predicted_at": "2026-10-27T05:52:23+00:00"
+    },
+    {
+      "n": 91,
+      "cve": "CVE-2026-44249",
+      "pkg": "netty",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "NOTAFF",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm's netty 1:4.1.48-7+deb12u2 predates the 4.1.135.Final fix and ships the vulnerable IpSubnetFilterRule code, so the IPv6 subnet ACL bypass crosses a real security boundary; the LTS team has previously shipped bookworm netty security",
+      "reason_memory_path": "The vulnerability allows bypassing IPv6 subnet access controls in netty-handler, a core network security boundary. Bookworm's version 4.1.48 is well before the fixed 4.1.135.Final, and similar network bypass/injection flaws in netty (CVE-20",
+      "predicted_at": "2026-10-27T05:53:41+00:00"
+    },
+    {
+      "n": 92,
+      "cve": "CVE-2026-42246",
+      "pkg": "ruby3.1",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability affects Net::IMAP in ruby3.1, but the Debian LTS team has consistently treated similar Net::IMAP issues as minor, deferring fixes via <no-dsa> (e.g., CVE-2025-43857, CVE-2025-25186).",
+      "reason_memory_path": "This Net::IMAP STARTTLS bypass vulnerability follows the pattern of previous Net::IMAP issues in ruby3.1 (CVE-2025-43857, CVE-2025-25186) which were all deferred as minor issues (<no-dsa>) by the LTS team.",
+      "predicted_at": "2026-10-27T05:54:17+00:00"
+    },
+    {
+      "n": 93,
+      "cve": "CVE-2026-47526",
+      "pkg": "[organization omitted]-graphics-drivers",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "NEXT",
+        "S": "WONTFIX",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "class_unreliable",
+      "reason_evidence_path": "The [organization omitted]-graphics-drivers package is in non-free, which is not supported by the Debian LTS team; all recent CVEs for bookworm were marked <no-dsa> with 'Non-free not supported'.",
+      "reason_memory_path": "Null pointer dereference in firmware leading to denial of service, similar to CVE-2025-23330 and CVE-2025-23332 which were marked URGENT for bookworm; the LTS team has recently escalated multiple [organization omitted] driver CVEs to URGENT.",
+      "predicted_at": "2026-10-27T05:55:48+00:00"
+    },
+    {
+      "n": 94,
+      "cve": "CVE-2026-67295",
+      "pkg": "freerdp2",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Consistent with previous freerdp2 CVEs in bookworm marked as minor issues (<no-dsa>), including a similar path traversal in drive redirection (CVE-2026-40254). The LTS team batches such issues for later point releases.",
+      "reason_memory_path": "The vulnerability affects the bookworm version (2.11.7 < 3.29.0) but is a client-side issue requiring a malicious RDP server; similar drive-redirection and heap-overflow flaws in freerdp2 have been deferred as minor issues (NEXT).",
+      "predicted_at": "2026-10-27T05:56:30+00:00"
+    },
+    {
+      "n": 95,
+      "cve": "CVE-2019-11391",
+      "pkg": "modsecurity-crs",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships modsecurity-crs 3.3.4, which is newer than the affected version range (through 3.1.0); the upstream maintainer also disputes exploitability via ModSecurity.",
+      "reason_memory_path": "Bookworm ships modsecurity-crs 3.3.4, which is newer than the affected version range (through 3.1.0). The upstream maintainer disputes this is a vulnerability as the ReDOS cannot be exploited via ModSecurity.",
+      "predicted_at": "2026-10-27T05:57:41+00:00"
+    },
+    {
+      "n": 96,
+      "cve": "CVE-2026-111812",
+      "pkg": "trafficserver",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "URGENT",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability allows an attacker to force the proxy to sign arbitrary AWS headers with its own credentials, a serious authentication bypass affecting the version in bookworm (9.2.5). Past LTS decisions for trafficserver fixed similar no",
+      "reason_memory_path": "Bookworm's trafficserver 9.2.5 is within the affected range (9.0.0\u20139.2.15) and the vulnerability allows credential misuse via the origin_server_auth plugin, a real security boundary violation; all recent trafficserver CVEs with similar impa",
+      "predicted_at": "2026-10-27T05:59:08+00:00"
+    },
+    {
+      "n": 97,
+      "cve": "CVE-2018-5392",
+      "pkg": "mingw-w64",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "NEXT",
+        "S": "WONTFIX",
+        "OURS": "WONTFIX"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "This CVE affects Windows executables produced by the mingw-w64 cross-compiler toolchain, not Debian binaries themselves. As a build tool targeting a foreign platform, it crosses no security boundary within Debian; the vulnerable output is n",
+      "reason_memory_path": "mingw-w64 is a cross-compiler toolchain; the CVE describes a default behavior affecting Windows binaries it produces, not a vulnerability in the Debian system itself. This crosses no Debian security boundary and falls under 'unimportant' fo",
+      "predicted_at": "2026-10-27T05:59:41+00:00"
+    },
+    {
+      "n": 98,
+      "cve": "CVE-2026-112912",
+      "pkg": "python-filelock",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships python-filelock 3.9.0, but the vulnerability affects versions 3.32.6 through 4.2.1; the vulnerable code was introduced after the bookworm version.",
+      "reason_memory_path": "The vulnerability affects filelock versions 3.32.6 through 4.2.1, but bookworm ships version 3.9.0-1+deb12u1, which predates the introduction of the vulnerable code.",
+      "predicted_at": "2026-10-27T06:00:08+00:00"
+    },
+    {
+      "n": 99,
+      "cve": "CVE-2026-64654",
+      "pkg": "gh",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm's gh 2.23.0 is below the fixed upstream 2.97.0, so it is affected, but the LTS team has consistently treated this same terminal-escape class in gh as a minor bookworm issue (<no-dsa>), most recently CVE-2026-45803, so it should be ",
+      "reason_memory_path": "This CVE extends the same terminal escape sequence injection class as CVE-2026-45803, which was already triaged as NEXT (<no-dsa>, Minor issue) for bookworm. The gh package has a consistent pattern of NEXT decisions for similar vulnerabilit",
+      "predicted_at": "2026-10-27T06:01:14+00:00"
+    },
+    {
+      "n": 100,
+      "cve": "CVE-2026-109943",
+      "pkg": "freerdp2",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships freerdp2 version 2.11.7, while CVE-2026-109943 affects FreeRDP 3.29.0 through 3.31.x only. The tracker shows a consistent pattern of marking 3.x-only vulnerabilities as not-affected for bookworm.",
+      "reason_memory_path": "The CVE affects FreeRDP 3.29.0\u20133.32.0, but Debian bookworm ships freerdp2 2.11.7 from the earlier 2.x series; the vulnerable double-free polygon parsing code does not exist in the shipped version, matching the NOTAFF precedent for version-r",
+      "predicted_at": "2026-10-27T06:02:26+00:00"
+    },
+    {
+      "n": 101,
+      "cve": "CVE-2026-59919",
+      "pkg": "netty",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "NOTAFF",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability allows CRLF injection in HAProxy V1 headers via AF_UNIX addresses, enabling spoofing of client IPs to downstream servers; netty 4.1.48 in bookworm is vulnerable and the LTS team has previously shipped security updates for ",
+      "reason_memory_path": "This CRLF injection in Netty's HAProxy encoder allows header injection and IP spoofing to downstream servers, similar to previous CRLF injection CVEs in netty (CVE-2025-67735, CVE-2025-58057, CVE-2025-59419) that were triaged as URGENT for ",
+      "predicted_at": "2026-10-27T06:04:26+00:00"
+    },
+    {
+      "n": 102,
+      "cve": "CVE-2026-101897",
+      "pkg": "angular.js",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The CVE affects Angular DevTools browser extension versions 1.20.0\u20131.21.1 (modern Angular v2+ debugging tool), while bookworm ships angular.js 1.8.3 (AngularJS 1.x framework library). These are distinct codebases; the vulnerable chrome.runt",
+      "reason_memory_path": "CVE-2026-101897 affects modern Angular (v1.20.0-1.21.1, @angular/* packages) and its DevTools extension, not AngularJS 1.x. The bookworm package angular.js 1.8.3 ships AngularJS, a completely different codebase.",
+      "predicted_at": "2026-10-27T06:05:13+00:00"
+    },
+    {
+      "n": 103,
+      "cve": "CVE-2026-107232",
+      "pkg": "async-http-client",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NOTAFF",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm's async-http-client 2.12.3 is affected (fixed in 2.16.1), but the vulnerability requires specific conditions (HTTP proxy rejecting CONNECT, then redirect/auth handlers leaking credentials). Past decisions for similar proxy-related ",
+      "reason_memory_path": "Bookworm's async-http-client 2.12.3 is affected (fixed in 2.16.1), but the vulnerability requires a proxy that rejects CONNECT and specific authentication handling, similar to previous proxy-related CVEs for this package that were deferred ",
+      "predicted_at": "2026-10-27T06:06:05+00:00"
+    },
+    {
+      "n": 104,
+      "cve": "CVE-2026-112937",
+      "pkg": "python-filelock",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships python-filelock 3.9.0, but the vulnerability affects versions 4.1.0 through 4.2.1 only; the vulnerable code was introduced after the bookworm version.",
+      "reason_memory_path": "Bookworm ships python-filelock 3.9.0, but CVE-2026-112937 affects versions 4.1.0 through 4.2.1 only; the vulnerable code was introduced after the bookworm version.",
+      "predicted_at": "2026-10-27T06:06:42+00:00"
+    },
+    {
+      "n": 105,
+      "cve": "CVE-2019-20005",
+      "pkg": "mapcache",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "CVE-2019-20005 targets ezXML, which is not bundled or compiled into the mapcache 1.14.0-1 package shipped with Debian 12 bookworm; the vulnerable code path is absent from Debian's build, so bookworm is not affected.",
+      "reason_memory_path": "CVE-2019-20005 is a vulnerability in the ezXML library (ezxml_decode function), not in mapcache itself. Mapcache 1.14.0-1 in bookworm links against the system libezxml, so the fix resides in the ezxml source package; mapcache is not affecte",
+      "predicted_at": "2026-10-27T06:07:46+00:00"
+    },
+    {
+      "n": 106,
+      "cve": "CVE-2026-112941",
+      "pkg": "python-filelock",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships python-filelock 3.9.0, while the vulnerability affects versions 4.1.0 through 4.2.1 only. The vulnerable code was introduced after the bookworm version.",
+      "reason_memory_path": "Bookworm ships python-filelock 3.9.0, while CVE-2026-112941 affects versions 4.1.0 through 4.2.1 only; the vulnerable code was introduced after the bookworm version.",
+      "predicted_at": "2026-10-27T06:09:11+00:00"
+    },
+    {
+      "n": 107,
+      "cve": "CVE-2026-88834",
+      "pkg": "busybox",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "memory_disagrees_with_itself",
+      "reason_evidence_path": "The vulnerability is limited to username enumeration in httpd with system password authentication, requires non-default compile options or uncommon password file states, and default builds with shadow password support are not affected. This",
+      "reason_memory_path": "The vulnerability requires non-default compile options or uncommon password file states; default BusyBox builds with shadow password support (as used in Debian) are explicitly not affected.",
+      "predicted_at": "2026-10-27T06:10:58+00:00"
+    },
+    {
+      "n": 108,
+      "cve": "CVE-2026-93561",
+      "pkg": "netty",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "NOTAFF",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability in netty-codec-memcache allows response smuggling and cross-client data exposure in proxy/cache environments, constituting a real security boundary violation. Bookworm's netty 4.1.48 has received prior security updates (e.",
+      "reason_memory_path": "The vulnerability affects netty-codec-memcache in Netty 4.1.x, which is present in bookworm's version 1:4.1.48-7+deb12u2. Similar codec vulnerabilities in the same version (CVE-2025-58057, CVE-2025-58056) were treated as URGENT and fixed vi",
+      "predicted_at": "2026-10-27T06:13:56+00:00"
+    },
+    {
+      "n": 109,
+      "cve": "CVE-2026-111748",
+      "pkg": "python-aiohttp",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "NEXT",
+        "S": "WONTFIX",
+        "OURS": "WONTFIX"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The fix is in upstream 3.14.4, a major version jump from bookworm's 3.8.4; backporting is too intrusive, as seen with CVE-2026-54273 which was marked ignored for the same reason.",
+      "reason_memory_path": "The fix is in version 3.14.4, a major upgrade from bookworm's 3.8.4; backporting would be too intrusive, as with CVE-2026-54273 which was marked WONTFIX for the same reason.",
+      "predicted_at": "2026-10-27T06:15:08+00:00"
+    },
+    {
+      "n": 110,
+      "cve": "CVE-2026-71972",
+      "pkg": "u-boot",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "WONTFIX",
+        "S": "NEXT",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "The out-of-bounds write in video_bmp.c affects bookworm's 2023.01 version, but similar memory corruption vulnerabilities in parsing code (CVE-2026-46728, CVE-2024-42040) were deferred as minor issues (<no-dsa>/<postponed>) rather than fixed",
+      "reason_memory_path": "The vulnerable code in video_display_rle8_bitmap was introduced after the bookworm version (2023.01), consistent with CVE-2026-71974 and CVE-2026-74222 which were marked NOTAFF for the same reason.",
+      "predicted_at": "2026-10-27T06:16:25+00:00"
+    },
+    {
+      "n": 111,
+      "cve": "CVE-2026-107230",
+      "pkg": "async-http-client",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NOTAFF",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm's version 2.12.3 is in the affected range (2.0.0\u20133.0.14), but the vulnerability requires specific authenticated proxy/Kerberos/NTLM configurations. The LTS team has consistently deferred similar authentication-bypass issues in this",
+      "reason_memory_path": "This connection-pool partitioning flaw affects Kerberos, SPNEGO, NTLM, and authenticated proxy connections, which are niche configurations; past similar auth-related pooling issues (CVE-2026-85719, CVE-2026-85720) were deferred as minor iss",
+      "predicted_at": "2026-10-27T06:17:18+00:00"
+    },
+    {
+      "n": 112,
+      "cve": "CVE-2019-7351",
+      "pkg": "zoneminder",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "WONTFIX",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships zoneminder 1.36.33+dfsg1-1, which is newer than the last affected version 1.32.3 per the CVE description, so the vulnerable code is not present.",
+      "reason_memory_path": "CVE-2019-7351 affects ZoneMinder through version 1.32.3, but bookworm ships version 1.36.33 which is newer and should include the upstream fix.",
+      "predicted_at": "2026-10-27T06:18:51+00:00"
+    },
+    {
+      "n": 113,
+      "cve": "CVE-2026-88842",
+      "pkg": "busybox",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "WONTFIX"
+      },
+      "gate_rule": "memory_disagrees_with_itself",
+      "reason_evidence_path": "The bug causes limited data corruption in dpkg status file under specific conditions; similar busybox issues in bookworm are consistently treated as minor (no-dsa/postponed).",
+      "reason_memory_path": "This is a bug in the BusyBox dpkg applet (a CLI tool) causing limited data corruption in a specific edge case when removing two packages; it crosses no security boundary and is analogous to CVE-2026-88835 which was marked unimportant.",
+      "predicted_at": "2026-10-27T06:19:50+00:00"
+    },
+    {
+      "n": 114,
+      "cve": "CVE-2026-47504",
+      "pkg": "[organization omitted]-graphics-drivers",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "NEXT",
+        "S": "WONTFIX",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "class_unreliable",
+      "reason_evidence_path": "The [organization omitted]-graphics-drivers package is in non-free and the LTS team has consistently marked recent CVEs as <no-dsa> with 'Non-free not supported' for bookworm, indicating they will not provide security updates for this package.",
+      "reason_memory_path": "The vulnerability allows code execution, denial of service, information disclosure, and data tampering via type confusion in the NGX updater's embedded cryptographic library, matching the high-impact issues (use-after-free, race conditions,",
+      "predicted_at": "2026-10-27T06:20:34+00:00"
+    },
+    {
+      "n": 115,
+      "cve": "CVE-2018-14452",
+      "pkg": "libgig",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "CVE-2018-14452 affects libgig 4.1.0, but bookworm ships version 4.3.0 which includes the fix.",
+      "reason_memory_path": "CVE-2018-14452 is an old out-of-bounds read with unknown attack scope; likely a minor issue suitable for batching per LTS policy.",
+      "predicted_at": "2026-10-27T06:21:31+00:00"
+    },
+    {
+      "n": 116,
+      "cve": "CVE-2026-94634",
+      "pkg": "thrift",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "WONTFIX",
+        "S": "WONTFIX",
+        "OURS": "WONTFIX"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "All recent Thrift CVEs across various language bindings (Erlang, NodeJS, Lua, Ruby, JavaME, Dart, PHP, D, JS) are marked 'unimportant' in sid with no bookworm action, indicating the team considers these binding-specific resource allocation ",
+      "reason_memory_path": "This resource allocation issue in Python bindings mirrors similar vulnerabilities in other Thrift language bindings (dart, PHP, ruby, Erlang, Lua, JavaME, Delphi) that LTS has consistently marked as unimportant and WONTFIX for bookworm.",
+      "predicted_at": "2026-10-27T06:21:54+00:00"
+    },
+    {
+      "n": 117,
+      "cve": "CVE-2026-47587",
+      "pkg": "[organization omitted]-graphics-drivers",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "memory_disagrees_with_itself",
+      "reason_evidence_path": "The Debian LTS team's historical decisions for [organization omitted]-graphics-drivers in bookworm consistently mark affected CVEs as <no-dsa> (Non-free not supported), which per triage guidelines maps to NEXT (affected but deferred). No DLA is shipped for",
+      "reason_memory_path": "The vulnerability is a use-after-free exploitable by an unprivileged user leading to code execution and privilege escalation, closely matching CVE-2025-23280 which was marked URGENT; the LTS team has recently reclassified multiple similar N",
+      "predicted_at": "2026-10-27T06:23:35+00:00"
+    },
+    {
+      "n": 118,
+      "cve": "CVE-2026-47545",
+      "pkg": "[organization omitted]-graphics-drivers",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "memory_disagrees_with_itself",
+      "reason_evidence_path": "The tracker's recent bookworm decisions for this exact package mark similar [organization omitted] kernel-driver CVEs as <no-dsa> (Non-free not supported), which is the deferred category; [organization omitted]-graphics-drivers is non-free and past practice defers these i",
+      "reason_memory_path": "This is a kernel mode layer out-of-bounds read vulnerability with high impact (code execution, privilege escalation), matching the pattern of recent [organization omitted]-graphics-drivers CVEs (CVE-2025-23280, CVE-2025-23345, CVE-2025-33219) that were esc",
+      "predicted_at": "2026-10-27T06:24:53+00:00"
+    },
+    {
+      "n": 119,
+      "cve": "CVE-2026-73508",
+      "pkg": "netty",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "NOTAFF",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "This is a remotely exploitable denial-of-service vulnerability in the DNS codec affecting the version in bookworm (4.1.48). The LTS team has previously issued a DLA for a similar DoS in netty (CVE-2024-29025), indicating they treat such iss",
+      "reason_memory_path": "Bookworm's netty 4.1.48 is affected by this remote unauthenticated DNS memory leak DoS (fixed in 4.1.136), and the LTS team has consistently treated similar netty memory-leak/DoS issues as URGENT (7 of 8 relevant precedents).",
+      "predicted_at": "2026-10-27T06:25:31+00:00"
+    },
+    {
+      "n": 120,
+      "cve": "CVE-2026-89169",
+      "pkg": "live-boot",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "The vulnerability allows bypassing dm-verity signature enforcement when the .verity file is missing, but the attack scope is unknown and the package is not on the limited-security-support list; with no prior tracker history, this fits the L",
+      "reason_memory_path": "CVE-2026-89169 describes a bypass of dm-verity-enforce-roothash-signature protection in live-boot commit ff8867c; bookworm ships 1:20230131+deb12u1 which likely includes this code, the package receives full security support (not limited-sup",
+      "predicted_at": "2026-10-27T06:26:00+00:00"
+    },
+    {
+      "n": 121,
+      "cve": "CVE-2026-74766",
+      "pkg": "libnet-idn-encode-perl",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "NEXT",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability is a heap use-after-free in the XS backend when decoding attacker-supplied punycode labels, which could lead to arbitrary code execution; bookworm's version 2.500-3 is within the affected range (2.301\u20132.589).",
+      "reason_memory_path": "Bookworm's version 2.500-3 falls within the vulnerable range (2.301\u20132.590) and the heap use-after-free in the XS backend can be triggered by attacker-supplied punycode labels, constituting a real security impact.",
+      "predicted_at": "2026-10-27T06:26:41+00:00"
+    },
+    {
+      "n": 122,
+      "cve": "CVE-2026-87078",
+      "pkg": "libnet-idn-encode-perl",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "NEXT",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability in Net::IDN::Punycode (versions 2.302\u20132.589) allows a denial-of-service via unbounded memory leakage when decoding invalid labels, and bookworm ships the affected version 2.500-3; a fix exists upstream (2.590) and should b",
+      "reason_memory_path": "The vulnerability allows remote memory exhaustion via crafted invalid Punycode labels in the XS backend, constituting a denial-of-service risk in a widely used IDN library.",
+      "predicted_at": "2026-10-27T06:28:22+00:00"
+    },
+    {
+      "n": 123,
+      "cve": "CVE-2026-89044",
+      "pkg": "netty",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NOTAFF",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships netty 4.1.48, which is older than the vulnerable versions (4.1.133.Final through 4.1.137.Final). The vulnerable code was introduced later and is not present in the bookworm version.",
+      "reason_memory_path": "Bookworm ships netty 4.1.48, while CVE-2026-89044 affects versions 4.1.133.Final through 4.1.137.Final and 4.2.13.Final through 4.2.17.Final. The vulnerable code was introduced in later versions not present in bookworm.",
+      "predicted_at": "2026-10-27T06:28:51+00:00"
+    },
+    {
+      "n": 124,
+      "cve": "CVE-2017-12443",
+      "pkg": "minidjvu",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability is a denial-of-service in a command-line tool processing untrusted DjVu files; such issues are typically considered minor and deferred for batch updates.",
+      "reason_memory_path": "Denial-of-service via crafted DJVU file in an old, rarely-used package; minor issue deferred for batch update per LTS policy.",
+      "predicted_at": "2026-10-27T06:29:18+00:00"
+    },
+    {
+      "n": 125,
+      "cve": "CVE-2026-64621",
+      "pkg": "freerdp2",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability affects FreeRDP 3.x series (versions 3.0 through 3.27.1), while bookworm ships version 2.11.7 which is not in the affected range.",
+      "reason_memory_path": "The vulnerability affects FreeRDP 3.x versions before 3.28.0, but bookworm ships version 2.11.7 which does not contain the vulnerable code.",
+      "predicted_at": "2026-10-27T06:30:14+00:00"
+    },
+    {
+      "n": 126,
+      "cve": "CVE-2026-102559",
+      "pkg": "libsoup2.4",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The LTS team's bookworm history for libsoup2.4 consistently defers even memory-corruption/minor issues as <no-dsa> or <postponed> rather than shipping a DLA (e.g., heap OOB read CVE-2026-12548 postponed, minor issue CVE-2026-66339 no-dsa), ",
+      "reason_memory_path": "This heap buffer overflow in WebSocket client frame masking for very large payloads follows the pattern of similar memory safety issues in libsoup2.4 that the LTS team has consistently deferred as minor issues (postponed/no-dsa) due to limi",
+      "predicted_at": "2026-10-27T06:31:21+00:00"
+    },
+    {
+      "n": 127,
+      "cve": "CVE-2026-111811",
+      "pkg": "trafficserver",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "URGENT",
+        "S": "NEXT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "The vulnerability is in an experimental plugin (tsmemcache); past decisions for trafficserver in bookworm (e.g., CVE-2026-59173) show similar issues are postponed as minor, indicating LTS defers such fixes for batch updates.",
+      "reason_memory_path": "Bookworm's trafficserver 9.2.5 is within the affected range (9.0.0\u20139.2.15). The vulnerability allows unauthenticated network read/write/delete of the shared proxy cache via the tsmemcache plugin, a significant security boundary violation. T",
+      "predicted_at": "2026-10-27T06:32:04+00:00"
+    },
+    {
+      "n": 128,
+      "cve": "CVE-2016-5416",
+      "pkg": "389-ds-base",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "CVE-2016-5416 is a 2016 vulnerability affecting RHEL 6/7; the bookworm version 2.3.1+dfsg1-1+deb12u1 is far newer and the tracker shows similar older CVEs (2012) were fixed before initial upload, indicating this issue was resolved upstream ",
+      "reason_memory_path": "CVE-2016-5416 is an older vulnerability likely fixed upstream before the 2.3.1 version shipped in bookworm; previous similar CVEs (2012) were marked NOTAFF as fixed before initial upload.",
+      "predicted_at": "2026-10-27T06:32:58+00:00"
+    },
+    {
+      "n": 129,
+      "cve": "CVE-2026-106064",
+      "pkg": "gimp",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NOTAFF",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "All 20 recent CVE decisions for gimp in bookworm were marked <not-affected> because the vulnerable code is not present in the 2.10.x series shipped in bookworm; this GIF export plug-in integer overflow similarly affects newer 3.x code.",
+      "reason_memory_path": "The vulnerability affects GIMP's GIF export plug-in in newer 3.x versions; bookworm ships GIMP 2.10.34 where this code is not present, consistent with recent GIF-related and plug-in integer overflow CVEs marked NOTAFF for bookworm.",
+      "predicted_at": "2026-10-27T06:33:48+00:00"
+    },
+    {
+      "n": 130,
+      "cve": "CVE-2026-107285",
+      "pkg": "async-http-client",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NOTAFF",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability affects bookworm's version 2.12.3 (fixed in 2.16.1) but requires a specific configuration: proxied WebSocket (ws) requests through an authenticated HTTP proxy. Past decisions for similar proxy-authentication leakage issues",
+      "reason_memory_path": "This proxy credential leakage issue for WebSocket connections is similar to previous async-http-client CVEs (CVE-2026-85720, CVE-2026-85719) that were deferred as minor issues requiring authenticated proxy configuration.",
+      "predicted_at": "2026-10-27T06:34:28+00:00"
+    },
+    {
+      "n": 131,
+      "cve": "CVE-2026-49264",
+      "pkg": "python-oauthlib",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability only affects deployments that explicitly enable JSONP (disabled by default), making it a minor issue with limited real-world impact; can be deferred to a batch update.",
+      "reason_memory_path": "The vulnerability only affects deployments that explicitly enable JSONP (disabled by default), making it a conditional/minor issue suitable for batching.",
+      "predicted_at": "2026-10-27T06:34:45+00:00"
+    },
+    {
+      "n": 132,
+      "cve": "CVE-2024-24259",
+      "pkg": "freeglut",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Memory leak in glutAddMenuEntry is a minor resource exhaustion issue with unknown attack scope; LTS policy batches such low-impact issues for later point releases rather than issuing urgent DLAs.",
+      "reason_memory_path": "Memory leak in glutAddMenuEntry is a minor resource exhaustion issue with no direct security boundary crossing; LTS policy batches such low-impact issues for later point releases.",
+      "predicted_at": "2026-10-27T06:35:09+00:00"
+    },
+    {
+      "n": 133,
+      "cve": "CVE-2026-94644",
+      "pkg": "thrift",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "WONTFIX",
+        "S": "WONTFIX",
+        "OURS": "WONTFIX"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Past tracker decisions for Thrift consistently mark similar resource-allocation vulnerabilities in various language bindings (including PHP) as 'unimportant', indicating the LTS team does not consider them to cross a security boundary warra",
+      "reason_memory_path": "This CVE affects PHP bindings in Apache Thrift before 0.25.0, identical in nature to CVE-2026-87117 which was marked WONTFIX as 'unimportant'. The LTS team has consistently treated Thrift binding vulnerabilities as not crossing security bou",
+      "predicted_at": "2026-10-27T06:35:40+00:00"
+    },
+    {
+      "n": 134,
+      "cve": "CVE-2026-114619",
+      "pkg": "python-authlib",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "URGENT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "The vulnerability allows a scope bypass in OpenID Implicit Grant, enabling unauthorized ID token issuance; python-authlib has received multiple DLAs in bookworm (e.g., CVE-2024-37568, CVE-2025-68158) showing the LTS team actively backports ",
+      "reason_memory_path": "This vulnerability in OpenIDImplicitGrant requires a registered client and user consent, affecting only the implicit grant flow; similar logic flaws in python-authlib have been consistently deferred (NEXT) by the LTS team.",
+      "predicted_at": "2026-10-27T06:37:48+00:00"
+    },
+    {
+      "n": 135,
+      "cve": "CVE-2026-15390",
+      "pkg": "u-boot",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "WONTFIX",
+        "S": "NEXT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "trust_memory",
+      "reason_evidence_path": "Network stack vulnerability in u-boot historically treated as minor issue due to limited attack surface (local network during boot); similar to CVE-2024-42040 (bootp buffer overflow) and CVE-2026-46728 (FIT bypass) which were postponed/no-d",
+      "reason_memory_path": "This is a network-based remote code execution vulnerability in IP fragment reassembly (CONFIG_IP_DEFRAG) fixed in U-Boot 2026.07; bookworm ships 2023.01 and the LTS team has recently escalated u-boot CVEs to URGENT for bookworm (CVE-2026-46",
+      "predicted_at": "2026-10-27T06:38:41+00:00"
+    },
+    {
+      "n": 136,
+      "cve": "CVE-2026-109948",
+      "pkg": "freerdp2",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships FreeRDP 2.11.7, while the vulnerability affects versions 3.0.0 through 3.32.0; the vulnerable code is not present in the bookworm version.",
+      "reason_memory_path": "Bookworm ships freerdp2 version 2.11.7, while CVE-2026-109948 affects FreeRDP from version 3.0.0 onward. The vulnerable code was introduced in the 3.x series and is not present in the 2.x series shipped in bookworm.",
+      "predicted_at": "2026-10-27T06:39:14+00:00"
+    },
+    {
+      "n": 137,
+      "cve": "CVE-2022-35468",
+      "pkg": "texlive-bin",
+      "predictions": {
+        "GATED": "WONTFIX",
+        "pkg_mode": "WONTFIX",
+        "S": "WONTFIX",
+        "OURS": "WONTFIX"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "This CVE describes a heap buffer overflow in OTFCC's otfccdump tool at the same offset as CVE-2022-35068, which was marked 'unimportant' for sid and not considered a security issue for bookworm. The LTS team treats such non-security-critica",
+      "reason_memory_path": "The vulnerable OTFCC otfccdump CLI tool code is not built in Debian's texlive-bin package, so there is no security impact in bookworm, consistent with previous OTFCC CVEs for this package.",
+      "predicted_at": "2026-10-27T06:40:01+00:00"
+    },
+    {
+      "n": 138,
+      "cve": "CVE-2026-55833",
+      "pkg": "netty",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "NOTAFF",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm's netty 4.1.48 is vulnerable to this remote DoS via SPDY header decompression amplification (fixed in 4.1.136), and the LTS team previously issued a DLA for CVE-2024-29025 in bookworm, showing they treat netty network-facing DoS is",
+      "reason_memory_path": "Bookworm's netty 1:4.1.48-7+deb12u2 predates the fixed 4.1.136.Final, so the SPDY header-decoding compression bomb is present and remotely exploitable to cause CPU/allocation exhaustion, a real impact the LTS team addresses with a DLA, cons",
+      "predicted_at": "2026-10-27T06:41:49+00:00"
+    },
+    {
+      "n": 139,
+      "cve": "CVE-2018-14455",
+      "pkg": "libgig",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm ships libgig 4.3.0, which is newer than the affected version 4.1.0 and likely includes the upstream fix for CVE-2018-14455.",
+      "reason_memory_path": "Bookworm ships libgig 4.3.0~ds1-2, which is newer than the affected version 4.1.0; the vulnerability was likely fixed upstream before the bookworm release.",
+      "predicted_at": "2026-10-27T06:43:30+00:00"
+    },
+    {
+      "n": 140,
+      "cve": "CVE-2026-55648",
+      "pkg": "freerdp2",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "This integer overflow leading to heap buffer overflow in icon handling is similar to multiple prior CVEs in freerdp2 that were classified as minor issues (<no-dsa>) for bookworm, and xfreerdp includes a caller-side mitigation reducing real-",
+      "reason_memory_path": "This integer overflow in freerdp_image_copy_from_icon_data is nearly identical to CVE-2026-26271 (same function, same exploit vector via malicious RDP server icons) which was classified as a minor issue and deferred with <no-dsa>. The vulne",
+      "predicted_at": "2026-10-27T06:44:20+00:00"
+    },
+    {
+      "n": 141,
+      "cve": "CVE-2026-106123",
+      "pkg": "rabbitmq-java-client",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Consistent with previous decisions for rabbitmq-java-client where similar credential leakage issues were postponed as minor; the LTS team batches such issues rather than issuing immediate DLAs.",
+      "reason_memory_path": "Credential disclosure in error logs is a minor issue; consistent with previous NEXT decisions for similar CVEs in this package.",
+      "predicted_at": "2026-10-27T06:44:37+00:00"
+    },
+    {
+      "n": 142,
+      "cve": "CVE-2026-111814",
+      "pkg": "trafficserver",
+      "predictions": {
+        "GATED": "URGENT",
+        "pkg_mode": "URGENT",
+        "S": "URGENT",
+        "OURS": "URGENT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The vulnerability allows TLS session reuse across different client certificates, potentially breaking authentication boundaries; bookworm's version 9.2.5 is affected and the LTS team has previously fixed similar non-DoS issues in trafficser",
+      "reason_memory_path": "Bookworm's trafficserver 9.2.5 is within the affected range (9.0.0\u20139.2.15) for a TLS session-sharing flaw that can reuse a client certificate across transactions, an authentication bypass. The LTS team has issued URGENT (DLA) for 22 prior t",
+      "predicted_at": "2026-10-27T06:45:28+00:00"
+    },
+    {
+      "n": 143,
+      "cve": "CVE-2026-108093",
+      "pkg": "gimp",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NOTAFF",
+        "S": "NOTAFF",
+        "OURS": "WONTFIX"
+      },
+      "gate_rule": "memory_disagrees_with_itself",
+      "reason_evidence_path": "The vulnerable code is not present in bookworm's GIMP 2.10.x version; all recent CVEs for GIMP in bookworm are marked not-affected because the vulnerable code was introduced in later versions (3.x).",
+      "reason_memory_path": "This is a NULL pointer dereference crash in the XCF loader when processing a crafted file, causing only a denial-of-service (application crash) with no memory corruption or security boundary crossing. Debian's GIMP triage consistently treat",
+      "predicted_at": "2026-10-27T06:46:04+00:00"
+    },
+    {
+      "n": 144,
+      "cve": "CVE-2018-15853",
+      "pkg": "x11-xkb-utils",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "CVE-2018-15853 describes endless recursion in xkbcommon/libxkbcommon (xkbcomp/expr.c before 0.8.1), which is a separate source package; x11-xkb-utils in bookworm (X.Org xkb utilities) does not ship that vulnerable code.",
+      "reason_memory_path": "CVE-2018-15853 affects libxkbcommon's xkbcomp implementation before 0.8.1, while x11-xkb-utils ships the separate X.Org xkbcomp utility which does not contain the vulnerable code.",
+      "predicted_at": "2026-10-27T06:47:32+00:00"
+    },
+    {
+      "n": 145,
+      "cve": "CVE-2024-24258",
+      "pkg": "freeglut",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Memory leak in glutAddSubMenu is a minor issue with limited DoS potential; LTS batches such low-impact issues for later point releases.",
+      "reason_memory_path": "Memory leak in glutAddSubMenu is a local, low-impact issue unlikely to cross security boundaries; LTS batches such minor issues for later point releases.",
+      "predicted_at": "2026-10-27T06:48:04+00:00"
+    },
+    {
+      "n": 146,
+      "cve": "CVE-2026-49434",
+      "pkg": "activemq",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NOTAFF",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "Bookworm's activemq 5.17.2 is below the fixed 5.19.8, so it is affected, but exploitation requires prior access to publish/modify matching LDAP entries and the LTS team recently deferred a comparable activemq issue (CVE-2025-27533) as a min",
+      "reason_memory_path": "The vulnerability affects the core broker LDAP integration in version 5.17.2 (fixed in 5.19.8), but exploitation requires write access to LDAP entries matching specific search filters, a high barrier that limits real-world impact. Past LTS ",
+      "predicted_at": "2026-10-27T06:49:24+00:00"
+    },
+    {
+      "n": 147,
+      "cve": "CVE-2025-70291",
+      "pkg": "u-boot",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "WONTFIX",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The LTS team has deferred individual u-boot CVEs in bookworm as minor issues (CVE-2026-46728 <no-dsa>, CVE-2024-42040 <postponed>), while fixing batches of related memory corruption vulnerabilities together. Without evidence this CVE is par",
+      "reason_memory_path": "CVE-2025-70291 likely affects filesystem parsing code present in bookworm's u-boot 2023.01; similar integer overflow and stack consumption issues in squashfs/ext4fs handling (CVE-2024-57254 through CVE-2024-57258) were all triaged as NEXT f",
+      "predicted_at": "2026-10-27T06:50:33+00:00"
+    },
+    {
+      "n": 148,
+      "cve": "CVE-2026-115580",
+      "pkg": "pypdf2",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "This is a DoS vulnerability in cross-reference table handling causing excessive processing; all similar pypdf2 CVEs in bookworm have been deferred as minor issues per LTS batching policy.",
+      "reason_memory_path": "This is a DoS issue (excessive processing/long runtimes) in pypdf2, and the LTS team has consistently deferred similar DoS issues in this package as minor issues for batch updates. The fixed version 6.21.2 is far newer than bookworm's 2.12.",
+      "predicted_at": "2026-10-27T06:51:16+00:00"
+    },
+    {
+      "n": 149,
+      "cve": "CVE-2026-69149",
+      "pkg": "angular.js",
+      "predictions": {
+        "GATED": "NOTAFF",
+        "pkg_mode": "NEXT",
+        "S": "NOTAFF",
+        "OURS": "NOTAFF"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "CVE-2026-69149 affects @angular/platform-server (modern Angular v20+), not AngularJS 1.x. Bookworm ships angular.js 1.8.3 (AngularJS), a completely different codebase. Past tracker entries show similar @angular/* CVEs marked not-affected fo",
+      "reason_memory_path": "CVE-2026-69149 affects @angular/platform-server in modern Angular (v20+), but bookworm ships angular.js 1.8.3 which is AngularJS 1.x - a completely different framework that does not include @angular/platform-server or domino.",
+      "predicted_at": "2026-10-27T06:51:49+00:00"
+    },
+    {
+      "n": 150,
+      "cve": "CVE-2026-55193",
+      "pkg": "freerdp2",
+      "predictions": {
+        "GATED": "NEXT",
+        "pkg_mode": "NEXT",
+        "S": "NEXT",
+        "OURS": "NEXT"
+      },
+      "gate_rule": "agree",
+      "reason_evidence_path": "The LTS team consistently marks freerdp2 vulnerabilities as minor issues (<no-dsa>) for bookworm, deferring fixes to batch updates; this client-side heap overflow in TS Gateway handling follows the same pattern.",
+      "reason_memory_path": "This heap overflow in the TS Gateway client is similar to numerous prior FreeRDP vulnerabilities in bookworm that were deferred as minor issues (NEXT) because they require a malicious gateway/server and are batched for later point releases.",
+      "predicted_at": "2026-10-27T06:52:20+00:00"
+    }
+  ]
+}

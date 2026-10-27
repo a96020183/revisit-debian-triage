@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore recorded Revisit runs: Debian LTS triage with package memory, evidence, agent review and deferred CVE watches. Entirely offline.">
+  <meta name="color-scheme" content="dark">
+  <title>Revisit — recorded Debian LTS triage</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="replay.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="replay-banner" id="replay-banner"><span>Replay of recorded live runs. Live mode needs local Zetaris + Meterless Nightshift — see <a href="https://github.com/a96020183/revisit-debian-triage" id="repo-link">GitHub README</a>.</span></div>
+  <header class="top" id="site-header">
+    <a class="brand" href="#main" aria-label="Revisit home"><img src="assets/mark.svg" width="18" height="18" alt="">revisit</a>
+    <p class="tag">Debian LTS triage, with package memory.</p>
+    <nav aria-label="Explore the replay"><a href="#queue-h">Cases</a><a href="#exam-h">Results</a><a href="#trust-h">Evidence</a></nav>
+    <span class="offline-indicator">Offline replay</span>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="intro-title">
+      <h1 id="intro-title">Security triage.<br>With a memory.</h1>
+      <p class="lede">Revisit helps Debian LTS triagers review new vulnerabilities and bring deferred decisions back when their written condition is met.</p>
+      <div class="start-actions"><button class="primary" data-trace="CVE-2026-109618|php8.2">Explore the PHP2Shell trace <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button><a href="#queue-h">Browse recorded cases</a></div>
+      <p class="first-limit">A second reader, with limits: urgent recall is <strong id="intro-recall"></strong>. No-model package statistics perform about as well. Every decision needs human confirmation.</p>
+      <p class="mode" id="mode"></p>
+      <div class="replay-heading"><h2 id="hero-h"></h2><p class="sub" id="hero-lede"></p></div>
+      <div class="replay" id="php-replay"></div>
+      <aside class="forecast" id="forecast" aria-label="Sealed forecast" hidden></aside>
+      <details class="forecast-browser" id="forecast-browser"><summary>Inspect the sealed forecast</summary><div class="forecast-content"><p>These predictions were sealed before Debian decided. This offline page does not fetch current outcomes or calculate a live score.</p><div id="forecast-seal"></div><label for="forecast-search">Find a CVE or package</label><input id="forecast-search" type="search" placeholder="e.g. CVE or package name" autocomplete="off"><p id="forecast-count" role="status"></p><div class="table-scroll"><table><caption>Sealed predictions, in registered order</caption><thead><tr><th scope="col">CVE / package</th><th scope="col">Revisit</th><th scope="col">Package mode</th></tr></thead><tbody id="forecast-rows"></tbody></table></div><a href="data/forecast.json" download>Download the redacted forecast JSON</a><p class="sub">The published hash belongs to the original repository file. This export removes source URLs and unrelated organization names.</p></div></details>
+    </section>
+    <section class="band" aria-labelledby="queue-h">
+      <div class="band-head"><h2 id="queue-h">Explore the recorded queue</h2><p class="sub" id="queue-sub"></p></div>
+      <div class="guided"><h3>Follow a review</h3><div class="guided-actions"><button data-trace="CVE-2026-27590|caddy" data-filter="discussion">Evaluator asks for more evidence</button><button data-trace="CVE-2026-105083|imagemagick" data-filter="receipts">Verifier rejects an unsupported citation</button><button data-trace="CVE-2024-28757|expat">An urgent CVE Revisit missed</button></div></div>
+      <div class="queue"><div class="col"><h3 class="col-h"><span class="dot dot-urgent" aria-hidden="true"></span>New CVEs &amp; exam replays</h3><ul class="cards" id="q-triage"></ul></div><div class="col"><h3 class="col-h"><span class="dot dot-reopen" aria-hidden="true"></span>Reopen or close</h3><ul class="cards" id="q-reopen"></ul></div><div class="col"><h3 class="col-h"><span class="dot dot-wait" aria-hidden="true"></span>Keep waiting</h3><ul class="cards" id="q-wait"></ul></div></div>
+    </section>
+    <section class="band" aria-labelledby="catch-h"><div class="band-head"><h2 id="catch-h">When Scout overruled memory</h2><p class="sub" id="catch-sub"></p></div><div id="catch"></div></section>
+    <section class="band" aria-labelledby="exam-h"><div class="band-head"><h2 id="exam-h">The sealed exam, including its limits</h2><p class="sub" id="exam-sub"></p></div><div class="exam" id="exam"></div><p class="source-note">Source: <code>runs/news_score.json</code> and the repository README. These are offline exam results, not a forecast score.</p></section>
+    <section class="band" aria-labelledby="trust-h"><div class="band-head"><h2 id="trust-h">Evidence has a boundary</h2><p class="sub">The executor reads evidence through Zetaris under a scoped role. Recorded refusals show that a later time wall, raw tables and self-granted access are blocked.</p></div><div class="trust-layout"><div><h3>What ran behind the interface</h3><ol class="architecture"><li><b>Scout Intent</b><span>Routes the request and verifies a signed tool contract.</span></li><li><b>Zetaris → H-MEM</b><span>Fetches walled evidence and recalls the package’s current stances.</span></li><li><b>Two Nemotron paths</b><span>Compare recent raw history with organized package memory.</span></li><li><b>Planner ⇄ Evaluator → Verifier</b><span>Requests more evidence, checks cited rows, or escalates to the lead.</span></li><li><b>Human confirmation</b><span>Required before a proposal is committed.</span></li></ol><p class="sub">H-MEM and World Model also keep commitments, notes and watch events. The SQL view and judge decide whether to reopen; the engines keep the record.</p></div><div><h3>Recorded access receipts</h3><p class="sub">Read-only excerpts from <code>evidence/zetaris_governance.txt</code>. No query is executed here. Account identifiers are redacted.</p><div id="governance"></div></div></div></section>
+    <section class="band small" aria-labelledby="lim-h"><h2 id="lim-h">What this does not prove</h2><ul class="limits" id="limits"></ul></section>
+    <section class="band about" aria-labelledby="about-h"><h2 id="about-h">About this replay</h2><p>Cases, model responses, SQL results and receipts are recordings. Opening a trace reads the bundled data; it does not call a model, run SQL, grant access, commit a decision or reopen a CVE.</p><p>Source URLs, account identifiers and unrelated organization names are visibly redacted. CVEs, decision labels, evidence IDs, dates and measured results are preserved.</p><p id="repo-notice" hidden role="status">The coordinator has not supplied the GitHub URL yet. The required <code>https://github.com/a96020183/revisit-debian-triage</code> placeholder is preserved in the banner. Use the local guide below until it is replaced.</p><p><a href="SITE_README.md">Read the replay guide</a> · <a href="data/replay.json" download>Download replay JSON</a></p></section>
+  </main>
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dr-title" aria-hidden="true" tabindex="-1" inert>
+    <div class="dr-head"><div><h2 id="dr-title"></h2><p class="dr-meta" id="dr-kind"></p></div><button class="close" id="dr-close" aria-label="Close trace">Close <span aria-hidden="true">×</span></button></div>
+    <div class="trace-summary" id="dr-case-summary"></div>
+    <div class="trace-tools"><div class="trace-links"><a id="trace-permalink" href="#">Link to this trace</a><a id="trace-download" href="data/replay.json" download>Download trace JSON</a></div><div class="trace-filters" role="group" aria-label="Filter recorded events"><button data-event-filter="all" aria-pressed="true">All events</button><button data-event-filter="discussion" aria-pressed="false">Agent discussion</button><button data-event-filter="evidence" aria-pressed="false">Evidence &amp; SQL</button><button data-event-filter="receipts" aria-pressed="false">Receipts</button></div><p id="trace-filter-status" role="status"></p><p class="recorded-note">Recorded responses only. Expand a step to inspect its evidence or receipt.</p></div>
+    <div class="dr-stats" id="dr-stats"></div><ol class="events" id="dr-events"></ol>
+  </aside>
+  <footer class="foot" id="site-footer"><p id="foot"></p><p>Revisit · Open Agent Hackathon 2026 · Track 3: Reasoning Architecture</p></footer>
+  <noscript><p class="noscript">Enable JavaScript to browse local recordings. You can also open <a href="data/replay.json">the exported JSON</a>.</p></noscript>
+  <script src="data/replay.js"></script><script src="data/forecast.js"></script><script src="app.js"></script>
+</body>
+</html>

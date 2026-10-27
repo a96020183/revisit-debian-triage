@@ -1,0 +1,948 @@
+{
+  "kind": "reopen",
+  "subject": "daily watch 2026-10-23",
+  "started": "2026-10-27T09:11:57",
+  "mode": "live",
+  "events": [
+    {
+      "seq": 1,
+      "t": "2026-10-27T09:11:57",
+      "agent": "scout",
+      "kind": "route",
+      "title": "Scout: intent reopen.check_conditions (high band); risk low",
+      "detail": {
+        "intent": "reopen.check_conditions",
+        "toolPlan": [
+          "worldmodel.query",
+          "zetaris.sql",
+          "hmem.query"
+        ],
+        "contract": "01M5XEKZP2T6J5G1WP72X2KXYE"
+      }
+    },
+    {
+      "seq": 2,
+      "t": "2026-10-27T09:11:57",
+      "agent": "scout",
+      "kind": "verified",
+      "title": "Executor boundary: contract allows zetaris.sql",
+      "detail": {
+        "tool": "zetaris.sql",
+        "capability": "evidence.query",
+        "contract": "01M5XEKZP2T6J5G1WP72X2KXYE"
+      }
+    },
+    {
+      "seq": 3,
+      "t": "2026-10-27T09:11:58",
+      "agent": "watcher",
+      "kind": "zetaris",
+      "title": "Zetaris: 11 of 286 waits were already resolved in bookworm (a DSA/DLA or a fixed +deb12u line): close them, do not reopen",
+      "detail": {
+        "sql": "SELECT * FROM revisit_pg.rv3_resolved",
+        "identity": "watcher",
+        "rows": [
+          {
+            "wait_id": "CVE-2023-6605|ffmpeg",
+            "how": "advisory",
+            "ref": "DSA-5985-1",
+            "date": "2025-08-25",
+            "version": "7:5.1.7-0+deb12u1"
+          },
+          {
+            "wait_id": "CVE-2026-30997|ffmpeg",
+            "how": "advisory",
+            "ref": "DSA-6276-1",
+            "date": "2026-05-15",
+            "version": "7:5.1.9-0+deb12u1"
+          },
+          {
+            "wait_id": "CVE-2025-61103|frr",
+            "how": "advisory",
+            "ref": "DSA-6322-1",
+            "date": "2026-06-05",
+            "version": "8.4.4-1.1~deb12u2"
+          },
+          {
+            "wait_id": "CVE-2025-61104|frr",
+            "how": "advisory",
+            "ref": "DSA-6322-1",
+            "date": "2026-06-05",
+            "version": "8.4.4-1.1~deb12u2"
+          },
+          {
+            "wait_id": "CVE-2025-61106|frr",
+            "how": "advisory",
+            "ref": "DSA-6322-1",
+            "date": "2026-06-05",
+            "version": "8.4.4-1.1~deb12u2"
+          },
+          {
+            "wait_id": "CVE-2025-61107|frr",
+            "how": "advisory",
+            "ref": "DSA-6322-1",
+            "date": "2026-06-05",
+            "version": "8.4.4-1.1~deb12u2"
+          },
+          {
+            "wait_id": "CVE-2024-38949|libde265",
+            "how": "advisory",
+            "ref": "DLA-4789-1",
+            "date": "2026-09-20",
+            "version": "1.0.11-1+deb12u3"
+          },
+          {
+            "wait_id": "CVE-2024-38950|libde265",
+            "how": "advisory",
+            "ref": "DLA-4789-1",
+            "date": "2026-09-20",
+            "version": "1.0.11-1+deb12u3"
+          },
+          {
+            "wait_id": "CVE-2025-2337|libmatio",
+            "how": "advisory",
+            "ref": "DLA-4644-1",
+            "date": "2026-06-24",
+            "version": "1.5.23-2+deb12u1"
+          },
+          {
+            "wait_id": "CVE-2021-37746|sylpheed",
+            "how": "bookworm_fixed_line",
+            "ref": "tracker 2026-10-23",
+            "date": "",
+            "version": "3.8.0~beta1-1+deb12u1"
+          },
+          {
+            "wait_id": "CVE-2024-42040|u-boot",
+            "how": "advisory",
+            "ref": "DLA-4642-1",
+            "date": "2026-06-23",
+            "version": "2023.01+dfsg-2+deb12u3"
+          }
+        ]
+      }
+    },
+    {
+      "seq": 4,
+      "t": "2026-10-27T09:11:59",
+      "agent": "watcher",
+      "kind": "zetaris",
+      "title": "Zetaris daily view rv3.reopen_due_v2: 16 of the open waits have a condition row today",
+      "detail": {
+        "sql": "SELECT * FROM rv3.reopen_due_v2",
+        "identity": "watcher",
+        "n_waits": 16
+      }
+    },
+    {
+      "seq": 5,
+      "t": "2026-10-27T09:12:00",
+      "agent": "memory",
+      "kind": "recall",
+      "title": "H-MEM CVE-2025-14932|netcdf: original commitment \"Minor issue, revisit when fixed upstream\"; latest note \"Minor issue\" (rewritten since deferral)",
+      "detail": {
+        "wait": "CVE-2025-14932|netcdf",
+        "commitment": "Minor issue, revisit when fixed upstream",
+        "latest": "Minor issue",
+        "rewritten": true
+      }
+    },
+    {
+      "seq": 6,
+      "t": "2026-10-27T09:12:00",
+      "agent": "watcher",
+      "kind": "fired",
+      "title": "CVE-2025-14932|netcdf: watch query fired via the original condition (fix commit first released 2026-07-09: [external source URL omitted]",
+      "detail": {
+        "wait": "CVE-2025-14932|netcdf",
+        "rows": [
+          {
+            "wait_id": "CVE-2025-14932|netcdf",
+            "cve": "CVE-2025-14932",
+            "pkg": "netcdf",
+            "deferred_at": "2026-06-01",
+            "condition_at_deferral": "Minor issue, revisit when fixed upstream",
+            "condition_now": "Minor issue",
+            "via": "original",
+            "tpl": "upstream_fix",
+            "kind": "release_tag",
+            "detail": "fix commit first released 2026-07-09: [external source URL omitted]",
+            "signal_date": "2026-07-09"
+          },
+          {
+            "wait_id": "CVE-2025-14932|netcdf",
+            "cve": "CVE-2025-14932",
+            "pkg": "netcdf",
+            "deferred_at": "2026-06-01",
+            "condition_at_deferral": "Minor issue, revisit when fixed upstream",
+            "condition_now": "Minor issue",
+            "via": "original",
+            "tpl": "upstream_fix",
+            "kind": "unstable",
+            "detail": "unstable ships 1:4.10.1-1 (in the archive since 2026-07-10)",
+            "signal_date": "2026-07-10"
+          }
+        ]
+      }
+    },
+    {
+      "seq": 7,
+      "t": "2026-10-27T09:12:06",
+      "agent": "executor",
+      "kind": "zetaris",
+      "title": "Zetaris federated query for CVE-2025-14932|netcdf: 7 rows (tracker, upstream links, release-monitoring REST, OSV REST, deferral record)",
+      "detail": {
+        "wait": "CVE-2025-14932|netcdf",
+        "sql": "SELECT 'debian_tracker' AS source, concat(t.release, ' ', t.status, CASE WHEN t.version <> '' THEN concat(' ', t.version) ELSE '' END, CASE WHEN t.release = 'sid' AND t.status = 'fixed' THEN concat(CASE WHEN t.since = '' THEN ' [date unknown: does not count as new]' WHEN t.since > w.deferred_at THEN concat(' [new since the deferral: ', t.since, ']') ELSE concat(' [already there when Debian deferred: ', t.since, ']') END, CASE WHEN t.same_line = '0' THEN concat(' [not on the bookworm version line: ', t.line_note, ']') WHEN t.fix_newer = '0' THEN concat(' [not newer than bookworm ', t.bw_versions, ']') ELSE concat(' [same version line, newer than bookworm ', t.bw_versions, ']') END) ELSE '' END) AS fact, t.note AS detail, t.since AS signal_date, CASE WHEN t.bw_versions <> '' THEN concat('fixed ', t.version, ' vs bookworm ', t.bw_versions) ELSE '' END AS versions FROM revisit_pg.rv3_tracker_now t JOIN revisit_pg.rv3_waits w ON w.wait_id = t.wait_id WHERE t.wait_id = 'CVE-2025-14932|netcdf' UNION ALL SELECT 'upstream_link' AS source, concat(u.kind, CASE WHEN u.release_tags <> '' THEN concat(' contained in ', size(split(u.release_tags, ',')), ' release tags (latest listed ', split(u.release_tags, ',')[0], ')') ELSE '' END, CASE WHEN u.merged_at <> '' THEN concat(' merged ', u.merged_at) ELSE '' END, CASE WHEN u.commit_date <> '' AND u.kind = 'gh_commit' THEN concat(' authored ', u.commit_date) ELSE '' END, CASE WHEN u.tag_date = '' THEN '' WHEN u.tag_bound = 'at_most' THEN concat(' already released by ', u.tag_date, ' (the oldest of the newest tags listed)') ELSE concat(' first released ', u.tag_date) END, CASE WHEN u.qualifies = '1' THEN concat(' [counts as the fix: ', u.why, ']') ELSE concat(' [NOT the fix by the rule: ', u.why, ']') END, CASE WHEN CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END = '' THEN ' [date unknown: does not count as new]' WHEN CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END > w.deferred_at THEN concat(' [new since the deferral: ', CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END, ']') ELSE concat(' [already there when Debian deferred: ', CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END, ']') END) AS fact, u.url AS detail, CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END AS signal_date, '' AS versions FROM revisit_pg.rv3_upstream u JOIN revisit_pg.rv3_waits w ON w.wait_id = u.wait_id WHERE u.wait_id = 'CVE-2025-14932|netcdf' UNION ALL SELECT 'upstream_branch' AS source, concat('fix on upstream release/', b.branch, CASE WHEN b.met = '1' THEN ' branch: yes' ELSE ' branch: no' END, CASE WHEN b.met = '1' THEN CASE WHEN b.tag_date = '' THEN ' [date unknown: does not count as new]' WHEN b.tag_date > w.deferred_at THEN concat(' [new since the deferral: ', b.tag_date, ']') ELSE concat(' [already there when Debian deferred: ', b.tag_date, ']') END ELSE '' END) AS fact, concat('release tags: ', b.tags) AS detail, b.tag_date AS signal_date, '' AS versions FROM revisit_pg.rv3_branch_fix b JOIN revisit_pg.rv3_waits w ON w.wait_id = b.wait_id WHERE b.wait_id = 'CVE-2025-14932|netcdf' UNION ALL SELECT 'upstream_releases' AS source, concat('latest stable release ', it.stable_versions[0], ' [no release date: context only]') AS fact, concat('recent: ', concat_ws(', ', slice(it.stable_versions, 1, 6))) AS detail, '' AS signal_date, '' AS versions FROM rv3_up.rm_netcdf LATERAL VIEW explode(items) i AS it WHERE lower(it.name) = 'netcdf' UNION ALL SELECT 'osv' AS source, concat(o.id, ' modified ', substr(o.modified, 1, 10), ' [no date for when the fix appeared: context only]') AS fact, substr(to_json(o.affected), 1, 700) AS detail, '' AS signal_date, '' AS versions FROM rv3_up.osv_cve_2025_14932 o UNION ALL SELECT 'deferral_record' AS source, concat('deferred ', w.deferred_at) AS fact, concat('condition at deferral: ', w.condition_at_deferral, ' || condition now: ', w.condition_now) AS detail, w.deferred_at AS signal_date, '' AS versions FROM revisit_pg.rv3_waits w WHERE w.wait_id = 'CVE-2025-14932|netcdf'",
+        "identity": "watcher",
+        "rows": [
+          {
+            "source": "debian_tracker",
+            "fact": "sid fixed 1:4.10.1-1 [new since the deferral: 2026-07-10] [same version line, newer than bookworm 1:4.9.0-3]",
+            "detail": "bug #1123960",
+            "signal_date": "2026-07-10",
+            "versions": "fixed 1:4.10.1-1 vs bookworm 1:4.9.0-3",
+            "id": "E1"
+          },
+          {
+            "source": "debian_tracker",
+            "fact": "trixie no-dsa",
+            "detail": "Minor issue",
+            "signal_date": "",
+            "versions": "",
+            "id": "E2"
+          },
+          {
+            "source": "debian_tracker",
+            "fact": "bookworm postponed",
+            "detail": "Minor issue",
+            "signal_date": "",
+            "versions": "",
+            "id": "E3"
+          },
+          {
+            "source": "upstream_link",
+            "fact": "gh_commit contained in 1 release tags (latest listed v4.10.1) authored 2026-07-07 first released 2026-07-09 [counts as the fix: tracker note says Fixed by] [new since the deferral: 2026-07-09]",
+            "detail": "[external source URL omitted]",
+            "signal_date": "2026-07-09",
+            "versions": "",
+            "id": "E4"
+          },
+          {
+            "source": "upstream_releases",
+            "fact": "latest stable release 4.10.1 [no release date: context only]",
+            "detail": "recent: 4.10.1, 4.10.0, 4.9.3, 4.9.2, 4.9.1, 4.9.0",
+            "signal_date": "",
+            "versions": "",
+            "id": "E5"
+          },
+          {
+            "source": "osv",
+            "fact": "CVE-2025-14932 modified 2026-04-10 [no date for when the fix appeared: context only]",
+            "detail": "[{\"database_specific\":{\"source\":\"[external source URL omitted]\"}}]",
+            "signal_date": "",
+            "versions": "",
+            "id": "E6"
+          },
+          {
+            "source": "deferral_record",
+            "fact": "deferred 2026-06-01",
+            "detail": "condition at deferral: Minor issue, revisit when fixed upstream || condition now: Minor issue",
+            "signal_date": "2026-06-01",
+            "versions": "",
+            "id": "E7"
+          }
+        ]
+      }
+    },
+    {
+      "seq": 8,
+      "t": "2026-10-27T09:12:41",
+      "agent": "judge",
+      "kind": "verdict",
+      "title": "Reopen judge (Nemotron) CVE-2025-14932|netcdf: met = yes (original)",
+      "detail": {
+        "wait": "CVE-2025-14932|netcdf",
+        "met": "yes",
+        "which": "original",
+        "cites": [
+          "E4",
+          "E1",
+          "E7"
+        ],
+        "reason": "The original deferral condition 'revisit when fixed upstream' is met because an upstream fix commit was released in v4.10.1 on 2026-07-09 (E4) and Debian unstable uploaded the fixed version 1:4.10.1-1 on 2026-07-10 (E1), both after the 2026-06-01 deferral (E7). The latest tracker note 'Minor issue' does not specify a revisit condition, so only the original commitment's condition is satisfied.",
+        "parsed": true,
+        "served": "nemotron-3-ultra-550b-a55b",
+        "replayed": false
+      }
+    },
+    {
+      "seq": 9,
+      "t": "2026-10-27T09:12:41",
+      "agent": "verifier",
+      "kind": "check",
+      "title": "Verifier: claims supported",
+      "detail": {
+        "ok": true,
+        "problems": [],
+        "wait": "CVE-2025-14932|netcdf"
+      }
+    },
+    {
+      "seq": 10,
+      "t": "2026-10-27T09:12:41",
+      "agent": "scout",
+      "kind": "route",
+      "title": "Scout: intent reopen.recall -> hmem.query, worldmodel.write, hmem.write",
+      "detail": {
+        "intent": "reopen.recall"
+      }
+    },
+    {
+      "seq": 11,
+      "t": "2026-10-27T09:12:41",
+      "agent": "memory",
+      "kind": "recall",
+      "title": "H-MEM CVE-2024-13745|edk2: original commitment \"Minor issue, revisit when/if fixed upstream\"",
+      "detail": {
+        "wait": "CVE-2024-13745|edk2",
+        "commitment": "Minor issue, revisit when/if fixed upstream",
+        "latest": "Minor issue, revisit when/if fixed upstream",
+        "rewritten": false
+      }
+    },
+    {
+      "seq": 12,
+      "t": "2026-10-27T09:12:41",
+      "agent": "watcher",
+      "kind": "fired",
+      "title": "CVE-2024-13745|edk2: watch query fired via the latest/original condition (unstable ships 2026.05-3 (in the archive since 2026-09-22))",
+      "detail": {
+        "wait": "CVE-2024-13745|edk2",
+        "rows": [
+          {
+            "wait_id": "CVE-2024-13745|edk2",
+            "cve": "CVE-2024-13745",
+            "pkg": "edk2",
+            "deferred_at": "2026-06-01",
+            "condition_at_deferral": "Minor issue, revisit when/if fixed upstream",
+            "condition_now": "Minor issue, revisit when/if fixed upstream",
+            "via": "latest",
+            "tpl": "upstream_fix",
+            "kind": "unstable",
+            "detail": "unstable ships 2026.05-3 (in the archive since 2026-09-22)",
+            "signal_date": "2026-09-22"
+          },
+          {
+            "wait_id": "CVE-2024-13745|edk2",
+            "cve": "CVE-2024-13745",
+            "pkg": "edk2",
+            "deferred_at": "2026-06-01",
+            "condition_at_deferral": "Minor issue, revisit when/if fixed upstream",
+            "condition_now": "Minor issue, revisit when/if fixed upstream",
+            "via": "original",
+            "tpl": "upstream_fix",
+            "kind": "unstable",
+            "detail": "unstable ships 2026.05-3 (in the archive since 2026-09-22)",
+            "signal_date": "2026-09-22"
+          }
+        ]
+      }
+    },
+    {
+      "seq": 13,
+      "t": "2026-10-27T09:12:47",
+      "agent": "executor",
+      "kind": "zetaris",
+      "title": "Zetaris federated query for CVE-2024-13745|edk2: 5 rows (tracker, upstream links, release-monitoring REST, OSV REST, deferral record)",
+      "detail": {
+        "wait": "CVE-2024-13745|edk2",
+        "sql": "SELECT 'debian_tracker' AS source, concat(t.release, ' ', t.status, CASE WHEN t.version <> '' THEN concat(' ', t.version) ELSE '' END, CASE WHEN t.release = 'sid' AND t.status = 'fixed' THEN concat(CASE WHEN t.since = '' THEN ' [date unknown: does not count as new]' WHEN t.since > w.deferred_at THEN concat(' [new since the deferral: ', t.since, ']') ELSE concat(' [already there when Debian deferred: ', t.since, ']') END, CASE WHEN t.same_line = '0' THEN concat(' [not on the bookworm version line: ', t.line_note, ']') WHEN t.fix_newer = '0' THEN concat(' [not newer than bookworm ', t.bw_versions, ']') ELSE concat(' [same version line, newer than bookworm ', t.bw_versions, ']') END) ELSE '' END) AS fact, t.note AS detail, t.since AS signal_date, CASE WHEN t.bw_versions <> '' THEN concat('fixed ', t.version, ' vs bookworm ', t.bw_versions) ELSE '' END AS versions FROM revisit_pg.rv3_tracker_now t JOIN revisit_pg.rv3_waits w ON w.wait_id = t.wait_id WHERE t.wait_id = 'CVE-2024-13745|edk2' UNION ALL SELECT 'upstream_link' AS source, concat(u.kind, CASE WHEN u.release_tags <> '' THEN concat(' contained in ', size(split(u.release_tags, ',')), ' release tags (latest listed ', split(u.release_tags, ',')[0], ')') ELSE '' END, CASE WHEN u.merged_at <> '' THEN concat(' merged ', u.merged_at) ELSE '' END, CASE WHEN u.commit_date <> '' AND u.kind = 'gh_commit' THEN concat(' authored ', u.commit_date) ELSE '' END, CASE WHEN u.tag_date = '' THEN '' WHEN u.tag_bound = 'at_most' THEN concat(' already released by ', u.tag_date, ' (the oldest of the newest tags listed)') ELSE concat(' first released ', u.tag_date) END, CASE WHEN u.qualifies = '1' THEN concat(' [counts as the fix: ', u.why, ']') ELSE concat(' [NOT the fix by the rule: ', u.why, ']') END, CASE WHEN CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END = '' THEN ' [date unknown: does not count as new]' WHEN CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END > w.deferred_at THEN concat(' [new since the deferral: ', CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END, ']') ELSE concat(' [already there when Debian deferred: ', CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END, ']') END) AS fact, u.url AS detail, CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END AS signal_date, '' AS versions FROM revisit_pg.rv3_upstream u JOIN revisit_pg.rv3_waits w ON w.wait_id = u.wait_id WHERE u.wait_id = 'CVE-2024-13745|edk2' UNION ALL SELECT 'upstream_branch' AS source, concat('fix on upstream release/', b.branch, CASE WHEN b.met = '1' THEN ' branch: yes' ELSE ' branch: no' END, CASE WHEN b.met = '1' THEN CASE WHEN b.tag_date = '' THEN ' [date unknown: does not count as new]' WHEN b.tag_date > w.deferred_at THEN concat(' [new since the deferral: ', b.tag_date, ']') ELSE concat(' [already there when Debian deferred: ', b.tag_date, ']') END ELSE '' END) AS fact, concat('release tags: ', b.tags) AS detail, b.tag_date AS signal_date, '' AS versions FROM revisit_pg.rv3_branch_fix b JOIN revisit_pg.rv3_waits w ON w.wait_id = b.wait_id WHERE b.wait_id = 'CVE-2024-13745|edk2' UNION ALL SELECT 'upstream_releases' AS source, concat('latest stable release ', it.stable_versions[0], ' [no release date: context only]') AS fact, concat('recent: ', concat_ws(', ', slice(it.stable_versions, 1, 6))) AS detail, '' AS signal_date, '' AS versions FROM rv3_up.rm_edk2 LATERAL VIEW explode(items) i AS it WHERE lower(it.name) = 'edk2' UNION ALL SELECT 'deferral_record' AS source, concat('deferred ', w.deferred_at) AS fact, concat('condition at deferral: ', w.condition_at_deferral, ' || condition now: ', w.condition_now) AS detail, w.deferred_at AS signal_date, '' AS versions FROM revisit_pg.rv3_waits w WHERE w.wait_id = 'CVE-2024-13745|edk2'",
+        "identity": "watcher",
+        "rows": [
+          {
+            "source": "debian_tracker",
+            "fact": "sid fixed 2026.05-3 [new since the deferral: 2026-09-22] [same version line, newer than bookworm 2022.11-6+deb12u1,2022.11-6+deb12u2]",
+            "detail": "bug #1138847",
+            "signal_date": "2026-09-22",
+            "versions": "fixed 2026.05-3 vs bookworm 2022.11-6+deb12u1,2022.11-6+deb12u2",
+            "id": "E1"
+          },
+          {
+            "source": "debian_tracker",
+            "fact": "trixie no-dsa",
+            "detail": "Minor issue, revisit when/if fixed upstream",
+            "signal_date": "",
+            "versions": "",
+            "id": "E2"
+          },
+          {
+            "source": "debian_tracker",
+            "fact": "bookworm no-dsa",
+            "detail": "Minor issue, revisit when/if fixed upstream",
+            "signal_date": "",
+            "versions": "",
+            "id": "E3"
+          },
+          {
+            "source": "upstream_releases",
+            "fact": "latest stable release 202608 [no release date: context only]",
+            "detail": "recent: 202608, 202605, 202602, 202511, 202508.01, 202508",
+            "signal_date": "",
+            "versions": "",
+            "id": "E4"
+          },
+          {
+            "source": "deferral_record",
+            "fact": "deferred 2026-06-01",
+            "detail": "condition at deferral: Minor issue, revisit when/if fixed upstream || condition now: Minor issue, revisit when/if fixed upstream",
+            "signal_date": "2026-06-01",
+            "versions": "",
+            "id": "E5"
+          }
+        ]
+      }
+    },
+    {
+      "seq": 14,
+      "t": "2026-10-27T09:13:07",
+      "agent": "judge",
+      "kind": "verdict",
+      "title": "Reopen judge (Nemotron) CVE-2024-13745|edk2: met = yes (both)",
+      "detail": {
+        "wait": "CVE-2024-13745|edk2",
+        "met": "yes",
+        "which": "both",
+        "cites": [
+          "E1"
+        ],
+        "reason": "The condition 'revisit when/if fixed upstream' is met because Debian unstable (sid) received a fixed version 2026.05-3 on 2026-09-22 (E1), which is after the 2026-06-01 deferral and on the same version line as bookworm. The original and latest conditions are identical, so both are satisfied.",
+        "parsed": true,
+        "served": "nemotron-3-ultra-550b-a55b",
+        "replayed": false
+      }
+    },
+    {
+      "seq": 15,
+      "t": "2026-10-27T09:13:07",
+      "agent": "verifier",
+      "kind": "check",
+      "title": "Verifier: claims supported",
+      "detail": {
+        "ok": true,
+        "problems": [],
+        "wait": "CVE-2024-13745|edk2"
+      }
+    },
+    {
+      "seq": 16,
+      "t": "2026-10-27T09:13:07",
+      "agent": "scout",
+      "kind": "route",
+      "title": "Scout: intent reopen.recall -> hmem.query, worldmodel.write, hmem.write",
+      "detail": {
+        "intent": "reopen.recall"
+      }
+    },
+    {
+      "seq": 17,
+      "t": "2026-10-27T09:13:07",
+      "agent": "memory",
+      "kind": "recall",
+      "title": "H-MEM CVE-2023-6605|ffmpeg: original commitment \"Minor issue, wait until it's fixed in the 5.1 branch\"",
+      "detail": {
+        "wait": "CVE-2023-6605|ffmpeg",
+        "commitment": "Minor issue, wait until it's fixed in the 5.1 branch",
+        "latest": "Minor issue, wait until it's fixed in the 5.1 branch",
+        "rewritten": false
+      }
+    },
+    {
+      "seq": 18,
+      "t": "2026-10-27T09:13:07",
+      "agent": "watcher",
+      "kind": "resolved",
+      "title": "CVE-2023-6605|ffmpeg: already resolved in bookworm (DSA-5985-1 2025-08-25); close the wait, no model call",
+      "detail": {
+        "wait": "CVE-2023-6605|ffmpeg",
+        "wait_id": "CVE-2023-6605|ffmpeg",
+        "how": "advisory",
+        "ref": "DSA-5985-1",
+        "date": "2025-08-25",
+        "version": "7:5.1.7-0+deb12u1"
+      }
+    },
+    {
+      "seq": 19,
+      "t": "2026-10-27T09:13:07",
+      "agent": "memory",
+      "kind": "recall",
+      "title": "H-MEM CVE-2019-12067|qemu: original commitment \"Minor issue, revisit when fixed upstream\"",
+      "detail": {
+        "wait": "CVE-2019-12067|qemu",
+        "commitment": "Minor issue, revisit when fixed upstream",
+        "latest": "Minor issue, revisit when fixed upstream",
+        "rewritten": false
+      }
+    },
+    {
+      "seq": 20,
+      "t": "2026-10-27T09:13:15",
+      "agent": "executor",
+      "kind": "zetaris",
+      "title": "Zetaris rows for CVE-2019-12067|qemu: the sealed watch fired here; 1 of 7 rows say why the corrected watch does not",
+      "detail": {
+        "wait": "CVE-2019-12067|qemu",
+        "sql": "SELECT 'debian_tracker' AS source, concat(t.release, ' ', t.status, CASE WHEN t.version <> '' THEN concat(' ', t.version) ELSE '' END, CASE WHEN t.release = 'sid' AND t.status = 'fixed' THEN concat(CASE WHEN t.since = '' THEN ' [date unknown: does not count as new]' WHEN t.since > w.deferred_at THEN concat(' [new since the deferral: ', t.since, ']') ELSE concat(' [already there when Debian deferred: ', t.since, ']') END, CASE WHEN t.same_line = '0' THEN concat(' [not on the bookworm version line: ', t.line_note, ']') WHEN t.fix_newer = '0' THEN concat(' [not newer than bookworm ', t.bw_versions, ']') ELSE concat(' [same version line, newer than bookworm ', t.bw_versions, ']') END) ELSE '' END) AS fact, t.note AS detail, t.since AS signal_date, CASE WHEN t.bw_versions <> '' THEN concat('fixed ', t.version, ' vs bookworm ', t.bw_versions) ELSE '' END AS versions FROM revisit_pg.rv3_tracker_now t JOIN revisit_pg.rv3_waits w ON w.wait_id = t.wait_id WHERE t.wait_id = 'CVE-2019-12067|qemu' UNION ALL SELECT 'upstream_link' AS source, concat(u.kind, CASE WHEN u.release_tags <> '' THEN concat(' contained in ', size(split(u.release_tags, ',')), ' release tags (latest listed ', split(u.release_tags, ',')[0], ')') ELSE '' END, CASE WHEN u.merged_at <> '' THEN concat(' merged ', u.merged_at) ELSE '' END, CASE WHEN u.commit_date <> '' AND u.kind = 'gh_commit' THEN concat(' authored ', u.commit_date) ELSE '' END, CASE WHEN u.tag_date = '' THEN '' WHEN u.tag_bound = 'at_most' THEN concat(' already released by ', u.tag_date, ' (the oldest of the newest tags listed)') ELSE concat(' first released ', u.tag_date) END, CASE WHEN u.qualifies = '1' THEN concat(' [counts as the fix: ', u.why, ']') ELSE concat(' [NOT the fix by the rule: ', u.why, ']') END, CASE WHEN CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END = '' THEN ' [date unknown: does not count as new]' WHEN CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END > w.deferred_at THEN concat(' [new since the deferral: ', CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END, ']') ELSE concat(' [already there when Debian deferred: ', CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END, ']') END) AS fact, u.url AS detail, CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END AS signal_date, '' AS versions FROM revisit_pg.rv3_upstream u JOIN revisit_pg.rv3_waits w ON w.wait_id = u.wait_id WHERE u.wait_id = 'CVE-2019-12067|qemu' UNION ALL SELECT 'upstream_branch' AS source, concat('fix on upstream release/', b.branch, CASE WHEN b.met = '1' THEN ' branch: yes' ELSE ' branch: no' END, CASE WHEN b.met = '1' THEN CASE WHEN b.tag_date = '' THEN ' [date unknown: does not count as new]' WHEN b.tag_date > w.deferred_at THEN concat(' [new since the deferral: ', b.tag_date, ']') ELSE concat(' [already there when Debian deferred: ', b.tag_date, ']') END ELSE '' END) AS fact, concat('release tags: ', b.tags) AS detail, b.tag_date AS signal_date, '' AS versions FROM revisit_pg.rv3_branch_fix b JOIN revisit_pg.rv3_waits w ON w.wait_id = b.wait_id WHERE b.wait_id = 'CVE-2019-12067|qemu' UNION ALL SELECT 'upstream_releases' AS source, concat('latest stable release ', it.stable_versions[0], ' [no release date: context only]') AS fact, concat('recent: ', concat_ws(', ', slice(it.stable_versions, 1, 6))) AS detail, '' AS signal_date, '' AS versions FROM rv3_up.rm_qemu LATERAL VIEW explode(items) i AS it WHERE lower(it.name) = 'qemu' UNION ALL SELECT 'osv' AS source, concat(o.id, ' modified ', substr(o.modified, 1, 10), ' [no date for when the fix appeared: context only]') AS fact, substr(to_json(o.affected), 1, 700) AS detail, '' AS signal_date, '' AS versions FROM rv3_up.osv_cve_2019_12067 o UNION ALL SELECT 'deferral_record' AS source, concat('deferred ', w.deferred_at) AS fact, concat('condition at deferral: ', w.condition_at_deferral, ' || condition now: ', w.condition_now) AS detail, w.deferred_at AS signal_date, '' AS versions FROM revisit_pg.rv3_waits w WHERE w.wait_id = 'CVE-2019-12067|qemu'",
+        "identity": "watcher",
+        "rows": [
+          {
+            "source": "debian_tracker",
+            "fact": "sid unfixed",
+            "detail": "low; bug #972099",
+            "signal_date": "",
+            "versions": "",
+            "id": "E1"
+          },
+          {
+            "source": "debian_tracker",
+            "fact": "trixie postponed",
+            "detail": "Minor issue, revisit when fixed upstream",
+            "signal_date": "",
+            "versions": "",
+            "id": "E2"
+          },
+          {
+            "source": "debian_tracker",
+            "fact": "bookworm postponed",
+            "detail": "Minor issue, revisit when fixed upstream",
+            "signal_date": "",
+            "versions": "",
+            "id": "E3"
+          },
+          {
+            "source": "upstream_link",
+            "fact": "gh_commit contained in 15 release tags (latest listed v11.1.2) authored 2014-10-01 already released by 2026-04-21 (the oldest of the newest tags listed) [NOT the fix by the rule: authored 2014-10-01, before the deferral; no Fixed-by note; does not name the CVE] [already there when Debian deferred: 2026-04-21]",
+            "detail": "[external source URL omitted]",
+            "signal_date": "2026-04-21",
+            "versions": "",
+            "id": "E4"
+          },
+          {
+            "source": "upstream_releases",
+            "fact": "latest stable release 11.1.2 [no release date: context only]",
+            "detail": "recent: 11.1.2, 11.1.1, 11.1.0, 11.0.5, 11.0.4, 11.0.3",
+            "signal_date": "",
+            "versions": "",
+            "id": "E5"
+          },
+          {
+            "source": "osv",
+            "fact": "CVE-2019-12067 modified 2026-10-24 [no date for when the fix appeared: context only]",
+            "detail": "[{\"database_specific\":{\"source\":\"[external source URL omitted]\"},\"ranges\":[{\"database_specific\":{\"extracted_events\":[{\"cpe\":\"cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*\",\"range\":[{\"introduced\":\"9.0\"},{\"last_affected\":\"9.0\"}],\"source\":\"CPE_STRING\"},{\"cpe\":\"cpe:2.3:o:debian:debian_linux:10.0:*:*:*:*:*:*:*\",\"range\":[{\"introduced\":\"10.0\"},{\"last_affected\":\"10.0\"}],\"source\":\"CPE_STRING\"},{\"cpe\":\"cpe:2.3:a:redhat:openstack_platform:10.0:*:*:*:*:*:*:*\",\"range\":[{\"introduced\":\"10.0\"},{\"last_affected\":\"10.0\"}],\"source\":\"CPE_STRING\"},{\"cpe\":\"cpe:2.3:o:debian:debian_linux:11.0:*:*:*:*:*:*:*\",\"range\":[{\"introduced\":\"11.0\"},{\"last_affected\":\"11.0\"}],",
+            "signal_date": "",
+            "versions": "",
+            "id": "E6"
+          },
+          {
+            "source": "deferral_record",
+            "fact": "deferred 2026-06-01",
+            "detail": "condition at deferral: Minor issue, revisit when fixed upstream || condition now: Minor issue, revisit when fixed upstream",
+            "signal_date": "2026-06-01",
+            "versions": "",
+            "id": "E7"
+          }
+        ]
+      }
+    },
+    {
+      "seq": 21,
+      "t": "2026-10-27T09:13:15",
+      "agent": "watcher",
+      "kind": "quiet",
+      "title": "CVE-2019-12067|qemu: no condition row today; keeps waiting (no model call)",
+      "detail": {
+        "wait": "CVE-2019-12067|qemu",
+        "why_quiet": [
+          "gh_commit contained in 15 release tags (latest listed v11.1.2) authored 2014-10-01 already released by 2026-04-21 (the oldest of the newest tags listed) [NOT the fix by the rule: authored 2014-10-01, before the deferral; no Fixed-by note; does not name the CVE] [already there when Debian deferred: 2026-04-21]"
+        ]
+      }
+    },
+    {
+      "seq": 22,
+      "t": "2026-10-27T09:13:15",
+      "agent": "memory",
+      "kind": "recall",
+      "title": "H-MEM CVE-2023-28858|python-redis: original commitment \"Minor issue, revisit when fixed upstream\"",
+      "detail": {
+        "wait": "CVE-2023-28858|python-redis",
+        "commitment": "Minor issue, revisit when fixed upstream",
+        "latest": "Minor issue, revisit when fixed upstream",
+        "rewritten": false
+      }
+    },
+    {
+      "seq": 23,
+      "t": "2026-10-27T09:13:16",
+      "agent": "executor",
+      "kind": "zetaris",
+      "title": "Zetaris rows for CVE-2023-28858|python-redis: the sealed watch fired here; 2 of 5 rows say why the corrected watch does not",
+      "detail": {
+        "wait": "CVE-2023-28858|python-redis",
+        "sql": "SELECT 'debian_tracker' AS source, concat(t.release, ' ', t.status, CASE WHEN t.version <> '' THEN concat(' ', t.version) ELSE '' END, CASE WHEN t.release = 'sid' AND t.status = 'fixed' THEN concat(CASE WHEN t.since = '' THEN ' [date unknown: does not count as new]' WHEN t.since > w.deferred_at THEN concat(' [new since the deferral: ', t.since, ']') ELSE concat(' [already there when Debian deferred: ', t.since, ']') END, CASE WHEN t.same_line = '0' THEN concat(' [not on the bookworm version line: ', t.line_note, ']') WHEN t.fix_newer = '0' THEN concat(' [not newer than bookworm ', t.bw_versions, ']') ELSE concat(' [same version line, newer than bookworm ', t.bw_versions, ']') END) ELSE '' END) AS fact, t.note AS detail, t.since AS signal_date, CASE WHEN t.bw_versions <> '' THEN concat('fixed ', t.version, ' vs bookworm ', t.bw_versions) ELSE '' END AS versions FROM revisit_pg.rv3_tracker_now t JOIN revisit_pg.rv3_waits w ON w.wait_id = t.wait_id WHERE t.wait_id = 'CVE-2023-28858|python-redis' UNION ALL SELECT 'upstream_link' AS source, concat(u.kind, CASE WHEN u.release_tags <> '' THEN concat(' contained in ', size(split(u.release_tags, ',')), ' release tags (latest listed ', split(u.release_tags, ',')[0], ')') ELSE '' END, CASE WHEN u.merged_at <> '' THEN concat(' merged ', u.merged_at) ELSE '' END, CASE WHEN u.commit_date <> '' AND u.kind = 'gh_commit' THEN concat(' authored ', u.commit_date) ELSE '' END, CASE WHEN u.tag_date = '' THEN '' WHEN u.tag_bound = 'at_most' THEN concat(' already released by ', u.tag_date, ' (the oldest of the newest tags listed)') ELSE concat(' first released ', u.tag_date) END, CASE WHEN u.qualifies = '1' THEN concat(' [counts as the fix: ', u.why, ']') ELSE concat(' [NOT the fix by the rule: ', u.why, ']') END, CASE WHEN CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END = '' THEN ' [date unknown: does not count as new]' WHEN CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END > w.deferred_at THEN concat(' [new since the deferral: ', CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END, ']') ELSE concat(' [already there when Debian deferred: ', CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END, ']') END) AS fact, u.url AS detail, CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END AS signal_date, '' AS versions FROM revisit_pg.rv3_upstream u JOIN revisit_pg.rv3_waits w ON w.wait_id = u.wait_id WHERE u.wait_id = 'CVE-2023-28858|python-redis' UNION ALL SELECT 'upstream_branch' AS source, concat('fix on upstream release/', b.branch, CASE WHEN b.met = '1' THEN ' branch: yes' ELSE ' branch: no' END, CASE WHEN b.met = '1' THEN CASE WHEN b.tag_date = '' THEN ' [date unknown: does not count as new]' WHEN b.tag_date > w.deferred_at THEN concat(' [new since the deferral: ', b.tag_date, ']') ELSE concat(' [already there when Debian deferred: ', b.tag_date, ']') END ELSE '' END) AS fact, concat('release tags: ', b.tags) AS detail, b.tag_date AS signal_date, '' AS versions FROM revisit_pg.rv3_branch_fix b JOIN revisit_pg.rv3_waits w ON w.wait_id = b.wait_id WHERE b.wait_id = 'CVE-2023-28858|python-redis' UNION ALL SELECT 'osv' AS source, concat(o.id, ' modified ', substr(o.modified, 1, 10), ' [no date for when the fix appeared: context only]') AS fact, substr(to_json(o.affected), 1, 700) AS detail, '' AS signal_date, '' AS versions FROM rv3_up.osv_cve_2023_28858 o UNION ALL SELECT 'deferral_record' AS source, concat('deferred ', w.deferred_at) AS fact, concat('condition at deferral: ', w.condition_at_deferral, ' || condition now: ', w.condition_now) AS detail, w.deferred_at AS signal_date, '' AS versions FROM revisit_pg.rv3_waits w WHERE w.wait_id = 'CVE-2023-28858|python-redis'",
+        "identity": "watcher",
+        "rows": [
+          {
+            "source": "debian_tracker",
+            "fact": "sid fixed 5.2.1-1 [already there when Debian deferred: 2025-04-10] [same version line, newer than bookworm 4.3.4-3]",
+            "detail": "bug #1033754",
+            "signal_date": "2025-04-10",
+            "versions": "fixed 5.2.1-1 vs bookworm 4.3.4-3",
+            "id": "E1"
+          },
+          {
+            "source": "debian_tracker",
+            "fact": "bookworm postponed",
+            "detail": "Minor issue, revisit when fixed upstream",
+            "signal_date": "",
+            "versions": "",
+            "id": "E2"
+          },
+          {
+            "source": "upstream_link",
+            "fact": "gh_pull merged 2023-03-22 [NOT the fix by the rule: authored 2023-03-22, before the deferral; no Fixed-by note; does not name the CVE] [already there when Debian deferred: 2023-03-22]",
+            "detail": "[external source URL omitted]",
+            "signal_date": "2023-03-22",
+            "versions": "",
+            "id": "E3"
+          },
+          {
+            "source": "osv",
+            "fact": "CVE-2023-28858 modified 2026-10-21 [no date for when the fix appeared: context only]",
+            "detail": "[{\"database_specific\":{\"source\":\"[external source URL omitted]\"},\"ranges\":[{\"database_specific\":{\"extracted_events\":[{\"cpe\":\"cpe:2.3:a:redis:redis-py:*:*:*:*:*:*:*:*\",\"range\":[{\"introduced\":\"4.2.0\"},{\"fixed\":\"4.3.6\"}],\"source\":\"CPE_RANGE\"},{\"cpe\":\"cpe:2.3:a:redis:redis-py:*:*:*:*:*:*:*:*\",\"range\":[{\"introduced\":\"4.4.0\"},{\"fixed\":\"4.4.3\"}],\"source\":\"CPE_RANGE\"},{\"cpe\":\"cpe:2.3:a:redis:redis-py:*:*:*:*:*:*:*:*\",\"range\":[{\"introduced\":\"4.5.0\"},{\"fixed\":\"4.5.3\"}],\"source\":\"CPE_RANGE\"}]},\"events\":[{\"introduced\":\"ef4caf5b8bd55fc5c3ca7d994e2047e046f7e942\"},{\"fixed\":\"7b48b1bb34f97e4adf32c12a987ff593dc536aef\"},{\"introduced\":\"6fa6cfc9ada2ec1878484ba44",
+            "signal_date": "",
+            "versions": "",
+            "id": "E4"
+          },
+          {
+            "source": "deferral_record",
+            "fact": "deferred 2026-06-01",
+            "detail": "condition at deferral: Minor issue, revisit when fixed upstream || condition now: Minor issue, revisit when fixed upstream",
+            "signal_date": "2026-06-01",
+            "versions": "",
+            "id": "E5"
+          }
+        ]
+      }
+    },
+    {
+      "seq": 24,
+      "t": "2026-10-27T09:13:16",
+      "agent": "watcher",
+      "kind": "quiet",
+      "title": "CVE-2023-28858|python-redis: no condition row today; keeps waiting (no model call)",
+      "detail": {
+        "wait": "CVE-2023-28858|python-redis",
+        "why_quiet": [
+          "sid fixed 5.2.1-1 [already there when Debian deferred: 2025-04-10] [same version line, newer than bookworm 4.3.4-3]",
+          "gh_pull merged 2023-03-22 [NOT the fix by the rule: authored 2023-03-22, before the deferral; no Fixed-by note; does not name the CVE] [already there when Debian deferred: 2023-03-22]"
+        ]
+      }
+    },
+    {
+      "seq": 25,
+      "t": "2026-10-27T09:13:16",
+      "agent": "memory",
+      "kind": "recall",
+      "title": "H-MEM CVE-2022-29977|libsixel: original commitment \"Minor issue, revisit when fixed upstream\"",
+      "detail": {
+        "wait": "CVE-2022-29977|libsixel",
+        "commitment": "Minor issue, revisit when fixed upstream",
+        "latest": "Minor issue, revisit when fixed upstream",
+        "rewritten": false
+      }
+    },
+    {
+      "seq": 26,
+      "t": "2026-10-27T09:13:23",
+      "agent": "executor",
+      "kind": "zetaris",
+      "title": "Zetaris rows for CVE-2022-29977|libsixel: the sealed watch fired here; 3 of 8 rows say why the corrected watch does not",
+      "detail": {
+        "wait": "CVE-2022-29977|libsixel",
+        "sql": "SELECT 'debian_tracker' AS source, concat(t.release, ' ', t.status, CASE WHEN t.version <> '' THEN concat(' ', t.version) ELSE '' END, CASE WHEN t.release = 'sid' AND t.status = 'fixed' THEN concat(CASE WHEN t.since = '' THEN ' [date unknown: does not count as new]' WHEN t.since > w.deferred_at THEN concat(' [new since the deferral: ', t.since, ']') ELSE concat(' [already there when Debian deferred: ', t.since, ']') END, CASE WHEN t.same_line = '0' THEN concat(' [not on the bookworm version line: ', t.line_note, ']') WHEN t.fix_newer = '0' THEN concat(' [not newer than bookworm ', t.bw_versions, ']') ELSE concat(' [same version line, newer than bookworm ', t.bw_versions, ']') END) ELSE '' END) AS fact, t.note AS detail, t.since AS signal_date, CASE WHEN t.bw_versions <> '' THEN concat('fixed ', t.version, ' vs bookworm ', t.bw_versions) ELSE '' END AS versions FROM revisit_pg.rv3_tracker_now t JOIN revisit_pg.rv3_waits w ON w.wait_id = t.wait_id WHERE t.wait_id = 'CVE-2022-29977|libsixel' UNION ALL SELECT 'upstream_link' AS source, concat(u.kind, CASE WHEN u.release_tags <> '' THEN concat(' contained in ', size(split(u.release_tags, ',')), ' release tags (latest listed ', split(u.release_tags, ',')[0], ')') ELSE '' END, CASE WHEN u.merged_at <> '' THEN concat(' merged ', u.merged_at) ELSE '' END, CASE WHEN u.commit_date <> '' AND u.kind = 'gh_commit' THEN concat(' authored ', u.commit_date) ELSE '' END, CASE WHEN u.tag_date = '' THEN '' WHEN u.tag_bound = 'at_most' THEN concat(' already released by ', u.tag_date, ' (the oldest of the newest tags listed)') ELSE concat(' first released ', u.tag_date) END, CASE WHEN u.qualifies = '1' THEN concat(' [counts as the fix: ', u.why, ']') ELSE concat(' [NOT the fix by the rule: ', u.why, ']') END, CASE WHEN CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END = '' THEN ' [date unknown: does not count as new]' WHEN CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END > w.deferred_at THEN concat(' [new since the deferral: ', CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END, ']') ELSE concat(' [already there when Debian deferred: ', CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END, ']') END) AS fact, u.url AS detail, CASE WHEN u.kind = 'gh_pull' THEN u.merged_at WHEN u.tag_date <> '' THEN u.tag_date ELSE u.commit_date END AS signal_date, '' AS versions FROM revisit_pg.rv3_upstream u JOIN revisit_pg.rv3_waits w ON w.wait_id = u.wait_id WHERE u.wait_id = 'CVE-2022-29977|libsixel' UNION ALL SELECT 'upstream_branch' AS source, concat('fix on upstream release/', b.branch, CASE WHEN b.met = '1' THEN ' branch: yes' ELSE ' branch: no' END, CASE WHEN b.met = '1' THEN CASE WHEN b.tag_date = '' THEN ' [date unknown: does not count as new]' WHEN b.tag_date > w.deferred_at THEN concat(' [new since the deferral: ', b.tag_date, ']') ELSE concat(' [already there when Debian deferred: ', b.tag_date, ']') END ELSE '' END) AS fact, concat('release tags: ', b.tags) AS detail, b.tag_date AS signal_date, '' AS versions FROM revisit_pg.rv3_branch_fix b JOIN revisit_pg.rv3_waits w ON w.wait_id = b.wait_id WHERE b.wait_id = 'CVE-2022-29977|libsixel' UNION ALL SELECT 'upstream_releases' AS source, concat('latest stable release ', it.stable_versions[0], ' [no release date: context only]') AS fact, concat('recent: ', concat_ws(', ', slice(it.stable_versions, 1, 6))) AS detail, '' AS signal_date, '' AS versions FROM rv3_up.rm_libsixel LATERAL VIEW explode(items) i AS it WHERE lower(it.name) = 'libsixel' UNION ALL SELECT 'osv' AS source, concat(o.id, ' modified ', substr(o.modified, 1, 10), ' [no date for when the fix appeared: context only]') AS fact, substr(to_json(o.affected), 1, 700) AS detail, '' AS signal_date, '' AS versions FROM rv3_up.osv_cve_2022_29977 o UNION ALL SELECT 'deferral_record' AS source, concat('deferred ', w.deferred_at) AS fact, concat('condition at deferral: ', w.condition_at_deferral, ' || condition now: ', w.condition_now) AS detail, w.deferred_at AS signal_date, '' AS versions FROM revisit_pg.rv3_waits w WHERE w.wait_id = 'CVE-2022-29977|libsixel'",
+        "identity": "watcher",
+        "rows": [
+          {
+            "source": "debian_tracker",
+            "fact": "sid fixed 1:1.8.7-1 [already there when Debian deferred: 2026-03-12] [not on the bookworm version line: unstable 1:1.8.7-1 (epoch 1) is not on bookworm's line (1.10.3-3, epoch 0)]",
+            "detail": "bug #1014526",
+            "signal_date": "2026-03-12",
+            "versions": "fixed 1:1.8.7-1 vs bookworm 1.10.3-3",
+            "id": "E1"
+          },
+          {
+            "source": "debian_tracker",
+            "fact": "trixie postponed",
+            "detail": "Minor issue, revisit when fixed upstream",
+            "signal_date": "",
+            "versions": "",
+            "id": "E2"
+          },
+          {
+            "source": "debian_tracker",
+            "fact": "bookworm postponed",
+            "detail": "Minor issue, revisit when fixed upstream",
+            "signal_date": "",
+            "versions": "",
+            "id": "E3"
+          },
+          {
+            "source": "upstream_link",
+            "fact": "gh_commit contained in 5 release tags (latest listed v1.8.7) authored 2025-01-09 first released 2025-08-31 [NOT the fix by the rule: authored 2025-01-09, before the deferral; no Fixed-by note; does not name the CVE] [already there when Debian deferred: 2025-08-31]",
+            "detail": "[external source URL omitted]",
+            "signal_date": "2025-08-31",
+            "versions": "",
+            "id": "E4"
+          },
+          {
+            "source": "upstream_link",
+            "fact": "gh_commit contained in 5 release tags (latest listed v1.8.7) authored 2025-01-09 first released 2025-08-31 [NOT the fix by the rule: authored 2025-01-09, before the deferral; no Fixed-by note; does not name the CVE] [already there when Debian deferred: 2025-08-31]",
+            "detail": "[external source URL omitted]",
+            "signal_date": "2025-08-31",
+            "versions": "",
+            "id": "E5"
+          },
+          {
+            "source": "upstream_releases",
+            "fact": "latest stable release 1.10.5 [no release date: context only]",
+            "detail": "recent: 1.10.5, 1.10.4, 1.10.3, 1.10.2, 1.10.1, 1.10.0",
+            "signal_date": "",
+            "versions": "",
+            "id": "E6"
+          },
+          {
+            "source": "osv",
+            "fact": "CVE-2022-29977 modified 2026-10-20 [no date for when the fix appeared: context only]",
+            "detail": "[{\"database_specific\":{\"source\":\"[external source URL omitted]\"},\"ranges\":[{\"database_specific\":{\"extracted_events\":[{\"cpe\":\"cpe:2.3:a:saitoha:libsixel:1.8.6:*:*:*:*:*:*:*\",\"range\":[{\"introduced\":\"1.8.6\"},{\"last_affected\":\"1.8.6\"}],\"source\":\"CPE_STRING\"}]},\"events\":[{\"introduced\":\"6a5be8b72d84037b83a5ea838e17bcf372ab1d5f\"},{\"last_affected\":\"6a5be8b72d84037b83a5ea838e17bcf372ab1d5f\"}],\"repo\":\"[external source URL omitted]\",\"type\":\"GIT\"}],\"versions\":[\"1.8.6\",\"v1.8.6\"]}]",
+            "signal_date": "",
+            "versions": "",
+            "id": "E7"
+          },
+          {
+            "source": "deferral_record",
+            "fact": "deferred 2026-06-01",
+            "detail": "condition at deferral: Minor issue, revisit when fixed upstream || condition now: Minor issue, revisit when fixed upstream",
+            "signal_date": "2026-06-01",
+            "versions": "",
+            "id": "E8"
+          }
+        ]
+      }
+    },
+    {
+      "seq": 27,
+      "t": "2026-10-27T09:13:23",
+      "agent": "watcher",
+      "kind": "quiet",
+      "title": "CVE-2022-29977|libsixel: no condition row today; keeps waiting (no model call)",
+      "detail": {
+        "wait": "CVE-2022-29977|libsixel",
+        "why_quiet": [
+          "sid fixed 1:1.8.7-1 [already there when Debian deferred: 2026-03-12] [not on the bookworm version line: unstable 1:1.8.7-1 (epoch 1) is not on bookworm's line (1.10.3-3, epoch 0)]",
+          "gh_commit contained in 5 release tags (latest listed v1.8.7) authored 2025-01-09 first released 2025-08-31 [NOT the fix by the rule: authored 2025-01-09, before the deferral; no Fixed-by note; does not name the CVE] [already there when Debian deferred: 2025-08-31]",
+          "gh_commit contained in 5 release tags (latest listed v1.8.7) authored 2025-01-09 first released 2025-08-31 [NOT the fix by the rule: authored 2025-01-09, before the deferral; no Fixed-by note; does not name the CVE] [already there when Debian deferred: 2025-08-31]"
+        ]
+      }
+    },
+    {
+      "seq": 28,
+      "t": "2026-10-27T09:13:23",
+      "agent": "memory",
+      "kind": "recall",
+      "title": "H-MEM CVE-2019-12214|freeimage: original commitment \"Revisit when upstream fixes are available\"",
+      "detail": {
+        "wait": "CVE-2019-12214|freeimage",
+        "commitment": "Revisit when upstream fixes are available",
+        "latest": "Revisit when upstream fixes are available",
+        "rewritten": false
+      }
+    },
+    {
+      "seq": 29,
+      "t": "2026-10-27T09:13:23",
+      "agent": "watcher",
+      "kind": "quiet",
+      "title": "CVE-2019-12214|freeimage: no condition row today; keeps waiting (no model call)",
+      "detail": {
+        "wait": "CVE-2019-12214|freeimage",
+        "why_quiet": []
+      }
+    },
+    {
+      "seq": 30,
+      "t": "2026-10-27T09:13:23",
+      "agent": "memory",
+      "kind": "recall",
+      "title": "H-MEM CVE-2022-37331|openbabel: original commitment \"Minor issue, revisit when fixed upstream\"",
+      "detail": {
+        "wait": "CVE-2022-37331|openbabel",
+        "commitment": "Minor issue, revisit when fixed upstream",
+        "latest": "Minor issue, revisit when fixed upstream",
+        "rewritten": false
+      }
+    },
+    {
+      "seq": 31,
+      "t": "2026-10-27T09:13:23",
+      "agent": "watcher",
+      "kind": "quiet",
+      "title": "CVE-2022-37331|openbabel: no condition row today; keeps waiting (no model call)",
+      "detail": {
+        "wait": "CVE-2022-37331|openbabel",
+        "why_quiet": []
+      }
+    },
+    {
+      "seq": 32,
+      "t": "2026-10-27T09:13:23",
+      "agent": "scout",
+      "kind": "final",
+      "title": "Reopen today: 2; close (already resolved): 1; keep waiting: 5; needs lead: 0",
+      "detail": {}
+    }
+  ],
+  "result": {
+    "cards": [
+      {
+        "wait": "CVE-2025-14932|netcdf",
+        "cve": "CVE-2025-14932",
+        "pkg": "netcdf",
+        "status": "reopen",
+        "commitment": "Minor issue, revisit when fixed upstream",
+        "latest": "Minor issue",
+        "rewritten": true,
+        "watch_rows": [
+          "fix commit first released 2026-07-09: [external source URL omitted]",
+          "unstable ships 1:4.10.1-1 (in the archive since 2026-07-10)"
+        ],
+        "judge": {
+          "met": "yes",
+          "which": "original",
+          "cites": [
+            "E4",
+            "E1",
+            "E7"
+          ],
+          "reason": "The original deferral condition 'revisit when fixed upstream' is met because an upstream fix commit was released in v4.10.1 on 2026-07-09 (E4) and Debian unstable uploaded the fixed version 1:4.10.1-1 on 2026-07-10 (E1), both after the 2026-06-01 deferral (E7). The latest tracker note 'Minor issue' does not specify a revisit condition, so only the original commitment's condition is satisfied.",
+          "parsed": true,
+          "served": "nemotron-3-ultra-550b-a55b",
+          "replayed": false
+        }
+      },
+      {
+        "wait": "CVE-2024-13745|edk2",
+        "cve": "CVE-2024-13745",
+        "pkg": "edk2",
+        "status": "reopen",
+        "commitment": "Minor issue, revisit when/if fixed upstream",
+        "latest": "Minor issue, revisit when/if fixed upstream",
+        "rewritten": false,
+        "watch_rows": [
+          "unstable ships 2026.05-3 (in the archive since 2026-09-22)"
+        ],
+        "judge": {
+          "met": "yes",
+          "which": "both",
+          "cites": [
+            "E1"
+          ],
+          "reason": "The condition 'revisit when/if fixed upstream' is met because Debian unstable (sid) received a fixed version 2026.05-3 on 2026-09-22 (E1), which is after the 2026-06-01 deferral and on the same version line as bookworm. The original and latest conditions are identical, so both are satisfied.",
+          "parsed": true,
+          "served": "nemotron-3-ultra-550b-a55b",
+          "replayed": false
+        }
+      },
+      {
+        "wait": "CVE-2023-6605|ffmpeg",
+        "cve": "CVE-2023-6605",
+        "pkg": "ffmpeg",
+        "status": "resolved",
+        "commitment": "Minor issue, wait until it's fixed in the 5.1 branch",
+        "latest": "Minor issue, wait until it's fixed in the 5.1 branch",
+        "resolved_by": {
+          "wait_id": "CVE-2023-6605|ffmpeg",
+          "how": "advisory",
+          "ref": "DSA-5985-1",
+          "date": "2025-08-25",
+          "version": "7:5.1.7-0+deb12u1"
+        }
+      },
+      {
+        "wait": "CVE-2019-12067|qemu",
+        "cve": "CVE-2019-12067",
+        "pkg": "qemu",
+        "status": "waiting",
+        "commitment": "Minor issue, revisit when fixed upstream",
+        "latest": "Minor issue, revisit when fixed upstream",
+        "watch_rows": [],
+        "why_quiet": [
+          "gh_commit contained in 15 release tags (latest listed v11.1.2) authored 2014-10-01 already released by 2026-04-21 (the oldest of the newest tags listed) [NOT the fix by the rule: authored 2014-10-01, before the deferral; no Fixed-by note; does not name the CVE] [already there when Debian deferred: 2026-04-21]"
+        ]
+      },
+      {
+        "wait": "CVE-2023-28858|python-redis",
+        "cve": "CVE-2023-28858",
+        "pkg": "python-redis",
+        "status": "waiting",
+        "commitment": "Minor issue, revisit when fixed upstream",
+        "latest": "Minor issue, revisit when fixed upstream",
+        "watch_rows": [],
+        "why_quiet": [
+          "sid fixed 5.2.1-1 [already there when Debian deferred: 2025-04-10] [same version line, newer than bookworm 4.3.4-3]",
+          "gh_pull merged 2023-03-22 [NOT the fix by the rule: authored 2023-03-22, before the deferral; no Fixed-by note; does not name the CVE] [already there when Debian deferred: 2023-03-22]"
+        ]
+      },
+      {
+        "wait": "CVE-2022-29977|libsixel",
+        "cve": "CVE-2022-29977",
+        "pkg": "libsixel",
+        "status": "waiting",
+        "commitment": "Minor issue, revisit when fixed upstream",
+        "latest": "Minor issue, revisit when fixed upstream",
+        "watch_rows": [],
+        "why_quiet": [
+          "sid fixed 1:1.8.7-1 [already there when Debian deferred: 2026-03-12] [not on the bookworm version line: unstable 1:1.8.7-1 (epoch 1) is not on bookworm's line (1.10.3-3, epoch 0)]",
+          "gh_commit contained in 5 release tags (latest listed v1.8.7) authored 2025-01-09 first released 2025-08-31 [NOT the fix by the rule: authored 2025-01-09, before the deferral; no Fixed-by note; does not name the CVE] [already there when Debian deferred: 2025-08-31]",
+          "gh_commit contained in 5 release tags (latest listed v1.8.7) authored 2025-01-09 first released 2025-08-31 [NOT the fix by the rule: authored 2025-01-09, before the deferral; no Fixed-by note; does not name the CVE] [already there when Debian deferred: 2025-08-31]"
+        ]
+      },
+      {
+        "wait": "CVE-2019-12214|freeimage",
+        "cve": "CVE-2019-12214",
+        "pkg": "freeimage",
+        "status": "waiting",
+        "commitment": "Revisit when upstream fixes are available",
+        "latest": "Revisit when upstream fixes are available",
+        "watch_rows": [],
+        "why_quiet": []
+      },
+      {
+        "wait": "CVE-2022-37331|openbabel",
+        "cve": "CVE-2022-37331",
+        "pkg": "openbabel",
+        "status": "waiting",
+        "commitment": "Minor issue, revisit when fixed upstream",
+        "latest": "Minor issue, revisit when fixed upstream",
+        "watch_rows": [],
+        "why_quiet": []
+      }
+    ],
+    "watch_fired": 16,
+    "resolved": 11,
+    "watch_date": "2026-10-23",
+    "audit": 12
+  },
+  "finished": "2026-10-27T09:13:23",
+  "scope_mode": "iso"
+}
